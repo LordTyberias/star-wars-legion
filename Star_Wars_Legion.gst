@@ -97,7 +97,7 @@
     <categoryEntry id="8d3c-284b-625a-5346" name="Force User" hidden="false"/>
     <categoryEntry id="6405-820e-ddee-20d3" name="Command Hand" hidden="false"/>
     <categoryEntry id="c151-c107-dd65-5bc7" name="Command Cards" hidden="false"/>
-    <categoryEntry id="d3db-0eeb-a7f3-eb43" name="Unreleased (†)" hidden="false"/>
+    <categoryEntry id="d3db-0eeb-a7f3-eb43" name="Unreleased (†)" hidden="true"/>
     <categoryEntry id="800f-3742-0fdf-e2da" name="Emplacement Trooper" hidden="false"/>
     <categoryEntry id="6db2-4a46-fe95-7db6" name="Small Base" hidden="false"/>
     <categoryEntry id="81b7-a43d-9e75-399a" name="Medium Base" hidden="false"/>
@@ -208,11 +208,6 @@
             <constraint field="selections" scope="roster" value="7.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="a34e-b888-9273-d91a" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="4108-5260-0da3-fcbe" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false">
-          <constraints>
-            <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="4107-c7ec-e707-2af9" type="max"/>
-          </constraints>
-        </categoryLink>
         <categoryLink id="acd3-3beb-a28b-8129" name="Battle Cards" hidden="false" targetId="b249-fbc6-5d4f-8f82" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="05cc-ac7a-b490-aa80" type="min"/>
@@ -312,11 +307,6 @@
           <constraints>
             <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="a25d-5cfe-4430-d66c" type="min"/>
             <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="44fb-0ee5-e4bc-a7a0" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="e274-b7bf-5661-5a50" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false">
-          <constraints>
-            <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="8cd9-758e-b25c-47f1" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -459,11 +449,6 @@
           <constraints>
             <constraint field="selections" scope="roster" value="7.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="49e2-63bb-b8b3-7004" type="max"/>
             <constraint field="selections" scope="roster" value="7.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="c83f-5311-5e4f-6b32" type="min"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="7f67-25e1-08f7-8b3b" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false">
-          <constraints>
-            <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="687c-cdef-d1af-da25" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="3850-2a84-440a-57be" name="Battle Cards" hidden="false" targetId="b249-fbc6-5d4f-8f82" primary="false">
@@ -2184,7 +2169,7 @@ If there is a 3-pip command card in your discard pile, Lando Calrissian gains 1 
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e985-f7ba-6a02-468e" name="•Size Matters Not†" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e985-f7ba-6a02-468e" name="•Size Matters Not" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -2213,13 +2198,12 @@ If There Is No Try is in your discard pile, return it to your hand.</characteris
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="bfb8-112d-c2ce-b963" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
-                <categoryLink id="4351-e739-3646-b34d" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1545-e8b3-bf2e-4939" name="•Grroooogrrraaaawrrrrrrrrmph†" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="1545-e8b3-bf2e-4939" name="•Grroooogrrraaaawrrrrrrrrmph" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -2241,7 +2225,6 @@ If There Is No Try is in your discard pile, return it to your hand.</characteris
               </profiles>
               <categoryLinks>
                 <categoryLink id="6047-1720-1c3c-6d4e" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
-                <categoryLink id="6c00-5add-b013-61cd" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
@@ -2542,7 +2525,7 @@ Friendly vehicle units can spend dodge tokens to cancel Critical results.</chara
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1567-2894-48aa-938c" name="••Size Matters Sometimes†" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="1567-2894-48aa-938c" name="••Size Matters Sometimes" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -2572,7 +2555,6 @@ Friendly vehicle units can spend dodge tokens to cancel Critical results.</chara
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="745a-81d5-b740-3e7a" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
-                <categoryLink id="69e1-c5b7-e729-374b" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
@@ -3320,7 +3302,7 @@ Before drawing from your order pool, you may instead discard this card from your
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="fde3-1574-0ae3-69e5" name="••There Is No Try†" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="fde3-1574-0ae3-69e5" name="••There Is No Try" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -3346,7 +3328,6 @@ Before drawing from your order pool, you may instead discard this card from your
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="08d3-3cba-96b4-ca88" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
-                <categoryLink id="e321-32a6-d99e-f12c" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
@@ -3384,7 +3365,7 @@ Before drawing from your order pool, you may instead discard this card from your
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7158-dda9-622b-d7a7" name="••Mrowgh Ghrrmrowrig!†" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="7158-dda9-622b-d7a7" name="••Mrowgh Ghrrmrowrig!" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -3409,7 +3390,6 @@ Before drawing from your order pool, you may instead discard this card from your
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="07c3-3a9b-06c5-aeb5" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
-                <categoryLink id="e173-47dd-adb9-da53" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
@@ -4484,7 +4464,7 @@ During Agent Kallus&apos;s activation, he may perform a free recover action.</ch
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f820-6f0b-ec84-4a84" name="•••Luminous Beings Are We†" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f820-6f0b-ec84-4a84" name="•••Luminous Beings Are We" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -4507,13 +4487,12 @@ If Size Matters Not is in your discard pile, return it to your hand.</characteri
               </profiles>
               <categoryLinks>
                 <categoryLink id="f184-98b0-8ba9-62a1" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
-                <categoryLink id="a77f-106e-1457-fa3a" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4456-b0ce-4765-b1b5" name="•••YHWARGGHHHHHHHHHH!†" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="4456-b0ce-4765-b1b5" name="•••YHWARGGHHHHHHHHHH!" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -4538,7 +4517,6 @@ If Size Matters Not is in your discard pile, return it to your hand.</characteri
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="b8b8-71d4-72a4-df04" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
-                <categoryLink id="5563-508a-c02f-0cc6" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
@@ -4601,7 +4579,7 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Any</characteristic>
                     <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">1 Unit</characteristic>
-                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">At the end of the turn, return this card to your hand.</characteristic>
+                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">At the end of the Command Phase, return this card to your hand.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9012,7 +8990,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="38.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4677-e368-e468-24af" name="  •Unit Template†" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="4677-e368-e468-24af" name="  •Unit Template" hidden="true" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1c66-beee-7867-e3c1" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d162-d942-61be-e728" type="max"/>
@@ -9980,7 +9958,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
     </selectionEntry>
     <selectionEntry id="d745-571e-8ef8-3724" name="B2 Super Battle Droids" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="f746-feac-0a86-38e7" name="B2 Super Battle Droids†" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+        <profile id="f746-feac-0a86-38e7" name="B2 Super Battle Droids" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
           <modifiers>
             <modifier type="increment" field="a5b5-9e18-969c-7e34" value="1">
               <repeats>
@@ -12729,7 +12707,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="105.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ce40-7bde-464f-4449" name="Wookiee Warriors (Kashyyyk Resistance)†" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="ce40-7bde-464f-4449" name="Wookiee Warriors (Kashyyyk Resistance)" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="6684-c9eb-25ce-3de3" name="Wookiee Warriors" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
           <modifiers>
@@ -12764,7 +12742,6 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <categoryLink id="aae3-475c-4ea6-4ea7" name="Rebel" hidden="false" targetId="1d91-e11e-a87b-4790" primary="false"/>
         <categoryLink id="95ca-b149-5a79-5f60" name="Small Base" hidden="false" targetId="6db2-4a46-fe95-7db6" primary="false"/>
         <categoryLink id="9296-957c-c22f-d2fa" name="Wookiee Trooper" hidden="false" targetId="be18-9b53-454b-4214" primary="false"/>
-        <categoryLink id="37f6-ae02-62f5-624a" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="403b-6e50-9141-dcfa" name=" Combat Training" hidden="false" collective="false" import="true" type="upgrade">
@@ -12816,7 +12793,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="72.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0c30-b791-3e63-d01d" name="Wookiee Warriors (Noble Fighters)†" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="0c30-b791-3e63-d01d" name="Wookiee Warriors (Noble Fighters)" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="cf51-d0ec-078b-6081" name="Wookiee Warriors" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
           <modifiers>
@@ -12852,7 +12829,6 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <categoryLink id="e2b5-7e6c-a1be-6f86" name="Small Base" hidden="false" targetId="6db2-4a46-fe95-7db6" primary="false"/>
         <categoryLink id="8ff1-50eb-e7d0-c4d6" name="Wookiee Trooper" hidden="false" targetId="be18-9b53-454b-4214" primary="false"/>
         <categoryLink id="34e7-b265-d20a-2c10" name="Republic" hidden="false" targetId="e057-60b7-67f9-8d41" primary="false"/>
-        <categoryLink id="4a30-e17b-7597-29d3" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="48f3-0f42-a75f-dc09" name=" Ryyk Blade" hidden="false" collective="false" import="true" type="upgrade">
@@ -12908,7 +12884,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="69.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="814e-83e4-e695-7933" name="Wookiee Warriors (Kashyyyk Defenders)†" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="814e-83e4-e695-7933" name="Wookiee Warriors (Kashyyyk Defenders)" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="e0fd-1978-1537-0023" name="Wookiee Warriors" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
           <modifiers>
@@ -12943,7 +12919,6 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <categoryLink id="c39d-cb32-0f41-eebb" name="Small Base" hidden="false" targetId="6db2-4a46-fe95-7db6" primary="false"/>
         <categoryLink id="4c96-f9d8-a1c3-78f9" name="Wookiee Trooper" hidden="false" targetId="be18-9b53-454b-4214" primary="false"/>
         <categoryLink id="c3cc-f4f9-5723-24c7" name="Republic" hidden="false" targetId="e057-60b7-67f9-8d41" primary="false"/>
-        <categoryLink id="632d-579d-74db-bd4a" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1772-aaae-66e2-3341" name=" Combat Training" hidden="false" collective="false" import="true" type="upgrade">
@@ -12995,7 +12970,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="72.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b5f7-7b1a-fe25-8a8e" name="•Chewbacca†" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="b5f7-7b1a-fe25-8a8e" name="•Chewbacca" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="63b6-cd31-a2e2-13f1" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7364-05e5-c470-a990" type="max"/>
@@ -13027,7 +13002,6 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <categoryLink id="21da-fe48-aa1b-26cd" name="Small Base" hidden="false" targetId="6db2-4a46-fe95-7db6" primary="false"/>
         <categoryLink id="1297-584d-88c8-3184" name="Wookiee Trooper" hidden="false" targetId="be18-9b53-454b-4214" primary="false"/>
         <categoryLink id="0b65-9c31-cf79-60a4" name="Republic" hidden="false" targetId="e057-60b7-67f9-8d41" primary="false"/>
-        <categoryLink id="4d51-8e02-667e-7e5f" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false"/>
         <categoryLink id="cb0f-4356-09e8-e44a" name="Commander" hidden="false" targetId="8837-65e9-c1bd-f304" primary="true"/>
       </categoryLinks>
       <selectionEntries>
@@ -13090,7 +13064,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="90.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="89b9-999c-5406-06fd" name="•Wookiee Chieftain†" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="89b9-999c-5406-06fd" name="•Wookiee Chieftain" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9a99-846d-d8bd-937f" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6ee2-5c50-5683-b69b" type="max"/>
@@ -13120,7 +13094,6 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
       </infoLinks>
       <categoryLinks>
         <categoryLink id="582a-879e-f4a9-807a" name="Wookiee Trooper" hidden="false" targetId="be18-9b53-454b-4214" primary="false"/>
-        <categoryLink id="c720-8331-7ad6-02f4" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false"/>
         <categoryLink id="8428-f823-7d8b-c7f0" name="Small Base" hidden="false" targetId="6db2-4a46-fe95-7db6" primary="false"/>
         <categoryLink id="f281-501a-a776-3fc1" name="Republic" hidden="false" targetId="e057-60b7-67f9-8d41" primary="false"/>
         <categoryLink id="d815-8ffe-2dba-ed15" name="Light Side" hidden="false" targetId="5639-96ef-9aa3-961d" primary="false"/>
@@ -13183,7 +13156,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="985f-4bbc-b614-689e" name="•Yoda†" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="985f-4bbc-b614-689e" name="•Yoda" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="675f-c5eb-6638-a264" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="14af-09be-726d-7044" type="max"/>
@@ -13211,7 +13184,6 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <infoLink id="6883-6ed4-050c-aaae" name="Master of the Force X" hidden="false" targetId="7923-6416-78ad-12b9" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="2e5c-ee77-48ee-5ed4" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false"/>
         <categoryLink id="6c14-f872-7a74-8439" name="Small Base" hidden="false" targetId="6db2-4a46-fe95-7db6" primary="false"/>
         <categoryLink id="0721-3fb0-ff45-3bfc" name="Republic" hidden="false" targetId="e057-60b7-67f9-8d41" primary="false"/>
         <categoryLink id="7271-5294-1d8a-fd3e" name="Light Side" hidden="false" targetId="5639-96ef-9aa3-961d" primary="false"/>
@@ -14289,7 +14261,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="bc91-19c6-2338-500c" name="Force Lift†" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="bc91-19c6-2338-500c" name="Force Lift" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2586-f7a1-1baf-ee76" type="max"/>
           </constraints>
@@ -14303,7 +14275,6 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink id="cb38-8d3a-ab5b-88e3" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="5.0"/>
@@ -14322,7 +14293,6 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink id="01c9-3ebb-de86-fe94" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="10.0"/>
@@ -14491,7 +14461,6 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <infoLink id="e2f1-7b88-b657-edb8" name="Scout X" hidden="false" targetId="7410-450a-1190-5b7e" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="5ee9-6ce1-86c6-179b" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="8.0"/>
@@ -15088,7 +15057,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae2d-521a-3805-450b" type="max"/>
           </constraints>
           <profiles>
-            <profile id="4382-ba6c-1bd5-7585" name="FX-9 Medical Droid†" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
+            <profile id="4382-ba6c-1bd5-7585" name="FX-9 Medical Droid" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
                 <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc"/>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">&gt;&gt; Treat 1: Capacity 2, Noncombatant</characteristic>
@@ -17133,7 +17102,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="27.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="670f-3a81-3936-372c" name="Battle Shield Wookiee†" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="670f-3a81-3936-372c" name="Battle Shield Wookiee" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -17191,7 +17160,7 @@ Reduce your maximum speed by 1</characteristic>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="26.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="34b1-86b3-5333-e9a8" name="Long Gun Wookiee†" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="34b1-86b3-5333-e9a8" name="Long Gun Wookiee" hidden="false" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -19504,7 +19473,6 @@ During the End Phase, ready this card.</characteristic>
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink id="85f2-2419-53c5-af38" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="5.0"/>

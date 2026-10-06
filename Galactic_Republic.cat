@@ -76,11 +76,11 @@
     <entryLink id="d684-f6ae-a330-c5b5" name=" •Anakin Skywalker" hidden="false" collective="false" import="true" targetId="4fc9-b585-a7aa-1fc0" type="selectionEntry"/>
     <entryLink id="2fd5-982d-2006-2b41" name="Clone Commander" hidden="false" collective="false" import="true" targetId="9b55-36e8-6913-02fb" type="selectionEntry"/>
     <entryLink id="698b-af24-bcbb-648e" name="LAAT/le Patrol Transport" hidden="false" collective="false" import="true" targetId="6c48-8772-70d4-0ffe" type="selectionEntry"/>
-    <entryLink id="d994-15da-56a6-b54b" name="Wookiee Warriors (Noble Fighters)†" hidden="false" collective="false" import="true" targetId="0c30-b791-3e63-d01d" type="selectionEntry"/>
-    <entryLink id="5f3d-e826-7be5-30b4" name="Wookiee Warriors (Kashyyyk Defenders)†" hidden="false" collective="false" import="true" targetId="814e-83e4-e695-7933" type="selectionEntry"/>
-    <entryLink id="0b1e-1ce8-cbbd-3afe" name="•Chewbacca†" hidden="false" collective="false" import="true" targetId="b5f7-7b1a-fe25-8a8e" type="selectionEntry"/>
-    <entryLink id="35fc-81d7-3cc8-5d12" name="•Wookiee Chieftain†" hidden="false" collective="false" import="true" targetId="89b9-999c-5406-06fd" type="selectionEntry"/>
-    <entryLink id="3b70-ba48-a6f7-ea16" name="•Yoda†" hidden="false" collective="false" import="true" targetId="985f-4bbc-b614-689e" type="selectionEntry"/>
+    <entryLink id="d994-15da-56a6-b54b" name="Wookiee Warriors (Noble Fighters)" hidden="false" collective="false" import="true" targetId="0c30-b791-3e63-d01d" type="selectionEntry"/>
+    <entryLink id="5f3d-e826-7be5-30b4" name="Wookiee Warriors (Kashyyyk Defenders)" hidden="false" collective="false" import="true" targetId="814e-83e4-e695-7933" type="selectionEntry"/>
+    <entryLink id="0b1e-1ce8-cbbd-3afe" name="•Chewbacca" hidden="false" collective="false" import="true" targetId="b5f7-7b1a-fe25-8a8e" type="selectionEntry"/>
+    <entryLink id="35fc-81d7-3cc8-5d12" name="•Wookiee Chieftain" hidden="false" collective="false" import="true" targetId="89b9-999c-5406-06fd" type="selectionEntry"/>
+    <entryLink id="3b70-ba48-a6f7-ea16" name="•Yoda" hidden="false" collective="false" import="true" targetId="985f-4bbc-b614-689e" type="selectionEntry"/>
     <entryLink id="f14a-e86c-edcd-b207" name="Raddaugh Gnasp Fluttercraft" hidden="false" collective="false" import="true" targetId="35be-285e-0012-cd11" type="selectionEntry"/>
 	<entryLink id="f88c-6d18-4b57-ad16" name="Infantry Support Platform" hidden="false" collective="false" import="true" targetId="c0b0-9b6e-1e01-c73f" type="selectionEntry"/>
   </entryLinks>
