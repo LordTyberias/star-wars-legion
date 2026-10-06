@@ -1372,7 +1372,7 @@ During Boba Fett&apos;s activation, he gains:
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="1f83-2a06-3a05-85aa" name="•And Now... You Will Die" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="1f83-2a06-3a05-85aa" name="•And Now... You Will Die" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -2498,7 +2498,7 @@ Friendly vehicle units can spend dodge tokens to cancel Critical results.</chara
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a194-be95-b5f5-b0a9" name="••Give in to Your Anger" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="a194-be95-b5f5-b0a9" name="••Give in to Your Anger" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -3629,7 +3629,7 @@ When Darth Vader activates, each enemy trooper at range 1-2 of him gains 3 suppr
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c956-c603-b09d-b3c1" name="•••An Entire Legion" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="c956-c603-b09d-b3c1" name="•••An Entire Legion" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -6459,7 +6459,7 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="55.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e0c2-b41f-4814-9b56" name="•Emperor Palpatine" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="e0c2-b41f-4814-9b56" name="•Emperor Palpatine" hidden="true" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3d03-215c-5125-8788" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0b3f-0f94-9fbd-4384" type="max"/>
@@ -6531,7 +6531,7 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="190.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="aec2-d449-8d4a-9a84" name="Imperial Royal Guards" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="aec2-d449-8d4a-9a84" name="Imperial Royal Guards" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="4924-c39f-bd7a-aad5" name="Imperial Royal Guards" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
           <modifiers>
@@ -6882,7 +6882,7 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="45.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b1ab-39cb-f761-ed4a" name="Imperial Officer" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="b1ab-39cb-f761-ed4a" name="Imperial Officer" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="577c-c1ce-b746-ba19" name="Imperial Officer" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
           <characteristics>
@@ -15964,7 +15964,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="19.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4448-8551-733b-8fd9" name="Electrostaff Guard" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="4448-8551-733b-8fd9" name="Electrostaff Guard" hidden="true" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -19918,7 +19918,7 @@ During the End Phase, ready this card.</characteristic>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0531-0bff-35b2-36ec" name="•Iden&apos;s DLT-20A Rifle" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="0531-0bff-35b2-36ec" name="•Iden&apos;s DLT-20A Rifle" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -20125,7 +20125,7 @@ During the End Phase, ready this card.</characteristic>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3177-dc9f-7cb6-16a6" name="•Iden&apos;s TL-50 Repeater" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3177-dc9f-7cb6-16a6" name="•Iden&apos;s TL-50 Repeater" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -20189,7 +20189,7 @@ During the End Phase, ready this card.</characteristic>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="8.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="2895-22a4-5a81-e8bf" name="J-19 Bo-rifle" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="2895-22a4-5a81-e8bf" name="J-19 Bo-rifle" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>

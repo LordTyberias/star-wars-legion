@@ -72,9 +72,9 @@
     <entryLink id="30d1-1c24-4024-8615" name="Scout Troopers" hidden="false" collective="false" import="true" targetId="a672-8380-48cd-30a8" type="selectionEntry"/>
     <entryLink id="75d0-8529-6e38-5e11" name="Scout Troopers (Strike Team)" hidden="false" collective="false" import="true" targetId="13e5-b1cc-af4b-b33c" type="selectionEntry"/>
     <entryLink id="0e34-163c-8207-0951" name="E-Web Heavy Blaster Team" hidden="false" collective="false" import="true" targetId="f4df-37ce-e988-1e54" type="selectionEntry"/>
-    <entryLink id="59ee-25fe-b89f-d909" name="•Emperor Palpatine" hidden="false" collective="false" import="true" targetId="e0c2-b41f-4814-9b56" type="selectionEntry"/>
-    <entryLink id="a8fa-85cd-a3ca-4c1c" name="Imperial Royal Guards" hidden="false" collective="false" import="true" targetId="aec2-d449-8d4a-9a84" type="selectionEntry"/>
-    <entryLink id="e4c3-bec8-eed5-812c" name="Imperial Officer" hidden="false" collective="false" import="true" targetId="b1ab-39cb-f761-ed4a" type="selectionEntry"/>
+    <entryLink id="59ee-25fe-b89f-d909" name="•Emperor Palpatine" hidden="true" collective="false" import="true" targetId="e0c2-b41f-4814-9b56" type="selectionEntry"/>
+    <entryLink id="a8fa-85cd-a3ca-4c1c" name="Imperial Royal Guards" hidden="true" collective="false" import="true" targetId="aec2-d449-8d4a-9a84" type="selectionEntry"/>
+    <entryLink id="e4c3-bec8-eed5-812c" name="Imperial Officer" hidden="true" collective="false" import="true" targetId="b1ab-39cb-f761-ed4a" type="selectionEntry"/>
     <entryLink id="93a4-4f22-1b3b-32ed" name="Imperial Death Troopers" hidden="false" collective="false" import="true" targetId="fe82-164e-5d9b-3724" type="selectionEntry"/>
     <entryLink id="5f9a-60bf-cfe2-649b" name="•Director Orson Krennic" hidden="false" collective="false" import="true" targetId="7c06-cdf6-d011-d902" type="selectionEntry"/>
     <entryLink id="8906-e690-1887-31d6" name="TX-225 GAVw Occupier Combat Assault Tank" hidden="false" collective="false" import="true" targetId="e95b-9d47-5248-9b39" type="selectionEntry"/>
