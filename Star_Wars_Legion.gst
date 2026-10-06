@@ -732,7 +732,7 @@
               <profiles>
                 <profile id="ad2e-3521-4753-37ec" name="Surface Scan" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
                   <characteristics>
-                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Starting with the Blue player, each player chooses 2 allied units. Each chosen unit gains an allied Scanner (asset). Special Rules: Each unit gains &gt;&gt; Claim (Scanner). Units cannot claim enemy Scanners. Each unit can hold only 1 Scanner at a time.</characteristic>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Starting with the Blue player, each player chooses 2 allied units. Each chosen unit gains an allied Scanner (asset). Special Rules: Each unit gains Card Action: Claim (Scanner). Units cannot claim enemy Scanners. Each unit can hold only 1 Scanner at a time.</characteristic>
                     <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, during each End Phase, if a player controls 2 units that are each holding a Scanner, are not within allied Territory, and are not Contesting a POI that is within allied Territory, they score 1 VP. During the End Phase, if an allied unit holding a Scanner is Contesting an unclaimed enemy Scanner, that unit&apos;s controlling player scores 2 VPs. Each player may score a maximum of 2 VPs in this way per game.</characteristic>
                   </characteristics>
                 </profile>
@@ -748,7 +748,7 @@
               <profiles>
                 <profile id="c003-ff6e-6dcd-1740" name="Destroy Enemy Base" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
                   <characteristics>
-                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Starting with the Blue player, each player places 1 allied Base (POI) not within Range 1 of each edge of the battlefield. Then, starting with the Blue player, each player chooses 1 allied unit. Each chosen unit gains a Bomb (asset). Special Rules: Each unit gains &gt;&gt; Claim (Bomb). Each unit can hold only 1 Bomb. At the start of the End Phase, if 1 or more allied units holding a Bomb are Contesting an enemy Base that you are Securing, remove all Bombs held by allied units Contesting that Base from the game. Then that Base is destroyed and removed from the battlefield.</characteristic>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Starting with the Blue player, each player places 1 allied Base (POI) not within Range 1 of each edge of the battlefield. Then, starting with the Blue player, each player chooses 1 allied unit. Each chosen unit gains a Bomb (asset). Special Rules: Each unit gains Card Action: Claim (Bomb). Each unit can hold only 1 Bomb. At the start of the End Phase, if 1 or more allied units holding a Bomb are Contesting an enemy Base that you are Securing, remove all Bombs held by allied units Contesting that Base from the game. Then that Base is destroyed and removed from the battlefield.</characteristic>
                     <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">During each End Phase, players score 4 VPs if the enemy Base was destroyed during that End Phase.</characteristic>
                   </characteristics>
                 </profile>
@@ -764,7 +764,7 @@
               <profiles>
                 <profile id="30b9-0383-13e9-1630" name="Recon Mission" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
                   <characteristics>
-                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Starting with the Blue player, each player chooses 1 allied unit. Each chosen unit gains an allied Scanner (asset). Special Rules: Each unit gains &gt;&gt; Claim (Scanner). Units cannot claim enemy Scanners. If an allied unit is holding a Scanner, at the end of that unit&apos;s Activation, each enemy unit within Range 2 and in LOS of that allied unit&apos;s unit leader gains 1 Observation token.</characteristic>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Starting with the Blue player, each player chooses 1 allied unit. Each chosen unit gains an allied Scanner (asset). Special Rules: Each unit gains Card Action: Claim (Scanner). Units cannot claim enemy Scanners. If an allied unit is holding a Scanner, at the end of that unit&apos;s Activation, each enemy unit within Range 2 and in LOS of that allied unit&apos;s unit leader gains 1 Observation token.</characteristic>
                     <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, at the end of each allied unit&apos;s Activation, if that unit is holding a Scanner and if that unit&apos;s unit leader is within Range 2 and has LOS to 2 or more enemy units, that allied unit&apos;s controlling player scores 1 VP. Each player can score a maximum of 1 VP in this way each Round.</characteristic>
                   </characteristics>
                 </profile>
@@ -780,7 +780,7 @@
               <profiles>
                 <profile id="5a74-bc1e-2522-1726" name="Failed Negotiations" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
                   <characteristics>
-                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Place an Exchange (POI) in the center of the battlefield, even if there is already an Objective token there. Then, starting with the Blue player, each player chooses 1 of their Corps or Special Forces Trooper units. Each chosen unit gains an allied Prisoner (Asset). Special Rules: A unit that has 1 or more Prisoners increases its Courage by 1. At the start of the first Activation Phase, units that are holding 1 or more Prisoners gain Incognito until the end of the Round. Additionally, each Corps and Special Forces Trooper unit gains &gt;&gt; Claim (Prisoner).</characteristic>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Place an Exchange (POI) in the center of the battlefield, even if there is already an Objective token there. Then, starting with the Blue player, each player chooses 1 of their Corps or Special Forces Trooper units. Each chosen unit gains an allied Prisoner (Asset). Special Rules: A unit that has 1 or more Prisoners increases its Courage by 1. At the start of the first Activation Phase, units that are holding 1 or more Prisoners gain Incognito until the end of the Round. Additionally, each Corps and Special Forces Trooper unit gains Card Action: Claim (Prisoner).</characteristic>
                     <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, during the End Phase, players score 1 VP for each unit they control holding 1 or more Prisoners that is within Range 1 of the Exchange.</characteristic>
                   </characteristics>
                 </profile>
@@ -796,7 +796,7 @@
               <profiles>
                 <profile id="d097-02cf-889a-9bef" name="Supply Run" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
                   <characteristics>
-                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Starting with the Blue player, each player places 2 Supply Caches (Assets) in Contested Territory, not within Range 2 of each edge of the battlefield and not within Range 1 of another Supply Cache. Special Rules: Each Trooper unit gains &gt;&gt; Claim (Supply Cache). Each unit can hold only 1 Supply Cache at a time.</characteristic>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Starting with the Blue player, each player places 2 Supply Caches (Assets) in Contested Territory, not within Range 2 of each edge of the battlefield and not within Range 1 of another Supply Cache. Special Rules: Each Trooper unit gains Card Action: Claim (Supply Cache). Each unit can hold only 1 Supply Cache at a time.</characteristic>
                     <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, at the start of each allied unit&apos;s Activation, if that unit is contesting a POI and is holding a Supply Cache, its Controlling player may choose to remove that Supply Cache from the Game. If they do, that player scores 1 VP. If it is the fourth or fifth Round, that player scores 1 additional VP.</characteristic>
                   </characteristics>
                 </profile>
@@ -812,7 +812,7 @@
               <profiles>
                 <profile id="5418-13b0-0ab8-b56b" name="Retrieve the Data" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
                   <characteristics>
-                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Place a Data Core (Asset) in the center of the battlefield, even if there is already an Objective token there. Then, starting with the Blue player, each player places 2 Data Cores (Asset) in Contested Territory, not within Range 2 of each edge of the battlefield and not within Range 1 of another Data Core. Special Rules: Each unit gains &gt;&gt; Data Recovery (Place 1 Suppression token on a Data Core this unit is Contesting).</characteristic>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Place a Data Core (Asset) in the center of the battlefield, even if there is already an Objective token there. Then, starting with the Blue player, each player places 2 Data Cores (Asset) in Contested Territory, not within Range 2 of each edge of the battlefield and not within Range 1 of another Data Core. Special Rules: Each unit gains Card Action: Data Recovery (Place 1 Suppression token on a Data Core this unit is Contesting).</characteristic>
                     <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, during the End Phase, players score 1 VP for each Data Core they are Securing that has 2 or more Suppression tokens. After scoring VPs, if a player is Securing a Data Core with 2 or more Suppression tokens, remove that Data Core from the battlefield.</characteristic>
                   </characteristics>
                 </profile>
@@ -828,7 +828,7 @@
               <profiles>
                 <profile id="2530-7990-4b7b-cfcc" name="Align the Relay" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
                   <characteristics>
-                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Place a Comms Relay (Asset) in the center of the battlefield, even if there is already an Objective token there. Then, starting with the Blue player, each player places 2 Comms Relays within Range 3 of both long battlefield edges, not within Range 1 of a short battlefield edge, and not within Range 1 of another Comms Relay. Special Rules: Each unit gains &gt;&gt; Align Relay (Choose a Comms Relay this unit is Contesting. You now control that Comms Relay.) A Comms Relay Controlled by a player is Controlled by that player until another player Controls it.</characteristic>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Place a Comms Relay (Asset) in the center of the battlefield, even if there is already an Objective token there. Then, starting with the Blue player, each player places 2 Comms Relays within Range 3 of both long battlefield edges, not within Range 1 of a short battlefield edge, and not within Range 1 of another Comms Relay. Special Rules: Each unit gains Card Action: Align Relay (Choose a Comms Relay this unit is Contesting. You now control that Comms Relay.) A Comms Relay Controlled by a player is Controlled by that player until another player Controls it.</characteristic>
                     <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, during the End Phase, players score 1 VP if they Control 2 or more Comms Relays, and 1 additional VP if they Control 4 or more Comms Relays.</characteristic>
                   </characteristics>
                 </profile>
@@ -1024,7 +1024,7 @@
               <profiles>
                 <profile id="2de7-a08c-9ad6-ec80" name="Scrambled Orders" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
                   <characteristics>
-                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Special Rules: Rebel Only. During Setup, place an allied Comms Scrambler (Advantage) on the battlefield. Enemy units within Range 1 of 1 or more Comms Scramblers cannot be issued Orders. Enemy units gain &gt;&gt; Destroy Comms Scrambler (Remove an enemy Comms Scrambler within Half-Range from the battlefield).</characteristic>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Special Rules: Rebel Only. During Setup, place an allied Comms Scrambler (Advantage) on the battlefield. Enemy units within Range 1 of 1 or more Comms Scramblers cannot be issued Orders. Enemy units gain Card Action: Destroy Comms Scrambler (Remove an enemy Comms Scrambler within Half-Range from the battlefield).</characteristic>
                     <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8"></characteristic>
                   </characteristics>
                 </profile>
@@ -13817,7 +13817,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="e1fd-e596-db98-5c6f" name="Protocol" hidden="false" collective="false" import="true" targetId="1c9b-29ff-9d21-cdf5" type="selectionEntryGroup">
+        <entryLink id="e1fd-e596-db98-5c6f" name="Programming" hidden="false" collective="false" import="true" targetId="1c9b-29ff-9d21-cdf5" type="selectionEntryGroup">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d8eb-955d-8005-01f1" type="min"/>
           </constraints>
@@ -13910,7 +13910,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="e15b-5a6a-03cb-6edc" name="Protocol" hidden="false" collective="false" import="true" targetId="1c9b-29ff-9d21-cdf5" type="selectionEntryGroup">
+        <entryLink id="e15b-5a6a-03cb-6edc" name="Programming" hidden="false" collective="false" import="true" targetId="1c9b-29ff-9d21-cdf5" type="selectionEntryGroup">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9449-92c9-c664-a922" type="min"/>
           </constraints>
@@ -13981,6 +13981,82 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="65.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="b3ee-5d1c-587c-8bf4" name="Strike and Fade" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4cda-3b55-e9eb-760c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e9df-4740-c4ae-ed25" name="Strike and Fade" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
+          <characteristics>
+            <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Unit with Speeder X Only. Units may equip this card even if they do not have a Training upgrade slot on their unit card. After this unit makes an Attack action, you may exhaust this card. If you do, this unit makes a Move action.</characteristic>
+            <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
+            <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">Exhaust</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a880-6b8c-1af7-e476" name="Imperial March" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d2d0-d42f-1561-a394" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e62f-5b3d-f667-28fe" name="Imperial March" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
+          <characteristics>
+            <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Imperial Corps Only. Units may equip this card even if they do not have a Training upgrade slot on their unit card. When this unit makes a second Move action during its Activation, increase its Speed by 1 during that Move action. Additionally, when this unit makes a Move action during its Activation, you may discard this card. If you do, this unit gains Charge until the end of its Activation.</characteristic>
+            <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
+            <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="104a-36b1-93c2-b1f9" name="Dug In" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49a8-fcef-9154-5b72" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="834e-d0d9-302b-1a68" name="Dug In" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
+          <characteristics>
+            <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Emplacement Trooper or Trooper Unit with Prepared Position Only. Units may equip this card even if they do not have a Training upgrade slot on their unit card. While this unit is completely within Allied Territory and while it does not have a facedown Order token, this unit rolls red defense dice instead of white defense dice when rolling its Cover Pool.</characteristic>
+            <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
+            <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="6.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8cd2-a896-f431-0c3b" name="Door Gunners" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6618-17a2-cada-13ee" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="dbb7-b2e0-5517-b290" name="Mounted Blaster" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+          <characteristics>
+            <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-2</characteristic>
+            <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black x2, White x2</characteristic>
+            <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Fixed: Sides</characteristic>
+            <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+          </characteristics>
+        </profile>
+        <profile id="f9fb-0f84-eafe-cdde" name="Door Gunners" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
+          <characteristics>
+            <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Unit with Transport Only. Units may equip this card even if they do not have a Crew upgrade slot on their unit card. After this unit makes an Attack action during its Activation, if it did not add this weapon to an Attack Pool during that Attack action, it may make a free Attack action using only this weapon, even though it has already made an Attack action this Turn.</characteristic>
+            <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
+            <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="12.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="9510-6572-6230-10dc" name="Force" hidden="false" collective="false" import="true">
@@ -14002,13 +14078,13 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <profiles>
             <profile id="dd69-eba7-7a78-0d2f" name="Force Choke" hidden="false" typeId="def8-2ae7-1d1c-8ff8" typeName="4.1 Force">
               <characteristics>
-                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">&gt;&gt; Choose a non-commander, non-operative enemy trooper mini at range 1. It suffers 1 wound.</characteristic>
+                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">Dark Side Only. Free Card Action: Choose a non-Commander, non-Operative enemy Trooper unit within Range 1 of this unit. The chosen unit suffers 1 Wound.</characteristic>
                 <characteristic name="Icons" typeId="52e6-1f3c-eac8-636f">Exhaust</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="5.0"/>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="10.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b15b-a111-71cb-f4fe" name="Force Push" hidden="false" collective="false" import="true" type="upgrade">
@@ -14018,13 +14094,13 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <profiles>
             <profile id="e11b-4f01-7ec9-24f7" name="Force Push" hidden="false" typeId="def8-2ae7-1d1c-8ff8" typeName="4.1 Force">
               <characteristics>
-                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">&gt;&gt; Choose an enemy trooper unit at range 1. Perform a speed 1 move with that unit, even if it is engaged.</characteristic>
+                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">Free Card Action: Choose an enemy Trooper unit within Range 1 of this unit. The chosen unit makes a Speed-1 Move, even if it is Engaged. You resolve this Move.</characteristic>
                 <characteristic name="Icons" typeId="52e6-1f3c-eac8-636f">Exhaust</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="10.0"/>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="40.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b8fe-5ace-71b9-a74e" name="Force Reflexes" hidden="false" collective="false" import="true" type="upgrade">
@@ -14034,7 +14110,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <profiles>
             <profile id="f74c-025f-e437-ccf0" name="Force Reflexes" hidden="false" typeId="def8-2ae7-1d1c-8ff8" typeName="4.1 Force">
               <characteristics>
-                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">&gt;&gt; Gain 1 dodge token.</characteristic>
+                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">Free Card Action: This unit gains 1 Dodge token.</characteristic>
                 <characteristic name="Icons" typeId="52e6-1f3c-eac8-636f">Exhaust</characteristic>
               </characteristics>
             </profile>
@@ -14048,18 +14124,26 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="db38-8039-fd40-2ae6" type="max"/>
           </constraints>
           <profiles>
+            <profile id="0fc6-f900-b32a-bd18" name="Thrown Lightsaber" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-2</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Variable (see Saber Throw)</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"></characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
             <profile id="ac9d-0698-3b9c-b67c" name="Saber Throw" hidden="false" typeId="def8-2ae7-1d1c-8ff8" typeName="4.1 Force">
               <characteristics>
-                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">→ Choose 1 of your melee weapons. Perform a ranged attack with that weapon against an enemy at range 1-2, using half of that weapon&apos;s dice, rounded up. This is treated as an attack action.</characteristic>
+                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">When this unit makes an attack with this weapon, during the Form Attack Pool step, choose 1 of this unit&apos;s Melee weapons. The weapon dice for this weapon are equal to half of the chosen weapon&apos;s total dice, rounding up, and the Attack Pool gains the chosen weapon&apos;s weapon keywords.</characteristic>
                 <characteristic name="Icons" typeId="52e6-1f3c-eac8-636f"/>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="5.0"/>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1ca7-e218-b743-c825" name="Battle Meditation" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1ca7-e218-b743-c825" name="Battle Meditation" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3f27-1ff8-c033-e178" type="max"/>
           </constraints>
@@ -14089,7 +14173,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <profiles>
             <profile id="786c-3b93-0387-8a9d" name="Jedi Mind Trick" hidden="false" typeId="def8-2ae7-1d1c-8ff8" typeName="4.1 Force">
               <characteristics>
-                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">&gt;&gt; Choose a non-commander, non-operative enemy trooper unit at range 1-2. It gains 2 suppression tokens.</characteristic>
+                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">Light Side Only. Free Card Action: Choose a non-Commander, non-Operative enemy Trooper unit within Range 2 of this unit. The chosen unit gains 2 Suppression tokens.</characteristic>
                 <characteristic name="Icons" typeId="52e6-1f3c-eac8-636f">Exhaust</characteristic>
               </characteristics>
             </profile>
@@ -14112,7 +14196,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <profiles>
             <profile id="4066-beb2-eedd-64ff" name="Anger" hidden="false" typeId="def8-2ae7-1d1c-8ff8" typeName="4.1 Force">
               <characteristics>
-                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">After you suffer 1 or more wounds, gain 1 aim token.</characteristic>
+                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">Dark Side Only. When this unit suffers 1 or more Wounds, after the effect is resolved, it gains 1 Aim token.</characteristic>
                 <characteristic name="Icons" typeId="52e6-1f3c-eac8-636f"/>
               </characteristics>
             </profile>
@@ -14128,7 +14212,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <profiles>
             <profile id="d89d-0958-1f25-9eca" name="Force Guidance" hidden="false" typeId="def8-2ae7-1d1c-8ff8" typeName="4.1 Force">
               <characteristics>
-                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">&gt;&gt; Choose up to 2 friendly units at range 1-2. Each chosen unit gains 1 surge tokens.</characteristic>
+                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">Free Card Action: Choose up to 2 allied units within Range 2 of this unit. Each chosen unit gains 1 Surge token.</characteristic>
                 <characteristic name="Icons" typeId="52e6-1f3c-eac8-636f">Exhaust</characteristic>
               </characteristics>
             </profile>
@@ -14151,7 +14235,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <profiles>
             <profile id="b92a-7795-4721-86d2" name="Hope" hidden="false" typeId="def8-2ae7-1d1c-8ff8" typeName="4.1 Force">
               <characteristics>
-                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">You gain Inspire 1.</characteristic>
+                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">Light Side Only. This unit gains Inspire 1.</characteristic>
                 <characteristic name="Icons" typeId="52e6-1f3c-eac8-636f"/>
               </characteristics>
             </profile>
@@ -14177,7 +14261,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <profiles>
             <profile id="daa4-8996-af5e-f9d0" name="Fear" hidden="false" typeId="def8-2ae7-1d1c-8ff8" typeName="4.1 Force">
               <characteristics>
-                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">You gain Demoralize 1.</characteristic>
+                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">Dark Side Only. This unit gains Demoralize 1.</characteristic>
                 <characteristic name="Icons" typeId="52e6-1f3c-eac8-636f"/>
               </characteristics>
             </profile>
@@ -14196,7 +14280,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <profiles>
             <profile id="6ed7-e3fc-6dfe-c708" name="Force Barrier" hidden="false" typeId="def8-2ae7-1d1c-8ff8" typeName="4.1 Force">
               <characteristics>
-                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">While another friendly trooper unit at range 1 is defending against a ranged attack, during the Modify Attack Dice step, cancel either 1 Critical result or up to 2 Hit results.</characteristic>
+                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">When another allied Trooper unit within Range 1 of this unit defends against a Ranged attack, during the Modify Attack Dice step, you may exhaust this card to cancel either 1 Critical result or up to 2 Hit results.</characteristic>
                 <characteristic name="Icons" typeId="52e6-1f3c-eac8-636f">Exhaust</characteristic>
               </characteristics>
             </profile>
@@ -14205,7 +14289,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="bc91-19c6-2338-500c" name="Force Lift†" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="bc91-19c6-2338-500c" name="Force Lift†" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2586-f7a1-1baf-ee76" type="max"/>
           </constraints>
@@ -14225,15 +14309,15 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d7ad-d270-d059-f46b" name="Burst of Speed†" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="d7ad-d270-d059-f46b" name="Burst of Speed" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7d1e-d181-2037-c301" type="max"/>
           </constraints>
           <profiles>
             <profile id="4b5e-e654-f3e3-6389" name="Burst of Speed" hidden="false" typeId="def8-2ae7-1d1c-8ff8" typeName="4.1 Force">
               <characteristics>
-                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">At the start of your activation, treat your maximum speed as 3 until the end of the round. If you do, gain 1 immobilize token at the end of the round.</characteristic>
-                <characteristic name="Icons" typeId="52e6-1f3c-eac8-636f">Expend</characteristic>
+                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">At the start of this unit&apos;s Activation, you may discard this card to treat this unit&apos;s maximum Speed as 3 until the end of the Round. If you do, during the End Phase, this unit gains 1 Immobilize token.</characteristic>
+                <characteristic name="Icons" typeId="52e6-1f3c-eac8-636f"/>
               </characteristics>
             </profile>
           </profiles>
@@ -14241,7 +14325,69 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <categoryLink id="01c9-3ebb-de86-fe94" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="3.0"/>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="03fe-0355-7fc5-92ce" name="Terror" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5131-9cfb-0e26-b28b" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f647-4cc6-8e03-156b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4520-bf0b-093f-236f" name="Terror" hidden="false" typeId="def8-2ae7-1d1c-8ff8" typeName="4.1 Force">
+              <characteristics>
+                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">Dark Side Only. While this unit is not Engaged, when an enemy unit within Range 2 and in LOS of this unit makes a Ranged attack targeting another allied unit, the attacking unit gains 1 Suppression token after that attack is resolved.</characteristic>
+                <characteristic name="Icons" typeId="52e6-1f3c-eac8-636f"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="6.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="43ef-2c0a-0017-694b" name="Tranquility" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5639-96ef-9aa3-961d" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1b4a-8e60-0ad9-2a66" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="baa8-d885-9439-83f2" name="Tranquility" hidden="false" typeId="def8-2ae7-1d1c-8ff8" typeName="4.1 Force">
+              <characteristics>
+                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">Light Side Only. After another allied unit within Range 2 of this unit Rallies, but before its Make Actions step, you may exhaust this card. If you do, roll a number of white defense dice equal to this unit&apos;s Courage. For each Block and Defense Surge result rolled, this unit and the allied unit remove 1 Suppression token. When you would exhaust this card, you may instead discard it. If you do, roll red defense dice instead of white defense dice when resolving this card&apos;s effect.</characteristic>
+                <characteristic name="Icons" typeId="52e6-1f3c-eac8-636f">Exhaust</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2551-3e18-d5e5-7a2f" name="Clairvoyance" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a91-ab82-d836-1124" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b7a3-02df-ff85-5736" name="Clairvoyance" hidden="false" typeId="def8-2ae7-1d1c-8ff8" typeName="4.1 Force">
+              <characteristics>
+                <characteristic name="Force Ability" typeId="e83a-065b-588e-9de7">When this unit attacks, it may discard this card during the Reroll Dice step. If it does, it rerolls all of its attack dice, then converts any Attack Surge results as normal. You may not further modify the attack roll. When this unit defends, it may discard this card during the Reroll Dice step. If it does, it rerolls all of its defense dice, then converts any Defense Surge results as normal. You may not further modify the defense roll.</characteristic>
+                <characteristic name="Icons" typeId="52e6-1f3c-eac8-636f"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="10.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -14258,7 +14404,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <profiles>
             <profile id="9726-2801-bfad-e943" name="Targeting Scopes" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc"/>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains Precise 1.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Precise 1</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -14278,7 +14424,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <profiles>
             <profile id="05a7-f57e-54d2-03a4" name="Grappling Hooks" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc"/>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains Expert Climber.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Expert Climber</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -14288,7 +14434,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <infoLink id="c946-6ebd-8647-98ef" name="Expert Climber" hidden="false" targetId="e39c-9c4b-a68d-2dda" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="1.0"/>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="2.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0410-76a2-1c5f-fc56" name="Environmental Gear" hidden="false" collective="false" import="true" type="upgrade">
@@ -14298,7 +14444,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <profiles>
             <profile id="e035-12b5-19e2-3101" name="Environmental Gear" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc"/>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains Unhindered.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Unhindered</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -14318,7 +14464,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <profiles>
             <profile id="b302-83a3-4a8b-64c5" name="Emergency Stims" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">During an attack, when you would suffer wounds, prevent up to 2 wounds and place an equal number of wound tokens on this card instead. If you do, at the end of your next activation, discard each token on this card and suffer wounds equal to the number of tokens discarded.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">When this unit would suffer 1 or more Wounds from an enemy attack, you may exhaust this card to prevent suffering up to 2 of those Wounds and place an equal number of Wound tokens on this card instead. If you do, at the end of this unit&apos;s next Activation, this unit removes each Wound token from this card and suffers Wounds equal to the number of Wound tokens removed.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">Exhaust</characteristic>
               </characteristics>
@@ -14335,7 +14481,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <profiles>
             <profile id="211f-9a29-a6a2-7caf" name="Recon Intel" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc"/>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains Scout 1.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Scout 1</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -14348,7 +14494,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <categoryLink id="5ee9-6ce1-86c6-179b" name="Unreleased (†)" hidden="false" targetId="d3db-0eeb-a7f3-eb43" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="2.0"/>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="8.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c232-0699-d542-69d2" name="Personal Combat Shield" hidden="false" collective="false" import="true" type="upgrade">
@@ -14379,7 +14525,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a8de-ecdf-b12b-822c" name="Electro Grappling Line" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a8de-ecdf-b12b-822c" name="Electro Grappling Line" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -14403,7 +14549,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7842-bae7-c46f-8ae4" name="JT-12 Jetpacks" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="7842-bae7-c46f-8ae4" name="JT-12 Jetpacks" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -14448,7 +14594,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <profiles>
             <profile id="4b43-1a89-26ad-137b" name="Ascension Cables" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">&gt;&gt; Until the end of your activation, you gain Scale.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Free Card Action: This unit gains Scale until the end of its Activation.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Scale</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">Exhaust</characteristic>
               </characteristics>
@@ -14468,7 +14614,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <profiles>
             <profile id="39b8-b9d9-d2de-18ea" name="Portable Scanner" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc"/>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains Take Cover 1 (Card Action). B1 Battle Droids units can equip this card even though they do not have a Gear upgrade slot.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">→ Take Cover 1</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -14488,7 +14634,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <profiles>
             <profile id="02a7-6f17-b60d-5d96" name="Electrobinoculars" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc"/>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains Spotter 1 (Card Action). B1 Battle Droids units can equip this card even though they do not have a Gear upgrade slot.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">→ Spotter 1</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -14499,6 +14645,40 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           </infoLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="8.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="179d-e97a-53c0-3e3b" name="Prepared Supplies" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2594-3d96-adf7-5218" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="fe19-ad5a-77da-5956" name="Prepared Supplies" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
+              <characteristics>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Cache: Dodge 1.</characteristic>
+                <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2cde-ae65-0ddb-c4f0" name="Extra Supplies" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a414-d1c1-9c7c-2cee" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2526-2519-d6b5-fdf4" name="Extra Supplies" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
+              <characteristics>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">At the end of this unit&apos;s Activation you may discard this card. If you do, ready 1 of this unit&apos;s non-Force upgrades.</characteristic>
+                <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -14565,7 +14745,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             </profile>
             <profile id="5264-5cab-b900-63c6" name="Fragmentation Grenades" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">While this weapon is in your attack pool, you gain &quot;Attack Surge: Critical&quot;.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">While this weapon is in the Attack Pool, this unit gains &quot;Attack Surge: Critical.&quot;</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -14582,9 +14762,9 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <profiles>
             <profile id="2cf8-62cd-008b-25fe" name="Smoke Grenades" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc"/>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">During this unit&apos;s Activation, you may discard this card. If you do, this unit makes a Smoke 1 action.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">&gt;&gt; Smoke 1</characteristic>
-                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">Expend</characteristic>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
             </profile>
           </profiles>
@@ -14619,6 +14799,31 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <infoLinks>
             <infoLink id="b172-974d-c809-432c" name="Ion X" hidden="false" targetId="b2ab-1852-73e3-f56f" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="3.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8869-a29f-0fdf-a7e5" name="Sonic Imploders" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="12af-3aad-fb19-c2f8" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f1fa-756c-9bc5-4d11" name="Sonic Imploder" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Suppressive</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+            <profile id="a954-6689-b071-a9c0" name="Sonic Imploders" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
+              <characteristics>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc"></characteristic>
+                <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="3.0"/>
           </costs>
@@ -17320,7 +17525,7 @@ Reduce your maximum speed by 1</characteristic>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c263-b01c-befb-e341" type="min"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="ea33-a1cc-c388-bfed" name="Long Range Comlink" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ea33-a1cc-c388-bfed" name="Long Range Comlink" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d2d4-b95f-6278-294c" type="max"/>
           </constraints>
@@ -17344,7 +17549,7 @@ Reduce your maximum speed by 1</characteristic>
           <profiles>
             <profile id="7dec-7770-2f96-99b9" name="Comms Jammer" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Enemy units at range 1 cannot be issued orders, unless they are issuing an order to themselves.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Enemy units within Range 1 of this unit cannot be issued Orders, unless they are issuing an Order to themselves.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -17354,14 +17559,15 @@ Reduce your maximum speed by 1</characteristic>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9c85-9611-8a49-265a" name="HQ Uplink" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9c85-9611-8a49-265a" name="••HQ Uplink" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
+            <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8320-b93e-54b1-ec92" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6ce6-0d53-9df5-06c1" type="max"/>
           </constraints>
           <profiles>
             <profile id="69fe-6b54-8080-769c" name="HQ Uplink" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">During the Issue Orders step of the Command Phase, issue an order to yourself.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">During the Issue Orders step of the Command Phase, you may exhaust this card. If you do, this unit may issue an Order to itself.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">Exhaust</characteristic>
               </characteristics>
@@ -17371,7 +17577,7 @@ Reduce your maximum speed by 1</characteristic>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9bf9-570d-6aa7-f395" name="Comms Relay" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9bf9-570d-6aa7-f395" name="Comms Relay" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -17415,7 +17621,7 @@ Reduce your maximum speed by 1</characteristic>
           <profiles>
             <profile id="88e8-a630-2dc3-67f7" name="Linked Targeting Array" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">You gain Target 1.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Emplacement Trooper or Vehicle Only. This unit gains Target 1.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Target 1</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -17428,7 +17634,7 @@ Reduce your maximum speed by 1</characteristic>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1081-5fd7-021a-56d0" name="Integrated Comms Antenna" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1081-5fd7-021a-56d0" name="Integrated Comms Antenna" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -17471,14 +17677,14 @@ Reduce your maximum speed by 1</characteristic>
           <profiles>
             <profile id="08cb-271c-40e8-6078" name="Onboard Comms Channel" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">During the Issue Orders step of the Command Phase, after you are issued an order, you may issue an order to a unit you are transporting.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Vehicle Only. This unit gains Coordinate: Trooper.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="3.0"/>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="10.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="726f-eeec-6d4c-c6eb" name="Command Control Array" hidden="false" collective="false" import="true" type="upgrade">
@@ -17500,7 +17706,7 @@ Reduce your maximum speed by 1</characteristic>
           <profiles>
             <profile id="55a3-9f97-4e96-5c33" name="Command Control Array" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">When you use Coordinate, you can issue an order at range 1-2, instead of range 1.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Vehicle Only. When this unit uses Coordinate, it may issue an Order to a unit within Range 2 instead of within Range 1.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -17517,7 +17723,7 @@ Reduce your maximum speed by 1</characteristic>
           <profiles>
             <profile id="6c1f-42b7-d7da-5176" name="Hacked Comms Unit" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">During the Issue Orders step of the Command Phase, after an enemy unit at range 1 is issued an order, you may issue an order to yourself, if able.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">During the Issue Orders step of the Command Phase, after an enemy unit within Range 1 of this unit is issued an Order, this unit may issue an Order to itself.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -17525,6 +17731,40 @@ Reduce your maximum speed by 1</characteristic>
           </profiles>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="16a0-dbba-854a-f55f" name="Emergency Transponder" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f664-796d-01a0-c8b1" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="a217-81b9-088b-a0c3" name="Emergency Transponder" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
+              <characteristics>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">At the start of this unit&apos;s Activation, if it was activated with an Order token from the Order Pool, you may discard this card. If you do, this unit gains 1 Aim token, gains 1 Dodge token, or removes 1 Suppression token.</characteristic>
+                <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="4.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9926-f555-c909-b309" name="Spotter Uplink" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="60d4-1aa4-dfe2-1c81" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e6db-9af0-dcda-f0da" name="Spotter Uplink" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
+              <characteristics>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">When another allied unit declares a Ranged attack against an enemy unit within Range 1 and in LOS of this unit, if this unit is not in melee, the attacking unit gains Sharpshooter 1.</characteristic>
+                <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="3.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -18602,7 +18842,7 @@ During the End Phase, ready this card.</characteristic>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="37a9-7347-5133-3283" name="Reckless Driver" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="37a9-7347-5133-3283" name="Reckless Driver" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -18873,7 +19113,7 @@ During the End Phase, ready this card.</characteristic>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f723-b61d-0d43-f5e6" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="fe99-1fc8-676a-cb8a" name="Commanding Presence" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="fe99-1fc8-676a-cb8a" name="Commanding Presence" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3b2b-27c9-61bc-72f2" type="max"/>
           </constraints>
@@ -18890,7 +19130,7 @@ During the End Phase, ready this card.</characteristic>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1cfa-c362-1adc-23b2" name="Esteemed Leader" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1cfa-c362-1adc-23b2" name="Esteemed Leader" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ff60-c938-45f9-1eac" type="max"/>
           </constraints>
@@ -18910,14 +19150,15 @@ During the End Phase, ready this card.</characteristic>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1f85-cb33-897c-7def" name="Improvised Orders" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1f85-cb33-897c-7def" name="•Improvised Orders" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="46e6-35c2-0b88-2f58" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a309-399f-c229-24f7" type="max"/>
           </constraints>
           <profiles>
             <profile id="5fc9-5140-8652-a756" name="Improvised Orders" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">After an order token is drawn from a friendly order pool, you may draw a second order token, choose 1 to use and shuffle the other back into its order pool. If you do, during the End Phase, ready this card.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">During the Activation Phase, after you draw an Order token from your Order Pool, you may exhaust this card. If you do, draw a second Order token from your Order Pool and choose 1 of the drawn Order tokens to use. Then shuffle the other Order token back into your Order Pool.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">Exhaust</characteristic>
               </characteristics>
@@ -18934,7 +19175,7 @@ During the End Phase, ready this card.</characteristic>
           <profiles>
             <profile id="b6ff-553d-d6b9-b3bb" name="Strict Orders" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">When a friendly trooper unit with a faceup order token activates, during the Rally step, it may remove 1 suppression token instead of rolling dice.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">During the Activation Phase, when an allied unit that has a faceup Order token starts its Rally step, it may choose to remove 1 Suppression token instead of rolling dice.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -18944,7 +19185,7 @@ During the End Phase, ready this card.</characteristic>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a9e3-cccc-28ed-4d49" name="Aggressive Tactics" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a9e3-cccc-28ed-4d49" name="Aggressive Tactics" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ee01-0d2a-7a54-114e" type="max"/>
           </constraints>
@@ -18968,7 +19209,7 @@ During the End Phase, ready this card.</characteristic>
           <profiles>
             <profile id="d81b-b3b3-3f2f-62c4" name="Inspiring Presence" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Friendly units at range 1-4 can use your courage value when checking whether they are panicked. This range can be reduced by other effects.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Allied units within Range 4 of this unit may use its Courage when checking if they are Panicked. This range can be reduced by other effects.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -18985,7 +19226,59 @@ During the End Phase, ready this card.</characteristic>
           <profiles>
             <profile id="a0f4-2d23-d495-ab1a" name="Vigilance" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">During the End Phase, choose either 1 friendly trooper unit at range 1-2 or up to 2 friendly corps trooper units at range 1-2. Each chosen unit does not remove 1 dodge token.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">At the start of the Remove Tokens step, choose either 1 allied Trooper unit within Range 2 of this unit or up to 2 allied Corps Trooper units within Range 2 of this unit. Each chosen unit does not remove up to 1 Dodge token.</characteristic>
+                <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="9.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9d6c-c06e-09e5-8fac" name="Lead By Example" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3ced-7fdc-8c85-7f8a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="89e2-4220-a816-db78" name="Lead By Example" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
+              <characteristics>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains Inspire 2.</characteristic>
+                <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="8.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d5e6-f8f6-ef20-f0c2" name="Underworld Connections" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7914-aa63-4813-d9fd" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="20cb-533a-feb2-2485" name="Underworld Connections" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
+              <characteristics>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains Allies of Convenience.</characteristic>
+                <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7da9-17c2-3e2e-4d99" name="•Trusted Agent" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ad59-296c-0fda-d7d7" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7ab0-37d0-26bd-ed44" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c883-bf76-560e-04ae" name="Trusted Agent" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
+              <characteristics>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">During the Issue Orders step of the Command Phase, you may discard this card. If you do, choose an allied Operative unit. This unit may issue an Order to the chosen unit, regardless of Affiliation.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -19009,7 +19302,7 @@ During the End Phase, ready this card.</characteristic>
           <profiles>
             <profile id="8a1a-0daf-a5cf-b0ee" name="Duck and Cover" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">While defending against a ranged attack, during the Apply Dodge and Cover step, you may gain 1 suppression token.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">When this unit is defending against a Ranged attack, at the start of the Apply Dodge and Cover step, it may gain 1 Suppression token.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -19019,14 +19312,14 @@ During the End Phase, ready this card.</characteristic>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="2.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="42a9-d4d3-3078-eb70" name="Hunter" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="42a9-d4d3-3078-eb70" name="On the Hunt" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7907-b882-1864-ca8f" type="max"/>
           </constraints>
           <profiles>
             <profile id="3972-d0b1-e4f3-2fbe" name="Hunter" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">While attacking a wounded trooper unit, during the Roll Attack Dice step, you may gain 1 aim token.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">When this unit is attacking a Trooper unit that has 1 or more Wound tokens, during the Roll Attack Dice step, this unit may gain 1 Aim token.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -19043,14 +19336,14 @@ During the End Phase, ready this card.</characteristic>
           <profiles>
             <profile id="9156-c727-8fd2-b009" name="Tenacity" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">While performing a melee attack, if you are wounded or if one or more of your minis have been defeated, add 1 red attack die to your attack pool.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">When this unit makes a Melee attack, during the Form Attack Pool step, if it has 1 or more Wound tokens or if it has had 1 or more of its miniatures be defeated, it may add 1 red attack die to its Attack Pools.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
             </profile>
           </profiles>
           <costs>
-            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="4.0"/>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="6.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4f8a-347e-f5cc-d8aa" name="Endurance" hidden="false" collective="false" import="true" type="upgrade">
@@ -19060,7 +19353,7 @@ During the End Phase, ready this card.</characteristic>
           <profiles>
             <profile id="14c9-3361-dce0-5cf1" name="Endurance" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">At the end of the Activation Phase, you may remove 1 suppression token.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit may remove 1 Suppression token at the end of the Activation Phase.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -19077,7 +19370,7 @@ During the End Phase, ready this card.</characteristic>
           <profiles>
             <profile id="0367-844c-7d67-8d1e" name="Overwatch" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc"/>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains Sentinel.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Sentinel</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -19097,7 +19390,7 @@ During the End Phase, ready this card.</characteristic>
           <profiles>
             <profile id="db90-bbf3-22f6-c62c" name="Offensive Push" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">While performing a move, gain Tactical 1.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Free Card Action: During its next Move action this Activation, this unit has Tactical 1.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">Exhaust</characteristic>
               </characteristics>
@@ -19107,7 +19400,7 @@ During the End Phase, ready this card.</characteristic>
             <infoLink id="05ea-5643-3595-e9de" name="Tactical X" hidden="false" targetId="3ca9-ac5e-80c1-3778" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="4.0"/>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="6.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1e12-e885-1a48-33a7" name="Situational Awareness" hidden="false" collective="false" import="true" type="upgrade">
@@ -19124,7 +19417,7 @@ During the End Phase, ready this card.</characteristic>
           <profiles>
             <profile id="184e-c3f4-b322-831b" name="Situational Awareness" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc"/>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains Outmaneuver.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Outmaneuver</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -19134,7 +19427,7 @@ During the End Phase, ready this card.</characteristic>
             <infoLink id="d70b-b04a-85b2-f999" name="Outmaneuver" hidden="false" targetId="3aa7-726e-44cb-c46f" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="2.0"/>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="4.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f4c1-4f5e-1570-a638" name="Defensive/Offensive Stance" hidden="false" collective="false" import="true" type="upgrade">
@@ -19151,16 +19444,14 @@ During the End Phase, ready this card.</characteristic>
           <profiles>
             <profile id="6ee0-351f-485d-9068" name="Offensive Stance" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">At the start of your activation, you may flip this card.
-When you perform an aim action, gain 2 aim tokens instead of 1. You cannot spend dodge tokens.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This card may only be equipped by a unit that has 1 or more Force upgrade icons. At the start of this unit&apos;s Activation, it may flip this card. When this unit makes an Aim action, it gains 2 Aim tokens instead of the normal 1. This unit cannot spend Dodge tokens.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
             </profile>
             <profile id="4d90-64fd-1a58-2554" name="Defensive Stance" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">At the start of your activation, you may flip this card.
-When you perform a dodge action, gain 2 dodge tokens instead of 1. You cannot spend aim tokens.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This card may only be equipped by a unit that has 1 or more Force upgrade icons. At the start of this unit&apos;s Activation, it may flip this card. When this unit makes a Dodge action, it gains 2 Dodge tokens instead of the normal 1. This unit cannot spend Aim tokens.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -19189,9 +19480,9 @@ When you perform a dodge action, gain 2 dodge tokens instead of 1. You cannot sp
           <profiles>
             <profile id="99a5-d9e7-5b53-1baf" name="Seize the Initiative" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">During the Issue Orders step of the Command Phase, issue an order to yourself.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Commander or Operative Only. During the Issue Orders step of the Command Phase, you may discard this card. If you do, this unit issues an Order to itself.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
-                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">Expend</characteristic>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
             </profile>
           </profiles>
@@ -19199,15 +19490,14 @@ When you perform a dodge action, gain 2 dodge tokens instead of 1. You cannot sp
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="fd92-7e38-34f5-55ce" name="Protector†" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="fd92-7e38-34f5-55ce" name="Protector" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2e72-ad65-1c5c-d29e" type="max"/>
           </constraints>
           <profiles>
             <profile id="70cf-0d45-daa7-7b82" name="Protector" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">While using Guardian, you can cancel Critical results as though they were Hit results.
-During the End Phase, ready this card.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">When this unit uses Guardian X, you may exhaust this card to cancel Critical results with Guardian X as if they were Hit results. Ready this card during the End Phase.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">Exhaust</characteristic>
               </characteristics>
@@ -19227,7 +19517,7 @@ During the End Phase, ready this card.</characteristic>
           <profiles>
             <profile id="fae7-24f8-4325-3e3a" name="Into the Fray" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">When an enemy unit at range 1 activates, you may gain 1 surge token.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">During the Activation Phase, when an enemy unit starts its Activation within Range 1 of this unit, this unit may gain 1 Surge token.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -19235,6 +19525,72 @@ During the End Phase, ready this card.</characteristic>
           </profiles>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="4.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f08f-e29b-466b-69e3" name="Up Close and Personal" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2baa-c918-834b-a44d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c67d-bbef-0a6b-31ba" name="Up Close and Personal" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
+              <characteristics>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">When this unit makes a Ranged attack against an enemy unit within Range 2, after that attack is resolved, this unit gains 1 Dodge token.</characteristic>
+                <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="8.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7dca-6bfa-3690-7729" name="•Strike Team Leader" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb02-3ca8-cc7c-87a9" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f89e-eb99-6a9a-e9df" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7be5-6a47-60a2-211f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="35a7-9f3f-0ac5-d9e6" name="Strike Team Leader" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
+              <characteristics>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Operative Only. During Setup, this unit may choose an allied Special Forces unit that has the same Affiliation or Faction as this unit. At the start of each Activation Phase, the chosen unit gains 1 Aim token or 1 Dodge token if it is within Range 2 of this unit. Additionally, the chosen unit may provide Backup to this unit.</characteristic>
+                <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="8.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3d9b-ad5c-fc51-def6" name="Mission Objective" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ed4-f620-e8b3-3ca6" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7227-5c41-f15e-833f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9199-25df-3e8f-1108" name="Mission Objective" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
+              <characteristics>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Trooper Only. When this unit attacks an enemy unit that is holding or Contesting 1 or more Objective tokens, during the Reroll Attack Dice step, you may exhaust this card. If you do, this unit rerolls 1 attack die. At the start of this unit&apos;s Activation, ready this card.</characteristic>
+                <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">Exhaust</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="6.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -19251,7 +19607,7 @@ During the End Phase, ready this card.</characteristic>
           <profiles>
             <profile id="9a8c-4bdd-cf0c-1a9a" name="Overcharged Generator" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">While performing a ranged attack with a weapon that has Fixed, add 1 black attack die and apply Impact 1 to your attack pool.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">When this unit makes an attack with a Ranged weapon that has Fixed, during the Form Attack Pool step you may exhaust this card. If you do, add 1 black attack die to the Attack Pool and the Attack Pool gains Impact 1.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Impact 1</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">Exhaust</characteristic>
               </characteristics>
@@ -19271,7 +19627,7 @@ During the End Phase, ready this card.</characteristic>
           <profiles>
             <profile id="d15e-12a9-5ecf-a5b8" name="Barrage Generator" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">While performing a ranged attack with a weapon that has Fixed, add 2 white attack dice and apply Suppressive to your attack pool.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">When this unit makes an attack with a Ranged weapon that has Fixed, during the Form Attack Pool step you may exhaust this card. If you do, add 2 white attack dice to the Attack Pool and the Attack Pool gains Suppressive.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Suppressive</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">Exhaust</characteristic>
               </characteristics>
@@ -20068,7 +20424,7 @@ When defending against a melee attack, you gain Immune: Pierce.</characteristic>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="21.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6e3e-a4b8-b804-9624" name="Refurbished &quot;Gonk&quot; Droid" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6e3e-a4b8-b804-9624" name="Refurbished &quot;Gonk&quot; Droid" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -20480,7 +20836,7 @@ During the End Phase, roll 1 red defense die for each of your inactive shield to
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="1c9b-29ff-9d21-cdf5" name="Protocol" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="1c9b-29ff-9d21-cdf5" name="Programming" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="409b-cfcd-2878-3a06" type="max"/>
       </constraints>
@@ -20504,7 +20860,7 @@ During the End Phase, roll 1 red defense die for each of your inactive shield to
           <profiles>
             <profile id="f8bd-d884-9fab-809f" name="Attack Protocols" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc"/>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Vehicle Only. This unit gains AI: Aim and Precise 2.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">AI: Aim, Precise 2</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -20537,7 +20893,7 @@ During the End Phase, roll 1 red defense die for each of your inactive shield to
           <profiles>
             <profile id="39a7-3fb1-519b-19aa" name="Defense Protocols" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc"/>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Vehicle Only. This unit gains Nimble, Outmaneuver, and AI: Dodge.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">AI: Dodge, Nimble, Outmaneuver</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -20571,7 +20927,7 @@ During the End Phase, roll 1 red defense die for each of your inactive shield to
           <profiles>
             <profile id="defe-205c-13c6-e4cd" name="Engagement Protocols" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc"/>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Vehicle Only. This unit gains AI: Attack, Move.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">AI: Attack, Move</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -20581,7 +20937,7 @@ During the End Phase, roll 1 red defense die for each of your inactive shield to
             <infoLink id="9ad7-c9d8-b089-26c4" name="AI: *Action*" hidden="false" targetId="182a-5fac-9f05-d5bd" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="5.0"/>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="3.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
