@@ -1505,6 +1505,7 @@ Once per round, when an enemy unit at range 1-2 and in line of sight of Jyn Erso
                 <infoLink id="3010-118a-4840-c218" name="Detonate X: *Charge Type*" hidden="false" targetId="7ec0-dc5e-2218-4cd3" type="rule"/>
                 <infoLink id="54be-3104-ab81-d42a" name="Area Weapon" hidden="false" targetId="cd09-cd7a-8d02-605f" type="rule"/>
                 <infoLink id="5bd8-66cc-384e-b3dd" name="Blast" hidden="false" targetId="c8d6-c6c5-f2fe-daad" type="rule"/>
+                <infoLink id="33ae-cb40-67f0-4980" name="Critical X" hidden="false" targetId="2f36-2eeb-0407-8dd7" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="96d3-0421-1840-4aa3" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
@@ -4443,7 +4444,7 @@ Divulge: Deploy Units Step: Place three Bane tokens on the battlefield beyond ra
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="bea0-ce74-4f69-10ee" name="Suppressive" hidden="false" targetId="c4ab-770e-5009-04ff" type="rule"/>
+                <infoLink id="bea0-ce74-4f69-10ee" name="Danger Sense X" hidden="false" targetId="4af1-4705-8c43-ccd2" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="f173-c487-357e-b44f" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
@@ -4943,10 +4944,6 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="fc2b-e26b-42f6-2321" name="Gunslinger" hidden="false" targetId="1668-29f8-4fe1-651a" type="rule"/>
-                <infoLink id="712f-b892-9dcb-87bb" name="Marksman" hidden="false" targetId="2622-a15a-021d-0a8c" type="rule"/>
-              </infoLinks>
               <categoryLinks>
                 <categoryLink id="bdb1-c232-2076-caba" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
@@ -5115,7 +5112,7 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
             <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">4</characteristic>
             <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">1</characteristic>
             <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">1</characteristic>
-            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">--</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
@@ -5976,7 +5973,7 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
             <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">4</characteristic>
             <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">1</characteristic>
             <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">1</characteristic>
-            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Hit</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
@@ -6079,7 +6076,7 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
             <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
             <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">6</characteristic>
             <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
-            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Critical</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
@@ -6167,7 +6164,7 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
             <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
             <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">6</characteristic>
             <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
-            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Critical</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
@@ -6255,7 +6252,7 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
             <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">4</characteristic>
             <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">1</characteristic>
             <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
-            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Hit</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
@@ -6365,7 +6362,7 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
             <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
             <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">1</characteristic>
             <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
-            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Critical</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
@@ -6776,7 +6773,7 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
             <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
             <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">6</characteristic>
             <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
-            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Hit</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">0</characteristic>
@@ -7149,7 +7146,7 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
             <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
             <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">9</characteristic>
             <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
-            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Critical</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">--</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
@@ -7241,7 +7238,7 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
             <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">3</characteristic>
             <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">3</characteristic>
             <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
-            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Hit</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">--</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
@@ -7699,7 +7696,7 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
             <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
             <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">5</characteristic>
             <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">3</characteristic>
-            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Critical</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
@@ -9168,7 +9165,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">2</characteristic>
             <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">4</characteristic>
             <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
-            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Hit</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">3</characteristic>
@@ -9262,7 +9259,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">4</characteristic>
             <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">1</characteristic>
             <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">1</characteristic>
-            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Hit</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">1</characteristic>
@@ -9880,7 +9877,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
             <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">4</characteristic>
             <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
-            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Hit</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">1</characteristic>
@@ -11084,7 +11081,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
             <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">4</characteristic>
             <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
-            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Hit</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">1</characteristic>
@@ -11155,7 +11152,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
             <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">6</characteristic>
             <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
-            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Hit</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
@@ -11222,7 +11219,11 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="eefe-6a16-9226-151e" name="Armament" hidden="false" collective="false" import="true" targetId="4a24-39a8-4f98-d844" type="selectionEntryGroup"/>
+        <entryLink id="eefe-6a16-9226-151e" name="Armament" hidden="false" collective="false" import="true" targetId="4a24-39a8-4f98-d844" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9976-a42c-c552-8349" type="min"/>
+          </constraints>
+        </entryLink>
         <entryLink id="ccaa-b854-3558-f434" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup"/>
         <entryLink id="b0b3-a3af-933c-2fa5" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup">
           <modifiers>
@@ -13074,7 +13075,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
             <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">6</characteristic>
             <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
-            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Critical</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
@@ -13343,7 +13344,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">3</characteristic>
             <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">3</characteristic>
             <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
-            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Hit</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">--</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
@@ -13592,6 +13593,13 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
       </costs>
     </selectionEntry>
     <selectionEntry id="b5f7-7b1a-fe25-8a8e" name="•Chewbacca" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="07b6-21e0-299a-c83b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="63b6-cd31-a2e2-13f1" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7364-05e5-c470-a990" type="max"/>
@@ -15438,7 +15446,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">6</characteristic>
             <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">1</characteristic>
             <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
-            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Hit</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
@@ -17586,6 +17594,16 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a28a-87da-7eed-cb4c" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5839-fe25-2a07-b5c2" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="01c8-7c22-ce19-3759" type="notInstanceOf"/>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9845-41fc-a150-5324" type="notInstanceOf"/>
                   </conditions>
@@ -17610,6 +17628,9 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <infoLink id="4924-09ff-b065-101f" name="Precise X" hidden="false" targetId="abcc-5c44-68ef-82d1" type="rule"/>
             <infoLink id="ea6f-19e0-416a-ce65" name="Leader" hidden="false" targetId="333b-0ccb-b1ce-ca9d" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="043b-8ad3-1894-c90d" name="Leader" hidden="false" targetId="a28a-87da-7eed-cb4c" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="25.0"/>
           </costs>
@@ -19075,7 +19096,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ddbe-aaed-af24-5501" type="max"/>
           </constraints>
           <profiles>
-            <profile id="a3c6-3837-ca5d-051c" name="Battle Shield Wookiee" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+            <profile id="a3c6-3837-ca5d-051c" name="Battle Shield Wookiee (Front)" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
               <characteristics>
                 <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee</characteristic>
                 <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red x2</characteristic>
@@ -19083,14 +19104,25 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
                 <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
               </characteristics>
             </profile>
+            <profile id="5226-084d-8a3c-0b09" name="Battle Shield Wookiee (Back)" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black x2</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
             <profile id="0eed-44d6-d5c6-0e19" name="Battle Shield Wookiee" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Add 1 Battle Shield Wookiee miniature. At the start of this unit&apos;s Activation, you may flip this card.</characteristic>
-                <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Two-sided card. Front: Add 1 Battle Shield Wookiee miniature. At the start of this unit's Activation, you may flip this card. Back: Add 1 Battle Shield Wookiee miniature. At the start of this unit's Activation, you may flip this card. This unit reduces its maximum Speed by 1. This unit gains Armor 1.</characteristic>
+                <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Armor 1</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="7c98-14b6-cba3-ab0f" name="Armor X" hidden="false" targetId="557e-290b-b9ad-2a97" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="26.0"/>
           </costs>
@@ -19737,6 +19769,16 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         <selectionEntry id="6c97-3260-45fc-1189" name="•Cassian Andor" hidden="false" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a28a-87da-7eed-cb4c" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6c97-3260-45fc-1189" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1d91-e11e-a87b-4790" type="notInstanceOf"/>
               </conditions>
@@ -19788,12 +19830,25 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <infoLink id="70a4-98ed-eec8-4b73" name="Uncanny Luck X" hidden="false" targetId="f0f1-1fc6-505b-877b" type="rule"/>
             <infoLink id="40f2-b660-3112-ca4c" name="Long Shot X" hidden="false" targetId="5718-26da-aed5-de58" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="3641-cc76-e975-b4c1" name="Leader" hidden="false" targetId="a28a-87da-7eed-cb4c" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="25.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="07b6-21e0-299a-c83b" name="•Chewbacca" hidden="false" collective="false" import="true" type="model">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a28a-87da-7eed-cb4c" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="07b6-21e0-299a-c83b" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="be18-9b53-454b-4214" type="notInstanceOf"/>
@@ -19835,12 +19890,25 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <infoLink id="2373-ef1b-4564-931b" name="Leader" hidden="false" targetId="333b-0ccb-b1ce-ca9d" type="rule"/>
             <infoLink id="6006-3a3f-9e75-4343" name="Impact X" hidden="false" targetId="6da6-1112-3a36-33c2" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="122f-9acd-fbb0-5300" name="Leader" hidden="false" targetId="a28a-87da-7eed-cb4c" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="40.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7feb-62da-801c-7b42" name="•Jyn Erso" hidden="false" collective="false" import="true" type="model">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a28a-87da-7eed-cb4c" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7feb-62da-801c-7b42" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="and">
@@ -19886,12 +19954,25 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <infoLink id="4d33-c7e5-fcd4-ec8d" name="Sidearm: Ranged" hidden="false" targetId="1761-f3d6-1a45-e5c4" type="rule"/>
             <infoLink id="9d4a-5084-e797-9750" name="Suppressive" hidden="false" targetId="c4ab-770e-5009-04ff" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="1c00-69e1-6644-eb4c" name="Leader" hidden="false" targetId="a28a-87da-7eed-cb4c" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="22.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="73cf-d366-7e9b-b406" name="•Luke Skywalker" hidden="false" collective="false" import="true" type="model">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a28a-87da-7eed-cb4c" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="73cf-d366-7e9b-b406" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="and">
@@ -19941,6 +20022,9 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <infoLink id="8749-f2fa-558a-f58e" name="Impact X" hidden="false" targetId="6da6-1112-3a36-33c2" type="rule"/>
             <infoLink id="624f-a408-3f6b-8943" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="8ae1-9f71-bdb4-e670" name="Leader" hidden="false" targetId="a28a-87da-7eed-cb4c" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="25.0"/>
           </costs>
@@ -22604,7 +22688,6 @@ During the End Phase, ready this card.</characteristic>
                 <conditionGroup type="and">
                   <conditions>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a360-d849-2e60-9a77" type="notInstanceOf"/>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1618-567c-e0b2-c65e" type="notInstanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -23208,10 +23291,10 @@ During the End Phase, roll 1 red defense die for each of your inactive shield to
           <profiles>
             <profile id="6c24-30e3-6334-86d7" name="C-3PO" hidden="false" typeId="2332-473f-2385-57a9" typeName="1.3 Counterparts">
               <characteristics>
-                <characteristic name="Subtitle" typeId="c2e6-3500-61a5-d6c4">Human-Cyborg Relations</characteristic>
+                <characteristic name="Subtitle" typeId="c2e6-3500-61a5-d6c4">Human Cyborg Relations</characteristic>
                 <characteristic name="Models" typeId="8715-991f-4d19-44ff">1</characteristic>
                 <characteristic name="Wounds" typeId="266b-70a8-36f6-e230">2</characteristic>
-                <characteristic name="Keywords" typeId="0ced-237b-5eb7-c27f">→ Calculate Odds, &gt;&gt; Distract, Counterpart: R2-D2</characteristic>
+                <characteristic name="Keywords" typeId="0ced-237b-5eb7-c27f">Card Action: Calculate Odds, Free Card Action: Distract, Counterpart: R2-D2</characteristic>
               </characteristics>
             </profile>
           </profiles>
