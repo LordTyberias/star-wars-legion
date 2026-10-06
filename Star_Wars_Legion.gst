@@ -2096,8 +2096,7 @@ While Maul is engaged with an enemy unit, that unit cannot spend aim, dodge, sta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="c8ae-1b5c-f2d1-499b" name="Agile X" hidden="false" targetId="3a2a-fc8b-8c65-9670" type="rule"/>
-                <infoLink id="25aa-dd18-954d-29de" name="Block" hidden="false" targetId="8aa5-c537-ea38-418d" type="rule"/>
+                <infoLink id="61de-e781-fd7d-7b3f" name="Hold the Line" hidden="false" targetId="1a48-7f00-1d6d-86a3" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="525a-bccd-64bb-cc6c" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
@@ -2252,6 +2251,9 @@ If There Is No Try is in your discard pile, return it to your hand.</characteris
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="19d6-77b7-7e75-79b8" name="Indomitable" hidden="false" targetId="15b8-8088-8097-6a12" type="rule"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="23f1-1259-ce1a-eaa1" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
@@ -2279,6 +2281,9 @@ If There Is No Try is in your discard pile, return it to your hand.</characteris
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="9140-3080-8d35-ba54" name="Relentless" hidden="false" targetId="0c2b-f655-41f4-2efb" type="rule"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="91ab-9b5e-2f1f-1d32" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
@@ -2306,6 +2311,10 @@ If There Is No Try is in your discard pile, return it to your hand.</characteris
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="e0af-5a19-5d85-3b4a" name="Tactical X" hidden="false" targetId="3ca9-ac5e-80c1-3778" type="rule"/>
+                <infoLink id="3b2e-8d3a-4a07-07bc" name="Suppressive" hidden="false" targetId="c4ab-770e-5009-04ff" type="rule"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="ebba-f39f-2a5c-fd55" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
@@ -2495,6 +2504,9 @@ If There Is No Try is in your discard pile, return it to your hand.</characteris
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="9fb3-45d5-6823-6db1" name="Nimble" hidden="false" targetId="3565-7985-bb05-c0a5" type="rule"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="3ddc-7a04-1822-0a74" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
@@ -4160,7 +4172,6 @@ Divulge: Resolve Setup Effects step. Darth Vader gains Infiltrate this Game. Thi
               </profiles>
               <infoLinks>
                 <infoLink id="481e-d41f-8108-741b" name="Infiltrate" hidden="false" targetId="ae26-c3d3-240e-2c73" type="rule"/>
-                <infoLink id="ec0d-892a-691c-1f77" name="Scout X" hidden="false" targetId="7410-450a-1190-5b7e" type="rule"/>
                 <infoLink id="a2ba-c018-6f92-91ba" name="Divulge" hidden="false" targetId="5e49-44ef-fc17-aca6" type="rule"/>
                 <infoLink id="68bf-c17d-e2cf-0b47" name="Reliable X" hidden="false" targetId="4486-a71b-a40f-39af" type="rule"/>
               </infoLinks>
@@ -4722,6 +4733,9 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="101e-cd66-a5de-bc74" name="Demoralize X" hidden="false" targetId="a52a-4687-32b7-2633" type="rule"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="40d4-609b-4fa1-5edd" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
@@ -4749,6 +4763,9 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="f5ea-c89d-5c42-b247" name="Dauntless" hidden="false" targetId="e30f-0dd3-f201-316a" type="rule"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="852c-4db9-bfc0-9b48" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
@@ -9446,7 +9463,6 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <entryLink id="763f-e010-b85f-82f5" name="Comms" hidden="false" collective="false" import="true" targetId="bbf8-c77e-246a-d5c6" type="selectionEntryGroup"/>
         <entryLink id="c115-344e-3ded-c6ea" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup"/>
         <entryLink id="ca38-42db-82a8-9315" name="Armament" hidden="false" collective="false" import="true" targetId="4a24-39a8-4f98-d844" type="selectionEntryGroup"/>
-        <entryLink id="2e7f-448f-a66f-579d" name="Dug In" hidden="false" collective="false" import="true" targetId="104a-36b1-93c2-b1f9" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="70.0"/>
@@ -14476,6 +14492,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
       <entryLinks>
         <entryLink id="a41f-95d7-3af2-4b39" name="Heavy Weapon" hidden="false" collective="false" import="true" targetId="e8aa-f460-6961-1e6e" type="selectionEntryGroup">
           <modifiers>
+            <modifier type="set" field="2505-fca4-a091-9364" value="2.0"/>
             <modifier type="increment" field="2505-fca4-a091-9364" value="1.0">
               <conditions>
                 <condition field="selections" scope="d37d-a6a9-36d1-bf47" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c95e-45cb-f979-a661" type="atLeast"/>
@@ -14486,7 +14503,6 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
                 <condition field="selections" scope="d37d-a6a9-36d1-bf47" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="676f-7100-c272-0ece" type="atLeast"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="2505-fca4-a091-9364" value="2.0"/>
           </modifiers>
         </entryLink>
         <entryLink id="4c49-4982-25e6-31b1" name="Imperial March" hidden="false" collective="false" import="true" targetId="a880-6b8c-1af7-e476" type="selectionEntry"/>
@@ -14579,6 +14595,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
       <entryLinks>
         <entryLink id="d043-7dc9-019b-2fc2" name="Heavy Weapon" hidden="false" collective="false" import="true" targetId="e8aa-f460-6961-1e6e" type="selectionEntryGroup">
           <modifiers>
+            <modifier type="set" field="2505-fca4-a091-9364" value="2.0"/>
             <modifier type="increment" field="2505-fca4-a091-9364" value="1.0">
               <conditions>
                 <condition field="selections" scope="cadc-00f6-2f2e-2edf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c95e-45cb-f979-a661" type="atLeast"/>
@@ -14589,7 +14606,6 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
                 <condition field="selections" scope="cadc-00f6-2f2e-2edf" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="676f-7100-c272-0ece" type="atLeast"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="2505-fca4-a091-9364" value="2.0"/>
           </modifiers>
         </entryLink>
         <entryLink id="1f12-4fd4-5c99-492d" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup"/>
