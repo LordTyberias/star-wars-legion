@@ -1486,7 +1486,7 @@ After Luke Skywalker activates, if Chewbacca has a faceup order token, he may ac
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="c9fb-a488-d661-a85c" name="•Rebellious" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="c9fb-a488-d661-a85c" name="•Rebellious" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -3936,7 +3936,7 @@ When Luke Skywalker activates, each friendly trooper unit at range 1-3 of him ma
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f6af-c3a6-62e9-9eda" name="•••Complete the Mission" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f6af-c3a6-62e9-9eda" name="•••Complete the Mission" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -4561,7 +4561,7 @@ Maul gains 1 aim token and Jedi Hunter. When he activates, he may suffer 1 wound
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e056-b127-615b-0b3b" name="•••All In" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e056-b127-615b-0b3b" name="•••All In" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -7131,7 +7131,7 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="69.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6a95-8257-96f5-984e" name="Rebel Officer" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="6a95-8257-96f5-984e" name="Rebel Officer" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="956e-24de-3328-1a95" name="Rebel Officer" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
           <characteristics>
@@ -7563,7 +7563,7 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="90.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="366c-1d23-178b-9949" name="Rebel Pathfinders" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="366c-1d23-178b-9949" name="Rebel Pathfinders" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="4878-11a3-c90c-ef2a" name="Rebel Pathfinders" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
           <modifiers>
@@ -11920,7 +11920,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="70.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9845-41fc-a150-5324" name="Mandalorian Resistance" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="9845-41fc-a150-5324" name="Mandalorian Resistance" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="dde1-bb27-3c9a-f6de" name="Mandalorian Resistance" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
           <modifiers>
@@ -12008,7 +12008,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="72.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="01c8-7c22-ce19-3759" name="Mandalorian Resistance (Clan Wren)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="01c8-7c22-ce19-3759" name="Mandalorian Resistance (Clan Wren)" hidden="true" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="08ca-02d8-ea84-d8a1" type="max"/>
       </constraints>
@@ -17458,7 +17458,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="17.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="eedd-d971-eec8-a40a" name="•Pao" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="eedd-d971-eec8-a40a" name="•Pao" hidden="true" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -17508,7 +17508,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="20.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="595c-edab-603b-4af3" name="•Bistan" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="595c-edab-603b-4af3" name="•Bistan" hidden="true" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -18339,7 +18339,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="28.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="0727-60e7-27e5-11ae" name="Beskad Duelist" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="0727-60e7-27e5-11ae" name="Beskad Duelist" hidden="true" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -21340,7 +21340,7 @@ During the End Phase, ready this card.</characteristic>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="30b2-5aa3-b2e7-79f8" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="2c72-2b52-38a3-35e5" name="A-180" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="2c72-2b52-38a3-35e5" name="A-180" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -21377,7 +21377,7 @@ During the End Phase, ready this card.</characteristic>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3bdc-94e1-f107-ce08" name="A-300" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3bdc-94e1-f107-ce08" name="A-300" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -21887,7 +21887,7 @@ During the End Phase, ready this card.</characteristic>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="52ea-fa3d-8ed5-acc8" name="Jetpack Rockets" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="52ea-fa3d-8ed5-acc8" name="Jetpack Rockets" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>

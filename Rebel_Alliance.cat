@@ -74,8 +74,8 @@
     <entryLink id="bbd8-3ca9-1ca4-772c" name="1.4 FD Laser Cannon Team" hidden="false" collective="false" import="true" targetId="0f63-4823-0b22-7775" type="selectionEntry"/>
     <entryLink id="05f7-a2c9-8689-5cba" name="•Chewbacca" hidden="false" collective="false" import="true" targetId="b3dd-044d-5d7c-d7a6" type="selectionEntry"/>
     <entryLink id="7fc9-bd8e-1455-9807" name="Wookiee Warriors (Freedom Fighters)" hidden="false" collective="false" import="true" targetId="c365-178d-8de5-291b" type="selectionEntry"/>
-    <entryLink id="2eab-a0cf-3421-fe43" name="Rebel Officer" hidden="false" collective="false" import="true" targetId="6a95-8257-96f5-984e" type="selectionEntry"/>
-    <entryLink id="8516-8584-bdef-dc60" name="Rebel Pathfinders" hidden="false" collective="false" import="true" targetId="366c-1d23-178b-9949" type="selectionEntry"/>
+    <entryLink id="2eab-a0cf-3421-fe43" name="Rebel Officer" hidden="true" collective="false" import="true" targetId="6a95-8257-96f5-984e" type="selectionEntry"/>
+    <entryLink id="8516-8584-bdef-dc60" name="Rebel Pathfinders" hidden="true" collective="false" import="true" targetId="366c-1d23-178b-9949" type="selectionEntry"/>
     <entryLink id="0051-8a73-0c24-4a97" name="•Jyn Erso" hidden="false" collective="false" import="true" targetId="1618-567c-e0b2-c65e" type="selectionEntry"/>
     <entryLink id="42ad-6672-9b67-233e" name="X-34 Landspeeder" hidden="false" collective="false" import="true" targetId="976e-3faa-c0b8-56ba" type="selectionEntry"/>
     <entryLink id="01fa-1023-76dd-4f0a" name="•Sabine Wren" hidden="false" collective="false" import="true" targetId="e639-78c7-1647-af49" type="selectionEntry"/>
@@ -86,8 +86,8 @@
     <entryLink id="0506-2388-ee28-b6d9" name="•R2-D2" hidden="false" collective="false" import="true" targetId="880e-5aed-0e98-5dcf" type="selectionEntry"/>
     <entryLink id="b548-4818-4af5-4a6e" name="•Cassian Andor" hidden="false" collective="false" import="true" targetId="d6b8-678a-aa20-be0e" type="selectionEntry"/>
     <entryLink id="7494-46bf-0bc6-906d" name="•K-2SO" hidden="true" collective="false" import="true" targetId="a360-d849-2e60-9a77" type="selectionEntry"/>
-    <entryLink id="eade-7c0e-b508-8a8b" name="Mandalorian Resistance" hidden="false" collective="false" import="true" targetId="9845-41fc-a150-5324" type="selectionEntry"/>
-    <entryLink id="eacb-b61c-1a7d-1550" name="Mandalorian Resistance (Clan Wren)" hidden="false" collective="false" import="true" targetId="01c8-7c22-ce19-3759" type="selectionEntry"/>
+    <entryLink id="eade-7c0e-b508-8a8b" name="Mandalorian Resistance" hidden="true" collective="false" import="true" targetId="9845-41fc-a150-5324" type="selectionEntry"/>
+    <entryLink id="eacb-b61c-1a7d-1550" name="Mandalorian Resistance (Clan Wren)" hidden="true" collective="false" import="true" targetId="01c8-7c22-ce19-3759" type="selectionEntry"/>
     <entryLink id="8fe3-b8e0-b520-49ed" name="•Lando Calrissian" hidden="false" collective="false" import="true" targetId="e1ae-5b04-3639-39f6" type="selectionEntry"/>
     <entryLink id="7d45-7b34-74f0-8702" name="A-A5 Speeder Truck" hidden="false" collective="false" import="true" targetId="1eb8-aa6b-6bec-9515" type="selectionEntry"/>
     <entryLink id="1984-cf29-eb07-7bd4" name="Wookiee Warriors (Kashyyyk Resistance)" hidden="false" collective="false" import="true" targetId="ce40-7bde-464f-4449" type="selectionEntry"/>
