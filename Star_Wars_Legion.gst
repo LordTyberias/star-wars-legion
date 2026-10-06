@@ -901,7 +901,7 @@
               <profiles>
                 <profile id="4a55-5189-2760-0fb1" name="Ordnance" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
                   <characteristics>
-                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Special Rules: Once per game, at the end of the Command Phase, you may place an allied Ordnance token (Advantage) on the battlefield. At the beginning of the End Phase, if an allied Ordnance token is on the battlefield, roll 3 black attack dice. Each unit within Range 1 of that token that has the Armor or Armor X keyword or has the Vehicle unit type suffers 2 Wounds for each Hit result and 1 Wound for each Critical result rolled. Each other unit within Range 1 of that token gains 1 Suppression token for each Hit and Critical result rolled. Then remove that Ordnance token from the game.</characteristic>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Special Rules: Once per game, at the end of the Command Phase, you may place an allied Ordnance token (Advantage) on the battlefield. At the beginning of the End Phase, if an allied Ordnance token is on the battlefield, roll 3 black attack dice. Each unit within Range 1 of that token that has the Armor or Armor X keyword or has the Vehicle unit type suffers 2 Wounds for each Critical result and 1 Wound for each Hit result rolled. Each other unit within Range 1 of that token gains 1 Suppression token for each Hit and Critical result rolled. Then remove that Ordnance token from the game.</characteristic>
                     <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8"></characteristic>
                   </characteristics>
                 </profile>
@@ -7584,7 +7584,7 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="6f0d-c899-9a59-0fa1" type="min"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="6f0d-c899-9a59-0fa1" type="min"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="b311-79e9-bed1-868d" type="max"/>
       </constraints>
       <selectionEntryGroups>
@@ -7817,7 +7817,7 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="6544-38d1-8f3c-a5e9" type="max"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="e2b2-8cc4-a13b-e4fb" type="min"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="e2b2-8cc4-a13b-e4fb" type="min"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup id="842c-50b3-4f62-4188" name="Condition Cards" hidden="false" collective="false" import="true">
@@ -8078,7 +8078,7 @@ Non-creature troopers gain: &gt;&gt; Resupply</characteristic>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="2744-8f15-76f2-9973" type="max"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="8da4-8c01-c44b-9fc3" type="min"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="8da4-8c01-c44b-9fc3" type="min"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup id="eaa3-4130-60d3-2a39" name="Objective Cards" hidden="false" collective="false" import="true">
@@ -21435,7 +21435,7 @@ While a unit is being transported, it cannot perform attacks or be the defender 
       <description>When a unit with the Death From Above keyword attacks, the defending unit cannot use Cover to cancel hit Hit results during the Apply Cover step if the attacking unit&apos;s unit leader is overlapping a piece of non-area terrain of greater height than any terrain the defending unit&apos;s unit leader is overlapping.</description>
     </rule>
     <rule id="9c32-2863-676e-a133" name="Divine Influence" hidden="false">
-      <description>Other allied[?e915] Trooper units gain Guardian 2: C-3PO while they are within Range 1 and in LOS of an allied C-3PO. While allied [?e915] Trooper units within Range 1 and in LOS of an allied C-3PO use Guardian X, they may cancel Critical results as if they were Hit results.</description>
+      <description>Other allied Ewok Trooper units gain Guardian 2: C-3PO while they are within Range 1 and in LOS of an allied C-3PO. While allied Ewok Trooper units within Range 1 and in LOS of an allied C-3PO use Guardian X, they may cancel Critical results as if they were Hit results.</description>
     </rule>
     <rule id="6973-94c1-be1e-5bd5" name="Eyes on the Prize: *Keyword*" hidden="false">
       <description>While a unit with the Eyes on the Prize keyword has its unit leader within Half-Range of 1 or more Objective tokens or is holding 1 or more Objective tokens, it has the listed keyword.</description>
@@ -21447,7 +21447,7 @@ While a unit is being transported, it cannot perform attacks or be the defender 
       <description>A Graffiti token (Advantage) represents a striking image or symbol painted onto the terrain of the battlefield. Graffiti tokens affect a unit&apos;s morale. Players should place the Graffiti token flat on a surface. During a unit&apos;s Rally step, it may roll 1 additional die if it has LOS to and is within Range 2 of an allied Graffiti token. If it has LOS and is within Range 2 of an enemy Graffiti token, it must roll 1 fewer die, to a minumum of 1. Graffiti tokens remain in play until the end of the game. Units may Move through and end a movement overlapping Graffiti tokens.</description>
     </rule>
     <rule id="1a48-7f00-1d6d-86a3" name="Hold the Line" hidden="false">
-      <description>While a unit with the Hold the Line keyword is engaged, it gains Attack Surge : Hit and Defense Surge : Block.</description>
+      <description>While a unit with the Hold the Line keyword is engaged, it gains Attack Surge: Hit and Defense Surge: Block.</description>
     </rule>
     <rule id="8332-74b3-2ab1-4a40" name="Hunted" hidden="false">
       <description>During Setup, if 1 or more enemy units have the Bounty keyword, each unit with the Hunted keyword gains 1 Bounty token.</description>
@@ -21471,7 +21471,7 @@ While a unit is being transported, it cannot perform attacks or be the defender 
       <description>When an allied unit with the Mandalorians Are Stronger Together keyword spends 1 or more Aim tokens during an attack, after the attack is resolved, it gains 1 Dodge token if it is within Range 2 of another allied unit with the Mandalorians Are Stronger Together keyword. When an allied unit with Mandalorians Are Stronger Together keyword spends 1 or more Dodge token during an attack, after the attack is resolved, it gains 1 Aim token if it is within Range 2 of another allied unit with the Mandalorians Are Stronger Together keyword.</description>
     </rule>
     <rule id="b66f-7bde-72eb-715b" name="Master Storyteller" hidden="false">
-      <description>As a Card action, a unit with the Master Storyteller keyword may choose up to X allied [?e915] units within Range 2, where X is the current Round number. Each chosen unit gains 2 Surge tokens.</description>
+      <description>As a Card action, a unit with the Master Storyteller keyword may choose up to X allied Ewok units within Range 2, where X is the current Round number. Each chosen unit gains 2 Surge tokens.</description>
     </rule>
     <rule id="7d00-e11c-9182-fb03" name="Mechanized Infantry" hidden="false">
       <description>At the start of the Activation Phase, each unit with the Mechanized Infantry keyword may choose a different allied vehicle unit within Range 2. If they do, the unit with the Mechanized Infantry keyword and each chosen unit gain 1 Aim token or 1 Dodge token.</description>
