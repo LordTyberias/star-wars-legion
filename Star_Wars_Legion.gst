@@ -119,6 +119,9 @@
   </categoryEntries>
   <forceEntries>
     <forceEntry id="c9b1-e0bb-61ac-ce52" name=" Standard" hidden="false">
+      <constraints>
+        <constraint field="7d8d-a40c-cb7f-9ff3" scope="force" value="1000.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="277e-6565-610c-1752" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="2ec9-0943-7752-330d" name="Commander" hidden="false" targetId="8837-65e9-c1bd-f304" primary="false">
           <modifiers>
@@ -212,13 +215,13 @@
         </categoryLink>
         <categoryLink id="acd3-3beb-a28b-8129" name="Battle Cards" hidden="false" targetId="b249-fbc6-5d4f-8f82" primary="false">
           <constraints>
-            <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="05cc-ac7a-b490-aa80" type="min"/>
-            <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="4615-002c-8886-f78b" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="05cc-ac7a-b490-aa80" type="min"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="4615-002c-8886-f78b" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="7aaa-8697-cf40-8b2b" name="Grand Army" hidden="false">
+    <forceEntry id="7aaa-8697-cf40-8b2b" name="Grand Army" hidden="true">
       <categoryLinks>
         <categoryLink id="fc38-52ae-0182-2b80" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false">
           <modifiers>
@@ -318,7 +321,7 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="ea6d-d9e6-84ab-5b07" name="Unlimited" hidden="false">
+    <forceEntry id="ea6d-d9e6-84ab-5b07" name="Unlimited" hidden="true">
       <categoryLinks>
         <categoryLink id="9832-bc0d-1bf9-b54e" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false">
           <modifiers>
@@ -368,7 +371,10 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="8208-479f-946a-ebef" name="Skirmish" hidden="false">
+    <forceEntry id="8208-479f-946a-ebef" name="Recon" hidden="false">
+      <constraints>
+        <constraint field="7d8d-a40c-cb7f-9ff3" scope="force" value="600.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="0536-78cd-f8a4-a97b" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="8ee7-5c45-5b35-f5d3" name="Commander" hidden="false" targetId="8837-65e9-c1bd-f304" primary="false">
           <modifiers>
@@ -462,14 +468,667 @@
         </categoryLink>
         <categoryLink id="3850-2a84-440a-57be" name="Battle Cards" hidden="false" targetId="b249-fbc6-5d4f-8f82" primary="false">
           <constraints>
-            <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="22c1-388d-ea59-5d97" type="min"/>
-            <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="1953-58db-df2a-18fc" type="max"/>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="22c1-388d-ea59-5d97" type="min"/>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="1953-58db-df2a-18fc" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
+    <selectionEntry id="129e-29db-28e7-dacb" name="Battle Deck" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="aabf-e2c2-0e39-f787" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8208-479f-946a-ebef" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7aaa-8697-cf40-8b2b" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ea6d-d9e6-84ab-5b07" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8208-479f-946a-ebef" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aabf-e2c2-0e39-f787" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c1c7-64d7-514d-46d9" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="3fe5-f9f9-5f96-debc" name="Battle Cards" hidden="false" targetId="b249-fbc6-5d4f-8f82" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3e30-c77f-3f34-6921" name="Objective Cards - choose 3" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e28b-fc4d-8d8a-7b2b" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e676-edbe-7f5f-dda4" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b1f4-d6fa-25f1-9322" name="Shifting Priorities" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0fc8-52bb-9178-68fb" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="9f1d-18de-0817-0678" name="Shifting Priorities" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Place 5 Priority Targets (POI) as shown on the Shifting Priorities Map Card. Special Rules: Starting in the second Round, at the end of each End Phase, players take turns placing each Priority Target Secured by their opponent within Half-Range of its current position, starting with the Blue player. Each Priority Target may be placed this way only once per Round.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, during each End Phase, players score 1 VP for each Priority Target they Secure.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f67c-4888-b7c2-b39b" name="Recover the Research" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="10c8-2bb9-4d2d-b0c3" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="38e2-c579-c880-d5f0" name="Recover the Research" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Place 6 Labs (POI) as shown on the Recover the Research Map Card.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, during each End Phase, players score 1 VP if allied units Contest 2 Labs, 2 VPs if allied units Contest 3 Labs, or 3 VPs if allied units Contest 4 or more Labs.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4788-34b6-fd07-722b" name="Intercept Signals" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ef2-63ce-4d64-708d" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f9a5-759b-cf3f-e579" name="Intercept Signals" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Place 4 Comms Towers (POI) as shown on the Intercept Signals Map Card. Starting with the Blue player, each player chooses 3 allied units. Then each player chooses 2 of the enemy units that their opponent chose, starting with the Blue player. Each of the chosen enemy units gains an Intel token. Special Rules: At the end of each End Phase, if a player is Securing a Comms Tower, up to 2 allied units Contesting that Comms Tower may each gain an Intel token. Each player can have a maximum of 2 units with Intel tokens at any given time.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, during each End Phase, players score 1 VP for each Comms Tower not within allied Territory that meets 1 or more of the following conditions: - That Comms Tower is Contested by an allied unit with an Intel token. - That Comms Tower is Secured by that player.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7e92-7b73-a80e-f6be" name="Breakthrough" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d16f-971a-b5af-3433" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="1c9e-eca4-fda9-47a0" name="Breakthrough" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Place 4 Checkpoints (POI) as shown on the Breakthrough Map Card.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, during each End Phase, players score 1 VP for each Checkpoint within allied Territory that is not Contested by an enemy unit. Additionally, players score 2 VP for each Checkpoint within enemy Territory they Secure.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="23ae-5e3c-2647-bea0" name="Bunker Assault" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3b3a-6253-ecb2-01ab" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="d30c-1763-d62b-64ff" name="Bunker Assault" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Place 4 Bunkers (POI) as shown on the Bunker Assault Map Card. The 2 Bunkers set up furthest from allied Territory are enemy Bunkers. Special Rules: Starting in the second Round, at the start of the End Phase, each player places 1 Wound token on each enemy Bunker they Secure, starting with the Blue player. Then for each enemy Bunker a player Secures, if at least 1 of the Contesting units is an allied Commander, Operative, or Special Forces unit, place an additional Wound token on that Bunker. Then each Bunker that has 3 or more Wound tokens on it is destroyed and removed from the battlefield.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, during each End Phase, players score 1 VP for each Bunker they Secure. Additionally, players score 3 VPs for each enemy Bunker that was destroyed during that End Phase.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c16b-4d34-f3d5-f3ca" name="Close the Pocket" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4740-78a3-0919-1424" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="e8be-17b9-049b-114d" name="Close the Pocket" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Place 3 Stockpiles (POI) as shown on the Close the Pocket Map Card.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, during each End Phase, players score 2 VPs if they Secure the center Stockpile and score 1 VP for each non-center Stockpile they Secure.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="63b2-1c1a-d49f-2128" name="Outflank" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="98fd-69a7-9efb-f2ea" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="169b-d592-1541-9a9f" name="Outflank" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Place 4 Flags (POI) as shown on the Outflank Map Card. Starting with the Blue player, each player chooses up to 3 of their non-Commander units that are not being transported. Each chosen unit gains a Vanguard token. Special Rules: Units with Vanguard tokens must Deploy into the portion of a player&apos;s Territory that is touching the short battlefield edges. Unless they are Deployed using the Transport keyword, only units with Vanguard tokens may Deploy in this portion of a player&apos;s territory.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, during each End Phase, players score 1 VP for each Flag they Secure. Additionally, if a player controls 2 or more units with Vanguard tokens that are Contesting Flags Secured by that player, that player scores 1 additional VP.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="54c4-8ee3-1af8-eda6" name="Contact, Contact!" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d55a-ebbe-9b67-08da" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="40d9-2a09-63ca-7ec5" name="Contact, Contact!" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Place 5 Listening Posts (POI) as shown on the Contact, Contact! Map Card. Special Rules: Units Contesting 1 or more Listening Posts have Precise 1.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, during each End Phase, players score 1 VP for each Listening Post they Secure in allied or Contested Territory and 2 VP for each Listening Post they Secure in enemy Territory.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1534-6f9d-2061-7e41" name="Payload" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b85-32c7-959e-403f" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="ec2b-6e38-2e3f-dfd4" name="Payload" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Place 3 Bomb Carts (POI) as shown on the Payload Map Card.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, during each End Phase, players score 1 VP for each Bomb Cart they Secure. Then, players take turns placing each Bomb Cart they Secured that is not in enemy Territory within Half-Range of its current position, starting with the Blue player. Each Bomb Cart may be placed this way only once per Round. After all Bomb Carts, if any, have been placed, players score 2 VP for each Bomb Cart that is within enemy Territory.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dd86-9cab-7251-446a" name="Cauldron" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2c53-a4bc-4e9d-7eb1" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="dc5a-3047-1574-3ca1" name="Cauldron" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Place 6 Waypoints (POI) as shown on the Cauldron Map Card. Special Rules: During the End Phase, units Contesting 1 or more Waypoints remove 1 fewer Suppression token during the Remove Tokens step.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, during each End Phase, each player scores 1 VP for each Waypoint they Secure within allied Territory and 1VP for each Waypoint they Secure that is completely within Contested Territory and that is within Range 2 of another Waypoint they Secure. Additionally, a player scores 1 VP if they Secure both Waypoints that are completely within Contested Territory.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="292e-50fb-96da-08be" name="Secondary Objective Cards - choose 3" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3e93-38c7-6540-7468" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bfb4-50b4-6ac5-47f9" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e16a-6126-877d-59ec" name="Marked Targets" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="767c-b772-af9a-4264" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="648b-bd37-ee01-bb9d" name="Marked Targets" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Starting with the Blue player, each player chooses 2 allied units and 2 enemy units. A player may not choose a unit that has already been chosen. Then the chosen units each gain a Marked Target token.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">When a unit with a Marked Target token is defeated, after the effect is resolved, that unit&apos;s opposing player scores 1 VP.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f22c-5fef-1888-d8d9" name="Bring Them to Heel" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a6f9-6bfb-0fc2-b7e9" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="3b03-8cfb-4efe-6fa4" name="Bring Them to Heel" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e"></characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Once per Round, per player, when a unit gains 1 or more Suppression tokens, the opposing player may mark 1 of their unmarked spaces on the chart below if the condition listed in the leftmost column of that space&apos;s row is met. Chart (columns: Blue Player | Red Player): &apos;An enemy unit is Panicked.&apos; 2 VPs | 2 VPs; &apos;All enemy units that can gain Suppression tokens have 1 or more Suppression tokens.&apos; 2 VPs | 2 VPs. Starting in the second Round, during each End Phase, if more enemy units than allied units have a number of Suppression tokens equal to or greater than their Courage, score 1 VP.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="173f-891c-02d7-7bc8" name="Sweep and Clear" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a255-a764-bc12-d171" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="837f-4d9c-e1ed-6cd6" name="Sweep and Clear" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e"></characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Once per Round, per player, when an enemy unit is defeated by an attack made by an allied unit, that allied unit&apos;s controlling player may mark 1 of their unmarked spaces below. A player may only mark a space corresponding with a Territory the attacking unit&apos;s unit leader is within. Chart (columns: Blue Player | Red Player): Any Territory 1 VP | 1 VP; Allied Territory 1 VP | 1 VP; Contested Territory 1 VP | 1 VP; Enemy Territory 2 VPs | 2 VPs.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="abc6-c1c8-70d4-914d" name="Surface Scan" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f970-4f28-b14d-c29c" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="ad2e-3521-4753-37ec" name="Surface Scan" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Starting with the Blue player, each player chooses 2 allied units. Each chosen unit gains an allied Scanner (asset). Special Rules: Each unit gains &gt;&gt; Claim (Scanner). Units cannot claim enemy Scanners. Each unit can hold only 1 Scanner at a time.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, during each End Phase, if a player controls 2 units that are each holding a Scanner, are not within allied Territory, and are not Contesting a POI that is within allied Territory, they score 1 VP. During the End Phase, if an allied unit holding a Scanner is Contesting an unclaimed enemy Scanner, that unit&apos;s controlling player scores 2 VPs. Each player may score a maximum of 2 VPs in this way per game.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9d9f-6e51-6a47-ede8" name="Destroy Enemy Base" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c5a6-bfb7-f0c1-7c38" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="c003-ff6e-6dcd-1740" name="Destroy Enemy Base" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Starting with the Blue player, each player places 1 allied Base (POI) not within Range 1 of each edge of the battlefield. Then, starting with the Blue player, each player chooses 1 allied unit. Each chosen unit gains a Bomb (asset). Special Rules: Each unit gains &gt;&gt; Claim (Bomb). Each unit can hold only 1 Bomb. At the start of the End Phase, if 1 or more allied units holding a Bomb are Contesting an enemy Base that you are Securing, remove all Bombs held by allied units Contesting that Base from the game. Then that Base is destroyed and removed from the battlefield.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">During each End Phase, players score 4 VPs if the enemy Base was destroyed during that End Phase.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9571-6255-c78a-e29c" name="Recon Mission" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="126e-e6b7-c264-8366" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="30b9-0383-13e9-1630" name="Recon Mission" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Starting with the Blue player, each player chooses 1 allied unit. Each chosen unit gains an allied Scanner (asset). Special Rules: Each unit gains &gt;&gt; Claim (Scanner). Units cannot claim enemy Scanners. If an allied unit is holding a Scanner, at the end of that unit&apos;s Activation, each enemy unit within Range 2 and in LOS of that allied unit&apos;s unit leader gains 1 Observation token.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, at the end of each allied unit&apos;s Activation, if that unit is holding a Scanner and if that unit&apos;s unit leader is within Range 2 and has LOS to 2 or more enemy units, that allied unit&apos;s controlling player scores 1 VP. Each player can score a maximum of 1 VP in this way each Round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="807d-9c92-b7dc-197e" name="Failed Negotiations" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2050-fe67-be33-18fc" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5a74-bc1e-2522-1726" name="Failed Negotiations" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Place an Exchange (POI) in the center of the battlefield, even if there is already an Objective token there. Then, starting with the Blue player, each player chooses 1 of their Corps or Special Forces Trooper units. Each chosen unit gains an allied Prisoner (Asset). Special Rules: A unit that has 1 or more Prisoners increases its Courage by 1. At the start of the first Activation Phase, units that are holding 1 or more Prisoners gain Incognito until the end of the Round. Additionally, each Corps and Special Forces Trooper unit gains &gt;&gt; Claim (Prisoner).</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, during the End Phase, players score 1 VP for each unit they control holding 1 or more Prisoners that is within Range 1 of the Exchange.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7510-dd21-6d0d-69ab" name="Supply Run" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9bc6-ab03-380b-dc4f" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="d097-02cf-889a-9bef" name="Supply Run" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Starting with the Blue player, each player places 2 Supply Caches (Assets) in Contested Territory, not within Range 2 of each edge of the battlefield and not within Range 1 of another Supply Cache. Special Rules: Each Trooper unit gains &gt;&gt; Claim (Supply Cache). Each unit can hold only 1 Supply Cache at a time.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, at the start of each allied unit&apos;s Activation, if that unit is contesting a POI and is holding a Supply Cache, its Controlling player may choose to remove that Supply Cache from the Game. If they do, that player scores 1 VP. If it is the fourth or fifth Round, that player scores 1 additional VP.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ee32-ad16-4260-73e0" name="Retrieve the Data" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c436-a3ce-e6a5-7da1" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5418-13b0-0ab8-b56b" name="Retrieve the Data" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Place a Data Core (Asset) in the center of the battlefield, even if there is already an Objective token there. Then, starting with the Blue player, each player places 2 Data Cores (Asset) in Contested Territory, not within Range 2 of each edge of the battlefield and not within Range 1 of another Data Core. Special Rules: Each unit gains &gt;&gt; Data Recovery (Place 1 Suppression token on a Data Core this unit is Contesting).</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, during the End Phase, players score 1 VP for each Data Core they are Securing that has 2 or more Suppression tokens. After scoring VPs, if a player is Securing a Data Core with 2 or more Suppression tokens, remove that Data Core from the battlefield.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0165-a619-6638-75fe" name="Align the Relay" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="266f-9b37-5c82-5084" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2530-7990-4b7b-cfcc" name="Align the Relay" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: Place a Comms Relay (Asset) in the center of the battlefield, even if there is already an Objective token there. Then, starting with the Blue player, each player places 2 Comms Relays within Range 3 of both long battlefield edges, not within Range 1 of a short battlefield edge, and not within Range 1 of another Comms Relay. Special Rules: Each unit gains &gt;&gt; Align Relay (Choose a Comms Relay this unit is Contesting. You now control that Comms Relay.) A Comms Relay Controlled by a player is Controlled by that player until another player Controls it.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8">Starting in the second Round, during the End Phase, players score 1 VP if they Control 2 or more Comms Relays, and 1 additional VP if they Control 4 or more Comms Relays.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8daf-2fcc-9abe-b3b6" name="Advantage Cards - choose 3" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d67f-e2f3-2fd1-b33c" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8361-8971-34ca-d464" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="acf9-8423-7d2e-cc80" name="Advanced Intel" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="44fc-8e67-18df-3632" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2977-563a-cc54-49c6" name="Advanced Intel" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Special Rules: At the start of the first Activation Phase, add 1 Advantage token to your Pass Pool.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8"></characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6863-6bcf-58c1-b3a9" name="Cunning Deployment" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f6d3-854f-b874-b629" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="358b-1329-fd9b-a53a" name="Cunning Deployment" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Special Rules: At the start of the first Activation Phase, choose 3 allied units. Each chosen unit gains 1 Dodge token.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8"></characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="70cc-2955-665d-1551" name="Fortified Position" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4202-fa52-58cb-08be" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="c603-7d97-9d31-6ddd" name="Fortified Position" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: During Setup, you may place up to 3 barricades within allied or Contested Territory and not within Range 1 of each other.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8"></characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e907-34af-c73e-786e" name="Garrison" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4c50-f07f-2568-47e4" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5b22-2ba4-c7f8-4bd0" name="Garrison" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Setup: During Setup, choose up to 1 of your Corps units without Prepared Position. The chosen unit gains Prepared Position this game.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8"></characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fb5f-80cb-9aad-9ef8" name="Ordnance" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5abc-0dff-ab97-ef7a" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="4a55-5189-2760-0fb1" name="Ordnance" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Special Rules: Once per game, at the end of the Command Phase, you may place an allied Ordnance token (Advantage) on the battlefield. At the beginning of the End Phase, if an allied Ordnance token is on the battlefield, roll 3 black attack dice. Each unit within Range 1 of that token that has the Armor or Armor X keyword or has the Vehicle unit type suffers 2 Wounds for each Hit result and 1 Wound for each Critical result rolled. Each other unit within Range 1 of that token gains 1 Suppression token for each Hit and Critical result rolled. Then remove that Ordnance token from the game.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8"></characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c1ab-9c47-f36b-3b28" name="Strafing Run" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="53de-5b21-9e9d-1de2" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="ef03-c70d-806f-0e32" name="Strafing Run" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Special Rules: Once per game, at the end of the Command Phase, you may place an allied Air Support token (Advantage) on the battlefield. At the beginning of the End Phase, if an allied Air Support token is on the battlefield, measure from that token to any position within Range 2 of it and note the miniatures overlapped by the Range Tool. Then roll 4 black attack dice. Each unit that contains 1 or more miniatures that were overlapped by the tool or that overlap the token gains 1 Suppression token for each Hit and Critical result rolled. Then remove that Air Support token from the game.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8"></characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c498-bd90-d131-f179" name="Command Override" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="509e-5ffe-1bbb-5ff7" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8b1e-07e3-111a-5a94" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="daf8-2f0b-6d77-7290" name="Command Override" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Special Rules: Separatist Only. During Setup, place 2 Advantage tokens on this card. During the Issue Orders step of the Command Phase, you may remove 1 of the Advantage tokens on this card. If you do, choose an allied unit with the AI keyword. The chosen unit issues an Order to itself.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8"></characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5014-80a6-7939-649d" name="Armored Assault" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="509e-5ffe-1bbb-5ff7" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1af7-4290-76cb-6613" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5150-3e69-2945-429c" name="Armored Assault" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Special Rules: Separatist Only. At the start of the first Activation Phase, choose up to 3 allied Vehicle units. Each chosen Vehicle unit gains 1 Aim token.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8"></characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7e61-c36d-42f1-0ae0" name="No Time to Lose" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1d91-e11e-a87b-4790" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bb0e-9cf3-6cf8-2ece" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="94c3-4056-1095-4208" name="No Time to Lose" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Special Rules: Rebel Only. At the start of an allied unit&apos;s Activation, if you have 1 or more Advantage tokens in your Pass Pool, you may spend 1 of those Advantage tokens. If you do, the activating unit gains 1 Aim token and 1 Dodge token, or makes a free Recover action.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8"></characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4183-c37f-d1aa-4de3" name="Scrambled Orders" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1d91-e11e-a87b-4790" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa1f-c4d5-7016-6f88" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2de7-a08c-9ad6-ec80" name="Scrambled Orders" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Special Rules: Rebel Only. During Setup, place an allied Comms Scrambler (Advantage) on the battlefield. Enemy units within Range 1 of 1 or more Comms Scramblers cannot be issued Orders. Enemy units gain &gt;&gt; Destroy Comms Scrambler (Remove an enemy Comms Scrambler within Half-Range from the battlefield).</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8"></characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="21a2-470f-7758-9fbb" name="Extreme Discipline" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ef40-1f1b-5578-a7c3" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c1c3-73d8-1f8d-5544" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="e819-7441-7c39-d0b2" name="Extreme Discipline" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Special Rules: Imperial Only. During Setup, place 2 Advantage tokens on this card. When an allied unit gains 1 or more Suppression tokens, after the effect is resolved, you may remove 1 Advantage token on this card. If you do, the allied unit removes all of its Suppression tokens, then suffers 1 Wound.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8"></characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1444-14db-4485-b390" name="Black Ops" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ef40-1f1b-5578-a7c3" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7831-81b5-21eb-d42e" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2f58-d58c-ffb0-f740" name="Black Ops" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Special Rules: Imperial Only. At the start of the first Activation Phase, choose an allied Corps or Special Forces Trooper unit with 6 or fewer miniatures. If the chosen unit has Infiltrate, it gains 1 Aim token and 1 Dodge token. If the chosen unit does not have Infiltrate, it gains Infiltrate.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8"></characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="37e8-f520-9c62-98f4" name="Rapid Deployment" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e057-60b7-67f9-8d41" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8510-e6bd-c5e9-30ec" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="de3d-9a16-00ca-e42d" name="Rapid Deployment" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Special Rules: Republic Only. At the start of the first Activation Phase, choose up to 2 allied Corps Clone Trooper units. The chosen units gain Reinforcements.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8"></characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cb60-05ef-8a75-654a" name="Coordinated Strike" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e057-60b7-67f9-8d41" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f040-151d-78b3-0dbf" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="8495-8e46-affa-2df4" name="Coordinated Strike" hidden="false" typeId="c7d7-fd9e-98e1-fe88" typeName="1.0 Battle Cards">
+                  <characteristics>
+                    <characteristic name="Effect" typeId="5af2-dc6d-d9ed-dc9e">Special Rules: Republic Only. During Setup, place 1 Advantage token on this card. During the Issue Orders step of the Command Phase, you may remove 1 Advantage token on this card. If you do, choose up to 2 allied Republic units. Each unit gains Coordinate: Clone Trooper or Coordinate: Republic Vehicle this Round.</characteristic>
+                    <characteristic name="Victory Conditions" typeId="2928-4594-5931-d6e8"></characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
     <selectionEntry id="c05e-9cbe-ef41-91dc" name="Command Hand" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e84b-cb2e-8d15-745d" type="min"/>
@@ -6928,7 +7587,7 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="140.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1029-5e4f-678b-a9a9" name="Deployment Cards" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1029-5e4f-678b-a9a9" name="Deployment Cards" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -7170,7 +7829,7 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="274d-8bba-00e6-88cf" name="Condition Cards" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="274d-8bba-00e6-88cf" name="Condition Cards" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="e2b2-8cc4-a13b-e4fb" value="0.0">
           <conditions>
@@ -7431,7 +8090,7 @@ Non-creature troopers gain: &gt;&gt; Resupply</characteristic>
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d52e-37ec-0ac6-ce3f" name="Objective Cards" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="d52e-37ec-0ac6-ce3f" name="Objective Cards" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="8da4-8c01-c44b-9fc3" value="0.0">
           <conditions>
@@ -19930,219 +20589,214 @@ During the End Phase, roll 1 red defense die for each of your inactive shield to
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="3565-7985-bb05-c0a5" name="Nimble" hidden="false">
-      <description>After defending, if you spent 1 or more dodge tokens, gain 1 dodge token.</description>
+      <description>When a unit with the Nimble keyword defends against an attack and spends at least 1 Dodge token during any point of the attack sequence, after the attack is resolved, it gains 1 Dodge token.</description>
     </rule>
     <rule id="a44a-b83d-9e7c-964f" name="Charge" hidden="false">
-      <description>After you perform a move action, you may perform a free melee attack action.</description>
+      <description>After a unit that has the Charge keyword makes a Move action during its Activation that brings it into base contact with an enemy miniature to start a Melee, it may make a free Attack action against that unit using only Melee weapons.</description>
     </rule>
     <rule id="1466-e70a-9d14-34ef" name="Deflect" hidden="false">
-      <description>While defending, if you spend a dodge token, you gain &quot;Defensive Surge: Block&quot;; if it&apos;s a ranged attack, the attacker suffers 1 wound for each Surge rolled.</description>
+      <description>While a unit with the Deflect keyword defends against a Ranged attack or uses the Guardian X keyword, its surge conversion chart gains Defense Surge:Block. Additionally, during the Convert Defense Surges step before converting Defense Surge results, the attacker suffers 1 Wound if there is at least 1 Defense Surge result in the defense roll. When a unit with the Deflect keyword uses the Guardian X keyword, before converting any defense surges, the attacker suffers 1 Wound if at least 1 of the dice rolled with Guardian X rolled at least 1 Defense Surge result. If the Deflect keyword causes the attacking unit to be defeated, the attack continues, and the defender can still suffer Wounds. While defending or using the Guardian X keyword against an attack made only with weapons that have the High Velocity keyword, the Deflect keyword has no effect.</description>
     </rule>
     <rule id="619b-16b6-04fa-0814" name="Immune: Melee Pierce" hidden="false">
-      <description>While defending against a melee attack, Pierce cannot be used against you.</description>
+      <description>While a unit with the Immune: Melee Pierce keyword is defending against a Melee attack, the attacker cannot use the Pierce X weapon keyword to cancel Block results on defense dice during the Modify Defense Dice step. While a unit with Immune: Melee Pierce is using the Guardian X keyword during a Melee attack, the attacking unit cannot use the Pierce X keyword to cancel Block results on defense dice rolled by that unit for the Guardian X keyword.</description>
     </rule>
     <rule id="89df-da7f-b7da-6c0c" name="Jump X" hidden="false">
-      <description>Perform a move during which you ignore terrain that is height X or lower. This is treated as a move action.</description>
+      <description>A unit that has the Jump X keyword can make the Jump X Card action any time it could make a Move action. The unit makes a Move action as normal and can ignore or end its movement on top of terrain that is height X or lower. While making a Move with the Jump X action, a unit ignores the effects of difficult terrain and other miniatures with a height equal to or lower than X. When making a Move with the Jump X action, a unit may place the Movement Tool overlapping impassable terrain but may not end its Move overlapping it. When a unit makes the Jump X action, measure height from that unit&apos;s starting position.</description>
     </rule>
     <rule id="6f2e-eaa9-ea3c-abf4" name="Armor" hidden="false">
-      <description>While defending, cancel all Hit results.</description>
+      <description>During the Modify Attack Dice step of the attack sequence, if the defending unit has the Armor X keyword, the defending player may cancel up to X hit Hit results, removing those dice from the Attack Pool.</description>
     </rule>
     <rule id="1ed9-75e6-51da-bfba" name="Climbing Vehicle" hidden="false">
-      <description>You are treated as a trooper for the purposes of vertical movement.</description>
+      <description>A unit with the Climbing Vehicle keyword can make Climb moves and is treated as a Trooper unit for the purposes of Climbing.</description>
     </rule>
     <rule id="e39c-9c4b-a68d-2dda" name="Expert Climber" hidden="false">
-      <description>While clambering, do not roll defense dice or suffer wounds.</description>
+      <description>When a unit with the Expert Climber keyword makes a Climb, it may Move a vertical distance up to height 2.</description>
     </rule>
     <rule id="8baa-3b31-6fd5-cf66" name="Pierce X" hidden="false">
-      <description>You cancel X Block results.</description>
+      <description>When a unit attacks with an Attack Pool that has Pierce X keyword it may cancel up to X Block results during the Modify Defense Dice step. The Pierce X keyword can be used to cancel Block results on defense dice rolled by a unit using the Guardian X keyword. When doing so, treat canceled Block results as Blank results. After using the Pierce X keyword in this way, any unused Pierce X value can still be used to cancel Block results rolled by the defending unit.</description>
     </rule>
     <rule id="6da6-1112-3a36-33c2" name="Impact X" hidden="false">
-      <description>While attacking a unit that has Armor, change up to X Hit results to Critical results.</description>
+      <description>When a unit attacks, if its Attack Pool has the Impact X keyword and the defending unit has the Armor X keyword, the attacking unit can modify up to X Hit results to Critical results during the Modify Attack Dice step.</description>
     </rule>
     <rule id="abcc-5c44-68ef-82d1" name="Precise X" hidden="false">
-      <description>When you spend an aim token, reroll up to X additional dice.</description>
+      <description>Each time a unit with the Precise X keyword spends an Aim token during the Reroll Attack Dice step, it can reroll up to X additional attack dice per Aim token spent.</description>
     </rule>
     <rule id="c8d6-c6c5-f2fe-daad" name="Blast" hidden="false">
-      <description>Ignore cover.</description>
+      <description>A defending unit cannot use light or heavy Cover during the Apply Dodge and Cover step to cancel hit Hit results produced by an Attack Pool that contains the Blast keyword.</description>
     </rule>
     <rule id="b2ab-1852-73e3-f56f" name="Ion X" hidden="false">
-      <description>A vehicle wounded by an attack that includes this weapon gains X ion tokens.</description>
+      <description>When a Vehicle or Droid Trooper unit suffers 1 or more Wounds from an attack that has the Ion X keyword in the Attack Pool, after the attack is resolved, it gains X Ion tokens. When a unit starts its Activation with 1 or more Ion tokens, roll 1 white defense die for each Ion token it has. If any Blank results are rolled, that unit makes 1 fewer action during that Activation. At the end of a unit&apos;s Activation, it removes any Ion tokens that it has. If an Attack Pool includes the Ion X keyword, at the start of the Modify Attack Dice step, before resolving other effects the defending unit must flip 1 active Shield token, if able, for each Hit or Critical result in the attack roll, to a maximum of X tokens flipped.</description>
     </rule>
     <rule id="ac2f-0059-9352-edff" name="Fixed: Front" hidden="false">
-      <description>The defender must be inside your front arc.</description>
+      <description>To add a weapon that has the Fixed: Front/Sides/Rear keyword to an Attack Pool, the defending unit must have at least 1 of its miniatures&apos; bases partially inside 1 of the specified firing arcs of the attacking miniature.</description>
     </rule>
     <rule id="7923-6416-78ad-12b9" name="Master of the Force X" hidden="false">
-      <description>During the End Phase, you may ready X of your Force Power upgrade cards.</description>
+      <description>When a unit with the Master of the Force X keyword ends its Activation, it may ready up to X of its exhausted Force Force Upgrade Cards.</description>
     </rule>
     <rule id="0c2b-f655-41f4-2efb" name="Relentless" hidden="false">
-      <description>After you perform a move action, you may perform a free attack action.</description>
+      <description>After a unit that has the Relentless keyword makes a Move action during its Activation, it may make a free Attack action.</description>
     </rule>
     <rule id="f4bf-508a-a537-1ce7" name="Speeder X" hidden="false">
-      <description>While moving, ignore terrain that is height X or lower.
-When you activate, perform a compulsory move.</description>
+      <description>A unit with the Speeder X keyword can Move over or end its movement on terrain equal to or less than height X. Additionally, when a unit with the Speeder X keyword on notched bases makes a Move, it skips step 1 of notched base movement. A unit with the Speeder X keyword must make a free compulsory Move action at the start or end of its Make Actions step. If a unit with the Speeder X keyword makes more than 1 non-compulsory Move action during its Activation, it may not claim Asset tokens that Activation. Additionally, a unit with the Speeder X keyword that has claimed an Asset token can make only 1 non-compulsory Move action during its Activation.</description>
     </rule>
     <rule id="99c4-94e0-7110-4e99" name="Cover X" hidden="false">
-      <description>When defending against a ranged attack, improve your cover by X.</description>
+      <description>When a unit with the Cover X keyword defends against a Ranged attack, during the Apply Dodge and Cover step, it increases its Cover by X.</description>
     </rule>
     <rule id="354d-b58d-b84b-4204" name="Cumbersome" hidden="false">
-      <description>You cannot use this weapon and move, except for pivoting, during the same activation.</description>
+      <description>When a unit adds a weapon with the Cumbersome keyword to an Attack Pool, it downgrades each of that weapon&apos;s attack dice if that unit has made any Moves during the same Activation.</description>
     </rule>
     <rule id="b6ff-1771-873f-2296" name="Spray" hidden="false">
-      <description>Add this weapon&apos;s dice to the attack pool one time for each mini in the defending unit to which line of sight is not blocked.</description>
+      <description>When a miniature adds a weapon that has the Spray keyword to an Attack Pool, that weapon adds its dice a number of times equal to the number of miniatures in the defending unit that are in LOS of the miniature using that weapon.</description>
     </rule>
     <rule id="1397-0314-a3ee-acc2" name="Arsenal X" hidden="false">
-      <description>While attacking, each model in this unit can use up to X of its weapons.</description>
+      <description>A unit with the Arsenal X keyword can contribute X weapons to Attack Pools during the Form Attack Pool step. Each weapon or combination of weapons may form a new Attack Pool, but each weapon may only be added to 1 Attack Pool.</description>
     </rule>
     <rule id="d310-f6f2-d3dd-2fa1" name="Immune: Blast" hidden="false">
-      <description>Blast cannot be used against you.</description>
+      <description>While a unit with the Immune: Blast keyword is defending, the effects of the Blast keyword are ignored.</description>
     </rule>
     <rule id="e2e2-c9c7-c142-48fd" name="Immune: Melee" hidden="false">
-      <description>Melee attacks cannot be used against you.</description>
+      <description>Units with the Immune: Melee keyword cannot be targeted by Melee attacks and cannot be Engaged. When forming an Attack Pool targeting a unit with the Immune: Melee keyword, the attacking unit can add Ranged weapons to the Attack Pool even if they are in Melee with the defending unit.</description>
     </rule>
     <rule id="23a9-6a39-9307-2469" name="Weak Point X: Rear" hidden="false">
-      <description>While defending, if the attacker&apos;s unit leader is inside your rear arc, the attack pool gains Impact X.</description>
+      <description>While a unit with the Weak Point X: Front/Rear/Sides keyword defends, if the attacking unit&apos;s unit leader is at least partially inside the specified firing arc of the defending unit, the Attack Pool gains the Impact X keyword where X is equal to the value of Weak Point X. While a unit with the Weak Point X keyword defends against a Ranged attack made by an area weapon, treat the Charge token or Advantage token as the attacking unit leader.</description>
     </rule>
     <rule id="e233-23ff-d4f9-d065" name="Steady" hidden="false">
-      <description>After you perform a move action, you may perform a free ranged attack action.</description>
+      <description>After a unit that has the Steady keyword makes a Move action during its Activation, it may make a free Attack action. Only Ranged weapons can be added to Attack Pools during this Attack action.</description>
     </rule>
     <rule id="2d99-7e82-617e-053b" name="Guardian X" hidden="false">
-      <description>While a friendly unit at range 1 and in line of sight is defending against a ranged attack, you may cancel up to X Hit results. For each result canceled, roll 1 of your defense dice. Convert any surges, then suffer 1 wound for each blank result.</description>
+      <description>While an allied Trooper unit within Range 1 and in LOS of a unit that has the Guardian X keyword defends against a Ranged attack, it may cancel up to X hit Hit results during the Modify Attack Dice step. For each hit Hit result canceled in this way, the unit with the Guardian X keyword rolls 1 defense die matching the one on its Unit Card. After converting any defense surge Defense Surge results according to its surge chart or by using Surge tokens, the unit with the Guardian X keyword gains 1 Suppression token, then suffers 1 Wound for each Blank result. A defending unit that has the Guardian X keyword used on it gains a Suppression token as normal. A unit cannot use Guardian X if the defending unit also has the Guardian X keyword. If multiple allied units can use the Guardian X keyword during an attack, the player who controls those units declares which unit is using the Guardian X keyword and resolves their ability before choosing whether to declare that another unit is using the Guardian X keyword. A unit cannot use Guardian X if it has a number of Suppression tokens equal to or greater than its Courage. The Pierce X keyword can be used to cancel block Block results on defense dice rolled by a unit using Guardian X; treat canceled block Block results as Blank results. After using Pierce X in this way, any unused Pierce X value can still be used to cancel block Block results rolled by the defending unit. Additionally, a unit with the Guardian X keyword cannot benefit from Backup and ignores the Corps Rank requirement to provide Backup.</description>
     </rule>
     <rule id="b5ed-8da2-132d-54b2" name="Immune: Deflect" hidden="false">
-      <description>Deflect cannot be used against you.</description>
+      <description>When a unit attacks with an Attack Pool that has Immune: Deflect, it cannot suffer Wounds from the Deflect keyword.</description>
     </rule>
     <rule id="a053-6a51-2d8d-a717" name="Spotter X" hidden="false">
-      <description>Choose up to X friendly units at range 1. Each chosen unit gains an aim token.</description>
+      <description>As a Card or Free Card action, a unit with the Spotter X keyword can choose up to X allied units within Range 2. Each chosen unit gains 1 Aim token.</description>
     </rule>
     <rule id="a4c9-42f5-6ea5-f3a3" name="Inspire X" hidden="false">
-      <description>After your Rally step, remove up to X suppression tokens from another friendly unit at range 1-2.</description>
+      <description>When a unit with the Inspire X keyword ends its Activation, remove up to X total Suppression tokens from other allied units within Range 2.</description>
     </rule>
     <rule id="18d2-5e0e-d04e-f771" name="Sharpshooter X" hidden="false">
-      <description>While performing a ranged attack, reduce the defender&apos;s cover by X.</description>
+      <description>During the Determine Cover step, a unit with the Sharpshooter X keyword subtracts X from the numerical value of the defender&apos;s Cover.</description>
     </rule>
     <rule id="c4ab-770e-5009-04ff" name="Suppressive" hidden="false">
-      <description>After you perform an attack, the defender that this weapon was used against gains 1 suppression token.</description>
+      <description>When a unit defends against an Attack Pool that has Suppressive, it gains 1 additional Suppression token during the Assign Suppression Token to Defender step.</description>
     </rule>
     <rule id="f2fe-8c57-7a66-0761" name="Full Pivot" hidden="false">
-      <description>When you pivot, you can pivot up to 360°.</description>
+      <description>When a unit with the Full Pivot keyword makes a Pivot, it may Pivot up to 360°.</description>
     </rule>
     <rule id="24b7-5b7a-f976-3e75" name="Fixed: Rear" hidden="false">
-      <description>The defender must be inside your rear arc.</description>
+      <description>To add a weapon that has the Fixed: Front/Sides/Rear keyword to an Attack Pool, the defending unit must have at least 1 of its miniatures&apos; bases partially inside 1 of the specified firing arcs of the attacking miniature.</description>
     </rule>
     <rule id="7e70-8d77-50ad-f8c6" name="Tow Cable" hidden="false">
-      <description>After a vehicle is wounded by an attack that includes this weapon, perform a pivot with that vehicle.</description>
+      <description>After a Vehicle suffers 1 or more Wounds from an attack that has Tow Cable in the Attack Pool, the attacking player makes a Pivot with that Vehicle, then it gains 1 Immobilize token.</description>
     </rule>
     <rule id="a517-5867-63b2-82d2" name="Ready X" hidden="false">
-      <description>After you perform a standby action, gain X aim tokens.</description>
+      <description>After a unit with the Ready X keyword makes a Standby action, it gains X Aim tokens.</description>
     </rule>
     <rule id="dcab-9ffc-62be-bb59" name="Take Cover X" hidden="false">
-      <description>Choose up to X friendly trooper units at range 1. Each chosen unit gains a dodge token.</description>
+      <description>As a Card or Free Card action, a unit with the Take Cover X keyword can choose up to X allied units within Range 2. Each chosen unit gains 1 Dodge token.</description>
     </rule>
     <rule id="a7bd-0b72-3096-1729" name="Low Profile" hidden="false">
-      <description>While defending against an attack, if a unit with the &quot;Low Profile&quot; keyword has cover, cancel one additional hit result.</description>
+      <description>When a unit with the Low Profile keyword would roll 1 or more defense dice during the Roll Cover Pool step, it rolls 1 fewer defense die and instead adds an additional Block result to the Cover Pool after rolling.</description>
     </rule>
     <rule id="1668-29f8-4fe1-651a" name="Gunslinger" hidden="false">
-      <description>After you perform a ranged attack action, you may perform an additional ranged attack action against a different unit.</description>
+      <description>When a unit with the Gunslinger keyword reaches the Declare Additional Defender step, it may declare an additional defender and create an Attack Pool consisting solely of a Ranged weapon that has already been contributed to another Attack Pool. The Gunslinger keyword can only be used once per attack sequence.</description>
     </rule>
     <rule id="f0f1-1fc6-505b-877b" name="Uncanny Luck X" hidden="false">
-      <description>While defending, you may reroll up to X defense dice.</description>
+      <description>While a unit with the Uncanny Luck X keyword defends, it may reroll up to X defense dice during the Reroll Defense Dice step. Any dice rerolled with the Uncanny Luck X keyword must be rerolled at the same time, and each die cannot be rerolled more than once.</description>
     </rule>
     <rule id="7410-450a-1190-5b7e" name="Scout X" hidden="false">
-      <description>After you deploy, you may perform a speed X move.</description>
+      <description>When an undeployed unit with the Scout X keyword activates, at the start of its Make Actions step, it may Deploy by making a free Speed-X Move action, ignoring difficult terrain. A unit can make this Move regardless of its Speed. The Scout X keyword is cumulative but cannot exceed 3. If a unit would ever have Scout X exceeding Scout 3, it has Scout 3 instead.</description>
     </rule>
     <rule id="a1b4-49d7-bca5-385f" name="Stationary" hidden="false">
-      <description>You cannot perform moves, except pivots.</description>
+      <description>A unit with the Stationary keyword cannot make Moves unless the Move is a Pivot. A unit with the Prepared Position and Stationary keywords must Deploy during the Deploy in Prepared Positions step of Setup.</description>
     </rule>
     <rule id="0795-6e12-9110-ea7d" name="Heavy Weapon Team" hidden="false">
-      <description>You must equip a Heavy Weapon upgrade card. The mini added by that card is your unit leader.</description>
+      <description>A unit with the Heavy Weapon Team keyword must equip a Heavy Weapon Upgrade Card. The miniature added to the unit with this Upgrade Card becomes the unit leader.</description>
     </rule>
     <rule id="cac7-4e9c-5f18-1773" name="Unhindered" hidden="false">
-      <description>You ignore the effects of difficult terrain.</description>
+      <description>When a unit that has the Unhindered keyword makes a Move, it does not reduce its Speed for moving out of, into, or through difficult terrain.</description>
     </rule>
     <rule id="8c57-6c86-0cef-1c7b" name="Impervious" hidden="false">
-      <description>While defending, if the attack pool has Pierce X, roll X additional defense dice.</description>
+      <description>When an Attack Pool is being resolved against a unit with the Impervious keyword, at the start of the Modify Defense Dice step, reduce that Attack Pool&apos;s Pierce X keyword value by 1, to a minimum of 0.</description>
     </rule>
     <rule id="eeb9-4663-ff09-4a4e" name="Bounty" hidden="false">
-      <description>After setup, place a victory token on an enemy commander or operative.
-If you defeat a unit with a victory token, move that token to you.
-At the end of the game, if you have a victory token, gain that token.</description>
+      <description>During Setup, a unit with the Bounty keyword chooses an enemy Operative or Commander unit. The chosen unit gains 1 Bounty token. After an allied unit with the Bounty keyword defeats an enemy unit that has 1 or more Bounty tokens with an attack or effect, the allied unit&apos;s controlling player scores 1 VP.</description>
     </rule>
     <rule id="cbd6-101d-191d-d189" name="Sentinel" hidden="false">
-      <description>Your standby range is 1-3.</description>
+      <description>A unit with the Sentinel keyword can spend a Standby token after an enemy unit makes an attack, Move, or action within Range 3, rather than within Range 2.</description>
     </rule>
     <rule id="5196-0d21-0f68-ac00" name="Plodding" hidden="false">
-      <description>During your activation, you can perform only 1 standard move.</description>
+      <description>A unit with the Plodding keyword can only make 1 Move action during its Activation.</description>
     </rule>
     <rule id="a307-c43d-f182-4a23" name="Reposition" hidden="false">
-      <description>Either before or after you perform a standard move, you may perform a free pivot action.</description>
+      <description>When a unit with the Reposition keyword makes a Standard Move, it may make a Pivot either before or after making that Standard Move.</description>
     </rule>
     <rule id="c49c-fb1f-d74d-bdfe" name="Pulling the Strings" hidden="false">
-      <description>Choose a friendly trooper unit at range 1-2. That unit may perform a free attack action or a free move action.</description>
+      <description>As a Card action, a unit with the Pulling the Strings keyword may choose another allied Trooper unit within Range 2. The chosen unit may make a free Attack action or a free Move action.</description>
     </rule>
     <rule id="339f-758b-8d7e-9b82" name="Entourage: *Unit Name*" hidden="false">
-      <description>While building an army, ignore the rank of 1 *Unit Name* unit.
-During the Command Phase, you may issue an order to a friendly *Unit Name* unit at range 1-2.</description>
+      <description>During Army Building, for each unit a player includes with the Entourage keyword, 1 unit specified by the Entourage keyword does not count its Rank towards the maximum Rank requirements for that Rank. This can allow a player to bring more units of a specific Rank than Rank requirements allow. In the Command Phase, during the Issue Orders step, a unit with the Entourage keyword may issue an Order to an allied unit within Range 2 that has the name specified by the Entourage keyword. Additionally, the unit specified by the Entourage keyword ignores the Corps Rank requirement to provide Backup to the unit with the Entourage keyword.</description>
     </rule>
     <rule id="b45d-4b6c-0efa-b70e" name="Disciplined X" hidden="false">
-      <description>When you are issued an order, you may remove up to X suppression tokens.</description>
+      <description>After a unit with the Disciplined X keyword is issued an Order, it may remove up to X Suppression tokens.</description>
     </rule>
     <rule id="0448-fa43-78c5-d281" name="Sidearm: Melee" hidden="false">
-      <description>While performing a melee attack, this mini can only use the weapon on this card.</description>
+      <description>If an upgrade has the Sidearm: Melee keyword, the miniature added by that upgrade or that has that upgrade equipped cannot add any Melee weapons to Attack Pools other than any Melee weapons on the Upgrade Card with the Sidearm: Melee keyword. If an upgrade has the Sidearm: Ranged keyword, the miniature added by that upgrade or that has that upgrade equipped cannot add any Ranged weapons to Attack Pools other than any Ranged weapons on the Upgrade Card with the Sidearm: Ranged keyword.</description>
     </rule>
     <rule id="88db-849b-6a12-5846" name="High Velocity" hidden="false">
-      <description>While attacking, if each weapon in your attack pool has High Velocity, the defender cannot spend dodge tokens.</description>
+      <description>A unit that defends against an attack that only has weapons with High Velocity in its Attack Pool cannot spend Dodge tokens during the Apply Dodge and Cover step.</description>
     </rule>
     <rule id="be08-2939-cc00-c2b9" name="Arm X: *Charge Type*" hidden="false">
-      <description>Place X charge tokens within range 1 and in line of sight of your unit leader.</description>
+      <description>A unit that is equipped with a card that has the Arm X: Charge Token Type keyword can make the Arm X action. When a unit makes the Arm X action, the unit places X Charge tokens (Advantage) of the specified type and matching its controlling player&apos;s color completely within Range 1 and LOS of its unit leader. Charge tokens cannot overlap any Objective, Advantage, or other Charge tokens and must be placed on a flat surface completely flush with that surface.</description>
     </rule>
     <rule id="4f1d-4b3a-0b15-dea6" name="Enrage X" hidden="false">
-      <description>While you have X or more wound tokens, treat your courage value as &quot;--&quot; and gain Charge.</description>
+      <description>When a unit with the Enrage X keyword has Wound tokens greater than or equal to X, that unit gains the Charge keyword and its Courage becomes &quot;-&quot;. If a unit with the Enrage X keyword has Wound tokens greater than or equal to X but removes Wound tokens through an effect so that it has fewer than X, it no longer benefits from the Enrage X keyword until it has Wound tokens greater than or equal to X again.</description>
     </rule>
     <rule id="afb7-f258-6b46-a4b9" name="Teamwork: *Unit Name*" hidden="false">
-      <description>While you are at range 1-2 of *Unit Name*, when you or *Unit Name* gains an aim or dodge token, the other unit gains a token of the same type.</description>
+      <description>While a unit with the Teamwork keyword is within Range 2 of an allied unit that has the unit name specified by the Teamwork keyword, if either unit gains 1 or more Aim tokens or 1 or more Dodge tokens, the other unit gains 1 token of the same type.</description>
     </rule>
     <rule id="15b8-8088-8097-6a12" name="Indomitable" hidden="false">
-      <description>During your Rally step, roll red defense dice instead of white.</description>
+      <description>When a unit that has the Indomitable keyword Rallies, it rolls red defense dice instead of white defense dice.</description>
     </rule>
     <rule id="333b-0ccb-b1ce-ca9d" name="Leader" hidden="false">
-      <description>This mini is your unit leader.</description>
+      <description>A miniature with the Leader keyword is treated as a unit&apos;s unit leader for all rules purposes. If a miniature with the Leader keyword and a Wound threshold of 2 or more is defeated while in a unit with a Wound threshold of 1, replace 1 of the remaining miniatures in that unit as normal, then assign the miniature with the Leader keyword 1 Wound token. Each unit may only equip 1 upgrade card with the Leader keyword.</description>
     </rule>
     <rule id="2dd6-d418-4321-f5bf" name="Compel" hidden="false">
-      <description>After another friendly unit at range 1-2 rallies, if it is suppressed but not panicked, it may gain 1 suppression token to perform a free move action.</description>
+      <description>After another allied non-Droid Trooper unit of the matching Rank or unit type, if specified, within Range 2 of an allied unit with the Compel keyword Rallies and is Suppressed but not Panicked, at the start of its Make Actions step, it may gain 1 Suppression token to make a free Move action.</description>
     </rule>
     <rule id="bccd-2bef-a175-725e" name="Cunning" hidden="false">
-      <description>When your commander-specific command cards are played, if there would be a tie for priority, treat your command card as though it had 1 fewer pip.</description>
+      <description>When determining priority during the Command Phase, if a player reveals a Commander or Operative specific Command Card that belongs to a unit with the Cunning keyword and there would be a tie for priority, treat that Command Card as having 1 fewer pip, to a minumim of 0. If both players reveal a specific Commander or Operative Command Card that belongs to a unit with the Cunning keyword, there is still a tie for priority.</description>
     </rule>
     <rule id="4377-a0ff-5108-0079" name="Quick Thinking" hidden="false">
-      <description>Gain 1 aim token and 1 dodge token.</description>
+      <description>When a unit makes the Quick Tinking Card action, it gains 1 Aim and 1 Dodge token.</description>
     </rule>
     <rule id="4af1-4705-8c43-ccd2" name="Danger Sense X" hidden="false">
-      <description>You may choose not to remove your suppression tokens.
-While defending against a ranged attack, roll 1 extra die for each suppression token you have, adding up to X extra dice.</description>
+      <description>When a unit with the Danger Sense X keyword would remove any number of its Suppression tokens, it may choose to not remove up to X tokens, including 0. While a unit with the Danger Sense X keyword defends against an attack, it rolls 1 extra defense die during the Roll Defense Dice step for each Suppression token it has, up to X additional dice.</description>
     </rule>
     <rule id="ae26-c3d3-240e-2c73" name="Infiltrate" hidden="false">
-      <description>You may deploy anywhere beyond range 3 of all enemy units.</description>
+      <description>When a unit with the Infiltrate keyword starts its Activaiton, if it is undeployed, it may Deploy by placing the unit leader of that unit completely within allied Territory. Then the remaining miniatures in that unit are placed in Cohesion with their unit leader and completely within allied Territory. Miniatures cannot overlap impassable terrain when they are placed using Infiltrate.</description>
     </rule>
     <rule id="3703-0622-33ae-f15a" name="Reconfigure" hidden="false">
-      <description>When you recover, you may flip this card.</description>
+      <description>When a unit equipped with an Upgrade Card that has the Reconfigure keyword makes a Recover action, that unit&apos;s controlling player may flip that Upgrade Card to a different side in addition to any other effects of that Recover action. If an Upgrade Card has the exhaust icon, using the Reconfigure ability does not cause that Upgrade Card to be exhausted.</description>
     </rule>
     <rule id="e30f-0dd3-f201-316a" name="Dauntless" hidden="false">
-      <description>After you rally, if you are suppressed but not panicked, you may gain 1 suppression token to perform a free move action.</description>
+      <description>After a non-Droid Trooper unit with the Dauntless keyword Rallies and is Suppressed but not Panicked, at the start of its Make Action step, it may gain 1 Suppression token to make a free Move action. A unit with the Dauntless keyword may not be affected by the Compel keyword.</description>
     </rule>
     <rule id="c06c-ef48-f54b-e8dc" name="Treat X: Capacity Y" hidden="false">
-      <description>Place a wound token on this card to remove X wound tokens from or restore X minis to a friendly non-emplacement trooper unit at range 1 and in line of sight. Limit Y tokens.</description>
+      <description>When a unit uses the Treat X: Capacity Y Card or Free Card action, choose an allied non-Droid Trooper Trooper unit within Range 1 and LOS and place 1 Wound token on the card that has the Treat X: Capacity Y keyword. Remove a total of up to X Wound and/or Poison tokens from the chosen unit or Restore up to X miniatures to that unit. This ability cannot be used if the card that has the Treat X: Capacity Y keyword has a number of Wound tokens on it equal to or exceeding Y. Wound tokens on cards are not considered to be on units and do not count toward a unit&apos;s Wound threshold, nor can they be removed by abilities that remove Wound tokens from units. A unit that has multiple Treat X: Capacity Y actions treats each keyword as a separate action, and can use each action once during its Activation, even if the unit has access to mutiple identical actions from different sources.</description>
     </rule>
     <rule id="1fd5-75ef-29c1-b14b" name="Repair X: Capacity Y" hidden="false">
-      <description>Place a wound token on this card to remove X wound, ion, or vehicle damage tokens from a friendly ground vehicle at range 1 and in line of sight. Limit Y tokens.</description>
+      <description>When a unit uses the Repair X: Capacity Y Card or Free Card action, choose an allied Droid Trooper or Vehicle unit within Range 1 and LOS and place 1 Wound token on the card that has the Repair X: Capacity Y keyword. Remove a total of up to 1 Wound, Ion, and/or Vehicle Damage tokens from the chosen unit or Restore up to X miniatures to that unit. This ability cannot be used if the card that has the Repair X: Capacity Y keyword has a number of Wound tokens on it equal to or exceeding Y. Wound tokens on cards are not considered to be on units and do not count toward a unit&apos;s Wound Treshold, nor can they be removed by abilities that remove Wound tokens from units. A unit that has multiple Repair X: Capacity Y actions treats each keyword as a separate action, and can use each action once during its Activation, even if the unit has access to mutiple identical actions from different sources.</description>
     </rule>
     <rule id="b618-1cf4-8edc-3797" name="Noncombatant" hidden="false">
-      <description>This mini cannot use any weapons and other non-unit leader minis must suffer wounds first.</description>
+      <description>A miniature with the Noncombatant keyword cannot add any weapons to Attack Pools, and any Wounds suffered must be assigned to non-unit leader miniatures without the Noncombatant keyword, if able. If a miniature with the Noncombatant keyword already has 1 or more Wound tokens, it must be assigned Wounds before miniatures that do not have Wound tokens. If the unit leader miniature in a unit with the Noncombatant keyword is defeated, a Noncombatant miniature cannot be replaced by a new unit leader miniature unless there are no other miniatures without the Noncombatant keyword.</description>
     </rule>
     <rule id="7bfe-782f-d0f6-e95b" name="Weak Point X: Sides" hidden="false">
-      <description>While defending, if the attacker&apos;s unit leader is inside either of your side arcs, the attack pool gains Impact X.</description>
+      <description>While a unit with the Weak Point X: Front/Rear/Sides keyword defends, if the attacking unit&apos;s unit leader is at least partially inside the specified firing arc of the defending unit, the Attack Pool gains the Impact X keyword where X is equal to the value of Weak Point X. While a unit with the Weak Point X keyword defends against a Ranged attack made by an area weapon, treat the Charge token or Advantage token as the attacking unit leader.</description>
     </rule>
     <rule id="3ca9-ac5e-80c1-3778" name="Tactical X" hidden="false">
-      <description>After you perform a standard move, gain X aim tokens.</description>
+      <description>When a unit with the Tactical X keyword makes a Standard Move as part of an action or free action, after the effect is resolved, it gains X Aim tokens.</description>
     </rule>
     <rule id="3c45-d376-201b-e8f2" name="Transport X: Open" hidden="false">
       <description>You may transport X friendly trooper units.
@@ -20155,134 +20809,130 @@ While a unit is being transported, it can perform most actions and an be the tar
 A unit that is being transported is treated as though it has heavy cover. This cover can be reduced as normal. </description>
     </rule>
     <rule id="557e-290b-b9ad-2a97" name="Armor X" hidden="false">
-      <description>While defending, cancel up to X Hit results.</description>
+      <description>During the Modify Attack Dice step of the attack sequence, if the defending unit has the Armor X keyword, the defending player may cancel up to X hit Hit results, removing those dice from the Attack Pool.</description>
     </rule>
     <rule id="8815-2915-1e7c-bc48" name="Regenerate X" hidden="false">
-      <description>At the end of your activation, roll 1 white defense die for each wound token you have, up to X. For each Surge or Block result, remove 1 wound token.</description>
+      <description>When a unit with the Regenerate X keyword ends its Activation, it rolls 1 white defense die for each Wound token it has, up to X. For each Block or Defense Surge result, it removes 1 Wound token.</description>
     </rule>
     <rule id="0515-3f69-586d-60d0" name="Shielded X" hidden="false">
-      <description>You have X shield tokens.</description>
+      <description>A unit with the Shielded X keyword has X Shield tokens. Shield tokens belong to the unit and are not assigned to individual miniatures. If a unit gains the Shielded X keyword, it gains X Shield tokens. Similarly, if a unit loses the Shielded X keyword it loses X Shield tokens. Shield tokens are double-sided, with an active side and an inactive side, and always enter play with their active side faceup. When a unit flips an active Shield token, that Shield token is flipped to its inactive side and is now inactive. When a unit flips an inactive Shield token, that Shield token is flipped to its active side and is now active. While defending against a Ranged attack, a defending unit may flip any number of its active Shield tokens to their inactive side during the Modify Attack Dice step to cancel 1 hit Hit or 1 critical Critical result for each Shield token flipped in this way.</description>
     </rule>
     <rule id="e453-4644-25ec-b759" name="Recharge X" hidden="false">
-      <description>When you recover, flip X inactive shield tokens.</description>
+      <description>When a unit with the Recharge X keyword makes a Recover action, it may flip up to X inactive Shield tokens from their inactive side to their active side.</description>
     </rule>
     <rule id="ec20-8113-bafe-4a95" name="Ram X" hidden="false">
-      <description>While attacking, if you performed a full standard move at your maximum speed before this attack, you may turn X attack dice to Critical results.</description>
+      <description>While a unit makes an attack with an Attack Pool that has the Ram X keyword, during the Modify Attack Dice step, it may change X results to Critical results if it meets either of the following conditions: • The unit leader has a notched base and the unit made at least 1 full Standard Move at its Speed during the same Activation as an attack using Ram X. • The unit leader has an unnotched base and the unit made at least 1 Move during the same Activation as an attack using Ram X.</description>
     </rule>
     <rule id="3a2a-fc8b-8c65-9670" name="Agile X" hidden="false">
-      <description>After you perform a standard move, gain X dodge tokens.</description>
+      <description>When a unit with the Agile X keyword makes a Standard Move as part of an action or free action, after the effect is resolved, it gains X Dodge tokens.</description>
     </rule>
     <rule id="84b3-093e-53b5-e805" name="Coordinate: *Unit Type*" hidden="false">
-      <description>After you are issued an order, you may issue an order to a friendly *Unit Type* unit at range 1.</description>
+      <description>After a unit with the Coordinate keyword is issued an Order, it may issue an Order to an allied unit within Range 1 that has the unit name or unit type specified. A unit that has 1 or more unit names or unit types listed can only choose 1 of these listed unit names or unit types to issue an Order to using the Coordinate keyword. If a unit already has the Coordinate keyword and gains another instance of the keyword, the unit may choose which targets to issue an Order to from the multiple instances of the keyword; it does not issue 2 Orders.</description>
     </rule>
     <rule id="efd2-65da-0994-0b77" name="Defend X" hidden="false">
-      <description>After you are issued an order, gain X dodge tokens.</description>
+      <description>After a unit with the Defend X keyword is issued an Order, it gains X Dodge tokens.</description>
     </rule>
     <rule id="69f0-0418-8196-8873" name="Fire Support" hidden="false">
-      <description>When another friendly unit performs a ranged attack, if you have a faceup order token, each model in your unit may add an eligible weapon to the attack pool. If you do, flip your order token facedown. Limit 1 Fire Support per attack pool.</description>
+      <description>After a unit with the Fire Support keyword is issued an Order, it gains a Standby token.</description>
     </rule>
     <rule id="9daa-4ccf-63bd-7524" name="Target X" hidden="false">
-      <description>After you are issued an order, gain X aim tokens.</description>
+      <description>After a unit with the Target X keyword is issued an Order, it gains X Aim tokens.</description>
     </rule>
     <rule id="cc37-290e-3d87-264b" name="Spur" hidden="false">
-      <description>While performing a move, you may gain 1 suppression token to increase your maximum speed by 1.</description>
+      <description>When a unit with the Spur keyword makes a Move, its controlling player may assign it 1 Suppression token. If they do, that unit increases its Speed by 1 during that Move to a maximum of 3. When a unit makes a Move, apply any effects that increase the unit&apos;s Speed before applying any effects that reduce that unit&apos;s Speed.</description>
     </rule>
     <rule id="2f36-2eeb-0407-8dd7" name="Critical X" hidden="false">
-      <description>While converting offensive surges, change up to X Surge results to Critical results.</description>
+      <description>When a unit attacks, if the Critical X keyword is in the Attack Pool, during the Convert Surges step it may convert up to X Attack Surge results to Critical results.</description>
     </rule>
     <rule id="44a2-37c3-fabc-610a" name="Soresu Mastery" hidden="false">
-      <description>While defending or using Guardian, if you spend a dodge token, you gain &quot;Defense Surge: Block&quot; and the attacker suffers 1 wound for each Surge rolled.</description>
+      <description>When a unit with Soresu Mastery defends against a Ranged attack, it may reroll all of its defense dice during the Reroll Defense Dice step. Additionally, when a unit with Soresu Mastery is using the Guardian X keyword, it may spend 1 Dodge token before converting any Defense Surge results. If it does, it rerolls all its defense dice before converting Defense Surge results. Each die cannot be rerolled more than once using Soresu Mastery.</description>
     </rule>
     <rule id="8870-40bf-20d5-ee78" name="Detachment: *Unit/Type Name*" hidden="false">
-      <description>During army building, a unit with the Detachment keyword can only be included in a player&apos;s army if a unit that has *Unit/Type Name* is also included in that army. Each Detachment unit requires a separate instance of *Unit/Type Name* in order to be included in an army. During the Deploy Units step of Setup, the unit leader of a Detachment unit must be placed at speed-1 and within height 1 of the unit leader of its corresponding instance of *Unit/Type Name* (this does not apply if the Detachment unit is deployed outside of the Deploy Units step, such as with the Rapid Reinforcements battle card). The Detachment unit does not have to be deployed within its deployment zone. </description>
+      <description>A unit with the Detachment keyword doesn&apos;t count against the maximum number of units of its Rank that can be included during Army Building. A unit with the Detachment keyword can be included in a player&apos;s army only if another unit that has the unit name or unit type specified and does not have the Detachment keyword is also included in that army. Each unit with the Detachment keyword needs its own matching specified unit. Additionally, during the Deploy in Prepared Positions step, a unit with the Detachment keyword gains the Infiltrate or Prepared Position keyword for the remainder of the game if its matching specified unit has that keyword.</description>
     </rule>
     <rule id="592a-de9e-fd7c-10fb" name="Fixed: Front, Rear" hidden="false">
-      <description>The defender must be inside your front or rear arc.</description>
+      <description>To add a weapon that has the Fixed: Front/Sides/Rear keyword to an Attack Pool, the defending unit must have at least 1 of its miniatures&apos; bases partially inside 1 of the specified firing arcs of the attacking miniature.</description>
     </rule>
     <rule id="3819-5fd8-788a-0752" name="Generator X" hidden="false">
-      <description>During the End Phase, flip X inactive shield tokens.</description>
+      <description>During the End Phase, a unit with the Generator X keyword may flip up to X inactive Shield tokens to their active side.</description>
     </rule>
     <rule id="6bb5-4031-b045-a080" name="Wheel Mode" hidden="false">
-      <description>When you activate, you may increase your maximum speed to 3. If you do, you gain Cover 2 and cannot attack or flip active shield tokens.</description>
+      <description>At the start of its Activation, a unit with the Wheel Mode keyword may change its Speed to 3 until the end of that Activation. If it does, until the end of the Round, it loses the Unconcerned keyword, gains the AI: Move and Cover 2 keywords, and cannot make attacks or flip its active Shield tokens. To indicate that a unit of Droidekas is using the Wheel Mode keyword, a player may replace their standing Droideka miniatures with ball-form Droideka miniatures, or simply mark the unit with a Wheel Mode token until the end of the Round. Players should use the ball-form Droideka miniatures only when the unit uses the Wheel Mode keyword and only for the duration of that Round. At the end of the Round, any ballform Droideka miniatures should be replaced with standing Droideka miniatures.</description>
     </rule>
     <rule id="8aa5-c537-ea38-418d" name="Block" hidden="false">
-      <description>While defending, if you spend a dodge token, you gain &quot;Defense Surge: Block&quot;.</description>
+      <description>When a unit with the Block keyword is defending, if it spends 1 or more Dodge tokens during the Apply Dodge and Cover step, it gains Defense Surge:Block until the end of that attack.</description>
     </rule>
     <rule id="f68b-2c74-aef3-17f4" name="Jedi Hunter" hidden="false">
-      <description>While attacking a unit that has a Force upgrade icon, you gain &quot;Attack Surge: Critical&quot;.</description>
+      <description>When a unit with the Jedi Hunter keyword attacks a unit with a Force upgrade icon on its upgrade bar, the attacking unit gains Attack Surge:Critical until the end of that attack.</description>
     </rule>
     <rule id="35a2-2f63-dc24-1c38" name="Scale" hidden="false">
-      <description>You ignore the effects of difficult terrain and do not suffer wounds while clambering.
-Either before or after you perform a move action, you may perform a free clamber action.</description>
+      <description>When a unit with the Scale keyword makes a Climb, it may Move a vertical distance up to height 2. When a unit that has the Scale keyword makes a Move, it does not reduce its Speed for moving out of, into, or through difficult terrain.</description>
     </rule>
     <rule id="bd82-f4e9-9b2e-c37b" name="Smoke X" hidden="false">
-      <description>Place X smoke tokens within range 1 and in line of sight of your unit leader.</description>
+      <description>A unit that has the Smoke X keyword can make the Smoke X action to place X Smoke tokens comepletely within Range 1 and in LOS of its unit leader. Smoke tokens cannot overlap any Objective, Advantage, Charge, or other Smoke tokens and must be placed on a flat surface.</description>
     </rule>
     <rule id="1883-2f15-80aa-b25d" name="Versatile" hidden="false">
-      <description>You can perform ranged attacks using this weapon while engaged.</description>
+      <description>Units can make Ranged attacks with a weapon that has the Versatile keyword even when they are Engaged. A weapon with the Versatile keyword that is both a Ranged weapon and a Melee weapon can be used to make either a Ranged attack or a Melee attack.</description>
     </rule>
     <rule id="1f57-513a-d262-486b" name="Disengage" hidden="false">
-      <description>You can perform moves while engaged with 1 unit.</description>
+      <description>A Trooper unit with the Disengage keyword can make Moves as normal while it is Engaged with a single enemy unit.</description>
     </rule>
     <rule id="a52a-4687-32b7-2633" name="Demoralize X" hidden="false">
-      <description>After your rally step, an enemy unit at range 1-2 gains up to X suppression tokens.</description>
+      <description>After a unit with the Demoralize X keyword Rallies, add up to X total Suppression tokens to enemy units within Range 2.</description>
     </rule>
     <rule id="6067-c530-5719-30af" name="Scatter" hidden="false">
-      <description>After a unit performs an attack using a weapon with the scatter keyword against a trooper unit whose minis are affixed to small bases, it may move any non-unit leader minis in the defending unit, following all the rules of cohesion, as if the defending unit leader had just performed a standard move.</description>
+      <description>When a unit attacks a small based Trooper unit with an Attack Pool that has the Scatter keyword, after the attack is resolved, it may place any of the non-unit leader miniatures in the defending unit in Cohesion.</description>
     </rule>
     <rule id="9d23-71b2-bbcb-c0f0" name="Makashi Mastery" hidden="false">
-      <description>While performing a melee attack, you may reduce the Pierce value of your melee weapon by 1. If you do, the defender cannot use Immune: Pierce.</description>
+      <description>When a unit with the Makashi Mastery keyword makes a Melee attack, it can reduce the Pierce X value of a weapon in the Attack Pool by 1 during the Choose Weapons and Gather Dice step. If it does, the defender cannot use the Immune: Melee Pierce, Immune: Pierce, and/or Impervious keywords during this attack.</description>
     </rule>
     <rule id="c7f9-a0c0-9188-838a" name="Barrage" hidden="false">
-      <description>If you do not use Arsenal during your activation, you can perform up to 2 attack actions.</description>
+      <description>If a unit has the Barrage keyword, it may make 2 Attack actions during its Activation instead of 1 if it does not use the Arsenal keyword during that Activation.</description>
     </rule>
     <rule id="c0c4-0f9c-4db8-73f9" name="Hover: Ground" hidden="false">
-      <description>You can reverse, strafe, and standby.
-You are treated as a ground vehicle by other units.</description>
+      <description>A unit with the Hover: Ground or Hover: Air X keyword can make Standby actions during the Make Actions step and can gain and spend Standby tokens. A unit with the Hover: Ground or Hover: Air X keyword can make Reverse Moves. A unit with the Hover: Ground keyword is treated as a Ground Vehicle by other units for all LOS purposes. For all other game effects, the unit is still treated as a Repulsor Vehicle. A unit with the Hover: Air X keyword ignores terrain of height X or lower while Moving and may end a movement overlapping such terrain.</description>
     </rule>
     <rule id="165d-f2f9-b815-f376" name="Field Commander" hidden="false">
-      <description>After a friendly neutral command card is played, you can be nominated as a commander.</description>
+      <description>During Army Building, an army that includes a unit with the Field Commander keyword may ignore the minimum Commander Rank requirement. If a player&apos;s army contains no Commander units during Setup but does contain a unit with the Field Commander keyword, that unit gains a Commander token. When a player reveals a non-Commander or Operative specific Command Card, they may nominate an allied unit with the Field Commander keyword to be Commander and issue Orders. A unit with the Field Commander keyword is not a Commander and only counts as one for the purposes of issuing Orders with a Command Card during the Command Phase. A unit with the Field Commander keyword counts as a Commander of that Faction or Affiliation when building a Command Hand. Additionally, if an allied Unit is within Range 3 of the unit with the Commander token and both units share the same Faction or Affiliation, that allied unit may treat the unit that has the Field Commander keyword as a Commander unit with a Courage of 2.</description>
     </rule>
     <rule id="bbaa-6329-e1b9-86fb" name="Scouting Party X" hidden="false">
-      <description>After you use Scout, choose up to X friendly troopers at Range 1-2. Each unit may perform a move with a speed equal to your Scout value.</description>
+      <description>During Setup, each unit with the Scouting Party keyword may choose up to X allied Trooper units that do not have the Scout keyword that share the same Faction or Affiliation as the Scouting Party unit. Each chosen unit gains the Scout X keyword, where X is the Scout X value of the unit with the Scouting Party keyword.</description>
     </rule>
     <rule id="4486-a71b-a40f-39af" name="Reliable X" hidden="false">
-      <description>At the start of the Activation Phase, gain X surge tokens.</description>
+      <description>A unit with the Reliable X keyword gains X surge tokens at the start of each Activation Phase.</description>
     </rule>
     <rule id="3de3-77ac-9e3a-aff6" name="Weak Point X: Rear, Sides" hidden="false">
-      <description>While defending, if the attacker&apos;s unit leader is inside your rear arc or either of your side arcs, the attack pool gains Impact X.</description>
+      <description>While a unit with the Weak Point X: Front/Rear/Sides keyword defends, if the attacking unit&apos;s unit leader is at least partially inside the specified firing arc of the defending unit, the Attack Pool gains the Impact X keyword where X is equal to the value of Weak Point X. While a unit with the Weak Point X keyword defends against a Ranged attack made by an area weapon, treat the Charge token or Advantage token as the attacking unit leader.</description>
     </rule>
     <rule id="3aa7-726e-44cb-c46f" name="Outmaneuver" hidden="false">
-      <description>You can spend dodge tokens to cancel Critical results.</description>
+      <description>A unit with the Outmaneuver keyword can spend Dodge tokens to cancel Critical results during the Apply Dodge and Cover step.</description>
     </rule>
     <rule id="3d21-4cbd-7b5a-69d4" name="Immune: Range 1 Weapons" hidden="false">
-      <description>You cannot be targeted by weapons that have a maximum range of 1.</description>
+      <description>An Attack Pool that is assigned to a unit with the Immune: Range 1 Weapons keyword cannot contain weapons with a maximum Range of Range 1.</description>
     </rule>
     <rule id="95e8-30da-54b0-8883" name="Secret Mission" hidden="false">
-      <description>Once per game, if you are within an enemy deployment zone, place 1 victory token on you.
-At the end of the game, if you have a victory token, gain that token.</description>
+      <description>At the beginning of each Command Phase, if a unit with the Secret Mission keyword is completely within enemy Territory, it gains 1 Secret Mission token. A unit may only ever gain 1 Secret Mission token per game. When scoring VP during the End Phase, if a player controls 1 or more units that have a Secret Mission token and are within enemy Territory, that player may choose to remove those unit&apos;s Secret Mission tokens from the game. That player scores 1 VP for each Secret Mission token removed in this way.</description>
     </rule>
     <rule id="e596-3a05-b8ce-331b" name="Grounded" hidden="false">
       <description>You cannot climb or clamber.</description>
     </rule>
     <rule id="9050-0d8e-979c-94ef" name="Inconspicuous" hidden="false">
-      <description>When an enemy unit performs an attack, if you have at least 1 suppression token, it must attack another unit, if able.
-During your Rally step, you may choose not to remove your suppression tokens.</description>
+      <description>While a unit with the Inconspicuous keyword has 1 or more Suppression tokens, attacking enemy units must target another unit, if able. When a unit with the Inconspicuous keyword Rallies, it may choose to not remove any number of Suppression tokens, including 0.</description>
     </rule>
     <rule id="e299-9d9f-3a98-06d8" name="Counterpart: *Unit Name*" hidden="false">
-      <description>While building an army, this mini must be added to a *Unit Name* unit.</description>
+      <description>Some units are faithful companions or subservient minions and are almost never seen apart from another unit. A unit like this has the Counterpart keyword and the miniature that represents this unit is always added to another unit. That miniature has a Counterpart Card and their miniature is a Counterpart miniature. The combined unit has the Rank, unit type, Defense, Courage, surge conversion chart, and Speed as shown on the Unit Card. • Sometimes, a Counterpart Card has a different unit type only for the purposes of equipping Upgrade Cards. • A unit leader in a combined unit can be assigned Wounds when it is the only non-Counterpart miniature in the unit. • When a Wound token would be assigned to a non- Counterpart miniature in a combined unit, that unit&apos;s controlling player may assign that Wound token to an undefeated Counterpart miniature in that unit instead. That Wound token must be assigned to a Counterpart miniature if it would cause the last non-Counterpart miniature in the unit to be defeated. • Upgrade Cards without weapons equipped to a Counterpart miniature are usable by the rest of the unit, unless the Counterpart miniature is defeated. • Upgrade Cards with weapons are usable only by the miniature which has them equipped. • The non-Counterpart miniatures in the unit use the Wound threshold on their Unit or Upgrade Card, the Counterpart miniature uses the Wound threshold on the Counterpart Card. • The combined unit has the keywords on both the Unit Card and the Counterpart Card. • Miniatures in a combined unit may only use weapons that are on their respective cards. If a combined unit gains a weapon from a Command Card, only the non-Counterpart miniature may use it. • If the Counterpart miniature is defeated, the unit loses any keywords, abilities, or effects on the Counterpart Card.</description>
     </rule>
     <rule id="9e27-98a3-38df-26b6" name="Calculate Odds" hidden="false">
-      <description>Choose a friendly trooper unit at range 1 and in line of sight. It gains 1 aim, 1 dodge, and 1 suppression token.</description>
+      <description>As a Card action, a unit with the Calculate Odds keyword can choose an allied Trooper unit within Range 2 and in LOS to gain 1 Aim token, 1 Dodge token, and 1 Suppression token.</description>
     </rule>
     <rule id="d95f-7467-0347-568b" name="Distract" hidden="false">
-      <description>Choose an enemy trooper unit at range 1-2 and in line of sight. Until the end of the round, you lose Inconspicuous and when that unit performs an attack, it must attack you, if able.</description>
+      <description>As a Free Card action, a unit with the Distract keyword can choose an enemy Trooper unit within Range 2 and in LOS. Until the end of the Round, when the chosen enemy unit makes an attack, it must attack the unit that used the Distract action, if able. While the chosen enemy unit is attacking the unit with the Distract keyword, each miniature in the enemy unit must choose an eligible weapon to contribute to an Attack Pool. The enemy unit may only declare additional defenders and form additional Attack Pools if, after first forming an Attack Pool with eligible weapons, there are still weapons usable by miniatures in the unit that were not eligible to be added to the first Attack Pool. When a unit uses the Distract keyword, if it has the Inconspicuous keyword, it loses Inconspicuous until the end of the Round.</description>
     </rule>
     <rule id="f39b-ba14-7a84-ae56" name="Poison X" hidden="false">
-      <description>A trooper wounded by an attack that includes this weapon gains X poison tokens.</description>
+      <description>A non-Droid Trooper Trooper unit that suffers 1 or more Wounds caused by an Attack Pool that has the Poison X keyword gains X Poison tokens. When a unit with 1 or more Poison tokens ends its Activation, it suffers 1 Wound for each Poison token it has, then removes all of its Poison tokens.</description>
     </rule>
     <rule id="8e81-d635-6a14-8e44" name="Immune: Enemy Effects" hidden="false">
-      <description>You ignore all enemy card effects and cannot be targeted by any enemy card effects. You are still affected by friendly card effects and battle card effects.</description>
+      <description>A unit with the Immune: Enemy Effects keyword ignores all enemy card effects and cannot be targeted by any enemy card effects.</description>
     </rule>
     <rule id="46a8-f06e-7ba8-afb3" name="Covert Ops" hidden="false">
       <description>When you deploy, you may treat your rank as Operative. If you do, you gain Infiltrate.</description>
@@ -20291,71 +20941,70 @@ During your Rally step, you may choose not to remove your suppression tokens.</d
       <description>When you deploy, you may swap any of your equipped upgrades with your set-aside upgrades.</description>
     </rule>
     <rule id="2622-a15a-021d-0a8c" name="Marksman" hidden="false">
-      <description>While attacking, you can spend aim tokens to improve attack die results.</description>
+      <description>A unit with the Marksman keyword may spend any number of Aim tokens after converting attack surges during the Convert Attack Surges step. For each Aim token spent in this way, instead of rerolling dice, change 1 Blank result to a Hit result, 1 Hit result to a Critical result, or spend 2 Aim tokens to change 1 Blank result to a Critical result.</description>
     </rule>
     <rule id="0165-2c78-7a77-1b82" name="Cycle" hidden="false">
-      <description>At the start of your activation, if you did not use this card, ready it.</description>
+      <description>At the end of a unit&apos;s Activation, ready each of its exhausted Upgrade Cards with the Cycle keyword that was not used during that Activation. Only using the weapon, keywords, or other card text on the card counts as using that Upgrade Card.</description>
     </rule>
     <rule id="7577-ca56-e0a4-0b4e" name="Beam X" hidden="false">
-      <description>After performing an attack with this weapon, you may perform up to X extra attacks using only this weapon. Each attack must be against an enemy unit that is in line of sight, has not already defended, and is at range 1 of the previous defender.</description>
+      <description>If a weapon with the Beam X keyword is in a unit&apos;s Attack Pool during the Declare Additional Defender step, that unit may declare up to X additional attacks, forming Attack Pools using only the weapon with the Beam X keyword, even though the weapon has already been added to an Attack Pool. These additional attacks do not generate further attacks. Each additional attack must be against a different defending unit that is within Range 1 of the last defending unit declared. These additional attacks must be in LOS of the attacking unit but do not have to be within the maximum Range of the weapon with the Beam X keyword. Units may not use the Beam X and Gunslinger keywords during the same attack.</description>
     </rule>
     <rule id="e7ef-a7f1-5c59-6f3b" name="Exemplar" hidden="false">
-      <description>Friendly units at range 1-2 and in line of sight can spend your green tokens.</description>
+      <description>While attacking or defending, if an allied unit is within Range 2 and in LOS of 1 or more allied units that have the Exemplar keyword and share the same Faction or Affiliation as that attacking or defending unit, that attacking or defending unit may spend an Aim, Dodge, or Surge token belonging to 1 of those units with Exemplar as if that attacking or defending unit had the token.</description>
     </rule>
     <rule id="c062-11dc-7b3e-d79f" name="Authorative" hidden="false">
       <description>When you would be issued an order, you may issue an order to a friendly unit at range 1-2 instead.</description>
     </rule>
     <rule id="3cf0-869d-474d-6f37" name="Lethal X" hidden="false">
-      <description>While attacking, spend up to X aim tokens to gain Pierce X.</description>
+      <description>When a unit makes an attack with an Attack Pool that has Lethal X, it can spend up to X Aim tokens during the Modify Attack Dice step. If it does, the Attack Pool gains Pierce 1 for each Aim token spent. The attacking unit may not reroll dice with any Aim tokens spent in this way.</description>
     </rule>
     <rule id="6174-bf0d-0783-05a8" name="Immobilize X" hidden="false">
-      <description>A unit wounded by an attack that includes this weapon gains X immobilize tokens.</description>
+      <description>A unit that suffers 1 or more Wounds from an attack that has Immobilize X in the Attack Pool gains X Immobilize tokens. When a unit makes a Move, its Speed is reduced by 1 for each Immobilize token it has. After modifiers, if a unit is Speed is 0 it cannot make Moves of any kind. At the end of a unit&apos;s Activation, it removes any Immobilize tokens that it has. When a unit makes a Move, apply any effects that increase the unit&apos;s Speed before applying any effects that reduce its Speed.</description>
     </rule>
     <rule id="9dd1-210e-b149-b2c0" name="Incognito" hidden="false">
-      <description>You cannot be attacked by enemy units beyond range 1, unless you have performed an attack or used an objective card during this game.</description>
+      <description>A unit with the Incognito keyword cannot be attacked by enemy units that are not within Range 1 of it, cannot Contest Objectives, and cannot provide Backup. If a unit with the Incognito keyword ever makes an attack or defends against an attack, it loses the Incognito keyword for the remainder of the game. Additionally, at the beginning of a unit with the Incognito keyword&apos;s Activation, it may choose to lose the Incognito keyword for the remainder of the game.</description>
     </rule>
     <rule id="5718-26da-aed5-de58" name="Long Shot X" hidden="false">
-      <description>While attacking, spend up to X aim tokens to increase this weapon&apos;s maximum range by 1 for each aim token spent.</description>
+      <description>When a unit with 1 or more weapons that have the Long Shot keyword makes an attack, before choosing an enemy unit to attack during the Declare Defender step, it may spend 1 Aim token to increase the maximum Range of each weapon with the Longshot keyword by 1 until the end of that attack sequence. The attacking unit may not reroll dice with any Aim tokens spent in this way. Only 1 Aim token may be spent in this way per attack sequence.</description>
     </rule>
     <rule id="875b-c67a-3256-8f1a" name="Small" hidden="false">
-      <description>While defending, when determining line of sight, cover, and range, ignore this mini.</description>
+      <description>A unit that has 1 or more Counterpart miniatures with the Small keyword cannot be targeted with attacks if the attacking unit leader only has LOS to the Counterpart miniature with the Small keyword</description>
     </rule>
     <rule id="d85e-627d-31dc-8df5" name="Retinue: *Unit Name*" hidden="false">
-      <description>At the start of the Activation Phase, if you are at range 1-2 of *Unit Name*, gain 1 aim or dodge token.</description>
+      <description>At the start of each Activation Phase, if a unit with the Retinue keyword is within Range 2 of another allied unit or unit type specified by the Retinue keyword, the unit with the Retinue keyword gains either 1 Aim or 1 Dodge token. Additionally, a unit with the Retinue keyword ignores the Corps Rank requirement to provide Backup to the specified unit.</description>
     </rule>
     <rule id="0d6b-c5f0-443a-a0fc" name="Equip: *Upgrade Name*" hidden="false">
-      <description>During army building, this unit must equip *Upgrade Name*.</description>
+      <description>During Army Building, if a player includes a unit with the Equip keyword, that unit must equip the upgrades listed after the keyword.</description>
     </rule>
     <rule id="e789-d963-2537-ba9b" name="Duelist" hidden="false">
-      <description>While performing a melee attack, if you spend an aim token, gain Pierce 1.
-While defending against a melee attack, if you spend a dodge token, gain Immune: Pierce.</description>
+      <description>When a unit with the Duelist keyword makes a Melee attack, if it spends 1 or more Aim tokens during the Reroll Attack Dice step, the Attack Pool gains the Pierce 1 weapon keyword. While a unit with the Duelist keyword defends against a Melee attack, if it spends at least 1 Dodge token during the Apply Dodge and Cover step, it gains the Immune: Pierce keyword. A unit with the Duelist keyword gets these effects in addition to the normal effects of spending Aim or Dodge tokens.</description>
     </rule>
     <rule id="1761-f3d6-1a45-e5c4" name="Sidearm: Ranged" hidden="false">
-      <description>While performing a ranged attack, this mini can only use the weapon on this card.</description>
+      <description>If an upgrade has the Sidearm: Melee keyword, the miniature added by that upgrade or that has that upgrade equipped cannot add any Melee weapons to Attack Pools other than any Melee weapons on the Upgrade Card with the Sidearm: Melee keyword. If an upgrade has the Sidearm: Ranged keyword, the miniature added by that upgrade or that has that upgrade equipped cannot add any Ranged weapons to Attack Pools other than any Ranged weapons on the Upgrade Card with the Sidearm: Ranged keyword.</description>
     </rule>
     <rule id="b79c-9dc8-3030-edf5" name="Flawed" hidden="false">
       <description>Add your flaw card to an opponent&apos;s hand.</description>
     </rule>
     <rule id="a34d-4d67-ab99-a8ca" name="Tempted" hidden="false">
-      <description>You can equip Force upgrades of any alignment.</description>
+      <description>If an allied unit is defeated by an enemy attack and the attacking unit is within Range 3 of a unit with the Tempted keyword, after the attack is resolved, that unit with the Tempted keyword may make a free Attack action or a Speed-2 Move ignoring difficult terrain. A unit may use the Tempted keyword only once each Round.</description>
     </rule>
     <rule id="77da-36c3-3fe7-0830" name="Djem So Mastery" hidden="false">
-      <description>While defending, if you spend a dodge token, you gain &quot;Defense Surge: Block&quot;; if at least 1 Hit or Critical result was canceled, the attacker suffers 1 wound.</description>
+      <description>When a unit with the Djem So Mastery keyword defends against a Melee attack, during the Compare Results step, the attacking unit suffers 1 Wound if the attack roll contains 1 or more Blank results.</description>
     </rule>
     <rule id="9ca2-252c-19ee-1c48" name="Juyo Mastery" hidden="false">
-      <description>While you are wounded, you can perform 1 additional action during your activation. Limit 2 move actions.</description>
+      <description>While a unit with the Juyo Mastery keyword has 1 or more Wound tokens, it can make 1 additional action during its Make Actions step. A unit with Juyo Mastery may only make 2 Move actions during its Activation, including free actions.</description>
     </rule>
     <rule id="a0ee-5634-1ac2-d283" name="Hover: Air X" hidden="false">
-      <description>While moving, ignore terrain height X or lower.</description>
+      <description>A unit with the Hover: Ground or Hover: Air X keyword can make Standby actions during the Make Actions step and can gain and spend Standby tokens. A unit with the Hover: Ground or Hover: Air X keyword can make Reverse Moves. A unit with the Hover: Ground keyword is treated as a Ground Vehicle by other units for all LOS purposes. For all other game effects, the unit is still treated as a Repulsor Vehicle. A unit with the Hover: Air X keyword ignores terrain of height X or lower while Moving and may end a movement overlapping such terrain.</description>
     </rule>
     <rule id="91e1-6a35-58cd-701b" name="Observe X" hidden="false">
-      <description>Choose an enemy unit at range 1-3 and in line of sight. It gains X observation tokens.</description>
+      <description>As a Card action, a unit with the Observe X keyword can choose an enemy unit within Range 3 and in LOS. The chosen enemy unit gains X Observation tokens. Observation tokens are removed during the Remove Tokens step of the End Phase. When an allied unit makes an attack, during the Reroll Attack Dice step it may spend any number of Observation tokens that belong to the defending unit. The attacking unit rerolls 1 attack die for each Observation token spent in this way. Observation tokens are spent 1 at a time, and the same die can be rerolled multiple times by spending subsequent Observation tokens or Aim tokens. An attacking unit may spend Aim tokens and Observation tokens in any order.</description>
     </rule>
     <rule id="bc35-e8ee-5f31-74bc" name="Bolster X" hidden="false">
-      <description>Choose up to X friendly units at range 1. Each chosen unit gains a surge token.</description>
+      <description>As a Card action, a unit with the Bolster X keyword can choose up to X allied units within Range 2 to each gain 1 Surge token.</description>
     </rule>
     <rule id="113b-1d4f-1fc6-1db9" name="Direct: *Unit Type*" hidden="false">
-      <description>During the Command Phase, you may issue an order to a friendly *Unit Type* at range 1-2.</description>
+      <description>During the Issue Orders step of the Command Phase, a unit with the Direct keyword may issue an Order to an allied unit within Range 2 that has the unit name or unit type specified.</description>
     </rule>
     <rule id="1b56-13f4-bf16-bd68" name="Contingencies X" hidden="false">
       <description>While building a command hand, set aside up to X extra cards as contingencies.</description>
@@ -20369,40 +21018,37 @@ While a unit is being transported, it cannot perform attacks or be the defender 
 While a unit is being transported, it cannot perform attacks or be the defender of an attack. </description>
     </rule>
     <rule id="e44d-97b1-fc83-5f01" name="Guidance" hidden="false">
-      <description>Choose another friendly trooper unit at range 1-2. That unit may perform a free non-attack action.</description>
+      <description>As a Card or Free Card action, a unit with the Guidance keyword may choose another allied unit of the specified unit type within Range 2. The chosen unit makes a free non-Attack action.</description>
     </rule>
     <rule id="72a7-e227-8b3a-8e8a" name="Ataru Mastery" hidden="false">
-      <description>You can perform up to 2 attack actions. After you perform an attack, gain 1 dodge token. After you defend, gain 1 aim token. While defending against a ranged attack, if you spend a dodge token, the attacker suffers 1 wound for each Surge result rolled.</description>
+      <description>A unit with the Ataru Mastery keyword can make up to 2 Attack actions during its Activation. When it attacks, it gains 1 Dodge token after the attack is resolved. When it defends, it gains 1 Aim token after the attack is resolved.</description>
     </rule>
     <rule id="6e3a-8e96-a01b-9573" name="Immune: Pierce" hidden="false">
-      <description>Pierce cannot be used against you.</description>
+      <description>While a unit with the Immune: Pierce keyword is defending, the attacker cannot use the Pierce X weapon keyword to cancel Block results on defense dice during the Modify Defense Dice step. While a unit with Immune: Pierce is using the Guardian X keyword, the attacking unit cannot use the Pierce X keyword to cancel Block results on defense dice rolled by that unit for the Guardian X keyword.</description>
     </rule>
     <rule id="af6c-48dc-e890-ce23" name="Strategize X" hidden="false">
-      <description>Gain 1 suppression token to choose up to X friendly units at range 1. Each chosen unit gains 1 aim and 1 dodge token.</description>
+      <description>When a unit makes the Strategize X action, it gains 1 Suppression token, then chooses X allied units within Range 2. Each chosen unit gains 1 Aim token and 1 Dodge token.</description>
     </rule>
     <rule id="c25e-c43b-2e6b-6241" name="Override X" hidden="false">
-      <description>When a friendly unit at range 1-X activates, you may gain 1 suppression token. If you do, that unit ignores AI during its activation.</description>
+      <description>When an allied unit with the AI keyword starts its Activation within Range 3 of 1 or more allied units that have the Override keyword, choose 1 of those units that has the Override keyword that is not Panicked. The chosen unit may gain 1 Suppression token. If it does, the activating unit ignores the AI keyword during its Activation.</description>
     </rule>
     <rule id="6740-1df6-ae5c-45f5" name="Reinforcements" hidden="false">
-      <description>You may deploy after all units without Reinforcements have deployed.</description>
+      <description>At the start of the End Phase of the first Round, a Unit with the Reinforcements keyword may make a Speed-1 Move.</description>
     </rule>
     <rule id="5e49-44ef-fc17-aca6" name="Divulge" hidden="false">
-      <description>Some command cards have the divulge keyword. These cards can be revealed at the start of the Phase or step stated after the divulge keyword on the command card.
-If a card is divulged in this manner, resolve the text that follows the divulge keyword.
-A card that is revealed in this way is not played, and is returned to that player’s command had at the end of the step in which it was divulged.</description>
+      <description>Some Command Cards have the Divulge keyword. Command Cards that contain the Divulge keyword are divided by a horizontal line, which serves to visually separate the Divulge keyword effect from the normal Command Card effect. Some Divulge cards have multiple options, in this case the player must pick 1. These cards can be revealed at the start of the phase or step indicated by the Divulge keyword. If a card is revealed in this manner, resolve the text that follows the Divulge keyword. A card that is revealed in this way is not played and is returned to that player&apos;s Command Hand at the end of the step in which it was Divulged. If a card with the Permanent keyword is Divulged, it does not return to a player&apos;s Command Hand and it remains in play. Players can Divulge as many Command Cards as they wish. If both players have Command Cards that are Divulged at the same time, the blue player can reveal their Command Card first. If this opportunity is declined, that card can no longer be Divulged.</description>
     </rule>
     <rule id="6143-be23-e486-59e7" name="Overrun X" hidden="false">
-      <description>During your activation, you can perform up to X overrun attacks.</description>
+      <description>A weapon with a red overrun Range icon (Overrun) is an Overrun weapon and can only be used during Overrun attacks. Overrun attacks are not Ranged or Melee attacks. A unit may make X Overrun attacks during its activation. A unit with an Overrun weapon can make an Overrun attack after it makes a Standard Move in which the Movement Tool or one of its miniatures&apos; bases overlapped an enemy miniature&apos;s base. After the Move is resolved, the unit with the Overrun weapon makes an attack against the unit it moved through, and ignores Range when making this attack. A unit can only form 1 Attack Pool when making an Overrun attack, and only weapons with the Overrun X keyword can be added to the Attack Pool. The Overrun weapon is only added to the Attack Pool once, even if there are multiple miniatures in the unit. If a unit can make multiple Overrun attacks during its Activation, it must make a separate Move through an enemy unit for each Overrun attack.</description>
     </rule>
     <rule id="fa89-b58c-fdbb-c725" name="Programmed" hidden="false">
-      <description>You must equip a Protocol upgrade card.</description>
+      <description>A unit with the Programmed keyword must equip at least 1 Programming Upgrade Card during Army Building.</description>
     </rule>
     <rule id="05aa-d4ac-3529-df25" name="Self-Destruct X" hidden="false">
-      <description>If you have at least X wound tokens, perform your self-destruct attack:
-&gt;&gt; Perform a ranged attack using the unit&apos;s self-destruct weapon against each unit (friendly and enemy) at range 1 and in line of sight of the unit performing the self-destruct attack. After performing all attacks, the unit performing the self-destruct attack is defeated and removed from play.</description>
+      <description>A unit may make a Self-Destruct X Card action only if it has a number of Wound tokens equal to or greater than half of its Wound threshold, rounding up. For each unit within Range 1 and in LOS, roll X black attack dice, completely resolving each roll before moving to the next unit. That unit suffers 1 Wound for each Attack Surge and Critical result rolled, then gains 1 Suppression token for each Hit result rolled. After all rolls are resolved, this unit is defeated.</description>
     </rule>
     <rule id="9cef-9d4f-e0db-2332" name="Compel: *Unit Type*" hidden="false">
-      <description>After another friendly *Unit Type* at range 1-2 rallies, if it is suppressed but not panicked, it may gain 1 suppression token to perform a free move action.</description>
+      <description>After another allied non-Droid Trooper unit of the matching Rank or unit type, if specified, within Range 2 of an allied unit with the Compel keyword Rallies and is Suppressed but not Panicked, at the start of its Make Actions step, it may gain 1 Suppression token to make a free Move action.</description>
     </rule>
     <rule id="7aa8-a452-e0db-b97c" name="Resupply" hidden="false">
       <description>Choose a condition token in base contact with your unit leader and flip it faceup if able; otherwise, remove it. Then, draw 2 supply cards; equip 1 and shuffle 1 into the supply deck.</description>
@@ -20414,16 +21060,169 @@ A card that is revealed in this way is not played, and is returned to that playe
       <description>Flip one of your claimed objective tokens to its unclaimed side.</description>
     </rule>
     <rule id="7ec0-dc5e-2218-4cd3" name="Detonate X: *Charge Type*" hidden="false">
-      <description>After a unit controlled by any player performs an action, each unit that has a weapon with the Detonate X: Charge Type keyword may detonate X friendly charge tokens of the specified type.</description>
+      <description>After a unit attacks, Moves, or makes an action, each unit that has a weapon with the Detonate X keyword may Detonate up to X allied Charge tokens (Advantage) of the specified type. If a token would detonate, that token detonates before any other abilities or effects that occur after a unit Moves or makes an action, with the exception of spending a Standby token which can be spent by a unit before the token detonates. If both players have units that could detonate Charge tokens, the player that does not control the unit that just made the attack, Move, or action may use their unit&apos;s Detonate X keyword first. When a token detonates, make a separate attack against each unit, allied and enemy, that has LOS to the token and is in Range of the area weapon, using the surge conversion chart and weapon keywords on the card for the token being detonated. The detonating token is considered the attacking unit when making attacks, meaning that it cannot spend Aim tokens or modify attack dice, regardless of any abilities on the unit that placed the token. After a token detonates, remove it from the battlefield.</description>
     </rule>
     <rule id="2e83-fee9-358a-a8eb" name="Sabotage/Repair" hidden="false">
       <description>If you are in base contact with an objective token, either remove 1 wound token from it or place 1 wound token on it.</description>
     </rule>
     <rule id="182a-5fac-9f05-d5bd" name="AI: *Action*" hidden="false">
-      <description>During the Perform Actions step of a unit&apos;s activation, a unit with the AI: *Action* keyword must perform one of the actions list after AI as its first action if it does not have a faceup order token.</description>
+      <description>When a unit that has the AI keyword starts its Make Actions step, it must make 1 of the actions listed in its AI keyword if it does not have a faceup Order token and if 1 of the following conditions are met: •The unit is Suppressed but not Panicked. •The unit has a Vehicle Damage token. •The unit is a Vehicle unit and half or more of the miniatures it started the game with have been defeated. If the unit with the AI keyword cannot make any of its listed actions, it makes 1 fewer action during its Make Actions step.</description>
     </rule>
     <rule id="cd09-cd7a-8d02-605f" name="Area Weapon" hidden="false">
-      <description>Perform a separate ranged attack against each unit that is in line of sight and at the range indicated by the number on the range icon, even if the unit is engaged. This weapon cannot be in the same attack pool as another weapon.</description>
+      <description>A weapon with a yellow Range icon is an area weapon. When using an area weapon, make a separate attack against each unit, allied and enemy, that is in LOS and within the Range indicated by the number on the Range icon, even if that unit is Engaged. Attacks made by area weapons are always Ranged attacks. Area weapons can never be in an Attack Pool made by a unit and must always be the only weapon in an Attack Pool.</description>
+    </rule>
+    <rule id="6f78-71ba-022e-cb20" name="Advanced Targeting: *Unit Type* X" hidden="false">
+      <description>When a unit with the Advanced Targeting X keyword makes an attack against an enemy unit with the unit type listed, during the Form Attack Pool step, it may gain X Aim tokens. A unit that uses the Advanced Targeting X keyword may only form 1 Attack Pool and skips the Declare Additional Defender step of the attack sequence.</description>
+    </rule>
+    <rule id="9aac-049a-26f0-9625" name="Aid: *Affiliation/Unit Type*" hidden="false">
+      <description>Each time a unit with the Aid keyword would gain an Aim, Dodge, or Surge token, another allied unit of the Affiliation or unit type listed within Range 2 and in LOS may gain that token instead. If it does, the unit with the Aid keyword gains 1 Suppression token, if able.</description>
+    </rule>
+    <rule id="0676-13b9-f93f-fcfd" name="Allies of Convenience" hidden="false">
+      <description>Units with the Allies of Convenience keyword may issue Orders to allied Mercenary units regardless of Affiliation. Additionally, when building an army, players may include 1 extra Mercenary unit in their army regardless of Rank if there is at least 1 unit with the Allies of Convenience keyword, though they cannot take more units of a particular Rank than normally allowed.</description>
+    </rule>
+    <rule id="b0c1-e8e9-508e-5a9d" name="Anti-Materiel X" hidden="false">
+      <description>When a unit makes an attack that has the Anti-Materiel X keyword in the Attack Pool, if the defending unit is a Vehicle unit, upgrade X of that weapon&apos;s attack dice.</description>
+    </rule>
+    <rule id="9653-7ce6-d06a-e454" name="Anti-Personnel X" hidden="false">
+      <description>When a unit makes an attack that has the Anti-Personnel X keyword in the Attack Pool, if the defending unit is a Trooper unit, upgrade X of that weapon&apos;s attack dice.</description>
+    </rule>
+    <rule id="658c-94aa-918b-7193" name="Assault X" hidden="false">
+      <description>When a weapon with the Assault X keyword is added to an Attack Pool, if the defending unit is within Range 1 of the attacking unit&apos;s unit leader, you may upgrade X of that weapon&apos;s attack dice.</description>
+    </rule>
+    <rule id="0d93-7365-edab-22d8" name="Associate: *Unit Name*" hidden="false">
+      <description>During Army Building, a unit with the Associate keyword does not count its Rank towards the maximum Rank requirements for that Rank if a unit with the specified unit name is included in the same army.</description>
+    </rule>
+    <rule id="b402-f495-31c3-b290" name="Attack Run" hidden="false">
+      <description>At the start of its Activation, a unit with the Attack Run keyword may increase or decrease its Speed by 1 until the end of that Activation.</description>
+    </rule>
+    <rule id="6c68-d594-2fd5-029d" name="Bane Tokens" hidden="false">
+      <description>Cad Bane has a set of 3 unique Bane tokens that he can place on the battlefield. Bane tokens are double-sided, with a uniform back and 3 different images on the front, each linked to a unique effect. Bane tokens must be placed facedown on the battlefield and cannot overlap Objective or Advantage tokens. Bane tokens are enemy effects. Each player may only have 1 copy of each different Bane token on the battlefield at the same time. When an enemy miniature Moves, Deploys, or is placed within Range 1 of an enemy Bane token, if that miniature has LOS to the token, that Bane token is revealed. Miniatures can Move through but not overlap Bane tokens. When a Bane token is revealed, it has 1 of the following effects: Here I Am: If Cad Bane is not on the battlefield and is not defeated, his Here I Am token is replaced by his miniature. Then, Cad Bane issues himself an Order. If Cad Bane is on the battlefield, his Here I Am token is • replaced by his miniature. Any tokens assigned to Cad Bane remain assigned to him. • If Cad Bane is defeated, the token is removed. • At the start of each Round, starting with the blue player, a player may reveal an allied Here I Am token and resolve it. Smoke and Mirrors: The token is removed. Kablamo!: The token detonates using the weapon profile on Cad Bane&apos;s I Make the Rules Now Command Card, then the token is removed.</description>
+    </rule>
+    <rule id="8cd5-7c4e-4921-6e71" name="Cache" hidden="false">
+      <description>During Setup, a unit with an equipped Upgrade Card that has the Cache keyword places the listed token(s) on the card with the Cache keyword. The unit may spend those tokens, even if any miniatures added to the unit with that card are defeated.</description>
+    </rule>
+    <rule id="4a35-3365-422e-b413" name="Command Vehicle X" hidden="false">
+      <description>When an allied unit within Range 3 of a unit that has the Command Vehicle X keyword checks for Panic, if both units have the same Affiliation or Faction, the allied unit treats the unit that has the Command Vehicle X keyword as a Commander unit with a Courage value of X.</description>
+    </rule>
+    <rule id="9b46-10f6-0b3f-9a8e" name="Complete the Mission" hidden="false">
+      <description>During Setup, for each allied unit with the Complete the Mission keyword, place an allied Priority Mission token (Advantage) on the battlefield within Contested Territory. While a unit with the Complete the Mission keyword is within Range 1 of 1 or more allied Priority Mission tokens, that unit gains Defense Surge:Block. When a unit with the Complete the Mission keyword attacks an enemy unit within Range 1 of 1 or more allied Priority Mission tokens, the attacking unit&apos;s Attack Pool gains the Critical 2 keyword.</description>
+    </rule>
+    <rule id="f1ca-e4ea-e491-8d26" name="Death From Above" hidden="false">
+      <description>When a unit with the Death From Above keyword attacks, the defending unit cannot use Cover to cancel hit Hit results during the Apply Cover step if the attacking unit&apos;s unit leader is overlapping a piece of non-area terrain of greater height than any terrain the defending unit&apos;s unit leader is overlapping.</description>
+    </rule>
+    <rule id="9c32-2863-676e-a133" name="Divine Influence" hidden="false">
+      <description>Other allied[?e915] Trooper units gain Guardian 2: C-3PO while they are within Range 1 and in LOS of an allied C-3PO. While allied [?e915] Trooper units within Range 1 and in LOS of an allied C-3PO use Guardian X, they may cancel Critical results as if they were Hit results.</description>
+    </rule>
+    <rule id="6973-94c1-be1e-5bd5" name="Eyes on the Prize: *Keyword*" hidden="false">
+      <description>While a unit with the Eyes on the Prize keyword has its unit leader within Half-Range of 1 or more Objective tokens or is holding 1 or more Objective tokens, it has the listed keyword.</description>
+    </rule>
+    <rule id="a6ca-b306-df37-4b2e" name="Flexible Response X" hidden="false">
+      <description>During Army Building, a unit with the Flexible Response keyword must equip X Heavy Weapon upgrades.</description>
+    </rule>
+    <rule id="d707-5d74-54aa-b851" name="Graffiti Tokens" hidden="false">
+      <description>A Graffiti token (Advantage) represents a striking image or symbol painted onto the terrain of the battlefield. Graffiti tokens affect a unit&apos;s morale. Players should place the Graffiti token flat on a surface. During a unit&apos;s Rally step, it may roll 1 additional die if it has LOS to and is within Range 2 of an allied Graffiti token. If it has LOS and is within Range 2 of an enemy Graffiti token, it must roll 1 fewer die, to a minumum of 1. Graffiti tokens remain in play until the end of the game. Units may Move through and end a movement overlapping Graffiti tokens.</description>
+    </rule>
+    <rule id="1a48-7f00-1d6d-86a3" name="Hold the Line" hidden="false">
+      <description>While a unit with the Hold the Line keyword is engaged, it gains Attack Surge : Hit and Defense Surge : Block.</description>
+    </rule>
+    <rule id="8332-74b3-2ab1-4a40" name="Hunted" hidden="false">
+      <description>During Setup, if 1 or more enemy units have the Bounty keyword, each unit with the Hunted keyword gains 1 Bounty token.</description>
+    </rule>
+    <rule id="d58c-cff1-0ebb-5fb4" name="Independent: *Token* X/*Action*" hidden="false">
+      <description>At the start of the Activation Phase, if a unit with the Independent keyword does not have an Order token, that unit may gain X of the listed token(s) or make the listed action as a free action.</description>
+    </rule>
+    <rule id="d481-a95b-6a89-9678" name="Interrogate" hidden="false">
+      <description>During the Command Phase, if a player reveals a Command Card that belongs to a unit within Range 1 of 1 or more enemy units with the Interrogate keyword and there would be a tie for priority, treat that Command Card as having 1 more pip.</description>
+    </rule>
+    <rule id="aec0-b429-1373-28bd" name="I&apos;m Part of the Squad Too" hidden="false">
+      <description>A unit with the I&apos;m Part of the Squad Too keyword is Contesting an Objective token if its unit leader is within Range 1 of that Objective token instead of Half-Range.</description>
+    </rule>
+    <rule id="df98-a4d0-a497-e4e4" name="Jar&apos;Kai Mastery" hidden="false">
+      <description>When a unit with the Jar&apos;Kai Mastery keyword makes a Melee attack, it may spend any number of Dodge tokens after converting attack surges during the Convert Attack Surges step. For each Dodge token spent in this way, change a Blank result to a Hit result, a Hit result to a Critical result, or spend 2 Dodge tokens to change a Blank result to a Critical result.</description>
+    </rule>
+    <rule id="f9fb-703d-bad6-a556" name="Latent Power" hidden="false">
+      <description>When a unit with the Latent Power keyword ends its Activation, it may gain 1 Suppression token to roll 1 red defense die. If it does, on a Defense Surge result, choose an enemy unit within Range 1 of this miniature. The chosen unit gains 2 Suppression tokens and 2 Immobilize tokens. On a Blank result, remove 1 Wound or 1 Poison token from an allied non-Droid Trooper Trooper unit within Range 1 of this miniature.</description>
+    </rule>
+    <rule id="5c81-a54a-f050-6655" name="Mandalorians Are Stronger Together" hidden="false">
+      <description>When an allied unit with the Mandalorians Are Stronger Together keyword spends 1 or more Aim tokens during an attack, after the attack is resolved, it gains 1 Dodge token if it is within Range 2 of another allied unit with the Mandalorians Are Stronger Together keyword. When an allied unit with Mandalorians Are Stronger Together keyword spends 1 or more Dodge token during an attack, after the attack is resolved, it gains 1 Aim token if it is within Range 2 of another allied unit with the Mandalorians Are Stronger Together keyword.</description>
+    </rule>
+    <rule id="b66f-7bde-72eb-715b" name="Master Storyteller" hidden="false">
+      <description>As a Card action, a unit with the Master Storyteller keyword may choose up to X allied [?e915] units within Range 2, where X is the current Round number. Each chosen unit gains 2 Surge tokens.</description>
+    </rule>
+    <rule id="7d00-e11c-9182-fb03" name="Mechanized Infantry" hidden="false">
+      <description>At the start of the Activation Phase, each unit with the Mechanized Infantry keyword may choose a different allied vehicle unit within Range 2. If they do, the unit with the Mechanized Infantry keyword and each chosen unit gain 1 Aim token or 1 Dodge token.</description>
+    </rule>
+    <rule id="fc39-5442-d61a-df0b" name="Mercenary: *Faction*" hidden="false">
+      <description>A unit with the Mercenary: Faction keyword is a Mercenary unit. The Faction(s) specified by the Mercenary: Faction keyword can include that unit in an army as a Mercenary unit.</description>
+    </rule>
+    <rule id="74de-3aa5-b8f7-b805" name="Mobile" hidden="false">
+      <description>When a unit on notched bases with the Mobile keyword makes a move, it skips step 1 of the notched base movement section, rotating the unit leader&apos;s base. A unit with the Mobile keyword must make a free compulsory Move action at the start or end of its Make Actions step. A unit with the Mobile keyword cannot make Reverse Moves. If a unit with the Mobile keyword makes more than 1 noncompulsory Move action during its Activation, it may not claim Asset tokens that Activation. Additionally, a unit with the Mobile keyword that has claimed an Asset token can make only 1 non-compulsory Move action during its Activation.</description>
+    </rule>
+    <rule id="ad1c-4c7c-ab20-5abe" name="My Mood Is Based on Profit" hidden="false">
+      <description>Keywords and stats that have an X value on the Unit Card of a unit with the My Mood is Based on Profit keyword have an X value equal to the number of pips on the Command Card that unit&apos;s controlling player most recently played and revealed that Game, to a minimum of 1. If a player has not yet played and revealed a Command Card this Game, treat X as 1 instead.</description>
+    </rule>
+    <rule id="cdc9-4359-bca3-9f2c" name="One Step Ahead" hidden="false">
+      <description>If 1 or more allied units have the One Step Ahead keyword, during the Resolve Command Card Effects step, after revealing Command Cards but before resolving Command Card effects, if the number of pips on the revealed Command Cards do not match, 1 allied unit with the One Step Ahead keyword on the battlefield may make a Speed-1 Move. If the number of pips do match, and there is 1 or more allied units with the One Step Ahead keyword on the battlefield, choose an allied unit on the battlefield. The chosen unit may make a Speed-1 Move.</description>
+    </rule>
+    <rule id="77f9-dc82-884d-47f4" name="Overwhelm" hidden="false">
+      <description>When a unit attacks with an Attack Pool that has 1 or more weapons with the Overwhelm keyword, if it spends at least 1 Aim token during the Reroll Dice step, the defending unit gains 1 Suppression token during the Assign Suppression Token to Defender step.</description>
+    </rule>
+    <rule id="31e2-7fdb-d782-e514" name="Permanent" hidden="false">
+      <description>Some Command Cards have the Permanent keyword. Unlike ordinary Command Cards, these cards are not discarded from play during the End Phase and their effects persist as long as they are in play.</description>
+    </rule>
+    <rule id="4dec-4e6c-c37b-f786" name="Prepared Position" hidden="false">
+      <description>During the Deploy in Prepared Positions step of Setup, a unit with the Prepared Position keyword may Deploy by placing the unit leader of that unit completely within allied Territory. Then the remaining miniatures in that unit are placed in Cohesion with their unit leader and within allied Territory. That unit then gains 1 Dodge token. Miniatures cannot overlap impassable terrain when they are placed using Prepared Position.</description>
+    </rule>
+    <rule id="8ac9-adaa-a0d7-6c0e" name="Primitive" hidden="false">
+      <description>When a unit attacks, if its Attack Pool has the Primitive keyword and the defending unit has the Armor X keyword, after resolving any instances of the Impact X keyword during the Modify Attack Dice step, the attacking unit must modify all Critical results to Hit results.</description>
+    </rule>
+    <rule id="60a5-f1dd-ab5d-6183" name="Ruthless" hidden="false">
+      <description>When an allied Corps Trooper unit with a faceup Order token starts its Activation within Range 2 and in LOS of a unit with the Ruthless keyword, that allied unit may suffer 1 Wound to make 1 free action.</description>
+    </rule>
+    <rule id="62ae-479b-f470-346f" name="Self-Preservation" hidden="false">
+      <description>A unit with the Self-Preservation keyword cannot use the Courage of units that are not of the same Affiliation when checking for Panic.</description>
+    </rule>
+    <rule id="72eb-0168-8781-87ee" name="Shien Mastery" hidden="false">
+      <description>When a unit with the Shien Mastery keyword uses the Deflect keyword, the attacker suffers 1 Wound for each Defense Surge result in the defense roll instead of any other Wounds Deflect would cause. Additionally, when a unit with the Shien Mastery keyword is the defending unit of a Ranged attack, if it does not suffer Wounds from that attack, it does not gain Suppression tokens during the Assign Suppression Token to Defender step of that attack.</description>
+    </rule>
+    <rule id="371d-3d77-6b78-495d" name="Sniper Team" hidden="false">
+      <description>When a unit makes an attack during its Activation, if one of its Attack Pools contain only weapons that have the Sniper Team keyword, upgrade each of those weapon&apos;s attack dice if the unit meets the following requirements: • The unit has not made a Move during this Activation. • Each miniature in the attacking unit has LOS to 1 or more miniatures in the defending unit. If you upgrade any dice in this way, at the end of the Convert Attack Surges step for that Attack Pool, you may cancel all the attack dice in that Attack Pool and skip to the Assign Suppression Token to Defender step. If you do, and if 1 or more Critical results were canceled, the defending unit suffers 1 Wound.</description>
+    </rule>
+    <rule id="19bd-8788-b007-46aa" name="Special Issue: *Battle Force*" hidden="false">
+      <description>A unit with the Special Issue keyword can only be included in an army using the specified Battle Force.</description>
+    </rule>
+    <rule id="3671-273f-bb1d-b414" name="Swashbuckler" hidden="false">
+      <description>When a unit with the Swashbuckler keyword spends 1 or more Aim tokens during an Attack action, after the effect is resolved, it gains 1 Dodge token.</description>
+    </rule>
+    <rule id="c0b9-c95d-a362-66f9" name="This Is the Way" hidden="false">
+      <description>When an allied unit with the This is the Way keyword is issued an Order, choose up to X other allied units within Range 2 of that unit. Each chosen unit performs the Action listed by the unit that was issued the order&apos;s This is the Way keyword as a free action.</description>
+    </rule>
+    <rule id="6a34-ad9f-efac-f9db" name="Transport" hidden="false">
+      <description>During Setup, a unit with the Transport keyword may choose an allied Corps Trooper or Special Forces Trooper unit to transport. During the first Round&apos;s Issue Orders step, a unit with the Transport keyword may issue an Order to the chosen unit. If the chosen unit is undeployed when the unit with the Transport keyword Deploys, after the effect is resolved, the chosen unit Deploys by making a Speed-1 Move. Measure the start of this Move with both prongs of one side of the Movement Tool touching the base of the unit with the Transport keyword. A unit can make this Move regardless of its Speed. When the chosen unit Deploys in this way, the unit leader of that unit measures the vertical distance changed during that Move starting from the unit with the Transport keyword.</description>
+    </rule>
+    <rule id="0f60-51c8-423d-0929" name="Unconcerned" hidden="false">
+      <description>A unit with the Unconcerned keyword cannot benefit from Cover, and miniatures in the unit cannot be Repaired or Restored.</description>
+    </rule>
+    <rule id="c2c3-5fcd-7684-27d8" name="Unstoppable" hidden="false">
+      <description>A unit with the Unstoppable keyword is eligible to activate during the Activation Phase while it has 1 or fewer Order tokens. This unit may never have more than 1 faceup Order token. While this unit is not defeated, when its controlling player is creating their Order Pool, they add an additional Order token corresponding to this unit&apos;s Rank to their Order Pool.</description>
+    </rule>
+    <rule id="4f52-5b6a-558d-da92" name="Vaapad Mastery" hidden="false">
+      <description>When a unit with the Vaapad Mastery keyword attacks, before rolling dice, it adds 1 white attack die to the pool for each Wound token it has, to a maximum of 3. When a unit with the Vaapad Mastery keyword defends, before rolling dice it adds 1 white defense die to the pool for each Wound token it has, to a maximum of 3.</description>
+    </rule>
+    <rule id="e1a8-0f3e-2aa3-be28" name="Victory or Death" hidden="false">
+      <description>When an allied unit with the Victory or Death keyword suffers 1 or more Wounds from an enemy attack, after the attack is resolved, the allied unit may gain 1 Suppression token. If it does, it may gains 1 Aim token or 1 Dodge token.</description>
+    </rule>
+    <rule id="8613-7167-89d7-6ebe" name="We Fight for Our Family" hidden="false">
+      <description>When a unit with the We Fight for Our Family keyword makes an attack action, after the effect is resolved, choose another allied unit with the We Fight for Our family keyword within Range 2, if able. The chosen unit gains 1 Dodge token.</description>
+    </rule>
+    <rule id="2ba8-776b-ed26-8219" name="We&apos;re Not Regs" hidden="false">
+      <description>A unit with the We&apos;re Not Regs keyword cannot spend Green tokens on other Clone Trooper units, and other Clone Trooper units cannot spend this unit&apos;s Green tokens. Additionally, this unit cannot benefit from Backup.</description>
+    </rule>
+    <rule id="c8c5-d8cc-f537-7c76" name="Weighed Down" hidden="false">
+      <description>A unit with the Weighed Down keyword cannot use the Jump keyword while it is holding 1 or more Objective tokens,</description>
+    </rule>
+    <rule id="b82b-2e06-90b9-5b2b" name="Wound X" hidden="false">
+      <description>The first time a unit with the Wound X keyword enters play, that unit suffers X Wounds.</description>
     </rule>
   </sharedRules>
   <sharedInfoGroups>

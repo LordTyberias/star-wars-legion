@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="f0cc-03b7-70ca-2d40" name="Galactic Republic" revision="9" battleScribeVersion="2.03" authorName="Dr Lucky, JoshWeller" authorContact="Dr Lucky on the BGG or FFG forums, JoshWeller on Github" authorUrl="https://github.com/BSData/star-wars-legion" library="false" gameSystemId="bece-5df3-7e27-1c4d" gameSystemRevision="95" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
-    <entryLink id="cc29-e840-8201-48ed" name="Condition Cards" hidden="false" collective="false" import="true" targetId="274d-8bba-00e6-88cf" type="selectionEntry">
+    <entryLink id="cc29-e840-8201-48ed" name="Condition Cards" hidden="true" collective="false" import="true" targetId="274d-8bba-00e6-88cf" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="3c9c-a6af-01e5-165f" value="0.0">
           <conditions>
@@ -10,7 +10,7 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c9c-a6af-01e5-165f" type="min"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c9c-a6af-01e5-165f" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2644-5393-b579-3fb0" type="max"/>
       </constraints>
       <categoryLinks>
@@ -18,7 +18,7 @@
         <categoryLink id="ef33-117d-358f-30ea" name="Republic" hidden="false" targetId="e057-60b7-67f9-8d41" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="c219-7914-86a8-dca3" name="Deployment Cards" hidden="false" collective="false" import="true" targetId="1029-5e4f-678b-a9a9" type="selectionEntry">
+    <entryLink id="c219-7914-86a8-dca3" name="Deployment Cards" hidden="true" collective="false" import="true" targetId="1029-5e4f-678b-a9a9" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="a28b-ee8b-4015-2d6b" value="0.0">
           <conditions>
@@ -37,7 +37,7 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a28b-ee8b-4015-2d6b" type="min"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a28b-ee8b-4015-2d6b" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ca8-3827-18ad-96ce" type="max"/>
       </constraints>
       <categoryLinks>
@@ -45,7 +45,7 @@
         <categoryLink id="1c27-9350-95b5-edad" name="Republic" hidden="false" targetId="e057-60b7-67f9-8d41" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="e36d-2656-71fd-cb09" name="Objective Cards" hidden="false" collective="false" import="true" targetId="d52e-37ec-0ac6-ce3f" type="selectionEntry">
+    <entryLink id="e36d-2656-71fd-cb09" name="Objective Cards" hidden="true" collective="false" import="true" targetId="d52e-37ec-0ac6-ce3f" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="0ff8-deaf-4bdc-0562" value="0.0">
           <conditions>
@@ -55,7 +55,7 @@
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1564-a7c0-5b9d-7acc" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ff8-deaf-4bdc-0562" type="min"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ff8-deaf-4bdc-0562" type="min"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="eb18-ca65-3697-f76d" name="Battle Cards" hidden="false" targetId="b249-fbc6-5d4f-8f82" primary="true"/>

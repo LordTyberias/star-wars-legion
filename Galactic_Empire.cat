@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="df8a-dd7e-4d2b-f1f1" name="Galactic Empire" revision="19" battleScribeVersion="2.03" authorName="Dr Lucky, JoshWeller" authorContact="Dr Lucky on the BGG or FFG forums, JoshWeller on Github" authorUrl="https://github.com/BSData/star-wars-legion" library="false" gameSystemId="bece-5df3-7e27-1c4d" gameSystemRevision="95" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
-    <entryLink id="c87d-9bf5-8e68-ab94" name="Objective Cards" hidden="false" collective="false" import="true" targetId="d52e-37ec-0ac6-ce3f" type="selectionEntry">
+    <entryLink id="c87d-9bf5-8e68-ab94" name="Objective Cards" hidden="true" collective="false" import="true" targetId="d52e-37ec-0ac6-ce3f" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="e984-1a8a-7b6b-b526" value="0.0">
           <conditions>
@@ -10,7 +10,7 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e984-1a8a-7b6b-b526" type="min"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e984-1a8a-7b6b-b526" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b7cd-5842-38ae-6152" type="max"/>
       </constraints>
       <categoryLinks>
@@ -18,7 +18,7 @@
         <categoryLink id="aa6d-9dcc-04d3-7d91" name="Imperial" hidden="false" targetId="ef40-1f1b-5578-a7c3" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="6f41-cc20-f140-07ef" name="Condition Cards" hidden="false" collective="false" import="true" targetId="274d-8bba-00e6-88cf" type="selectionEntry">
+    <entryLink id="6f41-cc20-f140-07ef" name="Condition Cards" hidden="true" collective="false" import="true" targetId="274d-8bba-00e6-88cf" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="013f-069a-6216-afba" value="0.0">
           <conditions>
@@ -27,7 +27,7 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="013f-069a-6216-afba" type="min"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="013f-069a-6216-afba" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2711-a5cf-484c-dd19" type="max"/>
       </constraints>
       <categoryLinks>
@@ -35,7 +35,7 @@
         <categoryLink id="eba9-09ef-fad1-420b" name="Imperial" hidden="false" targetId="ef40-1f1b-5578-a7c3" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="a2d0-a633-8ca2-2e33" name="Deployment Cards" hidden="false" collective="false" import="true" targetId="1029-5e4f-678b-a9a9" type="selectionEntry">
+    <entryLink id="a2d0-a633-8ca2-2e33" name="Deployment Cards" hidden="true" collective="false" import="true" targetId="1029-5e4f-678b-a9a9" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="04f4-5d51-efe2-eab1" value="0.0">
           <conditions>
@@ -54,7 +54,7 @@
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="04f4-5d51-efe2-eab1" type="min"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="04f4-5d51-efe2-eab1" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4ce0-fbce-ad6c-e728" type="max"/>
       </constraints>
       <categoryLinks>
