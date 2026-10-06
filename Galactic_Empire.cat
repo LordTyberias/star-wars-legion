@@ -88,5 +88,11 @@
     <entryLink id="cc24-4d8e-947b-c5a0" name="Imperial Special Forces (Inferno Squad)" hidden="false" collective="false" import="true" targetId="9670-a5ef-c0f4-a8ed" type="selectionEntry"/>
     <entryLink id="9e3d-a274-672e-1e24" name="•Agent Kallus" hidden="false" collective="false" import="true" targetId="7869-877b-821d-3092" type="selectionEntry"/>
     <entryLink id="2fcf-027d-c596-204e" name="LAAT/le Patrol Transport" hidden="false" collective="false" import="true" targetId="9d72-ff48-535f-9984" type="selectionEntry"/>
+    <entryLink id="9b88-1fcf-f2ea-83e6" name="Stormtrooper Riot Squad" hidden="false" collective="false" import="true" targetId="cadc-00f6-2f2e-2edf" type="selectionEntry"/>
+    <entryLink id="0e5a-3fbf-fe70-3a81" name="Range Troopers" hidden="false" collective="false" import="true" targetId="21d0-54f7-9e7a-dcc4" type="selectionEntry"/>
+    <entryLink id="94ad-e026-4684-2979" name="Imperial Dark Troopers" hidden="false" collective="false" import="true" targetId="7df1-f285-b366-f9e6" type="selectionEntry"/>
+    <entryLink id="fcab-37f6-19f9-9e78" name="•Moff Gideon" hidden="false" collective="false" import="true" targetId="e23c-3acc-a041-7ce2" type="selectionEntry"/>
+    <entryLink id="d91a-c796-8ebd-cb68" name="•Fifth Brother" hidden="false" collective="false" import="true" targetId="a903-801a-4c5d-2c9c" type="selectionEntry"/>
+    <entryLink id="7e02-2c63-5ac0-01fa" name="•Seventh Sister" hidden="false" collective="false" import="true" targetId="09ca-c404-481a-b59a" type="selectionEntry"/>
   </entryLinks>
 </catalogue>
