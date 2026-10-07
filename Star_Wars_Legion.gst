@@ -27451,6 +27451,16 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7869-877b-821d-3092" type="atLeast"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a28a-87da-7eed-cb4c" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="676f-7100-c272-0ece" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7205-5c58-99e9-1e87" type="max"/>
@@ -27479,6 +27489,9 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <infoLink id="da59-3acd-e603-bc03" name="Sidearm: Ranged" hidden="false" targetId="1761-f3d6-1a45-e5c4" type="rule"/>
             <infoLink id="e7f9-cf6d-2b2e-8283" name="Long Shot X" hidden="false" targetId="5718-26da-aed5-de58" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="c039-6c68-c29a-fa71" name="Leader" hidden="false" targetId="a28a-87da-7eed-cb4c" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="28.0"/>
           </costs>
@@ -27543,6 +27556,16 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="09ca-c404-481a-b59a" type="atLeast"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a28a-87da-7eed-cb4c" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6a1f-7a02-05b3-037d" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3500-5bd6-fe59-6846" type="max"/>
@@ -27573,6 +27596,9 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <infoLink id="8578-be7c-cc60-f78d" name="Impact X" hidden="false" targetId="6da6-1112-3a36-33c2" type="rule"/>
             <infoLink id="9a71-b61b-4faf-3f64" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="855a-d25d-3051-e381" name="Leader" hidden="false" targetId="a28a-87da-7eed-cb4c" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="30.0"/>
           </costs>
@@ -27597,6 +27623,16 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <conditions>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a903-801a-4c5d-2c9c" type="atLeast"/>
               </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a28a-87da-7eed-cb4c" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d981-8706-6981-119a" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -27629,6 +27665,9 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <infoLink id="bcb1-c674-9978-63a8" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
             <infoLink id="4096-4d92-29af-1068" name="Ram X" hidden="false" targetId="ec20-8113-bafe-4a95" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="e165-ab54-8103-b9bd" name="Leader" hidden="false" targetId="a28a-87da-7eed-cb4c" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="32.0"/>
           </costs>
