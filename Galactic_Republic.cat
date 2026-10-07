@@ -88,5 +88,10 @@
     <entryLink id="5b81-c8e4-6de2-fbaf" name="•Clone Commandos (Delta Squad)" hidden="false" collective="false" import="true" targetId="2859-5f6f-b8f0-bf36" type="selectionEntry"/>
     <entryLink id="d06c-3a95-1ac6-22b8" name="•Clone Commander Cody" hidden="false" collective="false" import="true" targetId="e018-4675-fb49-b689" type="selectionEntry"/>
     <entryLink id="4df7-d600-782e-8868" name="•The Bad Batch" hidden="false" collective="false" import="true" targetId="6b32-bda5-3dbe-4954" type="selectionEntry"/>
+    <entryLink id="7a0c-01b6-5682-24fa" name="Swoop Bike Riders" hidden="false" collective="false" import="true" targetId="4927-d036-4631-c448" type="selectionEntry"/>
+    <entryLink id="525f-1c5a-4e98-5529" name="Pyke Syndicate Foot Soldiers" hidden="false" collective="false" import="true" targetId="b541-1410-3e30-9091" type="selectionEntry"/>
+    <entryLink id="a29c-994e-fee3-f0f7" name="Pyke Syndicate Capo" hidden="false" collective="false" import="true" targetId="400e-02d6-d6de-7bb4" type="selectionEntry"/>
+    <entryLink id="19f3-db18-6105-c3d4" name="Clan Kryze Veterans" hidden="false" collective="false" import="true" targetId="d47e-eff1-5d5b-80e2" type="selectionEntry"/>
+    <entryLink id="b395-4092-2799-2771" name="•Axe Woves" hidden="false" collective="false" import="true" targetId="5249-e2b1-30f5-76f2" type="selectionEntry"/>
   </entryLinks>
 </catalogue>

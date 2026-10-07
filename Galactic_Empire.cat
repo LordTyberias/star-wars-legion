@@ -94,5 +94,13 @@
     <entryLink id="fcab-37f6-19f9-9e78" name="•Moff Gideon" hidden="false" collective="false" import="true" targetId="e23c-3acc-a041-7ce2" type="selectionEntry"/>
     <entryLink id="d91a-c796-8ebd-cb68" name="•Fifth Brother" hidden="false" collective="false" import="true" targetId="a903-801a-4c5d-2c9c" type="selectionEntry"/>
     <entryLink id="7e02-2c63-5ac0-01fa" name="•Seventh Sister" hidden="false" collective="false" import="true" targetId="09ca-c404-481a-b59a" type="selectionEntry"/>
+    <entryLink id="7af1-be8f-f220-94b2" name="Pyke Syndicate Foot Soldiers" hidden="false" collective="false" import="true" targetId="b541-1410-3e30-9091" type="selectionEntry"/>
+    <entryLink id="6eaa-cdfa-433c-156d" name="Pyke Syndicate Capo" hidden="false" collective="false" import="true" targetId="400e-02d6-d6de-7bb4" type="selectionEntry"/>
+    <entryLink id="e701-9c7c-9117-980c" name="Black Sun Vigo" hidden="false" collective="false" import="true" targetId="90f2-6e05-4492-88fa" type="selectionEntry"/>
+    <entryLink id="5465-3924-5a7b-59a3" name="Black Sun Enforcers" hidden="false" collective="false" import="true" targetId="efe7-1722-7b78-70ea" type="selectionEntry"/>
+    <entryLink id="e833-c559-0331-e534" name="•Cad Bane" hidden="false" collective="false" import="true" targetId="ebbf-c933-8476-7a7d" type="selectionEntry"/>
+    <entryLink id="28ba-ad0c-4b6a-df8c" name="•IG-11" hidden="false" collective="false" import="true" targetId="893b-b198-c4fa-6648" type="selectionEntry"/>
+    <entryLink id="899f-13b5-e439-aed8" name="•IG-88" hidden="false" collective="false" import="true" targetId="6d6a-5c85-d886-ef74" type="selectionEntry"/>
+    <entryLink id="d2ea-5757-17a9-f31b" name="•Din Djarin" hidden="false" collective="false" import="true" targetId="19ca-06a3-5327-c82c" type="selectionEntry"/>
   </entryLinks>
 </catalogue>

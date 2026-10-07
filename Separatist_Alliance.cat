@@ -86,5 +86,10 @@
     <entryLink id="386f-3fb8-a2c5-1693" name="•Poggle the Lesser" hidden="false" collective="false" import="true" targetId="4e10-df99-14da-1f38" type="selectionEntry"/>
     <entryLink id="d49c-ba60-d019-1081" name="•Asajj Ventress" hidden="false" collective="false" import="true" targetId="1309-a949-ce10-a63d" type="selectionEntry"/>
     <entryLink id="30c1-f984-1899-d65c" name="•Sun Fac" hidden="false" collective="false" import="true" targetId="6990-8206-19a0-5af4" type="selectionEntry"/>
+    <entryLink id="54f6-bd61-e7f9-2143" name="Pyke Syndicate Foot Soldiers" hidden="false" collective="false" import="true" targetId="b541-1410-3e30-9091" type="selectionEntry"/>
+    <entryLink id="488e-5289-be1b-0e15" name="Pyke Syndicate Capo" hidden="false" collective="false" import="true" targetId="400e-02d6-d6de-7bb4" type="selectionEntry"/>
+    <entryLink id="bedb-ab7b-a13a-c7d4" name="Black Sun Vigo" hidden="false" collective="false" import="true" targetId="90f2-6e05-4492-88fa" type="selectionEntry"/>
+    <entryLink id="8403-4bb1-586e-7dfb" name="Black Sun Enforcers" hidden="false" collective="false" import="true" targetId="efe7-1722-7b78-70ea" type="selectionEntry"/>
+    <entryLink id="2c57-05cb-c250-80a5" name="•Bossk" hidden="false" collective="false" import="true" targetId="6343-17f7-33c3-08f2" type="selectionEntry"/>
   </entryLinks>
 </catalogue>
