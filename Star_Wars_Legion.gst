@@ -34056,12 +34056,12 @@ During the End Phase, roll 1 red defense die for each of your inactive shield to
     <rule id="3ca9-ac5e-80c1-3778" name="Tactical X" hidden="false">
       <description>When a unit with the Tactical X keyword makes a Standard Move as part of an action or free action, after the effect is resolved, it gains X Aim tokens.</description>
     </rule>
-    <rule id="3c45-d376-201b-e8f2" name="Transport X: Open" hidden="false">
+    <rule id="3c45-d376-201b-e8f2" name="Transport X: Open" hidden="true">
       <description>You may transport X friendly trooper units.
 While a unit is being transported, it can perform most actions and an be the target of an attack.
 A unit that is being transported is treated as though it has heavy cover. This cover can be reduced as normal. </description>
     </rule>
-    <rule id="9826-2504-d91b-4629" name="Light Transport X: Open" hidden="false">
+    <rule id="9826-2504-d91b-4629" name="Light Transport X: Open" hidden="true">
       <description>You may transport X friendly trooper units that consist of exactly 1 small base mini.
 While a unit is being transported, it can perform most actions and an be the target of an attack.
 A unit that is being transported is treated as though it has heavy cover. This cover can be reduced as normal. </description>
@@ -34171,7 +34171,7 @@ A unit that is being transported is treated as though it has heavy cover. This c
     <rule id="95e8-30da-54b0-8883" name="Secret Mission" hidden="false">
       <description>At the beginning of each Command Phase, if a unit with the Secret Mission keyword is completely within enemy Territory, it gains 1 Secret Mission token. A unit may only ever gain 1 Secret Mission token per game. When scoring VP during the End Phase, if a player controls 1 or more units that have a Secret Mission token and are within enemy Territory, that player may choose to remove those unit&apos;s Secret Mission tokens from the game. That player scores 1 VP for each Secret Mission token removed in this way.</description>
     </rule>
-    <rule id="e596-3a05-b8ce-331b" name="Grounded" hidden="false">
+    <rule id="e596-3a05-b8ce-331b" name="Grounded" hidden="true">
       <description>You cannot climb or clamber.</description>
     </rule>
     <rule id="9050-0d8e-979c-94ef" name="Inconspicuous" hidden="false">
@@ -34192,10 +34192,10 @@ A unit that is being transported is treated as though it has heavy cover. This c
     <rule id="8e81-d635-6a14-8e44" name="Immune: Enemy Effects" hidden="false">
       <description>A unit with the Immune: Enemy Effects keyword ignores all enemy card effects and cannot be targeted by any enemy card effects.</description>
     </rule>
-    <rule id="46a8-f06e-7ba8-afb3" name="Covert Ops" hidden="false">
+    <rule id="46a8-f06e-7ba8-afb3" name="Covert Ops" hidden="true">
       <description>When you deploy, you may treat your rank as Operative. If you do, you gain Infiltrate.</description>
     </rule>
-    <rule id="8d1b-8cf8-70d9-a90b" name="Loadout" hidden="false">
+    <rule id="8d1b-8cf8-70d9-a90b" name="Loadout" hidden="true">
       <description>When you deploy, you may swap any of your equipped upgrades with your set-aside upgrades.</description>
     </rule>
     <rule id="2622-a15a-021d-0a8c" name="Marksman" hidden="false">
@@ -34210,7 +34210,7 @@ A unit that is being transported is treated as though it has heavy cover. This c
     <rule id="e7ef-a7f1-5c59-6f3b" name="Exemplar" hidden="false">
       <description>While attacking or defending, if an allied unit is within Range 2 and in LOS of 1 or more allied units that have the Exemplar keyword and share the same Faction or Affiliation as that attacking or defending unit, that attacking or defending unit may spend an Aim, Dodge, or Surge token belonging to 1 of those units with Exemplar as if that attacking or defending unit had the token.</description>
     </rule>
-    <rule id="c062-11dc-7b3e-d79f" name="Authorative" hidden="false">
+    <rule id="c062-11dc-7b3e-d79f" name="Authorative" hidden="true">
       <description>When you would be issued an order, you may issue an order to a friendly unit at range 1-2 instead.</description>
     </rule>
     <rule id="3cf0-869d-474d-6f37" name="Lethal X" hidden="false">
@@ -34240,7 +34240,7 @@ A unit that is being transported is treated as though it has heavy cover. This c
     <rule id="1761-f3d6-1a45-e5c4" name="Sidearm: Ranged" hidden="false">
       <description>If an upgrade has the Sidearm: Melee keyword, the miniature added by that upgrade or that has that upgrade equipped cannot add any Melee weapons to Attack Pools other than any Melee weapons on the Upgrade Card with the Sidearm: Melee keyword. If an upgrade has the Sidearm: Ranged keyword, the miniature added by that upgrade or that has that upgrade equipped cannot add any Ranged weapons to Attack Pools other than any Ranged weapons on the Upgrade Card with the Sidearm: Ranged keyword.</description>
     </rule>
-    <rule id="b79c-9dc8-3030-edf5" name="Flawed" hidden="false">
+    <rule id="b79c-9dc8-3030-edf5" name="Flawed" hidden="true">
       <description>Add your flaw card to an opponent&apos;s hand.</description>
     </rule>
     <rule id="a34d-4d67-ab99-a8ca" name="Tempted" hidden="false">
@@ -34264,14 +34264,14 @@ A unit that is being transported is treated as though it has heavy cover. This c
     <rule id="113b-1d4f-1fc6-1db9" name="Direct: *Unit Type*" hidden="false">
       <description>During the Issue Orders step of the Command Phase, a unit with the Direct keyword may issue an Order to an allied unit within Range 2 that has the unit name or unit type specified.</description>
     </rule>
-    <rule id="1b56-13f4-bf16-bd68" name="Contingencies X" hidden="false">
+    <rule id="1b56-13f4-bf16-bd68" name="Contingencies X" hidden="true">
       <description>While building a command hand, set aside up to X extra cards as contingencies.</description>
     </rule>
-    <rule id="b154-2055-4123-682d" name="Transport X: Closed" hidden="false">
+    <rule id="b154-2055-4123-682d" name="Transport X: Closed" hidden="true">
       <description>You may transport X friendly trooper units.
 While a unit is being transported, it cannot perform attacks or be the defender of an attack. </description>
     </rule>
-    <rule id="c0fa-eee3-4f74-aada" name="Light Transport X: Closed" hidden="false">
+    <rule id="c0fa-eee3-4f74-aada" name="Light Transport X: Closed" hidden="true">
       <description>You may transport X friendly trooper units that consist of exactly 1 small base mini.
 While a unit is being transported, it cannot perform attacks or be the defender of an attack. </description>
     </rule>
@@ -34308,19 +34308,19 @@ While a unit is being transported, it cannot perform attacks or be the defender 
     <rule id="9cef-9d4f-e0db-2332" name="Compel: *Unit Type*" hidden="false">
       <description>After another allied non-Droid Trooper unit of the matching Rank or unit type, if specified, within Range 2 of an allied unit with the Compel keyword Rallies and is Suppressed but not Panicked, at the start of its Make Actions step, it may gain 1 Suppression token to make a free Move action.</description>
     </rule>
-    <rule id="7aa8-a452-e0db-b97c" name="Resupply" hidden="false">
+    <rule id="7aa8-a452-e0db-b97c" name="Resupply" hidden="true">
       <description>Choose a condition token in base contact with your unit leader and flip it faceup if able; otherwise, remove it. Then, draw 2 supply cards; equip 1 and shuffle 1 into the supply deck.</description>
     </rule>
-    <rule id="0967-d239-3e4f-cfa4" name="Claim" hidden="false">
+    <rule id="0967-d239-3e4f-cfa4" name="Claim" hidden="true">
       <description>Claim an objective token that is in base contact with your unit leader.</description>
     </rule>
-    <rule id="9a5b-f9e0-8acb-f53b" name="Drop" hidden="false">
+    <rule id="9a5b-f9e0-8acb-f53b" name="Drop" hidden="true">
       <description>Flip one of your claimed objective tokens to its unclaimed side.</description>
     </rule>
     <rule id="7ec0-dc5e-2218-4cd3" name="Detonate X: *Charge Type*" hidden="false">
       <description>After a unit attacks, Moves, or makes an action, each unit that has a weapon with the Detonate X keyword may Detonate up to X allied Charge tokens (Advantage) of the specified type. If a token would detonate, that token detonates before any other abilities or effects that occur after a unit Moves or makes an action, with the exception of spending a Standby token which can be spent by a unit before the token detonates. If both players have units that could detonate Charge tokens, the player that does not control the unit that just made the attack, Move, or action may use their unit&apos;s Detonate X keyword first. When a token detonates, make a separate attack against each unit, allied and enemy, that has LOS to the token and is in Range of the area weapon, using the surge conversion chart and weapon keywords on the card for the token being detonated. The detonating token is considered the attacking unit when making attacks, meaning that it cannot spend Aim tokens or modify attack dice, regardless of any abilities on the unit that placed the token. After a token detonates, remove it from the battlefield.</description>
     </rule>
-    <rule id="2e83-fee9-358a-a8eb" name="Sabotage/Repair" hidden="false">
+    <rule id="2e83-fee9-358a-a8eb" name="Sabotage/Repair" hidden="true">
       <description>If you are in base contact with an objective token, either remove 1 wound token from it or place 1 wound token on it.</description>
     </rule>
     <rule id="182a-5fac-9f05-d5bd" name="AI: *Action*" hidden="false">
@@ -34484,7 +34484,7 @@ While a unit is being transported, it cannot perform attacks or be the defender 
     </rule>
   </sharedRules>
   <sharedInfoGroups>
-    <infoGroup id="4767-0083-a5c9-a7be" name="Covert Ops" hidden="false">
+    <infoGroup id="4767-0083-a5c9-a7be" name="Covert Ops" hidden="true">
       <infoLinks>
         <infoLink id="c060-c3d5-2c48-34eb" name="Covert Ops" hidden="false" targetId="46a8-f06e-7ba8-afb3" type="rule"/>
         <infoLink id="0486-ddc0-a256-ad05" name="Infiltrate" hidden="false" targetId="ae26-c3d3-240e-2c73" type="rule"/>
