@@ -20677,6 +20677,9 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <modifiers>
             <modifier type="set" field="2505-fca4-a091-9364" value="4"/>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cc1f-90b0-3541-b2ff" type="min"/>
+          </constraints>
         </entryLink>
         <entryLink id="7865-0da0-85ae-6871" name="Counterpart" hidden="false" collective="false" import="true" targetId="a1b6-1a92-678f-fe19" type="selectionEntryGroup"/>
       </entryLinks>
@@ -28196,7 +28199,6 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6b32-bda5-3dbe-4954" type="notInstanceOf"/>
-                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a061-7174-2a23-fce0" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
