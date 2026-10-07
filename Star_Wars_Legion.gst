@@ -4484,7 +4484,7 @@ Divulge: Deploy Units Step: Place three Bane tokens on the battlefield beyond ra
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="129c-d4cc-1302-b713" name="•••Hero of the Clone Wars" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="129c-d4cc-1302-b713" name="•••Hero of the Clone Wars" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -9359,7 +9359,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="48.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8943-cb3d-8d0c-9a04" name="Phase I Clone Troopers" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="8943-cb3d-8d0c-9a04" name="Phase I Clone Troopers" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="337c-4338-977e-8f18" name="Phase I Clone Troopers" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
           <modifiers>
@@ -10822,7 +10822,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="100.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e7ff-aac0-8cce-fbfc" name="Phase II Clone Troopers" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="e7ff-aac0-8cce-fbfc" name="Phase II Clone Troopers" hidden="true" collective="false" import="true" type="unit">
       <profiles>
         <profile id="8209-46f7-3957-4ee0" name="Phase II Clone Troopers" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
           <modifiers>
@@ -16787,7 +16787,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="10.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1799-30e6-cdeb-2c1c" name="Phase I Clone Trooper" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="1799-30e6-cdeb-2c1c" name="Phase I Clone Trooper" hidden="true" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -16847,7 +16847,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="13.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="bbe8-2c18-867d-c3db" name="Phase II Clone Trooper" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="bbe8-2c18-867d-c3db" name="Phase II Clone Trooper" hidden="true" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -17038,7 +17038,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="8.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="fa1e-8170-6630-f443" name="Phase I Clone Captain" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="fa1e-8170-6630-f443" name="Phase I Clone Captain" hidden="true" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -17079,7 +17079,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="12.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="290e-4a83-8fd8-15b3" name="Phase I Clone Specialist" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="290e-4a83-8fd8-15b3" name="Phase I Clone Specialist" hidden="true" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -18291,7 +18291,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="28.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c308-c995-3915-2829" name="Z-6 Phase I Trooper" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="c308-c995-3915-2829" name="Z-6 Phase I Trooper" hidden="true" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -18344,7 +18344,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="22.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5502-27e3-e9a4-e274" name="DC-15 Phase I Trooper" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="5502-27e3-e9a4-e274" name="DC-15 Phase I Trooper" hidden="true" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -18453,7 +18453,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="28.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="03cb-2c82-1510-86e4" name="Z-6 Phase II Trooper" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="03cb-2c82-1510-86e4" name="Z-6 Phase II Trooper" hidden="true" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -18478,7 +18478,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="27.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3562-3cb4-8f76-9e31" name="RPS-6 Phase I Trooper" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="3562-3cb4-8f76-9e31" name="RPS-6 Phase I Trooper" hidden="true" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -18507,7 +18507,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="21.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8b1c-b538-9726-4140" name="DP-23 Phase I Trooper" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="8b1c-b538-9726-4140" name="DP-23 Phase I Trooper" hidden="true" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -18725,7 +18725,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="24.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1c0d-6b73-ccd8-bc2c" name="Phase II Mortar Trooper" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="1c0d-6b73-ccd8-bc2c" name="Phase II Mortar Trooper" hidden="true" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -22544,7 +22544,7 @@ During the End Phase, ready this card.</characteristic>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="39cd-e32c-a0ed-d122" name="Looted E-5 Blaster" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="39cd-e32c-a0ed-d122" name="Looted E-5 Blaster" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
