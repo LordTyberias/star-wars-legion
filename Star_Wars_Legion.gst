@@ -23003,9 +23003,9 @@ The first time 1 or more miniatures in each Wookiee Trooper unit are defeated ea
           <profiles>
             <profile id="2cf8-62cd-008b-25fe" name="Smoke Grenades" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">During this unit&apos;s Activation, you may discard this card. If you do, this unit makes a Smoke 1 action.</characteristic>
-                <characteristic name="Keywords" typeId="7559-cfee-de60-8256">&gt;&gt; Smoke 1</characteristic>
-                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">During this unit&apos;s Activation, you may expend this card. If you do, this unit makes a Free Card Action: Smoke 1 action.</characteristic>
+                <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Free Card Action: Smoke 1</characteristic>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">Expend</characteristic>
               </characteristics>
             </profile>
           </profiles>
