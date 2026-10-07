@@ -32530,7 +32530,7 @@ When defending against a melee attack, you gain Immune: Pierce.</characteristic>
                 <conditionGroup type="and">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
-                  <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e55-0081-b0dd-4062" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e55-0081-b0dd-4062" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
