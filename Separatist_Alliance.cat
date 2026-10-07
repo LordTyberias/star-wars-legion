@@ -81,10 +81,10 @@
     <entryLink id="ff8b-d6ba-cfbd-bb69" name="•Kalani" hidden="false" collective="false" import="true" targetId="c114-73b7-7652-b01a" type="selectionEntry"/>
     <entryLink id="6401-4a32-8241-dba8" name="DSD1 Dwarf Spider Droid" hidden="false" collective="false" import="true" targetId="40c2-4474-5a52-c1e9" type="selectionEntry"/>
 	<entryLink id="f70c-15cb-4a89-80fe" name="Persuader-class Tank Droid" hidden="false" collective="false" import="true" targetId="6f39-b46a-7530-7a50" type="selectionEntry"/>
-    <entryLink id="d49c-ba60-d019-1081" name="Geonosian Warriors (Soldiers of the Hive)" hidden="false" collective="false" import="true" targetId="1bc4-7414-1f31-24ea" type="selectionEntry"/>
-    <entryLink id="30c1-f984-1899-d65c" name="Aqua Droids" hidden="false" collective="false" import="true" targetId="8f76-e907-cf92-0709" type="selectionEntry"/>
-    <entryLink id="d945-1044-d055-2810" name="•Poggle the Lesser" hidden="false" collective="false" import="true" targetId="4e10-df99-14da-1f38" type="selectionEntry"/>
-    <entryLink id="667d-f9d5-14ad-ed30" name="•Asajj Ventress" hidden="false" collective="false" import="true" targetId="1309-a949-ce10-a63d" type="selectionEntry"/>
-    <entryLink id="7e83-ce6c-f0f9-23f5" name="•Sun Fac" hidden="false" collective="false" import="true" targetId="6990-8206-19a0-5af4" type="selectionEntry"/>
+    <entryLink id="b2ac-1373-7b49-cd0c" name="Geonosian Warriors (Soldiers of the Hive)" hidden="false" collective="false" import="true" targetId="1bc4-7414-1f31-24ea" type="selectionEntry"/>
+    <entryLink id="70e9-c528-1240-d02d" name="Aqua Droids" hidden="false" collective="false" import="true" targetId="8f76-e907-cf92-0709" type="selectionEntry"/>
+    <entryLink id="386f-3fb8-a2c5-1693" name="•Poggle the Lesser" hidden="false" collective="false" import="true" targetId="4e10-df99-14da-1f38" type="selectionEntry"/>
+    <entryLink id="d49c-ba60-d019-1081" name="•Asajj Ventress" hidden="false" collective="false" import="true" targetId="1309-a949-ce10-a63d" type="selectionEntry"/>
+    <entryLink id="30c1-f984-1899-d65c" name="•Sun Fac" hidden="false" collective="false" import="true" targetId="6990-8206-19a0-5af4" type="selectionEntry"/>
   </entryLinks>
 </catalogue>
