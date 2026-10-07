@@ -25536,6 +25536,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2af-ba7b-fb32-a122" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d37d-a6a9-36d1-bf47" type="notInstanceOf"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="or">
@@ -25572,6 +25573,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2af-ba7b-fb32-a122" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d37d-a6a9-36d1-bf47" type="notInstanceOf"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="or">
@@ -25799,6 +25801,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0f83-7e06-cecd-48c9" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f7a4-bec8-396e-5bd7" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -25902,6 +25905,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a672-8380-48cd-30a8" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13e5-b1cc-af4b-b33c" type="notInstanceOf"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="or">
@@ -26486,6 +26490,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2af-ba7b-fb32-a122" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d37d-a6a9-36d1-bf47" type="notInstanceOf"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="or">
@@ -26522,6 +26527,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2af-ba7b-fb32-a122" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d37d-a6a9-36d1-bf47" type="notInstanceOf"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="or">
@@ -29482,6 +29488,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1eb8-aa6b-6bec-9515" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="539c-12e3-9fc9-68fa" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -29823,6 +29830,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1eb8-aa6b-6bec-9515" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="539c-12e3-9fc9-68fa" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -31861,6 +31869,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e639-78c7-1647-af49" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9004-cf4d-ef4f-7d38" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -33094,6 +33103,7 @@ During the End Phase, roll 1 red defense die for each of your inactive shield to
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1eb8-aa6b-6bec-9515" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="539c-12e3-9fc9-68fa" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -33121,6 +33131,7 @@ During the End Phase, roll 1 red defense die for each of your inactive shield to
                   <conditions>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="976e-3faa-c0b8-56ba" type="notInstanceOf"/>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1eb8-aa6b-6bec-9515" type="notInstanceOf"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="539c-12e3-9fc9-68fa" type="notInstanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -33147,6 +33158,7 @@ During the End Phase, roll 1 red defense die for each of your inactive shield to
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1eb8-aa6b-6bec-9515" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="539c-12e3-9fc9-68fa" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -33171,6 +33183,7 @@ During the End Phase, roll 1 red defense die for each of your inactive shield to
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35be-285e-0012-cd11" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc3c-54d1-e666-e4e7" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -33201,6 +33214,7 @@ During the End Phase, roll 1 red defense die for each of your inactive shield to
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35be-285e-0012-cd11" type="notInstanceOf"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dc3c-54d1-e666-e4e7" type="notInstanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
