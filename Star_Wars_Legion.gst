@@ -3225,7 +3225,7 @@ The first time IG-11 declares an Attack action during his next Activation, he ma
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">At the start of the Activation Phase this Round, 1 Ewok Trooper unit that contains an Ewok Trapper miniature may make an attack using the weapon below.</characteristic>
                   </characteristics>
                 </profile>
-              <profile id="67d1-d56d-7297-d2b4" name="Log Trap" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+                <profile id="67d1-d56d-7297-d2b4" name="Log Trap" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
                   <characteristics>
                     <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-4</characteristic>
                     <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red x2, Black x3</characteristic>
@@ -32530,6 +32530,7 @@ When defending against a melee attack, you gain Immune: Pierce.</characteristic>
                 <conditionGroup type="and">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e55-0081-b0dd-4062" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
