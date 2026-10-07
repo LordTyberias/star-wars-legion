@@ -1681,10 +1681,10 @@
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1fec-0bba-182b-0a59" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eecc-6d16-a193-090f" type="max"/>
               </constraints>
               <profiles>
-                <profile id="faad-6657-7a09-ba9e" name="•Whipcord Launcher" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                <profile id="e13e-e888-9ecf-0569" name="•Whipcord Launcher" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Boba Fett</characteristic>
                     <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">Boba Fett</characteristic>
@@ -1694,7 +1694,7 @@ Free Card Action: Choose an enemy Trooper unit within Range 1 and in LOS. The ch
                 </profile>
               </profiles>
               <categoryLinks>
-                <categoryLink id="a59f-3f87-e772-e1ea" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+                <categoryLink id="3dea-14e1-b7e8-f02c" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
@@ -1923,17 +1923,17 @@ Once per round, when an enemy unit at range 1-2 and in line of sight of Jyn Erso
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0285-4f34-de41-dc6c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0fb8-175e-d53c-ec58" type="max"/>
               </constraints>
               <profiles>
-                <profile id="202d-580e-fe9e-82f6" name="•Merciless Munitions" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                <profile id="b0c1-1334-1cd1-9eb2" name="•Merciless Munitions" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Bossk</characteristic>
                     <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">Bossk</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">Permanent. During the Round this card is played, Bossk gains Card Action: Arm 1: Dioxis Charge. After Bossk makes this action, he may make a Speed-1 Move. Until the end of the Game, Bossk gains Detonate 1: Dioxis Charge. After a Trooper unit defends against a Dioxis Charge attack, that unit gains 1 Poison token. Do not discard this card from play.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="edf2-9df7-57e1-a30d" name="Dioxis Charge" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+                <profile id="e919-c719-22f0-5c33" name="Dioxis Charge" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
                   <characteristics>
                     <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1</characteristic>
                     <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red, Black</characteristic>
@@ -1943,11 +1943,13 @@ Once per round, when an enemy unit at range 1-2 and in line of sight of Jyn Erso
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="6297-afce-6a72-0f91" name="Blast" hidden="false" targetId="c8d6-c6c5-f2fe-daad" type="rule"/>
+                <infoLink id="ddf7-be7b-62d1-b9c1" name="Blast" hidden="false" targetId="c8d6-c6c5-f2fe-daad" type="rule"/>
                 <infoLink id="743c-9d92-6df4-9789" name="Critical X" hidden="false" targetId="2f36-2eeb-0407-8dd7" type="rule"/>
+                <infoLink id="6522-3d78-9246-5f26" name="Arm X: *Charge Type*" hidden="false" targetId="be08-2939-cc00-c2b9" type="rule"/>
+                <infoLink id="921c-a45a-3362-38c8" name="Detonate X: *Charge Type*" hidden="false" targetId="7ec0-dc5e-2218-4cd3" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="5570-4ecf-b4eb-6c9d" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+                <categoryLink id="5024-896b-a59f-d658" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
@@ -2280,10 +2282,10 @@ Once per round, when an enemy unit at range 1-2 and in line of sight of Jyn Erso
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e074-e050-6e36-536e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a0f0-3974-a357-62d3" type="max"/>
               </constraints>
               <profiles>
-                <profile id="4d60-bfb2-b228-71f8" name="•I'm Your Worst Nightmare" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                <profile id="9fd2-5cca-0efe-704c" name="•I'm Your Worst Nightmare" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Cad Bane</characteristic>
                     <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">Cad Bane</characteristic>
@@ -2291,8 +2293,11 @@ Once per round, when an enemy unit at range 1-2 and in line of sight of Jyn Erso
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="e3fd-10e6-434b-f85b" name="Uncanny Luck X" hidden="false" targetId="f0f1-1fc6-505b-877b" type="rule"/>
+              </infoLinks>
               <categoryLinks>
-                <categoryLink id="a6c0-f3cf-cbc2-c4f5" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+                <categoryLink id="02f3-751b-a7a8-d460" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
@@ -2982,7 +2987,7 @@ Otherwise, Boba Fett gains 1 Aim token and, until the end of the Round, increase
                 <profile id="417b-edc3-d204-cc1b" name="•Focused on the Kill" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">IG-88</characteristic>
-                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">Ig-88</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">IG-88</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">Permanent. When IG-88 makes an attack against a unit that has 1 or more Bounty tokens, the defending unit cannot spend tokens during that attack.
 IG-88 is not defeated when he is assigned Wound tokens equal to his Wound threshold. At the start of the End Phase, if IG-88 has a number of Wound tokens equal to or exceeding his Wound threshold, he is defeated.</characteristic>
                   </characteristics>
@@ -3010,7 +3015,7 @@ IG-88 is not defeated when he is assigned Wound tokens equal to his Wound thresh
                 <profile id="da6e-1a38-9f86-c43e" name="•Mechanical Carnage" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">IG-11</characteristic>
-                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">Ig-11</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">IG-11</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">IG-11 loses Gunslinger this Round.
 The first time IG-11 declares an Attack action during his next Activation, he makes 1 attack against each enemy unit within Range 2 and in LOS instead of attacking normally.</characteristic>
                   </characteristics>
@@ -3084,7 +3089,7 @@ The first time IG-11 declares an Attack action during his next Activation, he ma
                 <profile id="c9f3-2e09-cf21-d0a3" name="•Arboreal Assault" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Bright Tree Village</characteristic>
-                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">2 Ewok Trooper UNITS</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">2 Ewok Trooper Units</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">You must nominate an Ewok Commander. If you cannot nominate an Ewok Commander, you cannot play this card. When a Ewok Trooper unit is issued an Order with this card, its weapons gain Suppressive and Immobilize 1 until the end of the Round. Additionally, when an allied Special Forces unit makes an attack against an enemy unit that has a faceup Order token, after the attack is resolved, shuffle that Order token back into that player's Order Pool.</characteristic>
                   </characteristics>
                 </profile>
@@ -3161,7 +3166,7 @@ The first time IG-11 declares an Attack action during his next Activation, he ma
                 <profile id="7305-ac10-13d1-ac90" name="•No One Threatens Our Family" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Ursa Wren</characteristic>
-                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">1 Clan Wren Commander OR Clan Wren Operative</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">1 Clan Wren Commander or Clan Wren Operative</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">Allied Clan Wren Commander and Clan Wren Operative units gain Guardian 1: Clan Wren until the end of the Round. Additionally, when an allied Clan Wren unit uses Guardian X this Round, after the effect is resolved, choose an allied Clan Wren unit within Range 1 of that unit. The chosen unit gains 1 Aim token.</characteristic>
                   </characteristics>
                 </profile>
@@ -3575,10 +3580,10 @@ The first time IG-11 declares an Attack action during his next Activation, he ma
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a6b4-bcbb-4a14-e447" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae65-e0c7-9b38-b436" type="max"/>
               </constraints>
               <profiles>
-                <profile id="a1a4-a0f2-380b-191f" name="••Reptilian Rampage" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                <profile id="2dc6-9bb5-735b-d310" name="••Reptilian Rampage" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Bossk</characteristic>
                     <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">Bossk</characteristic>
@@ -3587,7 +3592,7 @@ The first time IG-11 declares an Attack action during his next Activation, he ma
                 </profile>
               </profiles>
               <categoryLinks>
-                <categoryLink id="39bb-3444-7f28-b0db" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+                <categoryLink id="86e2-1c06-766e-e2ea" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
@@ -3879,10 +3884,10 @@ The first time IG-11 declares an Attack action during his next Activation, he ma
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bebd-23fd-0707-7f18" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e661-701a-b1ed-fd39" type="max"/>
               </constraints>
               <profiles>
-                <profile id="3f7c-c495-ff85-6ad5" name="••I'm in Control" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                <profile id="d7c3-2473-960c-f2bf" name="••I'm in Control" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Cad Bane</characteristic>
                     <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">Cad Bane &amp; 1 Unit</characteristic>
@@ -3891,7 +3896,7 @@ The first time IG-11 declares an Attack action during his next Activation, he ma
                 </profile>
               </profiles>
               <categoryLinks>
-                <categoryLink id="6c64-deb1-fb43-dc83" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+                <categoryLink id="f10c-d023-034b-5154" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
@@ -4802,7 +4807,7 @@ Gar Saxon and allied Special Forces units gain Outmaneuver this Round.</characte
                 <profile id="9d0b-d01d-bec6-b6d4" name="••Independent Programming" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">IG-88</characteristic>
-                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">Ig-88</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">IG-88</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">Permanent. When IG-88 issues an Order to himself, he gains 1 Aim token.
 IG-88 gains Independent: Dodge 1.</characteristic>
                   </characteristics>
@@ -4936,7 +4941,7 @@ This Round, when Din Djarin makes an Attack action, after that Attack action is 
                 <profile id="13be-0ba4-11de-ae97" name="••Hiding in Plain Sight" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Bright Tree Village</characteristic>
-                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">2 Ewok Trooper UNITS</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">2 Ewok Trooper Units</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">You must nominate an Ewok Commander. If you cannot nominate an Ewok Commander, you cannot play this card. Units issued an Order with this card gain Inconspicuous this Round.</characteristic>
                   </characteristics>
                 </profile>
@@ -5013,7 +5018,7 @@ This Round, when Din Djarin makes an Attack action, after that Attack action is 
                 <profile id="e5f7-bba3-e842-a2ad" name="••Make the Impossible Possible" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Sabine Wren, Back in the Fold</characteristic>
-                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">Sabine Wren &amp; 1 Clan Wren UNIT</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">Sabine Wren &amp; 1 Clan Wren Unit</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">Sabine Wren has Steady this Round. This Round, Sabine Wren gains the following free action: Free Card Action: Place 1 allied Graffiti token within Range 1 and in LOS of Sabine Wren, touching a piece of non-area terrain.</characteristic>
                   </characteristics>
                 </profile>
@@ -5040,7 +5045,7 @@ This Round, when Din Djarin makes an Attack action, after that Attack action is 
                 <profile id="64c8-7a67-8e36-11e4" name="••Vengeful Strike" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Rook Kast</characteristic>
-                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">Rook Kast &amp; 1 Clan Saxon UNIT</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">Rook Kast &amp; 1 Clan Saxon Unit</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">At the start of the next Activation Phase, choose another allied Clan Saxon unit within Range 2 of Rook Kast, if able. Rook Kast and the chosen unit each gain 1 Standby token. This Round, when Rook Kast or the chosen unit spends or removes 1 or more Standby tokens, they gain 1 Aim token and 1 Dodge token.</characteristic>
                   </characteristics>
                 </profile>
@@ -5067,7 +5072,7 @@ This Round, when Din Djarin makes an Attack action, after that Attack action is 
                 <profile id="1bb2-6112-ec00-28ba" name="••Close Formation" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Clan Kryze Commander OR Clan Kryze Operative</characteristic>
-                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">2 Clan Kryze UNITS</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">2 Clan Kryze Units</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">This Round, while an allied Clan Kryze unit is within Range 1 of another allied Clan Kryze unit, those units gain Precise 1 and Outmaneuver.</characteristic>
                   </characteristics>
                 </profile>
@@ -5094,7 +5099,7 @@ This Round, when Din Djarin makes an Attack action, after that Attack action is 
                 <profile id="d4d0-c1c4-dc45-7668" name="••Out of the Shadows" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Children of the Watch Commander OR Children of the Watch Operative</characteristic>
-                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">2 Children of the Watch UNITS</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">2 Children of the Watch Units</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">This Round, each time an allied Children of the Watch unit makes an attack against a unit that has a faceup Order token, after the attack is resolved, that unit's controlling player shuffles that unit's Order token into their Order Pool, then the defending unit gains 1 Suppression token.
 ---
 Divulge: Resolve Setup Effects step. Choose up to 2 allied Children of the Watch units. The chosen units have Infiltrate this Game.</characteristic>
@@ -5354,17 +5359,17 @@ Divulge: Resolve Setup Effects step. Choose up to 2 allied Children of the Watch
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="487f-6ffd-00c0-f8f1" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f2c-93a4-b8c1-a244" type="max"/>
               </constraints>
               <profiles>
-                <profile id="58ba-55da-eefb-a04e" name="•••Z-6 Jetpack Rocket" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                <profile id="72a2-4eef-e0df-d9d7" name="•••Z-6 Jetpack Rocket" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Boba Fett</characteristic>
                     <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">Boba Fett</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">This Round, Boba Fett gains the weapon below during his Activation.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="4aa0-70e4-47a5-7e99" name="Z-6 Jetpack Rocket" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+                <profile id="6771-9668-b924-64e8" name="Z-6 Jetpack Rocket" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
                   <characteristics>
                     <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">3-4</characteristic>
                     <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red x3</characteristic>
@@ -5374,11 +5379,11 @@ Divulge: Resolve Setup Effects step. Choose up to 2 allied Children of the Watch
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="cff4-58b0-9dbc-4c7a" name="Blast" hidden="false" targetId="c8d6-c6c5-f2fe-daad" type="rule"/>
-                <infoLink id="acfc-2967-632d-9a55" name="Impact X" hidden="false" targetId="6da6-1112-3a36-33c2" type="rule"/>
+                <infoLink id="9719-cdfc-7dc9-ae72" name="Blast" hidden="false" targetId="c8d6-c6c5-f2fe-daad" type="rule"/>
+                <infoLink id="6017-477d-2eaa-a22a" name="Impact X" hidden="false" targetId="6da6-1112-3a36-33c2" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="2b3f-d071-b07d-c977" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+                <categoryLink id="15de-25eb-0786-fd36" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
@@ -5509,10 +5514,10 @@ When a friendly trooper unit with a faceup order token activates, during its act
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a2e2-ae5c-17d4-de7e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9e54-d356-f8dc-ea51" type="max"/>
               </constraints>
               <profiles>
-                <profile id="aff4-38e5-d2db-bb7e" name="•••Lying in Wait" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                <profile id="2cc9-a370-dbd8-0261" name="•••Lying in Wait" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Bossk</characteristic>
                     <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">Bossk</characteristic>
@@ -5520,8 +5525,11 @@ When a friendly trooper unit with a faceup order token activates, during its act
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="75ed-5920-b11f-49a8" name="Sharpshooter X" hidden="false" targetId="18d2-5e0e-d04e-f771" type="rule"/>
+              </infoLinks>
               <categoryLinks>
-                <categoryLink id="dbf0-73a3-ef6d-cfa3" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+                <categoryLink id="6f31-cee0-26e5-34bc" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
@@ -5812,10 +5820,10 @@ Divulge: Resolve Setup Effects step. Darth Vader gains Infiltrate this Game. Thi
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3140-7da9-ebde-0ce0" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="49fa-2196-4c0a-99ea" type="max"/>
               </constraints>
               <profiles>
-                <profile id="57fe-fd58-65c8-b1a7" name="•••I Make the Rules Now" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                <profile id="2520-31cf-c13f-6caa" name="•••I Make the Rules Now" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Cad Bane</characteristic>
                     <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">Cad Bane</characteristic>
@@ -5824,7 +5832,7 @@ Divulge: Resolve Setup Effects step. Darth Vader gains Infiltrate this Game. Thi
 Divulge: Resolve Setup Effects step. Place 3 Bane tokens on the battlefield not within Range 1 of enemy Territory. Cad Bane cannot Deploy or make any actions until an allied Here I Am token is revealed. This card must be selected during Round 1.</characteristic>
                   </characteristics>
                 </profile>
-                <profile id="af49-fa3d-51bc-a095" name="Booby Trap" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+                <profile id="bf25-d998-eee8-c263" name="Booby Trap" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
                   <characteristics>
                     <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1</characteristic>
                     <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red x2, Black x2</characteristic>
@@ -5834,13 +5842,14 @@ Divulge: Resolve Setup Effects step. Place 3 Bane tokens on the battlefield not 
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="c010-4552-05e7-b2dd" name="Blast" hidden="false" targetId="c8d6-c6c5-f2fe-daad" type="rule"/>
+                <infoLink id="7204-e7b6-9f50-df81" name="Blast" hidden="false" targetId="c8d6-c6c5-f2fe-daad" type="rule"/>
                 <infoLink id="83c6-bd6a-84da-a74d" name="Critical X" hidden="false" targetId="2f36-2eeb-0407-8dd7" type="rule"/>
-                <infoLink id="bdd0-e825-4ae4-e7d8" name="Impact X" hidden="false" targetId="6da6-1112-3a36-33c2" type="rule"/>
-                <infoLink id="7b89-1a87-b7b8-0c9d" name="Suppressive" hidden="false" targetId="c4ab-770e-5009-04ff" type="rule"/>
+                <infoLink id="ce7d-2cf2-48fb-0cd5" name="Impact X" hidden="false" targetId="6da6-1112-3a36-33c2" type="rule"/>
+                <infoLink id="64bf-247c-f041-2dbd" name="Suppressive" hidden="false" targetId="c4ab-770e-5009-04ff" type="rule"/>
+                <infoLink id="017f-c65c-6fa5-e412" name="Divulge" hidden="false" targetId="5e49-44ef-fc17-aca6" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="b20b-de27-66ec-0fbd" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+                <categoryLink id="2e3d-3622-ee06-8cba" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
@@ -6710,7 +6719,7 @@ Gar Saxon and allied Special Forces units gain Indomitable this Round.</characte
                 <profile id="0ece-e69a-81fc-2e69" name="•••Anti-Capture Protocols" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">IG-11</characteristic>
-                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">Ig-11</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">IG-11</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">When building a Command Hand, if your army includes IG-11, this card must be included.
 This Round, IG-11 gains Free Card Action: Self-Destruct 4 and must make a Free Card Action: Self-Destruct 4 action during his Activation, if able.</characteristic>
                   </characteristics>
@@ -6763,7 +6772,7 @@ Card Action: Choose up to 3 enemy units within Range 1 and in LOS. For each chos
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">The Ohnaka Gang</characteristic>
                     <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">3 Units</characteristic>
-                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">This Round, allied crossed-blades icon units have Eyes on the Prize: Low Profile and Nimble.</characteristic>
+                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">This Round, allied Raiders units have Eyes on the Prize: Low Profile and Nimble.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6785,7 +6794,7 @@ Card Action: Choose up to 3 enemy units within Range 1 and in LOS. For each chos
                 <profile id="5f42-5a5a-2747-a10e" name="•••For the Tribe" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Bright Tree Village</characteristic>
-                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">3 Ewok Trooper UNITS</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">3 Ewok Trooper Units</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">You must nominate an Ewok Commander. If you cannot nominate an Ewok Commander, you cannot play this card. Units issued an Order with this card gain Dauntless and Relentless this Round. When a unit is issued an Order with this card, it may make a Recover action.</characteristic>
                   </characteristics>
                 </profile>
@@ -6867,7 +6876,7 @@ Card Action: Choose up to 3 enemy units within Range 1 and in LOS. For each chos
                 <profile id="e52a-4851-fdb8-56ba" name="•••We Protect Our Own" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Clan Wren Commander OR Clan Wren Operative</characteristic>
-                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">3 Clan Wren UNITS</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">3 Clan Wren Units</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">When a unit is issued an Order with this card, it gains 1 Aim token or 1 Dodge token. This Round, when an allied Clan Wren unit spends 1 or more Aim tokens or Dodge tokens, after the effect is resolved, choose another allied Clan Wren unit within Range 2. The chosen unit gains 1 token of the same type.</characteristic>
                   </characteristics>
                 </profile>
@@ -6899,7 +6908,7 @@ Card Action: Choose up to 3 enemy units within Range 1 and in LOS. For each chos
                 <profile id="8927-1fcb-60c8-67ec" name="•••Death Before Defeat" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Clan Saxon Commander OR Clan Saxon Operative</characteristic>
-                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">3 Clan Saxon UNITS</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">3 Clan Saxon Units</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">When a unit is issued an Order with this card, it gains 1 Aim token or 1 Surge token. This Round, when an allied Clan Saxon unit makes a Melee attack, the Attack Pool gains Ram 1.</characteristic>
                   </characteristics>
                 </profile>
@@ -8462,13 +8471,13 @@ Card Action: Choose up to 3 enemy units within Range 1 and in LOS. For each chos
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="bb2d-7493-74a3-cb15" name=" Integrated Rockets" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6fb5-27cd-06db-9918" name=" Integrated Rockets" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a1e-0f92-2a63-fd39" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6f3b-c741-80aa-66f9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="82a2-0909-2767-c1aa" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e651-c333-475b-acbc" type="max"/>
           </constraints>
           <profiles>
-            <profile id="cc28-d1aa-f71f-92ae" name=" Integrated Rockets" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+            <profile id="4d98-2b9a-2f9c-ce79" name=" Integrated Rockets" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
               <characteristics>
                 <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-2</characteristic>
                 <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black x3</characteristic>
@@ -8478,62 +8487,20 @@ Card Action: Choose up to 3 enemy units within Range 1 and in LOS. For each chos
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="6f3c-9f2c-90c9-3876" name="Impact X" hidden="false" targetId="6da6-1112-3a36-33c2" type="rule"/>
+            <infoLink id="9584-9323-5d6b-39f3" name="Impact X" hidden="false" targetId="6da6-1112-3a36-33c2" type="rule"/>
             <infoLink id="e172-f4a4-f1d4-7233" name="Versatile" hidden="false" targetId="1883-2f15-80aa-b25d" type="rule"/>
           </infoLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="bb2d-ef20-4654-ff03" name=" EE-3 Carbine Rifle" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="dde5-cccd-e677-8b05" name=" EE-3 Carbine Rifle" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="006f-7a1a-7396-1f2d" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9831-bc7b-1a59-27e6" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="5e3d-9ea0-562f-f7d3" name=" EE-3 Carbine Rifle" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
-              <characteristics>
-                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-3</characteristic>
-                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black x2</characteristic>
-                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Pierce 1</characteristic>
-                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="b1c0-8a6a-8d0c-2e52" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6fb5-27cd-06db-9918" name=" Wrist Rocket" hidden="true" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e651-c333-475b-acbc" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="4d98-2b9a-2f9c-ce79" name=" Wrist Rocket" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
-              <characteristics>
-                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-2</characteristic>
-                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black x2</characteristic>
-                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Impact 1</characteristic>
-                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="9584-9323-5d6b-39f3" name="Impact X" hidden="false" targetId="6da6-1112-3a36-33c2" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="dde5-cccd-e677-8b05" name=" Fett&apos;s E-3 Carbine" hidden="true" collective="false" import="true" type="upgrade">
-          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c8d4-7037-7eee-3943" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="442b-4b2f-c2ea-b472" type="max"/>
           </constraints>
           <profiles>
-            <profile id="a429-a130-5ad8-bf6f" name=" Fett&apos;s E-3 Carbine" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+            <profile id="a429-a130-5ad8-bf6f" name=" EE-3 Carbine Rifle" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
               <characteristics>
                 <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-3</characteristic>
                 <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black x2</characteristic>
@@ -11125,7 +11092,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="0556-0598-b762-add1" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
+            <infoLink id="55ef-ed39-a61c-e7da" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
           </infoLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
@@ -11147,8 +11114,8 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="a6eb-e7aa-ad33-9009" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
-            <infoLink id="d7bd-c617-b6c9-cea8" name="Suppressive" hidden="false" targetId="c4ab-770e-5009-04ff" type="rule"/>
+            <infoLink id="2639-414d-c4fb-c12a" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
+            <infoLink id="5e96-a35e-8c6a-7085" name="Suppressive" hidden="false" targetId="c4ab-770e-5009-04ff" type="rule"/>
           </infoLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
@@ -14030,7 +13997,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="135d-4437-bbe7-3f13" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
+            <infoLink id="0dc6-4f15-5c85-85bf" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
           </infoLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
@@ -19806,6 +19773,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <entryLink id="8a43-789c-35a6-81a1" name="Comms" hidden="false" collective="false" import="true" targetId="bbf8-c77e-246a-d5c6" type="selectionEntryGroup"/>
         <entryLink id="23ea-184e-781e-e3fa" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup"/>
         <entryLink id="e67f-dfca-dc3a-60db" name="Programming" hidden="false" collective="false" import="true" targetId="1c9b-29ff-9d21-cdf5" type="selectionEntryGroup"/>
+        <entryLink id="680b-1d63-1bf3-185a" name="Counterpart" hidden="false" collective="false" import="true" targetId="a1b6-1a92-678f-fe19" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="105.0"/>
@@ -21778,11 +21746,11 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7323-498d-49f9-1e0a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f5a-ae88-7a4a-fe36" type="max"/>
             <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7ee8-31a9-f2d1-8985" type="max"/>
           </constraints>
           <profiles>
-            <profile id="102d-017b-b913-9f1f" name="••Personal Combat Shield" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
+            <profile id="48cb-ebaa-21ca-8d70" name="••Personal Combat Shield" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
                 <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains Shielded 1 and Recharge 1. During the End Phase, if this unit did not flip any active Shield tokens this Round, it may flip up to 1 of its inactive Shield tokens.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Shielded 1, Recharge 1</characteristic>
@@ -21791,8 +21759,8 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="b7f3-384f-8105-9f82" name="Shielded X" hidden="false" targetId="0515-3f69-586d-60d0" type="rule"/>
-            <infoLink id="2f13-66f8-9dac-3b3a" name="Recharge X" hidden="false" targetId="e453-4644-25ec-b759" type="rule"/>
+            <infoLink id="909d-e3e1-5469-87b4" name="Shielded X" hidden="false" targetId="0515-3f69-586d-60d0" type="rule"/>
+            <infoLink id="f042-5ffd-c693-59c2" name="Recharge X" hidden="false" targetId="e453-4644-25ec-b759" type="rule"/>
           </infoLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="10.0"/>
@@ -25872,10 +25840,10 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3f38-2a38-96f4-98e7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="69e3-6f52-1d03-bd53" type="max"/>
           </constraints>
           <profiles>
-            <profile id="5b46-3ca5-601a-33cd" name="Vibro Sword" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+            <profile id="4924-6b25-9a2d-15e6" name="Vibro Sword" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
               <characteristics>
                 <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee</characteristic>
                 <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red x2</characteristic>
@@ -25883,7 +25851,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
                 <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
               </characteristics>
             </profile>
-            <profile id="d3cc-7817-7b76-9df4" name="Beskad Duelist" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
+            <profile id="45dc-4e3a-149e-b43b" name="Beskad Duelist" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
                 <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Add 1 Beskad Duelist miniature. At the start of this unit's Activation, you may Exhaust this card. If you do, this unit gains Charge until the end of its Activation.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Charge</characteristic>
@@ -31324,6 +31292,11 @@ When defending against a melee attack, you gain Immune: Pierce.</characteristic>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0fac-950b-f1fb-4d34" type="atLeast"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="66fc-828d-8849-a6d8" type="max"/>
@@ -32013,6 +31986,14 @@ During the End Phase, roll 1 red defense die for each of your inactive shield to
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="19ca-06a3-5327-c82c" type="notInstanceOf"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="893b-b198-c4fa-6648" type="notInstanceOf"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4af6-5825-646e-f523" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
