@@ -66,20 +66,25 @@
     <entryLink id="b771-4265-8611-314d" name="Droidekas" hidden="false" collective="false" import="true" targetId="5623-5a88-7914-1441" type="selectionEntry"/>
     <entryLink id="26ff-e900-5cae-faab" name="•General Grievous" hidden="false" collective="false" import="true" targetId="78ba-e4fe-8cb3-7c8e" type="selectionEntry"/>
     <entryLink id="2d8b-0e3a-1d46-f1f9" name="B2 Super Battle Droids" hidden="false" collective="false" import="true" targetId="d745-571e-8ef8-3724" type="selectionEntry"/>
-    <entryLink id="bf18-c464-5085-df09" name="AAT Trade Federation Battle Tank" hidden="false" collective="false" import="true" targetId="a42e-0405-17d1-d9ab" type="selectionEntry"/>
+    <entryLink id="bf18-c464-5085-df09" name="AAT Battle Tank" hidden="false" collective="false" import="true" targetId="a42e-0405-17d1-d9ab" type="selectionEntry"/>
     <entryLink id="e0a2-0c31-8977-4f44" name="•Count Dooku" hidden="false" collective="false" import="true" targetId="87d3-a316-11b8-d706" type="selectionEntry"/>
     <entryLink id="a2e6-1fd8-7d56-bba9" name="•Cad Bane" hidden="false" collective="false" import="true" targetId="ebbf-c933-8476-7a7d" type="selectionEntry"/>
-    <entryLink id="fae8-5c1d-cda5-3ce8" name="BX-series Droid Commandos" hidden="false" collective="false" import="true" targetId="72b1-abe6-8b8d-0f36" type="selectionEntry"/>
-    <entryLink id="a15e-2903-03be-cbae" name="BX-series Droid Commandos (Strike Team)" hidden="false" collective="false" import="true" targetId="a4cb-c87b-a754-99f1" type="selectionEntry"/>
+    <entryLink id="fae8-5c1d-cda5-3ce8" name="BX-Series Droid Commandos" hidden="false" collective="false" import="true" targetId="72b1-abe6-8b8d-0f36" type="selectionEntry"/>
+    <entryLink id="a15e-2903-03be-cbae" name="BX-Series Droid Commandos (Strike Team)" hidden="false" collective="false" import="true" targetId="a4cb-c87b-a754-99f1" type="selectionEntry"/>
     <entryLink id="39ea-0b40-4a83-e61a" name="STAP Riders" hidden="false" collective="false" import="true" targetId="28f5-f446-716c-00f9" type="selectionEntry"/>
     <entryLink id="a09e-92f8-4e70-ad28" name="•Maul" hidden="false" collective="false" import="true" targetId="8773-cc1e-ca48-fc89" type="selectionEntry"/>
-    <entryLink id="05f8-4989-9028-107b" name="DRK-1 Sith Probe Droids" hidden="true" collective="false" import="true" targetId="8fab-8387-1ad1-e0cb" type="selectionEntry"/>
-    <entryLink id="284a-409f-c728-774e" name="T-series Tactical Droid" hidden="false" collective="false" import="true" targetId="efb2-3aa9-b123-8be5" type="selectionEntry"/>
+    <entryLink id="05f8-4989-9028-107b" name="DRK-1 Sith Probe Droids" hidden="false" collective="false" import="true" targetId="8fab-8387-1ad1-e0cb" type="selectionEntry"/>
+    <entryLink id="284a-409f-c728-774e" name="T-Series Tactical Droid" hidden="false" collective="false" import="true" targetId="efb2-3aa9-b123-8be5" type="selectionEntry"/>
     <entryLink id="2d29-7c47-f129-11a1" name="IG-100 MagnaGuard" hidden="false" collective="false" import="true" targetId="1ebf-a178-398b-24d0" type="selectionEntry"/>
     <entryLink id="f00a-2984-6142-5315" name="•Super Tactical Droid" hidden="true" collective="false" import="true" targetId="81e5-d57c-f6d2-48f4" type="selectionEntry"/>
-    <entryLink id="a5ca-3be4-dd8e-f759" name="•Super Tactical Droid (Kraken)" hidden="false" collective="false" import="true" targetId="5251-4c50-6611-76af" type="selectionEntry"/>
-    <entryLink id="ff8b-d6ba-cfbd-bb69" name="•Super Tactical Droid (Kalani)" hidden="false" collective="false" import="true" targetId="c114-73b7-7652-b01a" type="selectionEntry"/>
+    <entryLink id="a5ca-3be4-dd8e-f759" name="•Kraken" hidden="false" collective="false" import="true" targetId="5251-4c50-6611-76af" type="selectionEntry"/>
+    <entryLink id="ff8b-d6ba-cfbd-bb69" name="•Kalani" hidden="false" collective="false" import="true" targetId="c114-73b7-7652-b01a" type="selectionEntry"/>
     <entryLink id="6401-4a32-8241-dba8" name="DSD1 Dwarf Spider Droid" hidden="false" collective="false" import="true" targetId="40c2-4474-5a52-c1e9" type="selectionEntry"/>
-	<entryLink id="f70c-15cb-4a89-80fe" name="NR-N99 Persuader-Class Tank Droid" hidden="false" collective="false" import="true" targetId="6f39-b46a-7530-7a50" type="selectionEntry"/>
+	<entryLink id="f70c-15cb-4a89-80fe" name="Persuader-class Tank Droid" hidden="false" collective="false" import="true" targetId="6f39-b46a-7530-7a50" type="selectionEntry"/>
+    <entryLink id="d49c-ba60-d019-1081" name="Geonosian Warriors (Soldiers of the Hive)" hidden="false" collective="false" import="true" targetId="1bc4-7414-1f31-24ea" type="selectionEntry"/>
+    <entryLink id="30c1-f984-1899-d65c" name="Aqua Droids" hidden="false" collective="false" import="true" targetId="8f76-e907-cf92-0709" type="selectionEntry"/>
+    <entryLink id="d945-1044-d055-2810" name="•Poggle the Lesser" hidden="false" collective="false" import="true" targetId="4e10-df99-14da-1f38" type="selectionEntry"/>
+    <entryLink id="667d-f9d5-14ad-ed30" name="•Asajj Ventress" hidden="false" collective="false" import="true" targetId="1309-a949-ce10-a63d" type="selectionEntry"/>
+    <entryLink id="7e83-ce6c-f0f9-23f5" name="•Sun Fac" hidden="false" collective="false" import="true" targetId="6990-8206-19a0-5af4" type="selectionEntry"/>
   </entryLinks>
 </catalogue>
