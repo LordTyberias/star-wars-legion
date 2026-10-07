@@ -2364,7 +2364,7 @@ While Maul is engaged with an enemy unit, that unit cannot spend aim, dodge, sta
                 <profile id="fe6d-4f8a-5509-cacd" name="•Defiance" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Any Republic</characteristic>
-                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">1 Commander Unit or Operative Unit</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">1 Special Forces Unit or Support Unit</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">When an allied unit is issued an Order with this card, if a Commander Wookiee Trooper unit issued that Order, and if the Ordered unit has 1 or more Wound tokens or has had 1 or more of its miniatures be defeated, the Ordered unit gains 1 Aim token, 1 Dodge token, and 1 Surge token.</characteristic>
                   </characteristics>
                 </profile>
@@ -3311,7 +3311,7 @@ Divulge: Deploy Units Step. Maul gains Infiltrate. During the first round, Maul 
                 <profile id="cb18-d03d-c511-dd1d" name="••Air Support" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
                     <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Any Republic</characteristic>
-                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">1 Commander or 1 Special Forces Unit</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">1 Commander or 1 Heavy Unit</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">Once this Round, at the end of an allied Commander&apos;s Activation or an allied Field Commander unit&apos;s Activation, that unit may make an attack using the weapon below.</characteristic>
                   </characteristics>
                 </profile>
