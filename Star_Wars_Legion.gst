@@ -5071,7 +5071,7 @@ This Round, when Din Djarin makes an Attack action, after that Attack action is 
               <profiles>
                 <profile id="1bb2-6112-ec00-28ba" name="••Close Formation" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
-                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Clan Kryze Commander OR Clan Kryze Operative</characteristic>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Clan Kryze Commander or Clan Kryze Operative</characteristic>
                     <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">2 Clan Kryze Units</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">This Round, while an allied Clan Kryze unit is within Range 1 of another allied Clan Kryze unit, those units gain Precise 1 and Outmaneuver.</characteristic>
                   </characteristics>
@@ -5098,7 +5098,7 @@ This Round, when Din Djarin makes an Attack action, after that Attack action is 
               <profiles>
                 <profile id="d4d0-c1c4-dc45-7668" name="••Out of the Shadows" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
-                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Children of the Watch Commander OR Children of the Watch Operative</characteristic>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Children of the Watch Commander or Children of the Watch Operative</characteristic>
                     <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">2 Children of the Watch Units</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">This Round, each time an allied Children of the Watch unit makes an attack against a unit that has a faceup Order token, after the attack is resolved, that unit's controlling player shuffles that unit's Order token into their Order Pool, then the defending unit gains 1 Suppression token.
 ---
@@ -6875,7 +6875,7 @@ Card Action: Choose up to 3 enemy units within Range 1 and in LOS. For each chos
               <profiles>
                 <profile id="e52a-4851-fdb8-56ba" name="•••We Protect Our Own" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
-                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Clan Wren Commander OR Clan Wren Operative</characteristic>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Clan Wren Commander or Clan Wren Operative</characteristic>
                     <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">3 Clan Wren Units</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">When a unit is issued an Order with this card, it gains 1 Aim token or 1 Dodge token. This Round, when an allied Clan Wren unit spends 1 or more Aim tokens or Dodge tokens, after the effect is resolved, choose another allied Clan Wren unit within Range 2. The chosen unit gains 1 token of the same type.</characteristic>
                   </characteristics>
@@ -6907,7 +6907,7 @@ Card Action: Choose up to 3 enemy units within Range 1 and in LOS. For each chos
               <profiles>
                 <profile id="8927-1fcb-60c8-67ec" name="•••Death Before Defeat" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
-                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Clan Saxon Commander OR Clan Saxon Operative</characteristic>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Clan Saxon Commander or Clan Saxon Operative</characteristic>
                     <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">3 Clan Saxon Units</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">When a unit is issued an Order with this card, it gains 1 Aim token or 1 Surge token. This Round, when an allied Clan Saxon unit makes a Melee attack, the Attack Pool gains Ram 1.</characteristic>
                   </characteristics>
