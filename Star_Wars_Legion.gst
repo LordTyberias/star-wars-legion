@@ -136,6 +136,8 @@
     <categoryEntry id="7016-6dd5-7d93-d697" name="Affiliation: Children of the Watch" hidden="false"/>
     <categoryEntry id="0fac-950b-f1fb-4d34" name="Affiliation: Clan Wren" hidden="false"/>
     <categoryEntry id="9128-d0ad-28e7-51b5" name="Affiliation: Clan Saxon" hidden="false"/>
+    <categoryEntry id="4b05-2844-a676-2834" name="Battle Force" hidden="false"/>
+    <categoryEntry id="9c40-3043-b4dd-835e" name="Recon Battle Force" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="c9b1-e0bb-61ac-ce52" name=" Standard" hidden="false">
@@ -818,6 +820,7 @@
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8208-479f-946a-ebef" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9c40-3043-b4dd-835e" type="atLeast"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7aaa-8697-cf40-8b2b" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ea6d-d9e6-84ab-5b07" type="instanceOf"/>
               </conditions>
@@ -825,9 +828,14 @@
           </conditionGroups>
         </modifier>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8208-479f-946a-ebef" type="instanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8208-479f-946a-ebef" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9c40-3043-b4dd-835e" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -1479,6 +1487,149 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="64f5-b8ec-4981-57fd" type="max"/>
           </constraints>
           <selectionEntries>
+            <selectionEntry id="9f43-7204-1a88-6609" name="•Unrelenting Fire" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e66-8ddb-f5e8-9f3f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="559c-c50a-d5cc-cf53" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="938b-7b82-eac4-0849" name="•Unrelenting Fire" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                  <characteristics>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Blizzard Force</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">2 Units</characteristic>
+                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">This Round, each enemy unit cannot remove more than 1 Suppression token during its Rally step.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="4ed1-fc52-9e84-e926" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5f4a-7797-a64f-006f" name="•Drive Them Out" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2342-b7eb-1682-2f88" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0247-0b32-78ec-efef" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="e842-d487-9011-c990" name="•Drive Them Out" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                  <characteristics>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Tempest Force</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">1 Vehicle Unit</characteristic>
+                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">Allied Vehicles gain Demoralize 1 this Round. The first time an allied Vehicle that has a faceup Order token ends a Move within Range ½ of 1 or more enemy units this Round, choose 1 of those units. Roll 1 white defense die for each miniature in the chosen unit. The chosen unit suffers 1 Wound for every Defense Surge or Block result in the roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="7ce8-f5b8-dafa-1548" name="Demoralize X" hidden="false" targetId="a52a-4687-32b7-2633" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="949b-a289-691c-da62" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ddbc-eeca-3cf8-94fa" name="•Delaying Tactics" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="175b-b27f-3552-ff7f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1991-a8a8-c696-d583" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="12ed-69f8-4207-d1d2" name="•Delaying Tactics" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                  <characteristics>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Echo Base Defenders</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">1 Unit</characteristic>
+                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">At the end of this Command Phase, choose an opponent. The chosen opponent must choose 1 of their non-Commander units that has a faceup Order token, if able, and return that unit&apos;s Order token to their Order Pool.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="aec6-181f-5c43-5983" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="aca3-c248-478d-cc6f" name="•Sneak Attack" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d774-3e19-db9a-57cd" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ffcf-fd20-2468-5130" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="8cc1-b3c9-ada0-24bb" name="•Sneak Attack" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                  <characteristics>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">212th Attack Battalion</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">1 Unit</characteristic>
+                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">Divulge: Setup. Choose up to 2 Corps Clone Trooper units. Each chosen unit gains Infiltrate this game. Then, for each Special Forces unit in your army, choose a different Vehicle unit. Each chosen Vehicle unit gains Scout 1 this Game.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="ab29-9822-e9e4-6387" name="Divulge" hidden="false" targetId="5e49-44ef-fc17-aca6" type="rule"/>
+                <infoLink id="f5b9-7068-56e8-48b3" name="Infiltrate" hidden="false" targetId="ae26-c3d3-240e-2c73" type="rule"/>
+                <infoLink id="e262-b6fb-9b98-39ee" name="Scout X" hidden="false" targetId="7410-450a-1190-5b7e" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="874c-2f1d-66ba-e1c3" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="424b-7bc8-e516-327b" name="•AI Coordination" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="78ff-ebe6-34a8-1e42" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0e39-0660-3210-96aa" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="09c7-1d7f-0697-bad2" name="•AI Coordination" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                  <characteristics>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Separatist Invasion</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">1 Heavy or Support Unit</characteristic>
+                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">When a unit is issued an Order with this card, it gains 1 Standby token.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="58ab-671a-6108-fd0c" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
             <selectionEntry id="c5a9-2690-9728-f576" name="•Son of Skywalker" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
@@ -3057,7 +3208,11 @@ The first time IG-11 declares an Attack action during his next Activation, he ma
             </selectionEntry>
             <selectionEntry id="0d00-70b7-eaa5-a775" name="•Log Traps" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true"/>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ca9-0cc7-c0e3-244e" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bd76-f51b-f42e-b8e6" type="max"/>
@@ -3070,7 +3225,19 @@ The first time IG-11 declares an Attack action during his next Activation, he ma
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">At the start of the Activation Phase this Round, 1 Ewok Trooper unit that contains an Ewok Trapper miniature may make an attack using the weapon below.</characteristic>
                   </characteristics>
                 </profile>
+              <profile id="67d1-d56d-7297-d2b4" name="Log Trap" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-4</characteristic>
+                    <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red x2, Black x3</characteristic>
+                    <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Impact 4, Pierce 1</characteristic>
+                    <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+                  </characteristics>
+                </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="1e82-5e91-a085-f2cb" name="Impact X" hidden="false" targetId="6da6-1112-3a36-33c2" type="rule"/>
+                <infoLink id="0429-6092-4739-bc46" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="5afc-bd60-30d5-6e61" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
@@ -3080,7 +3247,11 @@ The first time IG-11 declares an Attack action during his next Activation, he ma
             </selectionEntry>
             <selectionEntry id="164d-08d0-9d9f-18a9" name="•Arboreal Assault" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true"/>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ca9-0cc7-c0e3-244e" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3d04-551a-a49a-204a" type="max"/>
@@ -3186,6 +3357,216 @@ The first time IG-11 declares an Attack action during his next Activation, he ma
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="693b-bec5-eac6-7664" type="max"/>
           </constraints>
           <selectionEntries>
+            <selectionEntry id="ae0c-dd29-9ce3-2de4" name="••Overwhelming Barrage" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e66-8ddb-f5e8-9f3f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="375a-dbff-987c-f020" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="da54-f3de-5806-567c" name="••Overwhelming Barrage" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                  <characteristics>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Blizzard Force</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">2 Units</characteristic>
+                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">Once this Round, at the end of an allied Commander unit&apos;s Activation, that unit may make an attack using the weapon below.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="56f9-2e4e-3cff-dbc6" name="Overwhelming Barrage" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">4+</characteristic>
+                    <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">White x4</characteristic>
+                    <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Beam 1, Blast, Critical 3, Immune: Deflect, Suppressive</characteristic>
+                    <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="51f1-4003-d57b-95e0" name="Beam X" hidden="false" targetId="7577-ca56-e0a4-0b4e" type="rule"/>
+                <infoLink id="acbd-2387-b38f-8668" name="Blast" hidden="false" targetId="c8d6-c6c5-f2fe-daad" type="rule"/>
+                <infoLink id="a4c7-0148-6719-5bac" name="Critical X" hidden="false" targetId="2f36-2eeb-0407-8dd7" type="rule"/>
+                <infoLink id="c7a1-d7c1-a673-7d2d" name="Immune: Deflect" hidden="false" targetId="b5ed-8da2-132d-54b2" type="rule"/>
+                <infoLink id="204c-6ccf-6863-1f90" name="Suppressive" hidden="false" targetId="c4ab-770e-5009-04ff" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="d049-da26-3e18-18a1" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1418-cb01-9f45-b7bf" name="••We Need Reinforcements" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2342-b7eb-1682-2f88" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9281-d1c3-11d7-412f" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="56ad-801b-7130-e8ea" name="••We Need Reinforcements" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                  <characteristics>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Tempest Force</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">2 Trooper Units</characteristic>
+                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">When a unit is issued an Order with this card, it gains Disengage this Round.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="d83c-41db-7cd5-3518" name="Disengage" hidden="false" targetId="1f57-513a-d262-486b" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="1ffc-bfb5-f09c-b57a" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9f9d-6a00-c8c7-6c92" name="••Courage of the Rebellion" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="175b-b27f-3552-ff7f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ab59-b560-3631-e8e6" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="ec1a-d454-489f-688a" name="••Courage of the Rebellion" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                  <characteristics>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Echo Base Defenders</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">2 Units</characteristic>
+                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">When an allied unit is issued an Order with this card, that unit may make a Recover action.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="7bef-2d07-433b-2499" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d09f-c05a-0fc8-a89f" name="••Recon Division" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d774-3e19-db9a-57cd" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf9d-ed20-6054-b2b4" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="7e56-09a7-b729-c969" name="••Recon Division" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                  <characteristics>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">212th Attack Battalion</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">2 Vehicles or Special Forces Units</characteristic>
+                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">This Round, each allied Trooper unit gains Card Action: Observe 1. Additionally, during the Remove Tokens step of the next End Phase, if an enemy unit with 1 or more Observation tokens has LOS to 1 or more allied units, the enemy unit does not remove any Observation tokens.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="9449-fc0e-ee9c-68c2" name="Observe X" hidden="false" targetId="91e1-6a35-58cd-701b" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="8cc5-eae9-15dc-20f7" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3080-6717-68c9-4bb4" name="•Lead from the Front" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2248-09e7-9d4a-006f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4735-2418-34f3-b512" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="9404-8f87-0484-1c6e" name="•Lead from the Front" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                  <characteristics>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">501st Legion</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">1 Commander Unit</characteristic>
+                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">When building a Command Hand, treat this card as though it has 2 pips. When an allied Commander is issued an Order with this card, choose up to 3 other allied units within Range 1 of that Commander unit. Each chosen unit gains 1 Aim token or 1 Dodge token.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="2e38-e4ed-8c8e-746c" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="98bf-ba81-6165-f241" name="••Tactical Planning" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2248-09e7-9d4a-006f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c38f-d3e0-a416-b771" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="303a-32a1-72fd-7334" name="••Tactical Planning" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                  <characteristics>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">501st Legion</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">2 Special Forces or Support Units</characteristic>
+                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">This Round, each time an allied Special Forces or Support unit makes an attack against a unit that has a faceup Order token, after the attack is resolved, shuffle that token back into its controlling player&apos;s Order Pool.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="be0f-06ec-f07d-bacb" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6aa8-0137-e85d-2871" name="••Unrelenting Assault" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="78ff-ebe6-34a8-1e42" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="423a-b9cf-c016-691c" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="3c90-732f-44c7-e533" name="••Unrelenting Assault" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                  <characteristics>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Separatist Invasion</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">2 Corps Units</characteristic>
+                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">Until the end of the Round, each time an allied Corps unit makes a Ranged attack, after the action is resolved, if it spent 1 or more Aim tokens, another allied unit within Range 2 may gain 1 Aim token.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="000c-4686-fff8-4914" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
             <selectionEntry id="3088-96d9-6c4d-e8c2" name="••Push" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bb69-9cc1-d198-d776" type="max"/>
@@ -4932,7 +5313,11 @@ This Round, when Din Djarin makes an Attack action, after that Attack action is 
             </selectionEntry>
             <selectionEntry id="ec50-b90c-faa4-e3df" name="••Hiding in Plain Sight" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true"/>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ca9-0cc7-c0e3-244e" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1cba-8696-5827-d75d" type="max"/>
@@ -5121,6 +5506,175 @@ Divulge: Resolve Setup Effects step. Choose up to 2 allied Children of the Watch
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fca6-0be5-3989-8287" type="max"/>
           </constraints>
           <selectionEntries>
+            <selectionEntry id="f11a-8dd4-881f-f46f" name="•••Debark for Ground Assault" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e66-8ddb-f5e8-9f3f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1001-8603-7e3e-7052" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="c1e7-592a-e86d-1110" name="•••Debark for Ground Assault" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                  <characteristics>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Blizzard Force</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">3 Units</characteristic>
+                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">When a Corps Trooper unit is issued an Order with this card, until the end of the Round, it gains Spur, and its weapons gain Suppressive.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="eb09-2a37-9236-21ec" name="Spur" hidden="false" targetId="cc37-290e-3d87-264b" type="rule"/>
+                <infoLink id="fcf3-ed66-d3c9-8907" name="Suppressive" hidden="false" targetId="c4ab-770e-5009-04ff" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="dc18-f9c1-ef03-2110" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fd6d-1c77-af7b-44bf" name="•••Constantly Alert" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2342-b7eb-1682-2f88" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="90f5-e755-4c95-6e71" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5c20-1c82-f0b6-ca2e" name="•••Constantly Alert" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                  <characteristics>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Tempest Force</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">3 Units</characteristic>
+                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">When a unit is issued an Order with this card, it gains 1 Aim token for each enemy unit within Range 1 of it. Then, if it did not gain any Aim tokens this way, it gains 1 Standby token.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="4c44-d84d-a98f-e4be" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b3ff-200f-6372-7f20" name="•••Hold at Any Cost" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="175b-b27f-3552-ff7f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5daa-9ee0-58d0-292f" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="9c30-d8e6-edc7-fcc5" name="•••Hold at Any Cost" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                  <characteristics>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Echo Base Defenders</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">3 Corps Units or Support Units</characteristic>
+                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">When an allied Trooper unit is issued an Order with this card, it gains 1 Aim token and 1 Standby token.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="2d90-f817-79c7-d466" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ee18-bb3e-2a47-3451" name="•••Flexible Strategy" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d774-3e19-db9a-57cd" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="09e5-9e30-82f8-c459" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="636a-7eca-8b8f-793c" name="•••Flexible Strategy" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                  <characteristics>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">212th Attack Battalion</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">3 Units</characteristic>
+                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">When a Trooper unit is issued an Order with this card, it may remove up 1 to Suppression token or make a Speed-1 Move. When a Vehicle unit is issued an Order with this card, it may gain 1 Aim token or 1 Dodge token.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="743f-3560-efa6-0bea" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="222f-b38e-0a1e-e9da" name="•••Leaders of the 501st" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2248-09e7-9d4a-006f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f74b-26ab-de15-1c32" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="7e36-55b2-97d4-9eaa" name="•••Leaders of the 501st" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                  <characteristics>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">501st Legion</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">3 Special Forces or Corps Units</characteristic>
+                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">Permanent. Allied units within Range 2 of Anakin Skywalker and/or an allied Clone Captain Rex gain Indomitable.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="8686-42cc-7b85-e235" name="Indomitable" hidden="false" targetId="15b8-8088-8097-6a12" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="789c-5650-f35b-78ce" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1a01-c1d6-054d-2467" name="•••Unstoppable Advance" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="78ff-ebe6-34a8-1e42" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="55c8-ee06-4c66-b8c9" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="9583-7ac6-fa9b-32ee" name="•••Unstoppable Advance" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
+                  <characteristics>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Separatist Invasion</characteristic>
+                    <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">3 Corps Units</characteristic>
+                    <characteristic name="Effect" typeId="957b-dc58-3195-2a96">When a unit is issued an Order with this card, it may make a Speed-1 Move.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="aa84-5de0-ec43-6e12" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
             <selectionEntry id="2583-c0b2-f79b-dc70" name="•••Assault" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="880c-59df-630c-690a" type="max"/>
@@ -6785,7 +7339,11 @@ Card Action: Choose up to 3 enemy units within Range 1 and in LOS. For each chos
             </selectionEntry>
             <selectionEntry id="7819-bb03-f3ba-9e76" name="•••For the Tribe" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true"/>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ca9-0cc7-c0e3-244e" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6cc0-6560-c30c-b74d" type="max"/>
@@ -15222,6 +15780,50 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="75.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="539c-12e3-9fc9-68fa" name="A-A5 Speeder Truck (Raiders)" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="1b14-5fce-8ac3-4aca" name="A-A5 Speeder Truck" hidden="false" typeId="5f75-fcdc-0366-0628" typeName="1.4 Vehicles">
+          <characteristics>
+            <characteristic name="Models" typeId="621a-0141-7be7-8335">1</characteristic>
+            <characteristic name="Wounds" typeId="eee7-55c8-4a95-6177">8</characteristic>
+            <characteristic name="Resilience" typeId="8f53-abe0-8322-e7d2">6</characteristic>
+            <characteristic name="Defense" typeId="a098-86b4-db8f-c431">White</characteristic>
+            <characteristic name="Attack Surge" typeId="8bb0-caac-b4b4-82cd">--</characteristic>
+            <characteristic name="Defense Surge" typeId="1ca6-e726-090a-340d">Block</characteristic>
+            <characteristic name="Speed" typeId="4f1a-9937-f30d-051a">1</characteristic>
+            <characteristic name="Keywords" typeId="b524-8c1f-51b8-94fa">Armor 5, Hover: Ground, Reposition, Transport, Weak Point 2: Rear</characteristic>
+            <characteristic name="Upgrade Bar" typeId="7374-8d85-f1fe-aee4">Pilot, Crew x2, Hardpoint, Comms</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b00c-f7f8-02de-2367" name="Armor X" hidden="false" targetId="557e-290b-b9ad-2a97" type="rule"/>
+        <infoLink id="6ddd-f34d-3743-e955" name="Hover: Ground" hidden="false" targetId="c0c4-0f9c-4db8-73f9" type="rule"/>
+        <infoLink id="48e4-8be0-f955-bd75" name="Reposition" hidden="false" targetId="a307-c43d-f182-4a23" type="rule"/>
+        <infoLink id="aa95-5973-43e3-ee6f" name="Transport" hidden="false" targetId="6a34-ad9f-efac-f9db" type="rule"/>
+        <infoLink id="04fc-db38-6e85-3359" name="Weak Point X: Rear" hidden="false" targetId="23a9-6a39-9307-2469" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2ee2-97d5-17d5-6526" name="Heavy" hidden="false" targetId="2efc-25e2-f8de-7494" primary="true"/>
+        <categoryLink id="821c-3abd-f999-ba31" name="Affiliation: Raiders" hidden="false" targetId="5dd4-b4c7-e698-5500" primary="false"/>
+        <categoryLink id="6fbd-20ec-0021-7dfa" name="Repulsor Vehicle" hidden="false" targetId="1231-e5e0-ce18-e2be" primary="false"/>
+        <categoryLink id="6bd0-acf6-8b9d-3365" name="Huge Base" hidden="false" targetId="b6f3-3718-c6bd-d25a" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1922-664e-e3ef-51f6" name="Pilot" hidden="false" collective="false" import="true" targetId="0fbb-d602-1b11-bfa1" type="selectionEntryGroup"/>
+        <entryLink id="59dd-fbc2-41dc-37e6" name="Crew" hidden="false" collective="false" import="true" targetId="d746-6c9e-b4ca-bd90" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="9e23-d8cf-bae8-9d8a" value="2.0"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="51c8-7014-ab58-105b" name="Hardpoint" hidden="false" collective="false" import="true" targetId="542e-0da1-cc37-5c44" type="selectionEntryGroup"/>
+        <entryLink id="6223-b0ba-72ff-fbaa" name="Comms" hidden="false" collective="false" import="true" targetId="bbf8-c77e-246a-d5c6" type="selectionEntryGroup"/>
+        <entryLink id="9e22-c2b0-e7dc-72bb" name="Door Gunners" hidden="false" collective="false" import="true" targetId="8cd2-a896-f431-0c3b" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="75.0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="9d72-ff48-535f-9984" name="LAAT/le Patrol Transport" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="08c0-5932-4f4c-19b1" name="LAAT/le Patrol Transport" hidden="false" typeId="5f75-fcdc-0366-0628" typeName="1.4 Vehicles">
@@ -18200,6 +18802,16 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
     <selectionEntry id="2783-0648-5e34-9153" name="•Obi-Wan Kenobi" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d774-3e19-db9a-57cd" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="595e-1631-d059-2372" type="atLeast"/>
           </conditions>
@@ -18254,6 +18866,16 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
     </selectionEntry>
     <selectionEntry id="8dcc-172a-1b36-56dc" name="•Clone Commander Cody" hidden="false" collective="false" import="true" type="model">
       <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d774-3e19-db9a-57cd" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e018-4675-fb49-b689" type="atLeast"/>
@@ -21288,6 +21910,191 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="90.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="d774-3e19-db9a-57cd" name="Battle Force: 212th Attack Battalion" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="0b2c-592a-91d0-e478" name="212th Attack Battalion" hidden="false">
+          <description>A 212th Attack Battalion Battle Force is part of the Galactic Republic Faction.
+When an allied non-Commander non-Operative Vehicle unit is attacking or defending, it may spend up to 1 Aim token, Dodge token, or Surge token belonging to a non-Commander non-Operative allied Vehicle unit within Range 2 and in LOS, or up to 1 Aim or Dodge token belonging to an allied Clone Trooper unit within Range 2 and in LOS, as if the attacking or defending Vehicle unit had that token.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="84b0-5e7e-f656-b0d3" name="Battle Force" hidden="false" targetId="4b05-2844-a676-2834" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2248-09e7-9d4a-006f" name="Battle Force: 501st Legion" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="2042-9a43-68e1-9131" name="501st Legion" hidden="false">
+          <description>A 501st Legion Battle Force is part of the Galactic Republic Faction.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="ce3b-68ae-3999-29d9" name="Battle Force" hidden="false" targetId="4b05-2844-a676-2834" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4e66-8ddb-f5e8-9f3f" name="Battle Force: Blizzard Force" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="655b-a3a0-8486-0914" name="Blizzard Force" hidden="false">
+          <description>A Blizzard Force Battle Force is part of the Galactic Empire Faction.
+The Field Commander keyword cannot be used in a Blizzard Force army.
+Imperial Probe Droid units in this army do not have the Detachment keyword.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="4581-9b6a-cbe1-f2b5" name="Battle Force" hidden="false" targetId="4b05-2844-a676-2834" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3ca9-0cc7-c0e3-244e" name="Battle Force: Bright Tree Village" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="5f8d-0c96-7eb4-2e44" name="Bright Tree Village" hidden="false">
+          <description>A Bright Tree Village Battle Force is part of the Rebel Alliance Faction.
+This Battle Force may take any number of Mercenary units. These units do count towards the minimum number of Ranks required and the army may include any number of Mercenaries at each Rank. This Battle Force must take at least 2 non-Ewok Rebel units.
+During the End Phase, Ewok units in this army remove 1 fewer Suppression token during the Remove Tokens step.
+Rebel Commander units in this army gain Allies of Convenience.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="b8cf-40c3-9861-b570" name="Battle Force" hidden="false" targetId="4b05-2844-a676-2834" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="175b-b27f-3552-ff7f" name="Battle Force: Echo Base Defenders" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="8c5e-1d3c-3bba-2593" name="Echo Base Defenders" hidden="false">
+          <description>An Echo Base Defenders Battle Force is part of the Rebel Alliance Faction.
+The Field Commander keyword cannot be used in an Echo Base Defenders army.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="b0ca-97dc-637d-bea8" name="Battle Force" hidden="false" targetId="4b05-2844-a676-2834" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dee1-e8bc-ed4d-90b2" name="Battle Force: Experimental Droids" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="c2f1-b3f7-26b0-2ada" name="Experimental Droids" hidden="false">
+          <description>An Experimental Droids Battle Force is part of the Separatist Alliance Faction.
+The following unit counts as a Corps unit for the purposes of army building and Battle Cards: IG-100 MagnaGuard (Prototype Assassin Droids).
+At the start of each Activation Phase, choose up to 1 of your Commander units. If you do, put 3 Advantage tokens on that unit&apos;s Unit Card. Once during its Activation, an allied Special Forces, Corps, or Support unit that has the AI keyword may make a free action to spend 1 Advantage token on the chosen Commander unit, if it is within Range 3. If it does, choose 1 of the following:
+- Increase their Speed by 1 during their next Move action this Turn.
+- Gain 1 Aim token or 1 Dodge token.
+- Add 1 black die and 1 white die to 1 of their Attack Pools during their next Attack action this turn.
+- Remove up to 2 Suppression tokens.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="9a63-d290-b6c8-5ca5" name="Battle Force" hidden="false" targetId="4b05-2844-a676-2834" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="da12-e28f-75d1-7d43" name="Battle Force: Imperial Remnant" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="9ba6-3daf-ccce-72d5" name="Imperial Remnant" hidden="false">
+          <description>An Imperial Remnant Battle Force is part of the Galactic Empire Faction.
+The following units count as Corps units for the purposes of army building: Scout Troopers and Imperial Death Troopers.
+When building an army, an Imperial Remnant Battle Force cannot take more than 1 of each unit with a Corps Rank until at least 1 of each has been taken. This army may not include detachments.
+When issuing Orders, the nominated Commander can only issue Orders to allied units within Range 2 of them. Undeployed units or units not within Range 2 of any allied Commander units gain Independent: Aim 1 or Dodge 1.
+When an allied unit checks to see if it is Panicked, it can never use the Courage of an allied unit that is not within Range 2.
+Any non-Droid Trooper unit in this army with a Heavy Weapon upgrade icon may equip a Heavy Weapon upgrade with one of the following unit requirements, ignoring that requirement: Stormtroopers only, Shoretroopers only, Scout Troopers only, or Imperial Death Troopers only.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="abb3-79da-585d-6238" name="Battle Force" hidden="false" targetId="4b05-2844-a676-2834" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="78ff-ebe6-34a8-1e42" name="Battle Force: Separatist Invasion" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="fd51-58a3-296a-1731" name="Separatist Invasion" hidden="false">
+          <description>A Separatist Invasion Battle Force is part of the Separatist Alliance Faction.
+The Field Commander keyword cannot be used in a Separatist Invasion army.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="60ab-854e-e7cc-9c97" name="Battle Force" hidden="false" targetId="4b05-2844-a676-2834" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8e55-0081-b0dd-4062" name="Battle Force: Shadow Collective" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="86d5-5d90-b6a6-aad9" name="Shadow Collective" hidden="false">
+          <description>This Battle Force must be composed entirely of Mercenary units. These units do count toward the minimum number of Ranks required and the army may include any number of Mercenaries at each rank.
+A Shadow Collective Battle Force is aligned with the Dark Side.
+Units in this army with the Transport keyword may issue Orders to transported units regardless of Affiliation.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="8323-9d52-8784-6b4b" name="Battle Force" hidden="false" targetId="4b05-2844-a676-2834" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b338-dfbd-76ba-d4a3" name="Battle Force: Stormtrooper Battalion" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="1583-54ea-0628-762f" name="Stormtrooper Battalion" hidden="false">
+          <description>A Stormtrooper Battalion Battle Force is part of the Galactic Empire Faction.
+Non-unique Commander and non-unique Operative units in this army gain Target 2. When a non-unique Commander or non-unique Operative unit in this army is issued an Order, it gains 1 Surge token.
+Commander units in this army have Compel while they are the nominated Commander.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="70d2-843e-a821-c7c4" name="Battle Force" hidden="false" targetId="4b05-2844-a676-2834" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2342-b7eb-1682-2f88" name="Battle Force: Tempest Force" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="3f03-d128-ed43-9367" name="Tempest Force" hidden="false">
+          <description>A Tempest Force Battle Force is part of the Galactic Empire Faction.
+Vehicles in this army gain Scout 2.
+Units that are not within Range 3 of an allied Commander unit and do not have a Comms upgrade equipped remove 1 less Suppression token during the Remove Tokens step.
+During Setup, you may set aside 1 allied Special Forces or Support unit that is not holding an Asset Objective token, marking the unit with an Advantage token. The first time the set-aside unit would Activate this game, you must Deploy that unit in cohesion onto the battlefield not within Range 2 of any enemy units, if able. If you do, that unit is treated as activated and its Order token is placed facedown. Then, the unit loses its Advantage token.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="9383-f903-6d4e-3109" name="Battle Force" hidden="false" targetId="4b05-2844-a676-2834" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="565f-70b3-1f94-7511" name="Battle Force: Wookiee Defenders" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="9145-1de4-d0c9-67ce" name="Wookiee Defenders" hidden="false">
+          <description>A Wookiee Defenders Battle Force is part of the Galactic Republic Faction.
+The following unit counts as a Corps unit for the purposes of army building and Battle Cards: Wookiee Warriors (Noble Fighters).
+Your army must include at least 3 Wookiee Trooper units.
+The first time 1 or more miniatures in each Wookiee Trooper unit are defeated each Round, that unit may make a Speed-1 Move. A unit can make this Move regardless of its Speed.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="466e-2201-a5cc-9778" name="Battle Force" hidden="false" targetId="4b05-2844-a676-2834" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="9510-6572-6230-10dc" name="Force" hidden="false" collective="false" import="true">
@@ -21968,6 +22775,15 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="19ca-06a3-5327-c82c" type="notInstanceOf"/>
                   </conditions>
                 </conditionGroup>
@@ -22297,6 +23113,16 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <selectionEntry id="2e50-5989-354c-6231" name="•Boil" hidden="false" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d774-3e19-db9a-57cd" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0020-8ddc-bf35-3170" type="notInstanceOf"/>
               </conditions>
@@ -22345,6 +23171,16 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <selectionEntry id="29e6-b10f-34b6-e4db" name="•Waxer" hidden="false" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d774-3e19-db9a-57cd" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0020-8ddc-bf35-3170" type="notInstanceOf"/>
               </conditions>
@@ -22392,6 +23228,16 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         </selectionEntry>
         <selectionEntry id="3f0a-6110-5863-dc98" name="•Fives" hidden="false" collective="false" import="true" type="model">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2248-09e7-9d4a-006f" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="and">
@@ -22554,6 +23400,16 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         </selectionEntry>
         <selectionEntry id="d38d-012a-b7f0-412c" name="•Clone Captain Rex" hidden="false" collective="false" import="true" type="model">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2248-09e7-9d4a-006f" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e057-60b7-67f9-8d41" type="notInstanceOf"/>
@@ -23811,6 +24667,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a28a-87da-7eed-cb4c" type="atLeast"/>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5839-fe25-2a07-b5c2" type="equalTo"/>
                   </conditions>
@@ -23854,6 +24719,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="be97-6449-5f7a-429c" name="•Ursa Wren" hidden="false" collective="false" import="true" type="model">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="and">
@@ -24328,6 +25202,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a28a-87da-7eed-cb4c" type="atLeast"/>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1636-d85c-9340-6bde" type="equalTo"/>
                   </conditions>
@@ -24384,6 +25267,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a28a-87da-7eed-cb4c" type="atLeast"/>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="15b5-60b1-f160-49c0" type="equalTo"/>
                   </conditions>
@@ -24425,6 +25317,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="a3c1-dd95-3259-e4bf" name="•Din Djarin" hidden="false" collective="false" import="true" type="model">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="and">
@@ -24479,6 +25380,16 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="44d8-f216-00f4-7a6c" name="•Rook Kast" hidden="false" collective="false" import="true" type="model">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e55-0081-b0dd-4062" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="and">
@@ -24623,6 +25534,14 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2af-ba7b-fb32-a122" type="notInstanceOf"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="da12-e28f-75d1-7d43" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="40ed-3197-cf01-9a62" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -24651,6 +25570,14 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2af-ba7b-fb32-a122" type="notInstanceOf"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="da12-e28f-75d1-7d43" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="40ed-3197-cf01-9a62" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -24973,6 +25900,14 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a672-8380-48cd-30a8" type="notInstanceOf"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="da12-e28f-75d1-7d43" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="40ed-3197-cf01-9a62" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -25007,6 +25942,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="eedd-d971-eec8-a40a" name="•Pao" hidden="true" collective="false" import="true" type="model">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="366c-1d23-178b-9949" type="notInstanceOf"/>
@@ -25058,6 +26002,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         <selectionEntry id="595c-edab-603b-4af3" name="•Bistan" hidden="true" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="366c-1d23-178b-9949" type="notInstanceOf"/>
               </conditions>
@@ -25091,6 +26044,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a28a-87da-7eed-cb4c" type="atLeast"/>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fd6c-2552-b5c6-f147" type="equalTo"/>
                   </conditions>
@@ -25101,6 +26063,14 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fe82-164e-5d9b-3724" type="notInstanceOf"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="da12-e28f-75d1-7d43" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="40ed-3197-cf01-9a62" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -25141,6 +26111,14 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fe82-164e-5d9b-3724" type="notInstanceOf"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="da12-e28f-75d1-7d43" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="40ed-3197-cf01-9a62" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -25304,6 +26282,14 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d425-63e3-9405-6b4f" type="notInstanceOf"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="da12-e28f-75d1-7d43" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="40ed-3197-cf01-9a62" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -25498,6 +26484,14 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2af-ba7b-fb32-a122" type="notInstanceOf"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="da12-e28f-75d1-7d43" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="40ed-3197-cf01-9a62" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -25526,6 +26520,14 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2af-ba7b-fb32-a122" type="notInstanceOf"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="da12-e28f-75d1-7d43" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="40ed-3197-cf01-9a62" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -25725,6 +26727,16 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="6385-1926-4f65-e566" name="•Echo, ARC Marksman" hidden="false" collective="false" import="true" type="model">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2248-09e7-9d4a-006f" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="and">
@@ -26074,6 +27086,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6421-4bca-d13f-05dd" type="notInstanceOf"/>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0020-8ddc-bf35-3170" type="notInstanceOf"/>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9670-a5ef-c0f4-a8ed" type="notInstanceOf"/>
@@ -26124,6 +27145,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="a6fc-9588-0c26-0678" name="•Gideon Hask" hidden="false" collective="false" import="true" type="model">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="and">
@@ -26392,6 +27422,16 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         <selectionEntry id="676f-7100-c272-0ece" name="•Agent Kallus" hidden="false" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b338-dfbd-76ba-d4a3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef40-1f1b-5578-a7c3" type="notInstanceOf"/>
               </conditions>
@@ -26485,6 +27525,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         <selectionEntry id="6a1f-7a02-05b3-037d" name="•Seventh Sister" hidden="false" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6421-4bca-d13f-05dd" type="notInstanceOf"/>
               </conditions>
@@ -26530,6 +27579,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="d981-8706-6981-119a" name="•Fifth Brother" hidden="false" collective="false" import="true" type="model">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cadc-00f6-2f2e-2edf" type="notInstanceOf"/>
@@ -26605,6 +27663,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a28a-87da-7eed-cb4c" type="atLeast"/>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6c97-3260-45fc-1189" type="equalTo"/>
                   </conditions>
@@ -26676,6 +27743,16 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="565f-70b3-1f94-7511" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a28a-87da-7eed-cb4c" type="atLeast"/>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="07b6-21e0-299a-c83b" type="equalTo"/>
                   </conditions>
@@ -26732,6 +27809,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="7feb-62da-801c-7b42" name="•Jyn Erso" hidden="false" collective="false" import="true" type="model">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="and">
@@ -26796,6 +27882,16 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="73cf-d366-7e9b-b406" name="•Luke Skywalker" hidden="false" collective="false" import="true" type="model">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="175b-b27f-3552-ff7f" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="and">
@@ -27007,6 +28103,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         <selectionEntry id="c83d-7064-e422-ef20" name="•Wrecker" hidden="false" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6b32-bda5-3dbe-4954" type="notInstanceOf"/>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a061-7174-2a23-fce0" type="notInstanceOf"/>
@@ -27040,6 +28145,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="a4d2-292d-8997-9941" name="•Crosshair" hidden="false" collective="false" import="true" type="model">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6b32-bda5-3dbe-4954" type="notInstanceOf"/>
@@ -27080,6 +28194,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="8e62-e8c3-89b7-e8de" name="•Hunter" hidden="false" collective="false" import="true" type="model">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6b32-bda5-3dbe-4954" type="notInstanceOf"/>
@@ -27123,6 +28246,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         <selectionEntry id="7346-c1f6-b2a0-51b2" name="•Tech" hidden="false" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6b32-bda5-3dbe-4954" type="notInstanceOf"/>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a061-7174-2a23-fce0" type="notInstanceOf"/>
@@ -27152,6 +28284,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="48b9-95b3-06e2-5076" name="•Echo, Clone Force 99" hidden="false" collective="false" import="true" type="model">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6b32-bda5-3dbe-4954" type="notInstanceOf"/>
@@ -27265,6 +28406,16 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         <selectionEntry id="62bf-f4a8-3fc1-4333" name="•Kraken" hidden="false" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dee1-e8bc-ed4d-90b2" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="509e-5ffe-1bbb-5ff7" type="notInstanceOf"/>
               </conditions>
@@ -27332,6 +28483,16 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="78ff-ebe6-34a8-1e42" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dbff-85dd-ece7-afbb" type="notInstanceOf"/>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1ebf-a178-398b-24d0" type="notInstanceOf"/>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3604-ba97-467b-94c8" type="notInstanceOf"/>
@@ -27393,6 +28554,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="b7a9-35c0-fbdf-c249" name="•Asajj Ventress" hidden="false" collective="false" import="true" type="model">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="and">
@@ -27617,6 +28787,16 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="4c0e-2fdc-a7a0-688c" name="•Rook Kast (Mandalorian Super Commandos)" hidden="false" collective="false" import="true" type="model">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e55-0081-b0dd-4062" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="and">
@@ -28828,6 +30008,16 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         <selectionEntry id="eb95-3536-44c8-2c8e" name="•General Weiss" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e66-8ddb-f5e8-9f3f" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef40-1f1b-5578-a7c3" type="notInstanceOf"/>
               </conditions>
@@ -28862,6 +30052,16 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         <selectionEntry id="c6b6-ae34-8774-1377" name="•Wedge Antilles" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="175b-b27f-3552-ff7f" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1231-e5e0-ce18-e2be" type="notInstanceOf"/>
               </conditions>
@@ -28895,6 +30095,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         <selectionEntry id="b31f-0858-4928-9ea7" name="•Ryder Azadi" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1231-e5e0-ce18-e2be" type="notInstanceOf"/>
               </conditions>
@@ -28924,6 +30133,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="955b-b889-d0c6-67fe" name="•First Sergeant Arbmab" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef40-1f1b-5578-a7c3" type="notInstanceOf"/>
@@ -29049,6 +30267,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         <selectionEntry id="ec98-adc0-2b10-3dc9" name="•Aayla Secura" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="03a1-6d04-5ff4-304c" type="notInstanceOf"/>
               </conditions>
@@ -29110,6 +30337,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         <selectionEntry id="10f0-d0ab-21b7-b4f3" name="•Plo Koon" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="03a1-6d04-5ff4-304c" type="notInstanceOf"/>
               </conditions>
@@ -29165,6 +30401,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         <selectionEntry id="8fd1-bf6b-c58d-8a5d" name="•Lok Durd" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a42e-0405-17d1-d9ab" type="notInstanceOf"/>
               </conditions>
@@ -29189,6 +30434,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="b2fa-1f3d-47fb-3927" name="•Shriv Suurgav" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2efc-25e2-f8de-7494" type="notInstanceOf"/>
@@ -29311,6 +30565,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         <selectionEntry id="3df9-edc3-45ce-693e" name="•Baron Rudor" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef40-1f1b-5578-a7c3" type="notInstanceOf"/>
               </conditions>
@@ -29343,6 +30606,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="29f6-6b2c-47ab-082b" name="•Governor Pryce" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef40-1f1b-5578-a7c3" type="notInstanceOf"/>
@@ -29377,6 +30649,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         <selectionEntry id="8e5d-e04f-0a4f-3e55" name="•Clone Commander Fox" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c48-8772-70d4-0ffe" type="notInstanceOf"/>
               </conditions>
@@ -29404,6 +30685,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="03d9-e532-989a-a10f" name="•Hound and Grizzer" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c48-8772-70d4-0ffe" type="notInstanceOf"/>
@@ -29485,6 +30775,16 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="b0e5-5f88-a57b-85f9" name="•Raiding Party Leader" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e55-0081-b0dd-4062" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="or">
@@ -29596,6 +30896,29 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
           </costs>
         </selectionEntry>
         <selectionEntry id="1f85-cb33-897c-7def" name="•Improvised Orders" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d774-3e19-db9a-57cd" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2248-09e7-9d4a-006f" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4e66-8ddb-f5e8-9f3f" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ca9-0cc7-c0e3-244e" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="175b-b27f-3552-ff7f" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dee1-e8bc-ed4d-90b2" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="da12-e28f-75d1-7d43" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="78ff-ebe6-34a8-1e42" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e55-0081-b0dd-4062" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b338-dfbd-76ba-d4a3" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2342-b7eb-1682-2f88" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="565f-70b3-1f94-7511" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="46e6-35c2-0b88-2f58" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a309-399f-c229-24f7" type="max"/>
@@ -29719,6 +31042,21 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
           </costs>
         </selectionEntry>
         <selectionEntry id="7da9-17c2-3e2e-4d99" name="•Trusted Agent" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="175b-b27f-3552-ff7f" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="da12-e28f-75d1-7d43" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e55-0081-b0dd-4062" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b338-dfbd-76ba-d4a3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ad59-296c-0fda-d7d7" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7ab0-37d0-26bd-ed44" type="max"/>
@@ -29994,6 +31332,19 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         <selectionEntry id="7dca-6bfa-3690-7729" name="•Strike Team Leader" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d774-3e19-db9a-57cd" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dee1-e8bc-ed4d-90b2" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="da12-e28f-75d1-7d43" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="565f-70b3-1f94-7511" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb02-3ca8-cc7c-87a9" type="notInstanceOf"/>
               </conditions>
@@ -30141,6 +31492,16 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ca9-0cc7-c0e3-244e" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4839-d5a4-3b3c-48da" type="notInstanceOf"/>
                   </conditions>
                 </conditionGroup>
@@ -30170,6 +31531,16 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ca9-0cc7-c0e3-244e" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4839-d5a4-3b3c-48da" type="notInstanceOf"/>
                   </conditions>
                 </conditionGroup>
@@ -30195,6 +31566,16 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="ce54-12da-4c3f-b754" name="•Herbal Medicine" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ca9-0cc7-c0e3-244e" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="and">
@@ -30426,6 +31807,17 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         <selectionEntry id="cbaa-0096-0a5d-9675" name="•The Darksaber" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="da12-e28f-75d1-7d43" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e55-0081-b0dd-4062" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e639-78c7-1647-af49" type="notInstanceOf"/>
               </conditions>
@@ -30492,6 +31884,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="89f9-76d9-c9e1-0bd5" name="•DT-57 &quot;Annihilator&quot;" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="78ba-e4fe-8cb3-7c8e" type="notInstanceOf"/>
@@ -30624,6 +32025,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="0531-0bff-35b2-36ec" name="•Iden&apos;s DLT-20A Rifle" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7802-f7dc-f952-e063" type="notInstanceOf"/>
@@ -30795,6 +32205,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a360-d849-2e60-9a77" type="notInstanceOf"/>
                   </conditions>
                 </conditionGroup>
@@ -30837,6 +32256,15 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
         </selectionEntry>
         <selectionEntry id="3177-dc9f-7cb6-16a6" name="•Iden&apos;s TL-50 Repeater" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7802-f7dc-f952-e063" type="notInstanceOf"/>
@@ -30950,6 +32378,17 @@ When defending against a melee attack, you gain Immune: Pierce.</characteristic>
         <selectionEntry id="4b06-3d76-2b62-23de" name="•The Darksaber" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="da12-e28f-75d1-7d43" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e55-0081-b0dd-4062" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e23c-3acc-a041-7ce2" type="notInstanceOf"/>
               </conditions>
@@ -31044,6 +32483,16 @@ When defending against a melee attack, you gain Immune: Pierce.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e55-0081-b0dd-4062" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cdb2-7ccb-28f6-047c" type="notInstanceOf"/>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f179-1ad0-aa0d-fddb" type="notInstanceOf"/>
                   </conditions>
@@ -31076,6 +32525,15 @@ When defending against a melee attack, you gain Immune: Pierce.</characteristic>
         </selectionEntry>
         <selectionEntry id="1929-19dd-7093-3192" name="•Saxon's Jetpack Rockets" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="and">
@@ -31122,6 +32580,15 @@ When defending against a melee attack, you gain Immune: Pierce.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="19ca-06a3-5327-c82c" type="notInstanceOf"/>
                   </conditions>
                 </conditionGroup>
@@ -31158,6 +32625,17 @@ When defending against a melee attack, you gain Immune: Pierce.</characteristic>
         </selectionEntry>
         <selectionEntry id="728f-6a52-4dc4-04fc" name="•The Darksaber (Maul)" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="da12-e28f-75d1-7d43" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e55-0081-b0dd-4062" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="and">
@@ -31204,6 +32682,15 @@ When defending against a melee attack, you gain Immune: Pierce.</characteristic>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
                     <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="19ca-06a3-5327-c82c" type="notInstanceOf"/>
                   </conditions>
                 </conditionGroup>
@@ -31241,6 +32728,17 @@ When defending against a melee attack, you gain Immune: Pierce.</characteristic>
         </selectionEntry>
         <selectionEntry id="b779-7a1a-a1c7-f3c2" name="•The Darksaber (Din Djarin)" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="da12-e28f-75d1-7d43" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e55-0081-b0dd-4062" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="and">
@@ -31283,6 +32781,17 @@ When defending against a melee attack, you gain Immune: Pierce.</characteristic>
         </selectionEntry>
         <selectionEntry id="f8fa-2ec7-2575-b81b" name="•The Darksaber (Head of Clan Saxon)" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b05-2844-a676-2834" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="da12-e28f-75d1-7d43" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e55-0081-b0dd-4062" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="and">
