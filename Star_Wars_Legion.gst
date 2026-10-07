@@ -15159,6 +15159,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <categoryLink id="bf77-0c06-79c3-92d3" name="Rebel" hidden="false" targetId="1d91-e11e-a87b-4790" primary="false"/>
         <categoryLink id="90ea-30b7-b1d6-29be" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
         <categoryLink id="1d7e-6092-bc90-e7cd" name="Small Base" hidden="false" targetId="6db2-4a46-fe95-7db6" primary="false"/>
+        <categoryLink id="eb17-311e-e462-43cf" name="Allies of Convenience" hidden="false" targetId="036b-1d04-f52f-ab54" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="3a5a-a096-20e0-f2c3" name=" Backup Plan" hidden="false" collective="false" import="true" type="upgrade">
@@ -29545,6 +29546,10 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <infoLink id="5d45-2e3f-3194-9568" name="Field Commander" hidden="false" targetId="165d-f2f9-b815-f376" type="rule"/>
             <infoLink id="3ce2-ad5c-1db6-31e8" name="Demoralize X" hidden="false" targetId="a52a-4687-32b7-2633" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="2875-3950-c21e-fe6b" name="Allies of Convenience" hidden="false" targetId="036b-1d04-f52f-ab54" primary="false"/>
+            <categoryLink id="60ee-c7e9-b82b-1ef0" name="Field Commander" hidden="false" targetId="c12f-ba6d-8a73-68aa" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="10.0"/>
           </costs>
@@ -29738,6 +29743,9 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="dce9-89c8-c202-820e" name="Allies of Convenience" hidden="false" targetId="036b-1d04-f52f-ab54" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="5.0"/>
           </costs>
