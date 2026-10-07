@@ -67,7 +67,7 @@
     <entryLink id="e40b-5aee-0fc1-b0fe" name="•Clone Captain Rex" hidden="false" collective="false" import="true" targetId="47a7-c18f-1910-7d94" type="selectionEntry"/>
     <entryLink id="60cd-71d8-b272-9fed" name="Phase I Clone Troopers" hidden="true" collective="false" import="true" targetId="8943-cb3d-8d0c-9a04" type="selectionEntry"/>
     <entryLink id="7f1e-e73f-1068-c818" name="Phase II Clone Troopers" hidden="true" collective="false" import="true" targetId="e7ff-aac0-8cce-fbfc" type="selectionEntry"/>
-    <entryLink id="7349-627c-bf9c-e7df" name="TX-130 Saber-class Fighter Tank" hidden="false" collective="false" import="true" targetId="03a1-6d04-5ff4-304c" type="selectionEntry"/>
+    <entryLink id="7349-627c-bf9c-e7df" name="Saber-class Tank" hidden="false" collective="false" import="true" targetId="03a1-6d04-5ff4-304c" type="selectionEntry"/>
     <entryLink id="182e-6093-d8a4-5f5f" name="•R2-D2" hidden="false" collective="false" import="true" targetId="f12c-e053-6a37-e328" type="selectionEntry"/>
     <entryLink id="d53f-3a2d-eef6-53c0" name="ARC Troopers (Strike Team)" hidden="false" collective="false" import="true" targetId="f24b-6e59-a4fa-8054" type="selectionEntry"/>
     <entryLink id="bfd4-286b-eb00-0e19" name="ARC Troopers" hidden="false" collective="false" import="true" targetId="5f04-0ae9-c8eb-0b9c" type="selectionEntry"/>
@@ -83,5 +83,10 @@
     <entryLink id="3b70-ba48-a6f7-ea16" name="•Yoda" hidden="false" collective="false" import="true" targetId="985f-4bbc-b614-689e" type="selectionEntry"/>
     <entryLink id="f14a-e86c-edcd-b207" name="Raddaugh Gnasp Fluttercraft" hidden="false" collective="false" import="true" targetId="35be-285e-0012-cd11" type="selectionEntry"/>
 	<entryLink id="f88c-6d18-4b57-ad16" name="Infantry Support Platform" hidden="false" collective="false" import="true" targetId="c0b0-9b6e-1e01-c73f" type="selectionEntry"/>
+    <entryLink id="fe64-d6d8-074a-b4b2" name="Clone Trooper Infantry" hidden="false" collective="false" import="true" targetId="c83d-1340-27ca-a44a" type="selectionEntry"/>
+    <entryLink id="d45e-cb90-578b-5227" name="Clone Commandos" hidden="false" collective="false" import="true" targetId="a262-2f94-8e08-e059" type="selectionEntry"/>
+    <entryLink id="5b81-c8e4-6de2-fbaf" name="•Clone Commandos (Delta Squad)" hidden="false" collective="false" import="true" targetId="2859-5f6f-b8f0-bf36" type="selectionEntry"/>
+    <entryLink id="d06c-3a95-1ac6-22b8" name="•Clone Commander Cody" hidden="false" collective="false" import="true" targetId="e018-4675-fb49-b689" type="selectionEntry"/>
+    <entryLink id="4df7-d600-782e-8868" name="•The Bad Batch" hidden="false" collective="false" import="true" targetId="6b32-bda5-3dbe-4954" type="selectionEntry"/>
   </entryLinks>
 </catalogue>
