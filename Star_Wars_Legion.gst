@@ -1747,9 +1747,6 @@ At the end of his activation, he may perform an attack against each enemy unit a
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="99f0-c3f1-e5af-6236" name="Fire Support" hidden="false" targetId="69f0-0418-8196-8873" type="rule"/>
-              </infoLinks>
               <categoryLinks>
                 <categoryLink id="91a4-4325-6bb6-c594" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
@@ -1870,6 +1867,9 @@ After he performs an attack, each defender gains 2 suppression tokens.</characte
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="ebad-61d0-66e1-8e73" name="Danger Sense X" hidden="false" targetId="4af1-4705-8c43-ccd2" type="rule"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="40e6-7dbc-85c7-5055" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
@@ -1982,8 +1982,9 @@ After he performs an attack, each defender gains 2 suppression tokens.</characte
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="7076-e37a-8759-cc7d" name="Relentless" hidden="false" targetId="0c2b-f655-41f4-2efb" type="rule"/>
-                <infoLink id="69ba-256a-c394-6c54" name="Outmaneuver" hidden="false" targetId="3aa7-726e-44cb-c46f" type="rule"/>
+                <infoLink id="07e1-acc3-05cc-5d98" name="Prepared Position" hidden="false" targetId="4dec-4e6c-c37b-f786" type="rule"/>
+                <infoLink id="c301-8f17-d41d-b821" name="Divulge" hidden="false" targetId="5e49-44ef-fc17-aca6" type="rule"/>
+                <infoLink id="83c7-5a3e-6be9-e0ef" name="Jump X" hidden="false" targetId="89df-da7f-b7da-6c0c" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="d955-662e-4b70-58f2" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
@@ -2074,9 +2075,9 @@ While Maul is engaged with an enemy unit, that unit cannot spend aim, dodge, sta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="4377-2a09-f17c-4cdb" name="Jump X" hidden="false" targetId="89df-da7f-b7da-6c0c" type="rule"/>
-                <infoLink id="3936-567b-97f2-f411" name="Charge" hidden="false" targetId="a44a-b83d-9e7c-964f" type="rule"/>
                 <infoLink id="a73e-85ff-d149-f3d3" name="Disengage" hidden="false" targetId="1f57-513a-d262-486b" type="rule"/>
+                <infoLink id="3936-567b-97f2-f411" name="Charge" hidden="false" targetId="a44a-b83d-9e7c-964f" type="rule"/>
+                <infoLink id="4377-2a09-f17c-4cdb" name="Jump X" hidden="false" targetId="89df-da7f-b7da-6c0c" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="bfb8-112d-c2ce-b963" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
@@ -2337,6 +2338,10 @@ While Maul is engaged with an enemy unit, that unit cannot spend aim, dodge, sta
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="3c59-5558-4124-6325" name="Suppressive" hidden="false" targetId="c4ab-770e-5009-04ff" type="rule"/>
+                <infoLink id="74b6-f936-1376-decd" name="Impact X" hidden="false" targetId="6da6-1112-3a36-33c2" type="rule"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="660f-fd04-2f2a-e9a3" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
@@ -2639,6 +2644,7 @@ While Maul is engaged with an enemy unit, that unit cannot spend aim, dodge, sta
                 </profile>
               </profiles>
               <infoLinks>
+                <infoLink id="f1f1-b9ef-f87d-fee6" name="Guardian X" hidden="false" targetId="2d99-7e82-617e-053b" type="rule"/>
                 <infoLink id="dd61-3196-e70e-3755" name="Deflect" hidden="false" targetId="1466-e70a-9d14-34ef" type="rule"/>
               </infoLinks>
               <categoryLinks>
@@ -2837,6 +2843,9 @@ While Maul is engaged with an enemy unit, that unit cannot spend aim, dodge, sta
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="e5bd-69ed-1ee4-5e52" name="Guardian X" hidden="false" targetId="2d99-7e82-617e-053b" type="rule"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="2265-8d94-ee29-7267" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
@@ -3209,9 +3218,6 @@ While another friendly trooper unit has a faceup order token, it gains Guardian 
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="295d-d92f-3a70-535a" name="Master of the Force X" hidden="false" targetId="7923-6416-78ad-12b9" type="rule"/>
-              </infoLinks>
               <categoryLinks>
                 <categoryLink id="0fb1-772c-67d6-f175" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
@@ -3319,6 +3325,7 @@ Divulge: Deploy Units Step. Maul gains Infiltrate. During the first round, Maul 
                 </profile>
               </profiles>
               <infoLinks>
+                <infoLink id="36ff-3a38-06ae-45a8" name="Field Commander" hidden="false" targetId="165d-f2f9-b815-f376" type="rule"/>
                 <infoLink id="a3b0-7531-2238-850d" name="Beam X" hidden="false" targetId="7577-ca56-e0a4-0b4e" type="rule"/>
                 <infoLink id="88f6-566c-cbed-1e2b" name="Immune: Deflect" hidden="false" targetId="b5ed-8da2-132d-54b2" type="rule"/>
               </infoLinks>
@@ -3404,8 +3411,8 @@ Divulge: Deploy Units Step. Maul gains Infiltrate. During the first round, Maul 
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="2256-ddda-dc25-0e21" name="Relentless" hidden="false" targetId="0c2b-f655-41f4-2efb" type="rule"/>
                 <infoLink id="afe5-c771-4eb9-e182" name="Outmaneuver" hidden="false" targetId="3aa7-726e-44cb-c46f" type="rule"/>
+                <infoLink id="2256-ddda-dc25-0e21" name="Relentless" hidden="false" targetId="0c2b-f655-41f4-2efb" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="08d3-3cba-96b4-ca88" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
@@ -3749,6 +3756,9 @@ Divulge: Deploy Units Step. Maul gains Infiltrate. During the first round, Maul 
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="917e-cdf1-35ae-2ae7" name="Agile X" hidden="false" targetId="3a2a-fc8b-8c65-9670" type="rule"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="7957-8d56-2b50-cc8e" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
@@ -4372,6 +4382,9 @@ After Count Dooku performs a ranged attack against a trooper unit, he may perfor
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="9b7e-82c1-b6a5-1980" name="Inspire X" hidden="false" targetId="a4c9-42f5-6ea5-f3a3" type="rule"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="6ed4-fa17-648e-dc48" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
@@ -4435,9 +4448,10 @@ After Count Dooku performs a ranged attack against a trooper unit, he may perfor
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="5837-f2bf-09bd-d29c" name="Reliable X" hidden="false" targetId="4486-a71b-a40f-39af" type="rule"/>
                 <infoLink id="e3e5-f5d7-6655-c3b6" name="Secret Mission" hidden="false" targetId="95e8-30da-54b0-8883" type="rule"/>
                 <infoLink id="c5d7-367c-1141-aa48" name="Infiltrate" hidden="false" targetId="ae26-c3d3-240e-2c73" type="rule"/>
+                <infoLink id="62a6-39e5-0a57-c07e" name="Inspire X" hidden="false" targetId="a4c9-42f5-6ea5-f3a3" type="rule"/>
+                <infoLink id="3c47-92a4-578c-c5fb" name="Permanent" hidden="false" targetId="31e2-7fdb-d782-e514" type="rule"/>
                 <infoLink id="d708-ed6f-3d06-89a7" name="Divulge" hidden="false" targetId="5e49-44ef-fc17-aca6" type="rule"/>
               </infoLinks>
               <categoryLinks>
@@ -5067,6 +5081,9 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="5970-4d6a-897c-3b52" name="Demoralize X" hidden="false" targetId="a52a-4687-32b7-2633" type="rule"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="0388-b176-d3d1-3b32" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
@@ -5121,6 +5138,9 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="d8f1-6d06-f085-f1ab" name="Inspire X" hidden="false" targetId="a4c9-42f5-6ea5-f3a3" type="rule"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="3eba-9a84-b2f3-dc26" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
@@ -5148,6 +5168,13 @@ Divulge: Deploy Units Step. Choose up to 3 friendly units with AI. Each chosen u
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="3acb-ae9c-3312-f011" name="Suppressive" hidden="false" targetId="c4ab-770e-5009-04ff" type="rule"/>
+                <infoLink id="0381-25ad-210d-0e2a" name="Tactical X" hidden="false" targetId="3ca9-ac5e-80c1-3778" type="rule"/>
+                <infoLink id="1c11-fd2a-d098-0c0d" name="Reliable X" hidden="false" targetId="4486-a71b-a40f-39af" type="rule"/>
+                <infoLink id="22a9-d56e-6abd-0390" name="Precise X" hidden="false" targetId="abcc-5c44-68ef-82d1" type="rule"/>
+                <infoLink id="aa85-6dcd-2a60-f75d" name="Inspire X" hidden="false" targetId="a4c9-42f5-6ea5-f3a3" type="rule"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="df9e-77ea-a29c-c4c0" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false"/>
               </categoryLinks>
@@ -16112,7 +16139,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0">Delta Squad</characteristic>
             <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">4</characteristic>
             <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">1</characteristic>
-            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">None</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">--</characteristic>
             <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">--</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">--</characteristic>
@@ -16419,7 +16446,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <characteristics>
             <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Add 1 Obi-Wan Kenobi miniature. This unit gains Immune: Pierce. When this unit defends against a Ranged attack, during the Reroll Defense Dice step, you may exhaust this card. If you do, this unit rerolls all of its defense dice. Leader. Sidearm: Melee, Ranged.</characteristic>
             <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Immune: Pierce, Leader, Sidearm: Melee, Sidearm: Ranged</characteristic>
-            <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+            <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">1 Wound</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -16474,7 +16501,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
           <characteristics>
             <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Add 1 Clone Commander Cody miniature. This unit gains Mechanized Infantry and Precise 1. Leader.</characteristic>
             <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Mechanized Infantry, Precise 1, Leader</characteristic>
-            <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+            <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">1 Wound</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -17437,7 +17464,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
               <characteristics>
                 <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Add 1 Fives miniature. This unit&apos;s Courage is increased by 1. Leader. This unit gains Charge and Coordinate: Clone Trooper.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Leader, Charge, Coordinate: Clone Trooper</characteristic>
-                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">2 Wounds</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -17614,7 +17641,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
               <characteristics>
                 <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Add 1 Clone Captain Rex miniature. Leader. This unit increases its Courage by 1 and gains 1 Command and 1 Training upgrade icon. When this unit defeats an enemy unit with an attack, after the Attack action is resolved, this unit may make 1 free action.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Leader</characteristic>
-                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">2 Wounds</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20156,7 +20183,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <characteristics>
                 <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Add 1 Echo miniature. Leader. This unit gains Reliable 1.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Leader, Reliable 1</characteristic>
-                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">2 Wounds</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -21400,7 +21427,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <characteristics>
                 <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Add 1 Wrecker miniature. While this miniature is on the battlefield, Omega Counterparts in this unit cannot be assigned Wounds.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
-                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">3 Wounds</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -24425,7 +24452,7 @@ When defending against a melee attack, you gain Immune: Pierce.</characteristic>
               <characteristics>
                 <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Reconfigure. Two-sided card: DC-17m ICWS Sniper Configuration / DC-17m ICWS Anti-Armor Configuration. At the start of this unit&apos;s Activation, you may flip this card. Sniper side: While 1 or more of these weapons is in an Attack Pool, that Attack Pool gains Lethal 1.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Reconfigure, Lethal 1</characteristic>
-                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">Exhaust</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -24931,26 +24958,19 @@ During the End Phase, roll 1 red defense die for each of your inactive shield to
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b02e-5e92-e811-3668" type="max"/>
           </constraints>
           <profiles>
-            <profile id="8e4d-1fac-3966-d09f" name="C-3PO" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+            <profile id="9628-d830-33a0-5bc2" name="C-3PO" hidden="false" typeId="2332-473f-2385-57a9" typeName="1.3 Counterparts">
               <characteristics>
-                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee</characteristic>
-                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">White</characteristic>
-                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
-                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
-              </characteristics>
-            </profile>
-            <profile id="7b28-a0cd-d46d-1618" name="C-3PO" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
-              <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Calculate Odds. Distract. Counterpart: R2-D2.</characteristic>
-                <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Calculate Odds, Distract, Counterpart: R2-D2</characteristic>
-                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+                <characteristic name="Subtitle" typeId="c2e6-3500-61a5-d6c4">Human Cyborg Relations</characteristic>
+                <characteristic name="Models" typeId="8715-991f-4d19-44ff">1</characteristic>
+                <characteristic name="Wounds" typeId="266b-70a8-36f6-e230">2</characteristic>
+                <characteristic name="Keywords" typeId="0ced-237b-5eb7-c27f">Card Action: Calculate Odds, Free Card Action: Distract, Counterpart: R2-D2</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink id="070b-9f5d-c3e3-706e" name="Calculate Odds" hidden="false" targetId="9e27-98a3-38df-26b6" type="rule"/>
-            <infoLink id="9a23-6915-e85f-feb7" name="Distract" hidden="false" targetId="d95f-7467-0347-568b" type="rule"/>
             <infoLink id="3641-33a5-2ea2-151c" name="Counterpart: *Unit Name*" hidden="false" targetId="e299-9d9f-3a98-06d8" type="rule"/>
+            <infoLink id="9a23-6915-e85f-feb7" name="Distract" hidden="false" targetId="d95f-7467-0347-568b" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="ce9c-209c-4aa6-3155" name="Counterpart" hidden="false" targetId="5607-032a-efad-1d58" primary="false"/>
@@ -24959,6 +24979,27 @@ During the End Phase, roll 1 red defense die for each of your inactive shield to
             <categoryLink id="7778-9ded-bc78-d7bc" name="Republic" hidden="false" targetId="e057-60b7-67f9-8d41" primary="false"/>
             <categoryLink id="1811-2238-655b-4462" name="Small Base" hidden="false" targetId="6db2-4a46-fe95-7db6" primary="false"/>
           </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="0eea-5344-8dc0-cbb5" name=" Clumsy Kick" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3f02-7703-0cac-5cb6" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e57-7539-c122-82c7" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="709d-b876-909b-fe89" name=" Clumsy Kick" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee</characteristic>
+                    <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">White</characteristic>
+                    <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                    <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="15.0"/>
           </costs>
