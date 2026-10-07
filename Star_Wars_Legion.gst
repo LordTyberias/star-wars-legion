@@ -14219,7 +14219,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="72.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="81e5-d57c-f6d2-48f4" name="•Super Tactical Droid" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="81e5-d57c-f6d2-48f4" name="•Super Tactical Droid" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -23919,7 +23919,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="5.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="89f9-76d9-c9e1-0bd5" name="•DT-57 &quot;Annihilator&quot;" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="89f9-76d9-c9e1-0bd5" name="•DT-57 &quot;Annihilator&quot;" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>

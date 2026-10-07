@@ -76,7 +76,7 @@
     <entryLink id="05f8-4989-9028-107b" name="DRK-1 Sith Probe Droids" hidden="true" collective="false" import="true" targetId="8fab-8387-1ad1-e0cb" type="selectionEntry"/>
     <entryLink id="284a-409f-c728-774e" name="T-series Tactical Droid" hidden="false" collective="false" import="true" targetId="efb2-3aa9-b123-8be5" type="selectionEntry"/>
     <entryLink id="2d29-7c47-f129-11a1" name="IG-100 MagnaGuard" hidden="false" collective="false" import="true" targetId="1ebf-a178-398b-24d0" type="selectionEntry"/>
-    <entryLink id="f00a-2984-6142-5315" name="•Super Tactical Droid" hidden="false" collective="false" import="true" targetId="81e5-d57c-f6d2-48f4" type="selectionEntry"/>
+    <entryLink id="f00a-2984-6142-5315" name="•Super Tactical Droid" hidden="true" collective="false" import="true" targetId="81e5-d57c-f6d2-48f4" type="selectionEntry"/>
     <entryLink id="a5ca-3be4-dd8e-f759" name="•Super Tactical Droid (Kraken)" hidden="false" collective="false" import="true" targetId="5251-4c50-6611-76af" type="selectionEntry"/>
     <entryLink id="ff8b-d6ba-cfbd-bb69" name="•Super Tactical Droid (Kalani)" hidden="false" collective="false" import="true" targetId="c114-73b7-7652-b01a" type="selectionEntry"/>
     <entryLink id="6401-4a32-8241-dba8" name="DSD1 Dwarf Spider Droid" hidden="false" collective="false" import="true" targetId="40c2-4474-5a52-c1e9" type="selectionEntry"/>
