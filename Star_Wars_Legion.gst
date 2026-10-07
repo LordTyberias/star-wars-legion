@@ -117,6 +117,7 @@
     <categoryEntry id="c12f-ba6d-8a73-68aa" name="Field Commander" hidden="false"/>
     <categoryEntry id="a28a-87da-7eed-cb4c" name="Leader" hidden="false"/>
     <categoryEntry id="b46a-c38f-ea92-6ba6" name="Mandalorian Trooper" hidden="false"/>
+    <categoryEntry id="3d06-5654-a2f3-6b0a" name="Ewok Trooper" hidden="false"/>
     <categoryEntry id="3a36-59d0-2eae-0daa" name="Mercenary" hidden="false"/>
     <categoryEntry id="036b-1d04-f52f-ab54" name="Allies of Convenience" hidden="false"/>
     <categoryEntry id="13b7-8929-3146-3cf4" name="Mercenary Commander" hidden="false"/>
@@ -7303,36 +7304,40 @@ Before Lando Calrissian rolls dice during an attack, you may declare a Block or 
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Critical</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">3</characteristic>
-            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">→ Jump 2, Arsenal 2, Bounty, Impervious, Sharpshooter 2</characteristic>
-            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Training x2, Gear x2</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Card Action: Jump 2, Mercenary: Empire, Arsenal 2, Bounty, Impervious, Independent: Aim 1 or Dodge 1, Sharpshooter 2</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Training x2, Comms, Gear x2</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="05d5-2d21-f855-0a50" name="Sharpshooter X" hidden="false" targetId="18d2-5e0e-d04e-f771" type="rule"/>
-        <infoLink id="b8b4-9ed5-bcb2-d13a" name="Impervious" hidden="false" targetId="8c57-6c86-0cef-1c7b" type="rule"/>
-        <infoLink id="59e2-dd4f-94ed-8ae2" name="Bounty" hidden="false" targetId="eeb9-4663-ff09-4a4e" type="rule"/>
-        <infoLink id="89a4-003c-9801-022f" name="Arsenal X" hidden="false" targetId="1397-0314-a3ee-acc2" type="rule"/>
         <infoLink id="44ff-c1e8-07a6-4127" name="Jump X" hidden="false" targetId="89df-da7f-b7da-6c0c" type="rule"/>
+        <infoLink id="0bc2-5172-8464-976f" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
+        <infoLink id="89a4-003c-9801-022f" name="Arsenal X" hidden="false" targetId="1397-0314-a3ee-acc2" type="rule"/>
+        <infoLink id="59e2-dd4f-94ed-8ae2" name="Bounty" hidden="false" targetId="eeb9-4663-ff09-4a4e" type="rule"/>
+        <infoLink id="b8b4-9ed5-bcb2-d13a" name="Impervious" hidden="false" targetId="8c57-6c86-0cef-1c7b" type="rule"/>
+        <infoLink id="52c0-af8b-9970-37a4" name="Independent: *Token* X/*Action*" hidden="false" targetId="d58c-cff1-0ebb-5fb4" type="rule"/>
+        <infoLink id="05d5-2d21-f855-0a50" name="Sharpshooter X" hidden="false" targetId="18d2-5e0e-d04e-f771" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f1c3-f508-98cf-218f" name="Operative" hidden="false" targetId="fb02-3ca8-cc7c-87a9" primary="true"/>
-        <categoryLink id="33ca-f990-c3b7-ca5e" name="Dark Side" hidden="false" targetId="5131-9cfb-0e26-b28b" primary="false"/>
-        <categoryLink id="26d9-0810-d95b-b86f" name="Imperial" hidden="false" targetId="ef40-1f1b-5578-a7c3" primary="false"/>
         <categoryLink id="772e-f61f-6381-1d63" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="82da-175d-3cf5-075d" name="Mandalorian Trooper" hidden="false" targetId="b46a-c38f-ea92-6ba6" primary="false"/>
+        <categoryLink id="1c32-9693-492e-f578" name="Mercenary" hidden="false" targetId="3a36-59d0-2eae-0daa" primary="false"/>
+        <categoryLink id="1f76-9461-f570-64dc" name="Mercenary Operative" hidden="false" targetId="3d53-fe97-bc89-78c5" primary="false"/>
+        <categoryLink id="c215-ef1e-114b-bcff" name="Affiliation: Rogues" hidden="false" targetId="eb20-63ea-433c-bc49" primary="false"/>
         <categoryLink id="7e7c-b91f-a0e0-db59" name="Small Base" hidden="false" targetId="6db2-4a46-fe95-7db6" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="36c9-575d-5162-01b8" name=" Boot Spike" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="36c9-575d-5162-01b8" name=" Boot Spikes" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8958-05bf-d421-1c9b" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c9cb-b160-983e-9cd3" type="max"/>
           </constraints>
           <profiles>
-            <profile id="3479-6d39-f016-a221" name=" Boot Spike" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+            <profile id="3479-6d39-f016-a221" name=" Boot Spikes" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
               <characteristics>
                 <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee</characteristic>
-                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red x2</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red x3</characteristic>
                 <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
                 <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
               </characteristics>
@@ -7342,10 +7347,54 @@ Before Lando Calrissian rolls dice during an attack, you may declare a Block or 
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6fb5-27cd-06db-9918" name=" Wrist Rocket" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="bb2d-7493-74a3-cb15" name=" Integrated Rockets" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a1e-0f92-2a63-fd39" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6f3b-c741-80aa-66f9" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="cc28-d1aa-f71f-92ae" name=" Integrated Rockets" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-2</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black x3</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Impact 1, Versatile</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="6f3c-9f2c-90c9-3876" name="Impact X" hidden="false" targetId="6da6-1112-3a36-33c2" type="rule"/>
+            <infoLink id="e172-f4a4-f1d4-7233" name="Versatile" hidden="false" targetId="1883-2f15-80aa-b25d" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bb2d-ef20-4654-ff03" name=" EE-3 Carbine Rifle" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="006f-7a1a-7396-1f2d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9831-bc7b-1a59-27e6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5e3d-9ea0-562f-f7d3" name=" EE-3 Carbine Rifle" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-3</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black x2</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Pierce 1</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="b1c0-8a6a-8d0c-2e52" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6fb5-27cd-06db-9918" name=" Wrist Rocket" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e651-c333-475b-acbc" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="82a2-0909-2767-c1aa" type="min"/>
           </constraints>
           <profiles>
             <profile id="4d98-2b9a-2f9c-ce79" name=" Wrist Rocket" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
@@ -7364,9 +7413,8 @@ Before Lando Calrissian rolls dice during an attack, you may declare a Block or 
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="dde5-cccd-e677-8b05" name=" Fett&apos;s E-3 Carbine" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="dde5-cccd-e677-8b05" name=" Fett&apos;s E-3 Carbine" hidden="true" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c8d4-7037-7eee-3943" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="442b-4b2f-c2ea-b472" type="max"/>
           </constraints>
           <profiles>
@@ -7388,19 +7436,20 @@ Before Lando Calrissian rolls dice during an attack, you may declare a Block or 
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="3d9b-59ac-c3e0-0128" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="06c9-5f62-6d83-3aa0" value="2"/>
-          </modifiers>
-        </entryLink>
         <entryLink id="4cd3-5d44-6088-f47a" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="d61f-e553-69e6-5ac1" value="2"/>
           </modifiers>
         </entryLink>
+        <entryLink id="463f-0585-4378-1374" name="Comms" hidden="false" collective="false" import="true" targetId="bbf8-c77e-246a-d5c6" type="selectionEntryGroup"/>
+        <entryLink id="3d9b-59ac-c3e0-0128" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="06c9-5f62-6d83-3aa0" value="2"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="120.0"/>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="130.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a672-8380-48cd-30a8" name="Scout Troopers" hidden="false" collective="false" import="true" type="unit">
@@ -9923,24 +9972,26 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Critical</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">--</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
-            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Bounty, Enrage 3, Expert Climber, Regenerate 3, Unhindered</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Mercenary: Empire, Separatist, Bounty, Enrage 3, Independent: Surge 2, Regenerate 3, Scale</characteristic>
             <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Training x2, Gear</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
+        <infoLink id="8ae2-1d18-c3ff-e9a0" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
         <infoLink id="921c-c31c-a8fa-edc7" name="Bounty" hidden="false" targetId="eeb9-4663-ff09-4a4e" type="rule"/>
-        <infoLink id="5ed2-a61e-f1b7-9bbc" name="Enrage" hidden="false" targetId="43ef-e5b2-b408-933f" type="infoGroup"/>
-        <infoLink id="e8bd-1df3-f419-120b" name="Expert Climber" hidden="false" targetId="e39c-9c4b-a68d-2dda" type="rule"/>
+        <infoLink id="4ee6-8903-2a5f-1478" name="Enrage X" hidden="false" targetId="4f1d-4b3a-0b15-dea6" type="rule"/>
+        <infoLink id="40a1-a90e-293c-7e41" name="Independent: *Token* X/*Action*" hidden="false" targetId="d58c-cff1-0ebb-5fb4" type="rule"/>
         <infoLink id="3afa-b365-cec2-5a0a" name="Regenerate X" hidden="false" targetId="8815-2915-1e7c-bc48" type="rule"/>
-        <infoLink id="2ed4-4dce-8340-e6d6" name="Unhindered" hidden="false" targetId="cac7-4e9c-5f18-1773" type="rule"/>
+        <infoLink id="798e-99ee-9138-8498" name="Scale" hidden="false" targetId="35a2-2f63-dc24-1c38" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7ca4-74b6-ebd8-3e0e" name="Operative" hidden="false" targetId="fb02-3ca8-cc7c-87a9" primary="true"/>
-        <categoryLink id="aa64-5f52-80ad-dd45" name="Dark Side" hidden="false" targetId="5131-9cfb-0e26-b28b" primary="false"/>
-        <categoryLink id="bb23-0c7f-9f77-bc67" name="Imperial" hidden="false" targetId="ef40-1f1b-5578-a7c3" primary="false"/>
-        <categoryLink id="88e9-bb09-e41a-e00f" name="Small Base" hidden="false" targetId="6db2-4a46-fe95-7db6" primary="false"/>
         <categoryLink id="0fed-dfa3-24e6-08e9" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="ea8d-cd27-526d-923a" name="Mercenary" hidden="false" targetId="3a36-59d0-2eae-0daa" primary="false"/>
+        <categoryLink id="26cf-69d0-3899-ad46" name="Mercenary Operative" hidden="false" targetId="3d53-fe97-bc89-78c5" primary="false"/>
+        <categoryLink id="8bae-f17c-bfb5-657d" name="Affiliation: Rogues" hidden="false" targetId="eb20-63ea-433c-bc49" primary="false"/>
+        <categoryLink id="88e9-bb09-e41a-e00f" name="Small Base" hidden="false" targetId="6db2-4a46-fe95-7db6" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="fd08-3e8f-50d1-33ed" name=" Frenzy" hidden="false" collective="false" import="true" type="upgrade">
@@ -9959,19 +10010,19 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="55ef-ed39-a61c-e7da" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
+            <infoLink id="0556-0598-b762-add1" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
           </infoLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="af59-ee76-02bb-ba20" name=" Relby-v10 Mortar Rifle" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="af59-ee76-02bb-ba20" name=" Mortar Rifle" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9445-0049-45f1-5af0" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6a93-e8c2-43e5-2e64" type="max"/>
           </constraints>
           <profiles>
-            <profile id="12b7-c54a-650b-5b74" name=" Relby-v10 Mortar Rifle" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+            <profile id="12b7-c54a-650b-5b74" name=" Mortar Rifle" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
               <characteristics>
                 <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">2-4</characteristic>
                 <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red, White x4</characteristic>
@@ -9981,8 +10032,8 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="2639-414d-c4fb-c12a" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
-            <infoLink id="5e96-a35e-8c6a-7085" name="Suppressive" hidden="false" targetId="c4ab-770e-5009-04ff" type="rule"/>
+            <infoLink id="a6eb-e7aa-ad33-9009" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
+            <infoLink id="d7bd-c617-b6c9-cea8" name="Suppressive" hidden="false" targetId="c4ab-770e-5009-04ff" type="rule"/>
           </infoLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
@@ -9998,7 +10049,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <entryLink id="1258-4187-9880-c2e3" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="115.0"/>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="105.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="958f-e019-e7bb-89fb" name="Tauntaun Riders" hidden="false" collective="false" import="true" type="unit">
@@ -12803,27 +12854,30 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">6</characteristic>
             <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">3</characteristic>
             <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
-            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Hit</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Critical</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
-            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">→ Jump 1, Bounty, Danger Sense 2, Sharpshooter 1, Steady</characteristic>
-            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Training, Comms, Gear, Armament, Grenades</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Card Action: Jump 1, Mercenary: Empire, Separatist, Bounty, Danger Sense 3, Independent: Dodge 2, Sharpshooter 1, Steady</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Training x2, Comms, Gear, Armament, Grenades</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="f773-c688-1489-9bea" name="Steady" hidden="false" targetId="e233-23ff-d4f9-d065" type="rule"/>
-        <infoLink id="30d3-d356-f33b-2741" name="Sharpshooter X" hidden="false" targetId="18d2-5e0e-d04e-f771" type="rule"/>
-        <infoLink id="a3b8-85a0-f081-906a" name="Danger Sense X" hidden="false" targetId="4af1-4705-8c43-ccd2" type="rule"/>
-        <infoLink id="2ae8-395b-c386-a4ce" name="Bounty" hidden="false" targetId="eeb9-4663-ff09-4a4e" type="rule"/>
         <infoLink id="3386-aaef-e6ce-6117" name="Jump X" hidden="false" targetId="89df-da7f-b7da-6c0c" type="rule"/>
+        <infoLink id="7285-1bbe-0abc-82d5" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
+        <infoLink id="2ae8-395b-c386-a4ce" name="Bounty" hidden="false" targetId="eeb9-4663-ff09-4a4e" type="rule"/>
+        <infoLink id="a3b8-85a0-f081-906a" name="Danger Sense X" hidden="false" targetId="4af1-4705-8c43-ccd2" type="rule"/>
+        <infoLink id="2859-26ea-9038-e86c" name="Independent: *Token* X/*Action*" hidden="false" targetId="d58c-cff1-0ebb-5fb4" type="rule"/>
+        <infoLink id="30d3-d356-f33b-2741" name="Sharpshooter X" hidden="false" targetId="18d2-5e0e-d04e-f771" type="rule"/>
+        <infoLink id="f773-c688-1489-9bea" name="Steady" hidden="false" targetId="e233-23ff-d4f9-d065" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c47a-c283-8c97-65cb" name="Operative" hidden="false" targetId="fb02-3ca8-cc7c-87a9" primary="true"/>
-        <categoryLink id="fc51-0dce-17db-8ec0" name="Dark Side" hidden="false" targetId="5131-9cfb-0e26-b28b" primary="false"/>
-        <categoryLink id="eb14-2ad5-cde3-6a95" name="Separatist" hidden="false" targetId="509e-5ffe-1bbb-5ff7" primary="false"/>
-        <categoryLink id="5ad0-55f0-145d-b311" name="Small Base" hidden="false" targetId="6db2-4a46-fe95-7db6" primary="false"/>
         <categoryLink id="1024-5fd1-5946-3cf5" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="ef38-890f-acac-ba99" name="Mercenary" hidden="false" targetId="3a36-59d0-2eae-0daa" primary="false"/>
+        <categoryLink id="a9c9-194b-f1d5-0d53" name="Mercenary Operative" hidden="false" targetId="3d53-fe97-bc89-78c5" primary="false"/>
+        <categoryLink id="aafe-eff6-b29e-cbaf" name="Affiliation: Rogues" hidden="false" targetId="eb20-63ea-433c-bc49" primary="false"/>
+        <categoryLink id="5ad0-55f0-145d-b311" name="Small Base" hidden="false" targetId="6db2-4a46-fe95-7db6" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="58d1-f9ae-32d5-1144" name=" Martial Arts" hidden="false" collective="false" import="true" type="upgrade">
@@ -12845,13 +12899,13 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1a72-7d7e-2b02-9c51" name=" Dual LL-30 Blaster Pistols" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1a72-7d7e-2b02-9c51" name=" LL-30 Blaster Pistols" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="82c3-b431-9748-244d" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="626e-cbac-b369-110f" type="max"/>
           </constraints>
           <profiles>
-            <profile id="92a3-35c4-91f4-43b0" name=" Dual LL-30 Blaster Pistols" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+            <profile id="92a3-35c4-91f4-43b0" name=" LL-30 Blaster Pistols" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
               <characteristics>
                 <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-2</characteristic>
                 <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black x4</characteristic>
@@ -12861,7 +12915,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="0dc6-4f15-5c85-85bf" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
+            <infoLink id="135d-4437-bbe7-3f13" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
           </infoLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
@@ -12869,14 +12923,18 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
+        <entryLink id="710d-18e9-59a8-5d69" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="d61f-e553-69e6-5ac1" value="2"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="fbdf-ff87-fb55-8751" name="Comms" hidden="false" collective="false" import="true" targetId="bbf8-c77e-246a-d5c6" type="selectionEntryGroup"/>
         <entryLink id="d620-2190-8d4f-8828" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup"/>
         <entryLink id="659e-d596-6e19-f788" name="Armament" hidden="false" collective="false" import="true" targetId="4a24-39a8-4f98-d844" type="selectionEntryGroup"/>
         <entryLink id="0449-b304-48ad-2ce5" name="Grenades" hidden="false" collective="false" import="true" targetId="8e00-7b0f-9520-fb2d" type="selectionEntryGroup"/>
-        <entryLink id="710d-18e9-59a8-5d69" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup"/>
-        <entryLink id="fbdf-ff87-fb55-8751" name="Comms" hidden="false" collective="false" import="true" targetId="bbf8-c77e-246a-d5c6" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="120.0"/>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="105.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a4cb-c87b-a754-99f1" name="BX-Series Droid Commandos (Strike Team)" hidden="true" collective="false" import="true" type="unit">
@@ -17866,6 +17924,2260 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
       </entryLinks>
       <costs>
         <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="55.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4927-d036-4631-c448" name="Swoop Bike Riders" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="4585-6195-1ebe-e2e8" name="Swoop Bike Riders" hidden="false" typeId="5f75-fcdc-0366-0628" typeName="1.4 Vehicles">
+          <characteristics>
+            <characteristic name="Models" typeId="621a-0141-7be7-8335">2</characteristic>
+            <characteristic name="Wounds" typeId="eee7-55c8-4a95-6177">3</characteristic>
+            <characteristic name="Resilience" typeId="8f53-abe0-8322-e7d2">-</characteristic>
+            <characteristic name="Defense" typeId="a098-86b4-db8f-c431">White</characteristic>
+            <characteristic name="Attack Surge" typeId="8bb0-caac-b4b4-82cd">Hit</characteristic>
+            <characteristic name="Defense Surge" typeId="1ca6-e726-090a-340d">Block</characteristic>
+            <characteristic name="Speed" typeId="4f1a-9937-f30d-051a">3</characteristic>
+            <characteristic name="Keywords" typeId="b524-8c1f-51b8-94fa">Mercenary: Rebel, Republic, Cover 1, Independent: Aim 1 or Dodge 1, Reinforcements, Speeder 1</characteristic>
+            <characteristic name="Upgrade Bar" typeId="7374-8d85-f1fe-aee4">Comms</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="658b-f242-2860-45d2" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
+        <infoLink id="2ed3-4b93-2f55-3910" name="Cover X" hidden="false" targetId="99c4-94e0-7110-4e99" type="rule"/>
+        <infoLink id="1e89-81cb-13b3-ba93" name="Independent: *Token* X/*Action*" hidden="false" targetId="d58c-cff1-0ebb-5fb4" type="rule"/>
+        <infoLink id="bd83-05a5-7861-deae" name="Reinforcements" hidden="false" targetId="6740-1df6-ae5c-45f5" type="rule"/>
+        <infoLink id="81f8-8e40-f0b3-82b8" name="Speeder X" hidden="false" targetId="f4bf-508a-a537-1ce7" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="30de-9d5e-1543-9f2f" name="Support" hidden="false" targetId="b871-39d2-ad98-e654" primary="true"/>
+        <categoryLink id="f8a1-a144-1140-023c" name="Repulsor Vehicle" hidden="false" targetId="1231-e5e0-ce18-e2be" primary="false"/>
+        <categoryLink id="7a89-989a-6d27-f6b1" name="Mercenary" hidden="false" targetId="3a36-59d0-2eae-0daa" primary="false"/>
+        <categoryLink id="559a-d952-e668-205e" name="Mercenary Support" hidden="false" targetId="78f0-e1a4-844d-29fc" primary="false"/>
+        <categoryLink id="38d2-9ed1-6d2d-b5df" name="Affiliation: Raiders" hidden="false" targetId="5dd4-b4c7-e698-5500" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5733-d9c5-db24-6c00" name=" Vibro-Ax" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec28-467e-0596-5abe" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3193-3028-46a0-b522" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="25b2-4051-4bed-6f54" name=" Vibro-Ax" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Overrun</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red, White x2</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Overrun 2</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="7de3-21ce-ca32-b8ba" name="Overrun X" hidden="false" targetId="6143-be23-e486-59e7" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="15c7-0b09-1474-6e6e" name=" Heavy Blaster Pistol" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="19e0-4642-4ce5-7eda" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e626-aefd-e135-02e3" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="68c6-651e-1b97-1100" name=" Heavy Blaster Pistol" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-2</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red, Black</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="227d-ab0c-71e5-3e9d" name="Comms" hidden="false" collective="false" import="true" targetId="bbf8-c77e-246a-d5c6" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="70.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b541-1410-3e30-9091" name="Pyke Syndicate Foot Soldiers" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="1321-23f5-1ba6-f598" name="Pyke Syndicate Foot Soldiers" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0"/>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">4</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">1</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">1</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">--</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Mercenary: Empire, Rebel, Republic, Separatist, Danger Sense 2, Independent: Dodge 1, Outmaneuver, Self-Preservation</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Heavy Weapon, Personnel, Gear, Grenades</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0cda-047b-fa02-f073" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
+        <infoLink id="5c85-76c5-a3e2-1f50" name="Danger Sense X" hidden="false" targetId="4af1-4705-8c43-ccd2" type="rule"/>
+        <infoLink id="5fb9-9ca6-9f9e-de3b" name="Independent: *Token* X/*Action*" hidden="false" targetId="d58c-cff1-0ebb-5fb4" type="rule"/>
+        <infoLink id="0f50-655d-3093-ee38" name="Outmaneuver" hidden="false" targetId="3aa7-726e-44cb-c46f" type="rule"/>
+        <infoLink id="7447-42f8-b57d-8916" name="Self-Preservation" hidden="false" targetId="62ae-479b-f470-346f" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6fd9-5b48-c34b-a92d" name="Corps" hidden="false" targetId="0020-8ddc-bf35-3170" primary="true"/>
+        <categoryLink id="31fc-461c-faf3-cfb2" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="41ba-327e-376a-8479" name="Mercenary" hidden="false" targetId="3a36-59d0-2eae-0daa" primary="false"/>
+        <categoryLink id="0460-f3d4-0a3e-ddbb" name="Mercenary Corps" hidden="false" targetId="0ef8-b3fb-e5b5-125f" primary="false"/>
+        <categoryLink id="ea6d-ecdb-cca2-d84b" name="Affiliation: The Pyke Syndicate" hidden="false" targetId="a55a-c3fd-7656-c509" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6ad8-ae92-8661-5144" name=" Stun Baton" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="64e6-9811-8157-581e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d8f5-5c14-de5a-dcf5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="59bf-584a-3717-123d" name=" Stun Baton" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">White x2</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9664-6469-e58b-0d7a" name=" P13 Long Blaster" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2ebf-9b52-ef37-e488" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5e61-ce80-e181-31dc" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d64f-0a7d-c142-d76a" name=" P13 Long Blaster" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-3</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="3d97-d1fa-1937-39b9" name="Heavy Weapon" hidden="false" collective="false" import="true" targetId="e8aa-f460-6961-1e6e" type="selectionEntryGroup"/>
+        <entryLink id="532e-06d6-3e12-31fa" name="Personnel" hidden="false" collective="false" import="true" targetId="5758-b6ce-3d80-b87c" type="selectionEntryGroup"/>
+        <entryLink id="1b49-f0c3-8823-10d6" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup"/>
+        <entryLink id="d417-5fc0-b6ee-84bb" name="Grenades" hidden="false" collective="false" import="true" targetId="8e00-7b0f-9520-fb2d" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="42.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="400e-02d6-d6de-7bb4" name="Pyke Syndicate Capo" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="f2bc-f9d4-6d5c-1519" name="Pyke Syndicate Capo" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0"/>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">4</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">--</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Mercenary: Empire, Rebel, Republic, Separatist, Aid: The Pyke Syndicate, Danger Sense 2, Independent: Dodge 1</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Command, Gear</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="131a-6268-5b5c-784c" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
+        <infoLink id="65ae-5b5c-35b0-f427" name="Aid: *Affiliation/Unit Type*" hidden="false" targetId="9aac-049a-26f0-9625" type="rule"/>
+        <infoLink id="2d3d-ba61-4a6e-ea74" name="Danger Sense X" hidden="false" targetId="4af1-4705-8c43-ccd2" type="rule"/>
+        <infoLink id="3457-3716-fbc9-8be7" name="Independent: *Token* X/*Action*" hidden="false" targetId="d58c-cff1-0ebb-5fb4" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8756-f350-8257-3abb" name="Commander" hidden="false" targetId="8837-65e9-c1bd-f304" primary="true"/>
+        <categoryLink id="425f-d23d-6bf4-5137" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="f080-e337-f963-f014" name="Mercenary" hidden="false" targetId="3a36-59d0-2eae-0daa" primary="false"/>
+        <categoryLink id="6ddc-bba6-2d76-33cf" name="Mercenary Commander" hidden="false" targetId="13b7-8929-3146-3cf4" primary="false"/>
+        <categoryLink id="5871-a239-4ca5-690d" name="Affiliation: The Pyke Syndicate" hidden="false" targetId="a55a-c3fd-7656-c509" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="bba1-83ec-70b7-355b" name=" Unarmed" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2c0e-1717-dfa3-4734" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="805e-336c-900a-dc44" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="134b-a085-0698-1933" name=" Unarmed" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bb57-9a20-8342-ae2a" name=" Capo's Long Blaster" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f14b-e36b-9ed4-7e1f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5fa3-a0e7-819b-d0fd" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="fc82-91b6-ffb3-53f4" name=" Capo's Long Blaster" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-3</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black x3</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="2519-4ec5-ffc4-c15a" name="Command" hidden="false" collective="false" import="true" targetId="1f7e-c9c9-fb71-62b2" type="selectionEntryGroup"/>
+        <entryLink id="7450-1d98-55a3-dff9" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="42.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="90f2-6e05-4492-88fa" name="Black Sun Vigo" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="93ae-a545-fa30-2048" name="Black Sun Vigo" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0"/>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">4</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">--</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">--</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Mercenary: Empire, Separatist, Aid: Black Sun, Dauntless, Independent: Aim 1</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Command, Gear</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ab7b-80f8-57ea-a626" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
+        <infoLink id="9e77-52a4-ea9c-6d52" name="Aid: *Affiliation/Unit Type*" hidden="false" targetId="9aac-049a-26f0-9625" type="rule"/>
+        <infoLink id="7b3b-2234-8e06-e5bf" name="Dauntless" hidden="false" targetId="e30f-0dd3-f201-316a" type="rule"/>
+        <infoLink id="b0cf-0a8d-348d-daec" name="Independent: *Token* X/*Action*" hidden="false" targetId="d58c-cff1-0ebb-5fb4" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ae5c-c500-affa-9d03" name="Commander" hidden="false" targetId="8837-65e9-c1bd-f304" primary="true"/>
+        <categoryLink id="cf44-b179-3eea-294b" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="cdbc-c995-b87e-5d78" name="Mercenary" hidden="false" targetId="3a36-59d0-2eae-0daa" primary="false"/>
+        <categoryLink id="440d-331d-b563-99c5" name="Mercenary Commander" hidden="false" targetId="13b7-8929-3146-3cf4" primary="false"/>
+        <categoryLink id="d909-8e22-6587-20ab" name="Affiliation: Black Sun" hidden="false" targetId="d92a-1098-7a6a-e11d" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4acd-001b-9855-d372" name=" Vigo's Double Blaster" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b73c-8298-e26a-028f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="62bd-1e7d-27ec-8a70" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9725-9980-38a7-0734" name=" Vigo's Double Blaster" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee/1-2</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black x2, White x2</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="f04f-b9bd-b878-f81a" name="Command" hidden="false" collective="false" import="true" targetId="1f7e-c9c9-fb71-62b2" type="selectionEntryGroup"/>
+        <entryLink id="27a1-733f-7415-650b" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="efe7-1722-7b78-70ea" name="Black Sun Enforcers" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="f035-a2d4-d0ca-5b78" name="Black Sun Enforcers" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0"/>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">4</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">1</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">1</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">--</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">--</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Mercenary: Empire, Separatist, Dauntless, Independent: Aim 1, Precise 1, Self-Preservation</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Heavy Weapon, Personnel, Gear, Grenades</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0560-8aa2-9de9-95e2" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
+        <infoLink id="853d-4aef-a477-fa85" name="Dauntless" hidden="false" targetId="e30f-0dd3-f201-316a" type="rule"/>
+        <infoLink id="40f9-3862-ef7e-8280" name="Independent: *Token* X/*Action*" hidden="false" targetId="d58c-cff1-0ebb-5fb4" type="rule"/>
+        <infoLink id="fa87-ef47-d7f0-4000" name="Precise X" hidden="false" targetId="abcc-5c44-68ef-82d1" type="rule"/>
+        <infoLink id="5cb3-1e49-a048-2091" name="Self-Preservation" hidden="false" targetId="62ae-479b-f470-346f" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4252-f0cb-d4f9-a128" name="Corps" hidden="false" targetId="0020-8ddc-bf35-3170" primary="true"/>
+        <categoryLink id="44aa-7232-dd70-15c3" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="9c31-4719-57b6-b6c6" name="Mercenary" hidden="false" targetId="3a36-59d0-2eae-0daa" primary="false"/>
+        <categoryLink id="09a0-38c3-e0ba-06c9" name="Mercenary Corps" hidden="false" targetId="0ef8-b3fb-e5b5-125f" primary="false"/>
+        <categoryLink id="803f-b93e-2a71-e403" name="Affiliation: Black Sun" hidden="false" targetId="d92a-1098-7a6a-e11d" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6faa-6b36-02d6-889b" name=" Close Quarters Combat" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1268-8de9-7f1d-d27d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="df17-63b1-13d8-b1e9" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="12eb-74fc-2a25-04a3" name=" Close Quarters Combat" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6803-922a-256b-b967" name=" Double Blaster" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="09d1-4cdb-f631-404f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bbaa-2d65-adf1-9b9f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="bc66-526e-2e4b-4971" name=" Double Blaster" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-2</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black, White</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="38cb-c854-6b68-9a0b" name="Heavy Weapon" hidden="false" collective="false" import="true" targetId="e8aa-f460-6961-1e6e" type="selectionEntryGroup"/>
+        <entryLink id="6123-bd40-13ae-83ca" name="Personnel" hidden="false" collective="false" import="true" targetId="5758-b6ce-3d80-b87c" type="selectionEntryGroup"/>
+        <entryLink id="a8ea-4077-f20b-3728" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup"/>
+        <entryLink id="df02-96db-b080-4330" name="Grenades" hidden="false" collective="false" import="true" targetId="8e00-7b0f-9520-fb2d" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="63be-cc77-6cdc-a461" name="•Maul (A Rival)" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d05c-19d3-eda3-1b51" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="300d-e0b5-67f7-4509" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e402-be84-7649-508d" name="Maul (A Rival)" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0">A Rival</characteristic>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">6</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">3</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">--</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">--</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Card Action: Jump 1, Allies of Convenience, Deflect, Immune: Pierce, Juyo Mastery, Wound 1</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Force x2, Command, Training, Armament</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1b25-6b3b-2388-f215" name="Jump X" hidden="false" targetId="89df-da7f-b7da-6c0c" type="rule"/>
+        <infoLink id="6296-b544-ceab-3018" name="Allies of Convenience" hidden="false" targetId="0676-13b9-f93f-fcfd" type="rule"/>
+        <infoLink id="8267-e2d1-936c-d588" name="Deflect" hidden="false" targetId="1466-e70a-9d14-34ef" type="rule"/>
+        <infoLink id="244b-013d-6a0d-1858" name="Immune: Pierce" hidden="false" targetId="6e3a-8e96-a01b-9573" type="rule"/>
+        <infoLink id="1370-8dc7-0787-f95d" name="Juyo Mastery" hidden="false" targetId="9ca2-252c-19ee-1c48" type="rule"/>
+        <infoLink id="7cdc-624f-4c26-1057" name="Wound X" hidden="false" targetId="b82b-2e06-90b9-5b2b" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8e77-0027-d947-4ab1" name="Operative" hidden="false" targetId="fb02-3ca8-cc7c-87a9" primary="true"/>
+        <categoryLink id="c79c-e89d-2158-bef4" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="a8c6-7d5d-93d4-ca11" name="Force User" hidden="false" targetId="8d3c-284b-625a-5346" primary="false"/>
+        <categoryLink id="4d8d-a202-3b66-65a5" name="Affiliation: Maul Loyalists" hidden="false" targetId="bb66-cfcc-bb92-b40e" primary="false"/>
+        <categoryLink id="032c-80bd-5ef9-550f" name="Allies of Convenience" hidden="false" targetId="036b-1d04-f52f-ab54" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8774-b0c9-2ed1-a048" name=" Maul's Lightsaber" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e5cd-46a9-01e7-3426" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c723-e6b1-eae4-674b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7223-98de-df6d-7693" name=" Maul's Lightsaber" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red x4, White x4</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Impact 2, Pierce 2</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="27ff-98d2-afae-1593" name="Impact X" hidden="false" targetId="6da6-1112-3a36-33c2" type="rule"/>
+            <infoLink id="42ed-bb1a-0dad-ea11" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="dfc4-431a-f692-3ec5" name="Force" hidden="false" collective="false" import="true" targetId="9510-6572-6230-10dc" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="f32c-40e7-e111-1574" value="2"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="1822-f6db-349f-b982" name="Command" hidden="false" collective="false" import="true" targetId="1f7e-c9c9-fb71-62b2" type="selectionEntryGroup"/>
+        <entryLink id="5918-7ce5-68e2-1025" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup"/>
+        <entryLink id="e604-e8aa-aed2-4a30" name="Armament" hidden="false" collective="false" import="true" targetId="4a24-39a8-4f98-d844" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="130.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cdb2-7ccb-28f6-047c" name="•Gar Saxon (Militant Commander)" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="821f-8b28-a675-8580" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b477-df1c-8536-735c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="b015-ac60-4da8-4d75" name="Gar Saxon (Militant Commander)" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0">Militant Commander</characteristic>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">5</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Critical</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">3</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Card Action: Jump 2, Allies of Convenience, Compel, Impervious, Sharpshooter 1</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Training x2, Comms, Gear x2, Armament x2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b6ef-1943-bd1b-7913" name="Jump X" hidden="false" targetId="89df-da7f-b7da-6c0c" type="rule"/>
+        <infoLink id="892d-059e-5b97-ca69" name="Allies of Convenience" hidden="false" targetId="0676-13b9-f93f-fcfd" type="rule"/>
+        <infoLink id="647b-77c4-8c37-9769" name="Compel" hidden="false" targetId="2dd6-d418-4321-f5bf" type="rule"/>
+        <infoLink id="4205-82fe-4971-fd0b" name="Impervious" hidden="false" targetId="8c57-6c86-0cef-1c7b" type="rule"/>
+        <infoLink id="15d6-814f-8f91-0b88" name="Sharpshooter X" hidden="false" targetId="18d2-5e0e-d04e-f771" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3474-3bef-56d3-4195" name="Commander" hidden="false" targetId="8837-65e9-c1bd-f304" primary="true"/>
+        <categoryLink id="4644-ca87-c633-5abb" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="2742-7897-b81e-4bc2" name="Mandalorian Trooper" hidden="false" targetId="b46a-c38f-ea92-6ba6" primary="false"/>
+        <categoryLink id="4d6b-ca56-9cb4-b99e" name="Affiliation: Maul Loyalists" hidden="false" targetId="bb66-cfcc-bb92-b40e" primary="false"/>
+        <categoryLink id="aae7-db3a-2293-fbd8" name="Allies of Convenience" hidden="false" targetId="036b-1d04-f52f-ab54" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d9dc-aa26-97ec-d688" name=" Combat Training" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="26ba-ac51-76ae-977b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="55ee-e14e-05c8-8c36" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4ae6-eae0-ad5b-f5bd" name=" Combat Training" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red x2</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9054-8f23-6ef6-3513" name=" Gar's Blaster Pistol" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a877-279f-c6af-9d5c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6aa6-452a-5d76-118a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ab45-e4ae-7551-8aa5" name=" Gar's Blaster Pistol" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-2</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red, Black x2, White</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Pierce 1</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="e83a-1d29-07d1-9cf7" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="62b6-9d88-71be-dfc1" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="d61f-e553-69e6-5ac1" value="2"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="b58c-a670-c467-a3f0" name="Comms" hidden="false" collective="false" import="true" targetId="bbf8-c77e-246a-d5c6" type="selectionEntryGroup"/>
+        <entryLink id="88a0-49cc-4367-876c" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="06c9-5f62-6d83-3aa0" value="2"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="ab40-08d1-aaf4-1368" name="Armament" hidden="false" collective="false" import="true" targetId="4a24-39a8-4f98-d844" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="30b2-5aa3-b2e7-79f8" value="2"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="90.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="27f6-d217-8efe-6c46" name="•Boba Fett (Daimyo of Mos Espa)" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d6c1-caf1-d475-7451" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b7ec-e13c-41f2-97a7" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="3517-ec85-84fe-26a1" name="Boba Fett (Daimyo of Mos Espa)" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0">Daimyo of Mos Espa</characteristic>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">5</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">3</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Critical</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Card Action: Jump 1, Mercenary: Rebel, Arsenal 2, Impervious, Independent: Standby 1, Sentinel, Sharpshooter 1, Tactical 1</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Training x2, Gear x2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="eab6-3128-ea3e-c9e1" name="Jump X" hidden="false" targetId="89df-da7f-b7da-6c0c" type="rule"/>
+        <infoLink id="f460-078b-2a72-5c71" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
+        <infoLink id="a4c4-9bda-4e86-e7b7" name="Arsenal X" hidden="false" targetId="1397-0314-a3ee-acc2" type="rule"/>
+        <infoLink id="907a-3311-fa4a-75ac" name="Impervious" hidden="false" targetId="8c57-6c86-0cef-1c7b" type="rule"/>
+        <infoLink id="eb2b-88a4-4c62-e6b5" name="Independent: *Token* X/*Action*" hidden="false" targetId="d58c-cff1-0ebb-5fb4" type="rule"/>
+        <infoLink id="4b31-fd56-8adb-8194" name="Sentinel" hidden="false" targetId="cbd6-101d-191d-d189" type="rule"/>
+        <infoLink id="0ad9-b2a7-7011-5e60" name="Sharpshooter X" hidden="false" targetId="18d2-5e0e-d04e-f771" type="rule"/>
+        <infoLink id="f4be-b49f-d8e5-6a22" name="Tactical X" hidden="false" targetId="3ca9-ac5e-80c1-3778" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="53d0-6386-a25a-c0e9" name="Operative" hidden="false" targetId="fb02-3ca8-cc7c-87a9" primary="true"/>
+        <categoryLink id="8fd0-796c-c7c9-6b02" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="e028-3fa3-7ed9-a688" name="Mandalorian Trooper" hidden="false" targetId="b46a-c38f-ea92-6ba6" primary="false"/>
+        <categoryLink id="34ae-36d5-163a-62a7" name="Mercenary" hidden="false" targetId="3a36-59d0-2eae-0daa" primary="false"/>
+        <categoryLink id="ffda-9d5c-db80-ba80" name="Mercenary Operative" hidden="false" targetId="3d53-fe97-bc89-78c5" primary="false"/>
+        <categoryLink id="7fb9-270c-f8c0-e9a2" name="Affiliation: Rogues" hidden="false" targetId="eb20-63ea-433c-bc49" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="471a-fe4f-7a1d-c272" name=" Gaderffii Stick" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1b76-4221-8cf8-99ea" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4e15-46de-8954-898b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2a8b-4bc5-ebac-3061" name=" Gaderffii Stick" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red x3, Black</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1c08-1f50-53be-29a2" name=" EE-3 Carbine Rifle" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f3e7-883b-db8f-a037" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f9a-e2e9-2205-4a4c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="637a-2eed-64fe-4f0a" name=" EE-3 Carbine Rifle" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-3</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black x3</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Pierce 1</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="989e-9fa8-366e-02e7" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="aaa3-2273-0ca3-2ba6" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="d61f-e553-69e6-5ac1" value="2"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="b67a-a7d7-ec48-e90c" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="06c9-5f62-6d83-3aa0" value="2"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="120.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="893b-b198-c4fa-6648" name="•IG-11" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="69bb-de39-848f-3503" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e2a6-6f6f-0801-034b" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="41a1-b353-2aed-2869" name="IG-11" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0">Nurse and Protect</characteristic>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">5</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Hit</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">--</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Mercenary: Empire, Rebel, Armor 1, Gunslinger, Impervious, Programmed, Sharpshooter 1</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Training, Comms, Gear, Programming</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b2ee-7ffa-43e3-cf80" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
+        <infoLink id="5b27-deec-37a2-7284" name="Armor X" hidden="false" targetId="557e-290b-b9ad-2a97" type="rule"/>
+        <infoLink id="2f3a-814c-971a-882b" name="Gunslinger" hidden="false" targetId="1668-29f8-4fe1-651a" type="rule"/>
+        <infoLink id="4505-c032-8d49-4c21" name="Impervious" hidden="false" targetId="8c57-6c86-0cef-1c7b" type="rule"/>
+        <infoLink id="60a3-1829-8a62-acb8" name="Programmed" hidden="false" targetId="fa89-b58c-fdbb-c725" type="rule"/>
+        <infoLink id="4f30-daa5-31c2-5a8f" name="Sharpshooter X" hidden="false" targetId="18d2-5e0e-d04e-f771" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9bde-25f2-21f1-eaac" name="Operative" hidden="false" targetId="fb02-3ca8-cc7c-87a9" primary="true"/>
+        <categoryLink id="e379-9971-8f98-aa3b" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="7667-5850-b810-3108" name="Droid Trooper" hidden="false" targetId="40ed-3197-cf01-9a62" primary="false"/>
+        <categoryLink id="bf0c-8e46-9ddd-02a6" name="Mercenary" hidden="false" targetId="3a36-59d0-2eae-0daa" primary="false"/>
+        <categoryLink id="9b5e-d456-7d60-bd27" name="Mercenary Operative" hidden="false" targetId="3d53-fe97-bc89-78c5" primary="false"/>
+        <categoryLink id="99b4-2dc3-aa1e-b2b9" name="Affiliation: Rogues" hidden="false" targetId="eb20-63ea-433c-bc49" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8480-1d67-1c36-a885" name=" Overwhelm" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f89d-f2a6-8dc3-2451" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="800f-9ef3-25fa-8c90" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0660-f604-b74c-9e1a" name=" Overwhelm" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red x4</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b69d-881c-3e3d-4eca" name=" Modified E-11 Blaster" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="87e4-170b-6302-68de" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2643-7fa4-4111-b61f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e92c-abff-1bed-afc8" name=" Modified E-11 Blaster" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-3</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black, White x2</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Pierce 1</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="155c-5e58-4e4f-4450" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5039-f06a-9b43-5eac" name=" Modified DLT-20A" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4723-fca4-f3a9-f7f0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7786-07f0-fb56-30ee" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="327e-ebdf-88a5-d07f" name=" Modified DLT-20A" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-4</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black x2, White</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="c115-c1be-e9d2-1f87" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup"/>
+        <entryLink id="8a43-789c-35a6-81a1" name="Comms" hidden="false" collective="false" import="true" targetId="bbf8-c77e-246a-d5c6" type="selectionEntryGroup"/>
+        <entryLink id="23ea-184e-781e-e3fa" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup"/>
+        <entryLink id="e67f-dfca-dc3a-60db" name="Programming" hidden="false" collective="false" import="true" targetId="1c9b-29ff-9d21-cdf5" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="105.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6d6a-5c85-d886-ef74" name="•IG-88" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5c4e-25d8-d12c-e88a" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ce38-830d-9b94-a5c2" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="c044-c3b3-9e8a-adaf" name="IG-88" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0">Notorious Assassin Droid</characteristic>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">5</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Critical</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">--</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Mercenary: Empire, Armor 1, Arsenal 2, Bounty, Impervious, Sharpshooter 1</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Training, Comms, Gear</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f9e2-b3ea-a025-f479" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
+        <infoLink id="93d4-40c2-c87d-24d3" name="Armor X" hidden="false" targetId="557e-290b-b9ad-2a97" type="rule"/>
+        <infoLink id="5386-87e1-dd8f-a210" name="Arsenal X" hidden="false" targetId="1397-0314-a3ee-acc2" type="rule"/>
+        <infoLink id="2f50-b303-b907-f467" name="Bounty" hidden="false" targetId="eeb9-4663-ff09-4a4e" type="rule"/>
+        <infoLink id="b344-ff9b-82dc-d9f0" name="Impervious" hidden="false" targetId="8c57-6c86-0cef-1c7b" type="rule"/>
+        <infoLink id="4f0b-8bb2-6c37-f61b" name="Sharpshooter X" hidden="false" targetId="18d2-5e0e-d04e-f771" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="fca5-ca75-2851-f02a" name="Operative" hidden="false" targetId="fb02-3ca8-cc7c-87a9" primary="true"/>
+        <categoryLink id="9ce8-61ba-438f-d188" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="4816-f00d-2133-e235" name="Droid Trooper" hidden="false" targetId="40ed-3197-cf01-9a62" primary="false"/>
+        <categoryLink id="b001-868b-2781-9e6d" name="Mercenary" hidden="false" targetId="3a36-59d0-2eae-0daa" primary="false"/>
+        <categoryLink id="05f8-190d-bb29-507d" name="Mercenary Operative" hidden="false" targetId="3d53-fe97-bc89-78c5" primary="false"/>
+        <categoryLink id="9ba2-d573-b394-a3c6" name="Affiliation: Rogues" hidden="false" targetId="eb20-63ea-433c-bc49" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="803c-2207-f1fc-4f5a" name=" Vibrocleaver" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d05d-d564-7fb5-9e42" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="53e5-b3b9-b748-f60c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="13d2-56c3-54c5-6479" name=" Vibrocleaver" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red, Black, White</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Pierce 1</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="8032-d380-16a7-3e5a" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9479-5ff7-b941-a04c" name=" Modified E-11 Blaster" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2073-f7a4-06e8-d996" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="70bb-1c7f-b0e0-79d6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="395a-d235-057f-a6a7" name=" Modified E-11 Blaster" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-3</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black, White x2</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Pierce 1, Versatile</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="b0ba-795b-297c-d8c8" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
+            <infoLink id="39d2-4446-89c9-fa6e" name="Versatile" hidden="false" targetId="1883-2f15-80aa-b25d" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ab5b-4bda-a127-d12c" name=" Modified DLT-20A" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="46ce-90a8-432f-f92a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c682-311f-676d-ebe5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="fa2c-2b1a-51bc-aca0" name=" Modified DLT-20A" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-4</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black x2, White</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="239e-e335-221a-a8e6" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup"/>
+        <entryLink id="1d15-dec2-0930-7312" name="Comms" hidden="false" collective="false" import="true" targetId="bbf8-c77e-246a-d5c6" type="selectionEntryGroup"/>
+        <entryLink id="1bd4-a3ca-9112-9e17" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="110.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="88b3-98a3-80df-1f27" name="Mandalorian Super Commandos" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="0520-7b72-4a3d-10e3" name="Mandalorian Super Commandos" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0"/>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">3</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">1</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">--</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">3</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Card Action: Jump 2, Defend 1, Impervious, Independent: Aim 1</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Heavy Weapon, Training, Comms, Gear, Grenades, Armament</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8e3f-b806-a470-46d8" name="Jump X" hidden="false" targetId="89df-da7f-b7da-6c0c" type="rule"/>
+        <infoLink id="04d8-002b-5a31-0682" name="Defend X" hidden="false" targetId="efd2-65da-0994-0b77" type="rule"/>
+        <infoLink id="e2f1-e964-d556-36c5" name="Impervious" hidden="false" targetId="8c57-6c86-0cef-1c7b" type="rule"/>
+        <infoLink id="807d-143f-ab59-9194" name="Independent: *Token* X/*Action*" hidden="false" targetId="d58c-cff1-0ebb-5fb4" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8851-3ddb-2b47-ac09" name="Special Forces" hidden="false" targetId="8be4-90a0-cf45-973c" primary="true"/>
+        <categoryLink id="f6e0-bb05-b266-3140" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="157b-17ad-f6ef-138d" name="Mandalorian Trooper" hidden="false" targetId="b46a-c38f-ea92-6ba6" primary="false"/>
+        <categoryLink id="ee50-352a-bb8e-0755" name="Affiliation: Maul Loyalists" hidden="false" targetId="bb66-cfcc-bb92-b40e" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="492c-75a8-6ee5-099a" name=" WESTAR-35 Blasters" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="108e-6241-1b57-4ff5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0d36-1b3a-01f6-7ac0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="def8-0195-4576-c4ad" name=" WESTAR-35 Blasters" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee/1-2</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">White x2</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e84b-5931-fc0b-044f" name=" Blaster Carbines" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="054a-ec36-7630-afee" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b4aa-7a44-5c97-3458" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4f13-0802-9cdd-786e" name=" Blaster Carbines" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-3</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black, White</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="c999-6024-e835-683c" name="Heavy Weapon" hidden="false" collective="false" import="true" targetId="e8aa-f460-6961-1e6e" type="selectionEntryGroup"/>
+        <entryLink id="f08e-b711-8af5-d56e" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup"/>
+        <entryLink id="5ac2-0e09-6279-707b" name="Comms" hidden="false" collective="false" import="true" targetId="bbf8-c77e-246a-d5c6" type="selectionEntryGroup"/>
+        <entryLink id="08c7-253c-df25-67da" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup"/>
+        <entryLink id="aad6-8279-ac62-4e1b" name="Grenades" hidden="false" collective="false" import="true" targetId="8e00-7b0f-9520-fb2d" type="selectionEntryGroup"/>
+        <entryLink id="c06c-73e6-6639-b0fa" name="Armament" hidden="false" collective="false" import="true" targetId="4a24-39a8-4f98-d844" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="66.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a061-7174-2a23-fce0" name="•The Bad Batch (Mercenary)" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d3d9-13dc-c59c-14f8" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bce2-2e9e-81e4-d163" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="26fd-5f57-b962-8315" name="The Bad Batch (Mercenary)" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0">Clone Force 99</characteristic>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">0</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">2</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">3</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">--</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">--</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Mercenary: Rebel, Equip: Echo, Hunter, Wrecker, Tech, Impervious, Scale, Steady, Sharpshooter 1, We're Not Regs</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Heavy Weapon x4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="8f59-6dc2-ab7b-e291" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
+        <infoLink id="346f-d208-30a9-9485" name="Equip: *Upgrade Name*" hidden="false" targetId="0d6b-c5f0-443a-a0fc" type="rule"/>
+        <infoLink id="7497-2cf6-c171-8124" name="Impervious" hidden="false" targetId="8c57-6c86-0cef-1c7b" type="rule"/>
+        <infoLink id="1a2a-fb88-5ec1-1346" name="Scale" hidden="false" targetId="35a2-2f63-dc24-1c38" type="rule"/>
+        <infoLink id="e615-761c-7805-98bb" name="Steady" hidden="false" targetId="e233-23ff-d4f9-d065" type="rule"/>
+        <infoLink id="4d87-69f8-c964-0c5e" name="Sharpshooter X" hidden="false" targetId="18d2-5e0e-d04e-f771" type="rule"/>
+        <infoLink id="5bf5-a621-096a-ac62" name="We're Not Regs" hidden="false" targetId="2ba8-776b-ed26-8219" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="735d-ed4a-5016-48f0" name="Operative" hidden="false" targetId="fb02-3ca8-cc7c-87a9" primary="true"/>
+        <categoryLink id="bed5-e254-0cfd-544f" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="a249-2e35-d54b-8877" name="Clone Trooper" hidden="false" targetId="ce68-baa2-9223-05d7" primary="false"/>
+        <categoryLink id="dc2c-a1d9-a7cd-e9ea" name="Mercenary" hidden="false" targetId="3a36-59d0-2eae-0daa" primary="false"/>
+        <categoryLink id="6199-71bf-19a7-d85a" name="Mercenary Operative" hidden="false" targetId="3d53-fe97-bc89-78c5" primary="false"/>
+        <categoryLink id="d526-91a5-f9e2-0e2d" name="Affiliation: Rogues" hidden="false" targetId="eb20-63ea-433c-bc49" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="7bfb-b88f-d5c9-427f" name=" Advanced Training" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1538-cd8b-6ddd-df79" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa0f-c416-4447-4ba5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8908-6016-5bdf-7e52" name=" Advanced Training" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="770d-3f15-f2ab-1ccb" name=" DC-17 Blaster Pistols" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0393-3eb5-a1b9-d61e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a4ed-dc34-4263-c2bf" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4bf3-2d8a-6025-e5c7" name=" DC-17 Blaster Pistols" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-2</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black, White</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="720b-3c32-a3b8-95ea" name="Heavy Weapon" hidden="false" collective="false" import="true" targetId="e8aa-f460-6961-1e6e" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="2505-fca4-a091-9364" value="4"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="7865-0da0-85ae-6871" name="Counterpart" hidden="false" collective="false" import="true" targetId="a1b6-1a92-678f-fe19" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="150.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="419f-217e-3a0b-9028" name="Ewok Skirmishers" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="ee83-a579-7040-d4af" name="Ewok Skirmishers" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0"/>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">6</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">1</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">1</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">--</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">--</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Mercenary: Rebel, Low Profile, Unhindered</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Heavy Weapon, Personnel x2, Training</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="248e-dc5c-7794-caf5" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
+        <infoLink id="a553-4aef-464a-bf12" name="Low Profile" hidden="false" targetId="a7bd-0b72-3096-1729" type="rule"/>
+        <infoLink id="29ae-3bb8-c6ce-ad35" name="Unhindered" hidden="false" targetId="cac7-4e9c-5f18-1773" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ad4c-dc45-f8b4-9032" name="Corps" hidden="false" targetId="0020-8ddc-bf35-3170" primary="true"/>
+        <categoryLink id="7a28-16bb-65be-14ce" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="2b4f-7afb-b22b-ec5d" name="Ewok Trooper" hidden="false" targetId="3d06-5654-a2f3-6b0a" primary="false"/>
+        <categoryLink id="d34a-cfcf-73bc-83c9" name="Mercenary" hidden="false" targetId="3a36-59d0-2eae-0daa" primary="false"/>
+        <categoryLink id="de7e-65da-3520-36ae" name="Mercenary Corps" hidden="false" targetId="0ef8-b3fb-e5b5-125f" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="535e-ab9b-f735-78f2" name=" Spears" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8473-ad68-915b-8680" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bac7-b208-2395-3da7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9619-a862-c737-7185" name=" Spears" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="b99e-361c-20bc-ffd1" name="Heavy Weapon" hidden="false" collective="false" import="true" targetId="e8aa-f460-6961-1e6e" type="selectionEntryGroup"/>
+        <entryLink id="8139-c5d1-4a6b-af9c" name="Personnel" hidden="false" collective="false" import="true" targetId="5758-b6ce-3d80-b87c" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="90fb-be14-baee-f7ba" value="2"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="7543-8419-166c-9764" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2f4e-7fe4-05c3-0c23" name="Ewok Slingers" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="d66a-cb37-517c-35d5" name="Ewok Slingers" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0"/>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">6</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">1</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">1</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">--</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">--</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Mercenary: Rebel, Independent: Surge 1, Low Profile, Target 1, Unhindered</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Heavy Weapon, Personnel x2, Training</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d483-01b3-4132-8b11" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
+        <infoLink id="dd2b-f4ea-c2f7-3f0d" name="Independent: *Token* X/*Action*" hidden="false" targetId="d58c-cff1-0ebb-5fb4" type="rule"/>
+        <infoLink id="a98e-1f97-66c4-21c3" name="Low Profile" hidden="false" targetId="a7bd-0b72-3096-1729" type="rule"/>
+        <infoLink id="8210-e3fc-8b42-ab76" name="Target X" hidden="false" targetId="9daa-4ccf-63bd-7524" type="rule"/>
+        <infoLink id="b9d8-598c-ef4a-e87d" name="Unhindered" hidden="false" targetId="cac7-4e9c-5f18-1773" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c4ee-b723-9fa1-4559" name="Special Forces" hidden="false" targetId="8be4-90a0-cf45-973c" primary="true"/>
+        <categoryLink id="8258-0ab9-5031-bcd5" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="8833-e25e-6d0e-5a6c" name="Ewok Trooper" hidden="false" targetId="3d06-5654-a2f3-6b0a" primary="false"/>
+        <categoryLink id="fecd-33d3-1123-e7a2" name="Mercenary" hidden="false" targetId="3a36-59d0-2eae-0daa" primary="false"/>
+        <categoryLink id="e111-ce07-3954-dd44" name="Mercenary Special Forces" hidden="false" targetId="5579-bfde-9295-3245" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8813-2627-0dd7-073e" name=" Stones" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4dbb-0e55-a4f4-761d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e32c-8d8b-ad40-ab2b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b88c-78a4-ebd7-cb28" name=" Stones" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">White</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1fd7-6d03-e94d-a6fc" name=" Slings" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8273-7f42-334d-ae20" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5c04-ec6a-5ac7-534a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3071-b367-df5c-1ebe" name=" Slings" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-2</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Primitive</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="7b3a-2d98-80bb-0cc0" name="Primitive" hidden="false" targetId="8ac9-adaa-a0d7-6c0e" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="e85b-93af-e96a-bbec" name="Heavy Weapon" hidden="false" collective="false" import="true" targetId="e8aa-f460-6961-1e6e" type="selectionEntryGroup"/>
+        <entryLink id="4a6b-ea12-6f56-4dd2" name="Personnel" hidden="false" collective="false" import="true" targetId="5758-b6ce-3d80-b87c" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="90fb-be14-baee-f7ba" value="2"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="443d-d0d6-3b3c-07df" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="38.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4839-d5a4-3b3c-48da" name="•Logray" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2b93-556c-711a-96da" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a7b6-5a95-94e4-b9a9" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="058a-faa4-94ae-615c" name="Logray" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0">Superstitious Shaman</characteristic>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">4</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">3</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">--</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Aid: Ewok Trooper, Independent: Aim 1 or Dodge 1, Inspire 2, Low Profile, Nimble</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Command, Training x3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6201-9c54-a3b9-223d" name="Aid: *Affiliation/Unit Type*" hidden="false" targetId="9aac-049a-26f0-9625" type="rule"/>
+        <infoLink id="df8e-05ad-19ca-c70d" name="Independent: *Token* X/*Action*" hidden="false" targetId="d58c-cff1-0ebb-5fb4" type="rule"/>
+        <infoLink id="b088-d462-f6e6-e308" name="Inspire X" hidden="false" targetId="a4c9-42f5-6ea5-f3a3" type="rule"/>
+        <infoLink id="9711-8e9f-f321-b1fb" name="Low Profile" hidden="false" targetId="a7bd-0b72-3096-1729" type="rule"/>
+        <infoLink id="7aae-c3a2-109c-e4a2" name="Nimble" hidden="false" targetId="3565-7985-bb05-c0a5" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="831a-d2ec-4fde-27c6" name="Commander" hidden="false" targetId="8837-65e9-c1bd-f304" primary="true"/>
+        <categoryLink id="f7c4-bc21-f71a-c448" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="751c-74bb-4116-e94e" name="Ewok Trooper" hidden="false" targetId="3d06-5654-a2f3-6b0a" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="deb4-7590-2eee-8c34" name=" Staff" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c2b2-a8a7-ac0e-1bf8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8504-1aa4-f6ee-0098" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6f75-f5f0-4665-222f" name=" Staff" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black x2</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Suppressive</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="899a-bba2-7bb1-3409" name="Suppressive" hidden="false" targetId="c4ab-770e-5009-04ff" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="7a32-6ef7-26a6-2a4f" name="Command" hidden="false" collective="false" import="true" targetId="1f7e-c9c9-fb71-62b2" type="selectionEntryGroup"/>
+        <entryLink id="e334-8029-0c99-0934" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="d61f-e553-69e6-5ac1" value="3"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="45.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="291c-150b-74f1-b3fe" name="•C-3PO (Golden God)" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f997-5077-d9e8-d195" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8a55-f857-5ced-4893" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9a62-9d98-6ec5-2493" name="C-3PO (Golden God)" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0">Golden God</characteristic>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">3</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">--</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Card Action: Master Storyteller, Compel: Ewok Trooper, Divine Influence, Infiltrate</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e902-1011-2ba3-e185" name="Master Storyteller" hidden="false" targetId="b66f-7bde-72eb-715b" type="rule"/>
+        <infoLink id="e110-ec49-5928-5e8b" name="Compel: *Unit Type*" hidden="false" targetId="9cef-9d4f-e0db-2332" type="rule"/>
+        <infoLink id="db77-4c63-a55c-7997" name="Divine Influence" hidden="false" targetId="9c32-2863-676e-a133" type="rule"/>
+        <infoLink id="9312-4413-5ea3-3dd7" name="Infiltrate" hidden="false" targetId="ae26-c3d3-240e-2c73" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6701-d3d9-7612-4edd" name="Commander" hidden="false" targetId="8837-65e9-c1bd-f304" primary="true"/>
+        <categoryLink id="8d15-af2d-cc4a-86cd" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="e144-cd84-4cc3-5193" name="Droid Trooper" hidden="false" targetId="40ed-3197-cf01-9a62" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="80e8-8425-4b76-c378" name="•Wicket" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f907-3878-f701-587a" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a65c-c71a-53b8-26a8" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="0969-0955-cf94-53d4" name="Wicket" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0">Hero of Bright Tree</characteristic>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">5</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">White</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Critical</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Mercenary: Rebel, Independent: Dodge 1, Low Profile, Nimble, Relentless, Scout 1, Scouting Party 2, Unhindered</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Training x3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1a07-ba1f-5b79-a946" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
+        <infoLink id="6be7-4173-7ccb-1559" name="Independent: *Token* X/*Action*" hidden="false" targetId="d58c-cff1-0ebb-5fb4" type="rule"/>
+        <infoLink id="aa77-df0c-5b35-73fa" name="Low Profile" hidden="false" targetId="a7bd-0b72-3096-1729" type="rule"/>
+        <infoLink id="2fcb-9343-42e8-1277" name="Nimble" hidden="false" targetId="3565-7985-bb05-c0a5" type="rule"/>
+        <infoLink id="c973-35f2-3649-1382" name="Relentless" hidden="false" targetId="0c2b-f655-41f4-2efb" type="rule"/>
+        <infoLink id="1528-7d96-4760-a578" name="Scout X" hidden="false" targetId="7410-450a-1190-5b7e" type="rule"/>
+        <infoLink id="8287-1edc-22e6-94bc" name="Scouting Party X" hidden="false" targetId="bbaa-6329-e1b9-86fb" type="rule"/>
+        <infoLink id="4ae2-f632-bf97-66a1" name="Unhindered" hidden="false" targetId="cac7-4e9c-5f18-1773" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c3f4-6401-9d28-cd0e" name="Commander" hidden="false" targetId="8837-65e9-c1bd-f304" primary="true"/>
+        <categoryLink id="4fc9-409e-d566-1967" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="5647-1fa8-699d-870e" name="Ewok Trooper" hidden="false" targetId="3d06-5654-a2f3-6b0a" primary="false"/>
+        <categoryLink id="b75c-3847-4b80-9b51" name="Mercenary" hidden="false" targetId="3a36-59d0-2eae-0daa" primary="false"/>
+        <categoryLink id="913b-68d9-53a5-aabd" name="Mercenary Commander" hidden="false" targetId="13b7-8929-3146-3cf4" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="139b-7dc9-82c4-02cf" name=" Spear" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f863-17fb-bfae-f14f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d33f-c1bb-8045-7379" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4a5d-f958-6cc4-238b" name=" Spear" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red x2, Black</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Pierce 1</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="9886-808b-2b04-8665" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a9d1-5cc1-5cce-41fd" name=" Sling" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9444-b6b2-c8cb-23ec" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c4bb-0a45-8aa4-052a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9cde-d251-9d54-639c" name=" Sling" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-2</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Pierce 1, Primitive</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="f4b5-9321-fc42-90ef" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
+            <infoLink id="3f8f-1cf0-165d-dd5d" name="Primitive" hidden="false" targetId="8ac9-adaa-a0d7-6c0e" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="da9e-4da9-fb80-1671" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="d61f-e553-69e6-5ac1" value="3"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="64.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b253-4aa1-4b6e-db5e" name="•Chewbacca (Let the Wookiee Win)" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c1f6-0477-9321-37e7" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5f25-e6f2-0fc7-20eb" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="6759-8ccb-ac56-fe3b" name="Chewbacca (Let the Wookiee Win)" hidden="false" typeId="5f75-fcdc-0366-0628" typeName="1.4 Vehicles">
+          <characteristics>
+            <characteristic name="Models" typeId="621a-0141-7be7-8335">1</characteristic>
+            <characteristic name="Wounds" typeId="eee7-55c8-4a95-6177">11</characteristic>
+            <characteristic name="Resilience" typeId="8f53-abe0-8322-e7d2">8</characteristic>
+            <characteristic name="Defense" typeId="a098-86b4-db8f-c431">White</characteristic>
+            <characteristic name="Attack Surge" typeId="8bb0-caac-b4b4-82cd">Critical</characteristic>
+            <characteristic name="Defense Surge" typeId="1ca6-e726-090a-340d">Block</characteristic>
+            <characteristic name="Speed" typeId="4f1a-9937-f30d-051a">2</characteristic>
+            <characteristic name="Keywords" typeId="b524-8c1f-51b8-94fa">Armor 5, Arsenal 2, Incognito, Inspire 3, Weak Point 1: Rear</characteristic>
+            <characteristic name="Upgrade Bar" typeId="7374-8d85-f1fe-aee4"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a68d-b238-00c2-dc57" name="Armor X" hidden="false" targetId="557e-290b-b9ad-2a97" type="rule"/>
+        <infoLink id="f774-6923-3da3-b6f1" name="Arsenal X" hidden="false" targetId="1397-0314-a3ee-acc2" type="rule"/>
+        <infoLink id="4692-12ec-96b4-31a6" name="Incognito" hidden="false" targetId="9dd1-210e-b149-b2c0" type="rule"/>
+        <infoLink id="83a0-af9d-5160-fca3" name="Inspire X" hidden="false" targetId="a4c9-42f5-6ea5-f3a3" type="rule"/>
+        <infoLink id="0776-8551-d3b7-1e04" name="Weak Point X: Rear" hidden="false" targetId="23a9-6a39-9307-2469" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="eed1-8756-fd7a-9401" name="Heavy" hidden="false" targetId="2efc-25e2-f8de-7494" primary="true"/>
+        <categoryLink id="6b86-e1c6-1a4c-5e76" name="Ground Vehicle" hidden="false" targetId="ee3b-cb96-3862-edb2" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4127-01da-896b-76d5" name=" Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6c32-596c-0e11-5b64" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3814-0cfd-3e3c-9b01" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f0be-83e7-e031-2552" name=" Grenade Launcher" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee/1-2</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black x2</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Fixed: Front, Blast</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="7f41-1369-e99f-809b" name="Fixed: Front" hidden="false" targetId="ac2f-0059-9352-edff" type="rule"/>
+            <infoLink id="288f-8ca5-322d-794a" name="Blast" hidden="false" targetId="c8d6-c6c5-f2fe-daad" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3d22-28fa-50d8-7cda" name=" 88i Twin Light Blaster" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6fa7-8195-9783-1550" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bd89-10cd-ba2f-2a57" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="f553-face-89a7-f02b" name=" 88i Twin Light Blaster" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee/1-3</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red, Black, White</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Fixed: Front, Impact 1</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="8609-48a3-73c6-c563" name="Fixed: Front" hidden="false" targetId="ac2f-0059-9352-edff" type="rule"/>
+            <infoLink id="857d-1bfa-d454-d39e" name="Impact X" hidden="false" targetId="6da6-1112-3a36-33c2" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="104e-835b-a583-d8dc" name=" MS-4 Twin Blaster" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="63d5-6179-9ee5-5d6f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bf18-5b01-dde3-00ef" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6de8-ef7b-55b4-6036" name=" MS-4 Twin Blaster" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-4</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red x2, Black x2, White x2</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Fixed: Front, Impact 3</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="09d2-d170-2230-80d5" name="Fixed: Front" hidden="false" targetId="ac2f-0059-9352-edff" type="rule"/>
+            <infoLink id="2182-ebab-9996-8617" name="Impact X" hidden="false" targetId="6da6-1112-3a36-33c2" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="180.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bc2d-7de2-a40c-64c8" name="•Ursa Wren" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cdac-b1c2-3777-cc08" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b918-3b83-e611-f677" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="abbc-df4a-27fe-cc6d" name="Ursa Wren" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0">Leader of Clan Wren</characteristic>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">5</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Hit</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">3</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Mercenary: Rebel, Card Action: Bolster 2, Card Action: Jump 2, Entourage: Clan Wren Veterans, Impervious, Inspire 1, Nimble, We Fight for Our Family</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Command, Training x2, Gear x2, Grenades</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c7fa-5c50-3099-fc1f" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
+        <infoLink id="bb78-c369-a300-6faa" name="Bolster X" hidden="false" targetId="bc35-e8ee-5f31-74bc" type="rule"/>
+        <infoLink id="cdf1-6876-975a-cd7f" name="Jump X" hidden="false" targetId="89df-da7f-b7da-6c0c" type="rule"/>
+        <infoLink id="0189-b228-e107-0fe0" name="Entourage: *Unit Name*" hidden="false" targetId="339f-758b-8d7e-9b82" type="rule"/>
+        <infoLink id="62fc-22e8-8573-442a" name="Impervious" hidden="false" targetId="8c57-6c86-0cef-1c7b" type="rule"/>
+        <infoLink id="0f4d-e7c5-b3ff-92ad" name="Inspire X" hidden="false" targetId="a4c9-42f5-6ea5-f3a3" type="rule"/>
+        <infoLink id="ae5a-513e-b944-57e3" name="Nimble" hidden="false" targetId="3565-7985-bb05-c0a5" type="rule"/>
+        <infoLink id="8ca4-2af5-6cc9-972c" name="We Fight for Our Family" hidden="false" targetId="8613-7167-89d7-6ebe" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5f6c-fbdd-c894-67b7" name="Commander" hidden="false" targetId="8837-65e9-c1bd-f304" primary="true"/>
+        <categoryLink id="c56a-8ae1-5fbf-62a8" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="f8a6-3d12-c578-9ad9" name="Mandalorian Trooper" hidden="false" targetId="b46a-c38f-ea92-6ba6" primary="false"/>
+        <categoryLink id="390a-84db-0861-4520" name="Mercenary" hidden="false" targetId="3a36-59d0-2eae-0daa" primary="false"/>
+        <categoryLink id="0773-9e21-74df-8af7" name="Mercenary Commander" hidden="false" targetId="13b7-8929-3146-3cf4" primary="false"/>
+        <categoryLink id="5289-a6de-8953-6143" name="Affiliation: Clan Wren" hidden="false" targetId="0fac-950b-f1fb-4d34" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5c3e-0246-2910-cece" name=" Blaster Pistols" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a24d-b246-96b2-9ad3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b617-5796-da39-ea76" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b7fb-17cb-890a-51c1" name=" Blaster Pistols" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee/1-2</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red x2, Black x2</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="0854-8805-b65f-f9df" name="Command" hidden="false" collective="false" import="true" targetId="1f7e-c9c9-fb71-62b2" type="selectionEntryGroup"/>
+        <entryLink id="ffbc-c32d-da26-5617" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="d61f-e553-69e6-5ac1" value="2"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="73ab-c114-79d3-5f11" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="06c9-5f62-6d83-3aa0" value="2"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="d9d5-ab63-27b8-a73b" name="Grenades" hidden="false" collective="false" import="true" targetId="8e00-7b0f-9520-fb2d" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="75.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="19ca-06a3-5327-c82c" name="•Din Djarin" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9512-35b4-4982-27c2" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d205-65be-0de2-7169" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="bec5-1b23-2f75-c170" name="Din Djarin" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0">The Mandalorian</characteristic>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">5</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">3</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Critical</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Mercenary: Empire, Rebel, Arsenal 2, Bounty, Impervious, Independent: Aim 1 and Dodge 1, Tactical 1</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Training x2, Comms, Gear x2, Armament</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="674d-9444-a2f0-52df" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
+        <infoLink id="84af-c4b3-4c8b-3020" name="Arsenal X" hidden="false" targetId="1397-0314-a3ee-acc2" type="rule"/>
+        <infoLink id="76a6-7b2b-4624-c5e9" name="Bounty" hidden="false" targetId="eeb9-4663-ff09-4a4e" type="rule"/>
+        <infoLink id="b978-63f8-c038-6763" name="Impervious" hidden="false" targetId="8c57-6c86-0cef-1c7b" type="rule"/>
+        <infoLink id="c2a4-9d55-f5c7-2927" name="Independent: *Token* X/*Action*" hidden="false" targetId="d58c-cff1-0ebb-5fb4" type="rule"/>
+        <infoLink id="c476-cb97-51e8-4157" name="Tactical X" hidden="false" targetId="3ca9-ac5e-80c1-3778" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1f2e-e931-4084-5805" name="Operative" hidden="false" targetId="fb02-3ca8-cc7c-87a9" primary="true"/>
+        <categoryLink id="2941-b59d-d7d4-f042" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="29be-3fb7-bdfe-a673" name="Mandalorian Trooper" hidden="false" targetId="b46a-c38f-ea92-6ba6" primary="false"/>
+        <categoryLink id="74ab-4be8-e4db-62c8" name="Mercenary" hidden="false" targetId="3a36-59d0-2eae-0daa" primary="false"/>
+        <categoryLink id="0ac5-0562-14e3-c3bc" name="Mercenary Operative" hidden="false" targetId="3d53-fe97-bc89-78c5" primary="false"/>
+        <categoryLink id="62b8-98a8-1e1d-584a" name="Affiliation: Children of the Watch" hidden="false" targetId="7016-6dd5-7d93-d697" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="3f71-0cfc-9469-2501" name=" Vibroknife" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dcab-5ffc-c59e-56da" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="32d0-0883-e8a1-e59b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="eb05-f018-e65e-0d22" name=" Vibroknife" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black x2</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Lethal 1</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="c2fd-a376-1b9d-2bf5" name="Lethal X" hidden="false" targetId="3cf0-869d-474d-6f37" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="45ef-d86a-b8ff-4494" name=" IB-94 Blaster Pistol" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b483-fc9c-f0ad-ac4d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4937-11a7-7fa2-a11a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3817-b790-dfb5-eb4a" name=" IB-94 Blaster Pistol" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-2</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red x2, Black</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Lethal 1, Long Shot, Versatile</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="7265-caa6-50fc-4cd6" name="Lethal X" hidden="false" targetId="3cf0-869d-474d-6f37" type="rule"/>
+            <infoLink id="d38a-8ba5-fcb9-ac2b" name="Long Shot" hidden="false" targetId="6995-d431-a4b2-4e4c" type="rule"/>
+            <infoLink id="8d38-6152-6198-f9a5" name="Versatile" hidden="false" targetId="1883-2f15-80aa-b25d" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="9726-8208-bf7d-ce55" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="d61f-e553-69e6-5ac1" value="2"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="ca8f-2452-97b4-00fd" name="Comms" hidden="false" collective="false" import="true" targetId="bbf8-c77e-246a-d5c6" type="selectionEntryGroup"/>
+        <entryLink id="9f47-f157-e98e-4935" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="06c9-5f62-6d83-3aa0" value="2"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="69ba-235e-6f88-a746" name="Armament" hidden="false" collective="false" import="true" targetId="4a24-39a8-4f98-d844" type="selectionEntryGroup"/>
+        <entryLink id="26d2-49cb-f373-c7b1" name="Counterpart" hidden="false" collective="false" import="true" targetId="a1b6-1a92-678f-fe19" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="95.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8700-3201-19c9-944a" name="Clan Wren Veterans" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="5eca-48da-aeb4-63ac" name="Clan Wren Veterans" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0"/>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">4</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">1</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Hit</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">3</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Mercenary: Rebel, Card Action: Jump 2, Dauntless, Impervious, Nimble, We Fight for Our Family</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Heavy Weapon, Personnel, Training, Gear, Grenades</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d3fc-c9ea-e961-b525" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
+        <infoLink id="44d1-a675-e893-0042" name="Jump X" hidden="false" targetId="89df-da7f-b7da-6c0c" type="rule"/>
+        <infoLink id="0514-f3f5-102a-2785" name="Dauntless" hidden="false" targetId="e30f-0dd3-f201-316a" type="rule"/>
+        <infoLink id="f76c-3028-3bbb-a0f7" name="Impervious" hidden="false" targetId="8c57-6c86-0cef-1c7b" type="rule"/>
+        <infoLink id="9aa5-b985-e7b5-9100" name="Nimble" hidden="false" targetId="3565-7985-bb05-c0a5" type="rule"/>
+        <infoLink id="3d77-8ef8-de79-723a" name="We Fight for Our Family" hidden="false" targetId="8613-7167-89d7-6ebe" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="bafd-d759-1678-9bda" name="Special Forces" hidden="false" targetId="8be4-90a0-cf45-973c" primary="true"/>
+        <categoryLink id="b1a7-fbd3-cdf9-ba9a" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="ae8b-0bff-2f46-ce96" name="Mandalorian Trooper" hidden="false" targetId="b46a-c38f-ea92-6ba6" primary="false"/>
+        <categoryLink id="2f84-e737-f418-5db6" name="Mercenary" hidden="false" targetId="3a36-59d0-2eae-0daa" primary="false"/>
+        <categoryLink id="1721-b0fe-69fe-5609" name="Mercenary Special Forces" hidden="false" targetId="5579-bfde-9295-3245" primary="false"/>
+        <categoryLink id="9929-4450-660d-913a" name="Affiliation: Clan Wren" hidden="false" targetId="0fac-950b-f1fb-4d34" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0fd2-22b7-29de-9148" name=" Blaster Pistols" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b1b0-2cc4-9caf-17f1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bd65-9302-1a72-ea28" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="44ca-e958-1c97-432a" name=" Blaster Pistols" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee/1-2</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red, White</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ecd1-e3ec-9c1d-9876" name=" Galar-15 Carbines" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3bae-92bd-b801-cc32" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b90a-13dc-b7b2-5256" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4b69-4283-a3dd-d3cd" name=" Galar-15 Carbines" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-3</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="86a8-c78b-348f-b756" name="Heavy Weapon" hidden="false" collective="false" import="true" targetId="e8aa-f460-6961-1e6e" type="selectionEntryGroup"/>
+        <entryLink id="e6f5-a8f1-9657-9795" name="Personnel" hidden="false" collective="false" import="true" targetId="5758-b6ce-3d80-b87c" type="selectionEntryGroup"/>
+        <entryLink id="19c0-a223-bdb4-d7e3" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup"/>
+        <entryLink id="52bc-27af-ea8a-db5b" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup"/>
+        <entryLink id="bbb2-3741-7c75-c7d6" name="Grenades" hidden="false" collective="false" import="true" targetId="8e00-7b0f-9520-fb2d" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="92.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="49e5-d362-2150-e5ca" name="•Rook Kast" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8069-b1af-a6e0-3909" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="45ed-880e-0f2a-bf6f" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="349b-ed15-6add-0183" name="Rook Kast" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0">Devoted to the Cause</characteristic>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">5</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Critical</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">3</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Card Action: Jump 2, Coordinate: Clan Saxon, Impervious, Retinue: Clan Saxon Commander, Target 1, Victory or Death</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Command, Training, Comms, Gear, Grenades</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a4cc-43f9-aaa0-e9f8" name="Jump X" hidden="false" targetId="89df-da7f-b7da-6c0c" type="rule"/>
+        <infoLink id="6f66-ace8-e2ac-e440" name="Coordinate: *Unit Type*" hidden="false" targetId="84b3-093e-53b5-e805" type="rule"/>
+        <infoLink id="a04c-9023-7d27-e32a" name="Impervious" hidden="false" targetId="8c57-6c86-0cef-1c7b" type="rule"/>
+        <infoLink id="aa15-5cd7-9ef2-ce9b" name="Retinue: *Unit Name*" hidden="false" targetId="d85e-627d-31dc-8df5" type="rule"/>
+        <infoLink id="262b-d1bb-40da-15c6" name="Target X" hidden="false" targetId="9daa-4ccf-63bd-7524" type="rule"/>
+        <infoLink id="22cd-eafa-4608-cb6a" name="Victory or Death" hidden="false" targetId="e1a8-0f3e-2aa3-be28" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2ea0-bd5b-0831-896a" name="Operative" hidden="false" targetId="fb02-3ca8-cc7c-87a9" primary="true"/>
+        <categoryLink id="f258-40f5-4e93-9362" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="8f5e-f77a-177b-4060" name="Mandalorian Trooper" hidden="false" targetId="b46a-c38f-ea92-6ba6" primary="false"/>
+        <categoryLink id="2e56-99d9-8e96-981e" name="Affiliation: Clan Saxon" hidden="false" targetId="9128-d0ad-28e7-51b5" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c357-7d41-1eed-21cb" name=" Dual Pistols" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="21c5-fbb7-4637-4b36" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="44e9-4c5c-feae-2df0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="982a-edb8-5531-a0d8" name=" Dual Pistols" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee/1-2</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red x2, Black x2</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Overwhelm</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="5049-d074-fd12-ee3b" name="Overwhelm" hidden="false" targetId="77f9-dc82-884d-47f4" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="df64-fe3b-26f6-3076" name="Command" hidden="false" collective="false" import="true" targetId="1f7e-c9c9-fb71-62b2" type="selectionEntryGroup"/>
+        <entryLink id="4383-dd71-e5e7-501c" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup"/>
+        <entryLink id="69c7-a533-4500-fbd9" name="Comms" hidden="false" collective="false" import="true" targetId="bbf8-c77e-246a-d5c6" type="selectionEntryGroup"/>
+        <entryLink id="5f77-5460-e151-be3e" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup"/>
+        <entryLink id="d9a1-da87-f7d5-aad1" name="Grenades" hidden="false" collective="false" import="true" targetId="8e00-7b0f-9520-fb2d" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="85.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f179-1ad0-aa0d-fddb" name="•Gar Saxon (Head of Clan Saxon)" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b42-c890-8e61-ce08" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a7b0-c628-c6f8-65bc" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="d53a-e6a6-392d-b2e1" name="Gar Saxon (Head of Clan Saxon)" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0">Head of Clan Saxon</characteristic>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">5</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Critical</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">3</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Card Action: Jump 2, Advanced Targeting: Trooper 1, Allies of Convenience, Compel, Impervious, Marksman, Victory or Death</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Command, Armament, Training x2, Gear x2, Grenades</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f5ca-66b2-cb3e-d7d6" name="Jump X" hidden="false" targetId="89df-da7f-b7da-6c0c" type="rule"/>
+        <infoLink id="751d-ba88-b532-6503" name="Advanced Targeting: *Unit Type* X" hidden="false" targetId="6f78-71ba-022e-cb20" type="rule"/>
+        <infoLink id="3fa6-a822-2b1c-4fea" name="Allies of Convenience" hidden="false" targetId="0676-13b9-f93f-fcfd" type="rule"/>
+        <infoLink id="843c-b995-5e3c-fa44" name="Compel" hidden="false" targetId="2dd6-d418-4321-f5bf" type="rule"/>
+        <infoLink id="94aa-72b6-e5c8-71f3" name="Impervious" hidden="false" targetId="8c57-6c86-0cef-1c7b" type="rule"/>
+        <infoLink id="2211-c092-4cc1-ad7f" name="Marksman" hidden="false" targetId="2622-a15a-021d-0a8c" type="rule"/>
+        <infoLink id="1e29-77c9-ff53-9720" name="Victory or Death" hidden="false" targetId="e1a8-0f3e-2aa3-be28" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="582e-d975-051c-fa8e" name="Commander" hidden="false" targetId="8837-65e9-c1bd-f304" primary="true"/>
+        <categoryLink id="e3ca-20ff-1c92-08a9" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="c709-5abb-de63-d8c4" name="Mandalorian Trooper" hidden="false" targetId="b46a-c38f-ea92-6ba6" primary="false"/>
+        <categoryLink id="bd4c-0232-4485-f6f9" name="Affiliation: Clan Saxon" hidden="false" targetId="9128-d0ad-28e7-51b5" primary="false"/>
+        <categoryLink id="946f-0a56-8ec8-832e" name="Allies of Convenience" hidden="false" targetId="036b-1d04-f52f-ab54" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="218c-43bf-a667-058a" name=" Dual Pistols" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="34e6-0deb-6caa-9827" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9bf6-b71f-c2b1-d4a6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7486-3793-9e92-c88a" name=" Dual Pistols" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee/1-2</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red x2, Black x2</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3b04-a5e8-5554-da87" name=" GALAR-90 Sniper Rifle" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9caa-1ab8-41b4-db69" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb06-b5d3-b742-fdb8" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b279-ad0d-3dca-19f4" name=" GALAR-90 Sniper Rifle" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-5</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red x2, Black</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">High Velocity, Lethal 2</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="e1cc-0a13-be04-56b3" name="High Velocity" hidden="false" targetId="88db-849b-6a12-5846" type="rule"/>
+            <infoLink id="863b-d37e-da7c-917b" name="Lethal X" hidden="false" targetId="3cf0-869d-474d-6f37" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="b894-000c-39a3-bee4" name="Command" hidden="false" collective="false" import="true" targetId="1f7e-c9c9-fb71-62b2" type="selectionEntryGroup"/>
+        <entryLink id="f08e-e177-ab88-fcc5" name="Armament" hidden="false" collective="false" import="true" targetId="4a24-39a8-4f98-d844" type="selectionEntryGroup"/>
+        <entryLink id="c9cf-2c92-0362-d9ac" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="d61f-e553-69e6-5ac1" value="2"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="71d2-230c-c55d-c1dc" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="06c9-5f62-6d83-3aa0" value="2"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="3509-182d-1195-df09" name="Grenades" hidden="false" collective="false" import="true" targetId="8e00-7b0f-9520-fb2d" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="115.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9004-cf4d-ef4f-7d38" name="•Sabine Wren (Back in the Fold)" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dc02-a3e0-36b2-c4d7" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d9c1-38df-dd5d-652a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="61f3-179d-aaca-2a38" name="Sabine Wren (Back in the Fold)" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0">Back in the Fold</characteristic>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">5</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Critical</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">3</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Card Action: Jump 2, Gunslinger, Impervious, Nimble, We Fight for Our Family</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Armament, Training, Gear x2, Grenades</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f682-1416-1f98-71e1" name="Jump X" hidden="false" targetId="89df-da7f-b7da-6c0c" type="rule"/>
+        <infoLink id="61f3-8dd3-63d9-6909" name="Gunslinger" hidden="false" targetId="1668-29f8-4fe1-651a" type="rule"/>
+        <infoLink id="1b86-1d47-0081-9adb" name="Impervious" hidden="false" targetId="8c57-6c86-0cef-1c7b" type="rule"/>
+        <infoLink id="2b9f-4a41-79fb-00ce" name="Nimble" hidden="false" targetId="3565-7985-bb05-c0a5" type="rule"/>
+        <infoLink id="b254-bc53-5570-4a12" name="We Fight for Our Family" hidden="false" targetId="8613-7167-89d7-6ebe" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7586-fde6-48f6-6ae9" name="Operative" hidden="false" targetId="fb02-3ca8-cc7c-87a9" primary="true"/>
+        <categoryLink id="7ffb-3d57-4698-9c38" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="b799-daae-142d-4a16" name="Mandalorian Trooper" hidden="false" targetId="b46a-c38f-ea92-6ba6" primary="false"/>
+        <categoryLink id="d266-56f9-2a29-4728" name="Affiliation: Clan Wren" hidden="false" targetId="0fac-950b-f1fb-4d34" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9023-33a6-6f24-bba8" name=" Pistols &amp; Grenades" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aee3-61d7-e8a7-b31c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="39bc-fcdf-a470-68de" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="283e-688e-a9fd-6b3c" name=" Pistols &amp; Grenades" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee/1-2</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red x2, Black x2</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Blast, Overwhelm</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="b0b8-47c6-05ee-7922" name="Blast" hidden="false" targetId="c8d6-c6c5-f2fe-daad" type="rule"/>
+            <infoLink id="c8a3-7d5e-9744-84c3" name="Overwhelm" hidden="false" targetId="77f9-dc82-884d-47f4" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="ddde-cd8d-1849-2047" name="Armament" hidden="false" collective="false" import="true" targetId="4a24-39a8-4f98-d844" type="selectionEntryGroup"/>
+        <entryLink id="8a96-2de5-8aeb-cd94" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup"/>
+        <entryLink id="98f8-50ff-ec6f-4b0f" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="06c9-5f62-6d83-3aa0" value="2"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="7e52-7612-cdee-930f" name="Grenades" hidden="false" collective="false" import="true" targetId="8e00-7b0f-9520-fb2d" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="110.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3555-189e-a702-6093" name="Super Commandos" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="ae9e-f48d-0eff-80a7" name="Super Commandos" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0"/>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">4</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">1</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Hit</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">3</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Card Action: Jump 2, Defend 1, Impervious, Independent: Aim 1, Victory or Death</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Heavy Weapon, Personnel, Training, Gear, Grenades</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9ff2-476e-abb9-99af" name="Jump X" hidden="false" targetId="89df-da7f-b7da-6c0c" type="rule"/>
+        <infoLink id="0c21-2cfa-3ead-819f" name="Defend X" hidden="false" targetId="efd2-65da-0994-0b77" type="rule"/>
+        <infoLink id="879c-5206-d439-8c59" name="Impervious" hidden="false" targetId="8c57-6c86-0cef-1c7b" type="rule"/>
+        <infoLink id="493a-72ab-1cd0-f2cc" name="Independent: *Token* X/*Action*" hidden="false" targetId="d58c-cff1-0ebb-5fb4" type="rule"/>
+        <infoLink id="ae58-438a-010f-1c79" name="Victory or Death" hidden="false" targetId="e1a8-0f3e-2aa3-be28" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e735-8ed0-cf9a-9d76" name="Special Forces" hidden="false" targetId="8be4-90a0-cf45-973c" primary="true"/>
+        <categoryLink id="01e4-71c9-87d0-6dae" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="1571-7c0f-a308-01e1" name="Mandalorian Trooper" hidden="false" targetId="b46a-c38f-ea92-6ba6" primary="false"/>
+        <categoryLink id="cf0b-008f-b4c6-a3f8" name="Affiliation: Clan Saxon" hidden="false" targetId="9128-d0ad-28e7-51b5" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="78d7-2f8b-59e6-1508" name=" Dual Pistols" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0b81-d616-0ad2-6935" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4dec-e26e-b902-d3d7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b524-a099-ef72-1ea9" name=" Dual Pistols" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee/1-2</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red, White</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ff6d-221b-6c70-4698" name=" Blaster Rifles" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4287-d077-832c-b36e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd20-60ae-ed65-9950" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9cac-32f3-788f-0197" name=" Blaster Rifles" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-3</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="2048-05f7-61e9-4456" name="Heavy Weapon" hidden="false" collective="false" import="true" targetId="e8aa-f460-6961-1e6e" type="selectionEntryGroup"/>
+        <entryLink id="844d-e536-ef48-657b" name="Personnel" hidden="false" collective="false" import="true" targetId="5758-b6ce-3d80-b87c" type="selectionEntryGroup"/>
+        <entryLink id="3295-6182-1994-6444" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup"/>
+        <entryLink id="6066-1453-98ba-e4b3" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup"/>
+        <entryLink id="f667-a312-39d0-1da9" name="Grenades" hidden="false" collective="false" import="true" targetId="8e00-7b0f-9520-fb2d" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="92.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d47e-eff1-5d5b-80e2" name="Clan Kryze Veterans" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="4840-95d7-1471-c7ef" name="Clan Kryze Veterans" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0"/>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">5</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">1</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Hit</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">3</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Mercenary: Rebel, Republic, Card Action: Jump 2, Impervious, Mandalorians Are Stronger Together, Tactical 1</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Personnel, Heavy Weapon, Training, Grenades, Gear</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7d76-6df2-ab36-1648" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
+        <infoLink id="954e-bf81-21c2-25d5" name="Jump X" hidden="false" targetId="89df-da7f-b7da-6c0c" type="rule"/>
+        <infoLink id="9d26-7154-c4d0-764b" name="Impervious" hidden="false" targetId="8c57-6c86-0cef-1c7b" type="rule"/>
+        <infoLink id="4fa2-2889-5d1d-1310" name="Mandalorians Are Stronger Together" hidden="false" targetId="5c81-a54a-f050-6655" type="rule"/>
+        <infoLink id="37c5-0b04-27ab-2a6e" name="Tactical X" hidden="false" targetId="3ca9-ac5e-80c1-3778" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ab2b-a389-74f4-c874" name="Special Forces" hidden="false" targetId="8be4-90a0-cf45-973c" primary="true"/>
+        <categoryLink id="0cee-8a10-a113-11d6" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="9af9-8654-8feb-71de" name="Mandalorian Trooper" hidden="false" targetId="b46a-c38f-ea92-6ba6" primary="false"/>
+        <categoryLink id="fb24-a2e1-d628-a5d0" name="Mercenary" hidden="false" targetId="3a36-59d0-2eae-0daa" primary="false"/>
+        <categoryLink id="bfbe-3d1e-d2dc-08fd" name="Mercenary Special Forces" hidden="false" targetId="5579-bfde-9295-3245" primary="false"/>
+        <categoryLink id="4dac-382d-2038-0d03" name="Affiliation: Clan Kryze" hidden="false" targetId="413c-95f1-81ef-555a" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9336-bc10-bcdd-906a" name=" Blaster Pistols" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca8b-3383-da7c-6d71" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="41f6-f111-a675-56b5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3aa4-338e-8256-2292" name=" Blaster Pistols" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee/1-2</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red, White</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2f46-03d8-d7c4-44f0" name=" GALAAR-15 Carbines" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1ee6-ca75-7964-61fe" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa7e-48ce-9c84-a20a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="44c4-38fd-3377-b4a6" name=" GALAAR-15 Carbines" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">1-3</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Black</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="8d7c-c7c1-2071-2345" name="Personnel" hidden="false" collective="false" import="true" targetId="5758-b6ce-3d80-b87c" type="selectionEntryGroup"/>
+        <entryLink id="c27c-b1ee-fcbe-c7f3" name="Heavy Weapon" hidden="false" collective="false" import="true" targetId="e8aa-f460-6961-1e6e" type="selectionEntryGroup"/>
+        <entryLink id="f629-2452-2ecb-736f" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup"/>
+        <entryLink id="11a9-2c4b-b203-113a" name="Grenades" hidden="false" collective="false" import="true" targetId="8e00-7b0f-9520-fb2d" type="selectionEntryGroup"/>
+        <entryLink id="f371-f69d-2aaa-aec1" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="120.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5249-e2b1-30f5-76f2" name="•Axe Woves" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7ac3-f34b-2d61-77e6" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d451-9d51-17cb-195d" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="4471-d0e8-8a84-92e8" name="Axe Woves" hidden="false" typeId="add8-9503-b851-9d2d" typeName="1.2 Troopers">
+          <characteristics>
+            <characteristic name="Subtitle" typeId="1037-daec-b00d-38d0">Cunning Warrior</characteristic>
+            <characteristic name="Models" typeId="a5b5-9e18-969c-7e34">1</characteristic>
+            <characteristic name="Wounds" typeId="a23d-0e2d-dd4d-f538">5</characteristic>
+            <characteristic name="Courage" typeId="2023-ab5b-e8e1-42c9">2</characteristic>
+            <characteristic name="Defense" typeId="d709-b540-6ad3-b884">Red</characteristic>
+            <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Hit</characteristic>
+            <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">Block</characteristic>
+            <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">3</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Mercenary: Rebel, Republic, Card Action: Jump 2, Charge, Coordinate: Clan Kryze, Impervious, Mandalorians Are Stronger Together, Tactical 1</characteristic>
+            <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Training x2, Comms, Gear x2, Grenades</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d0d3-3b0d-9a60-1edd" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
+        <infoLink id="1c12-8b55-1ddf-b3fe" name="Jump X" hidden="false" targetId="89df-da7f-b7da-6c0c" type="rule"/>
+        <infoLink id="cbdb-fc3f-c947-9e2c" name="Charge" hidden="false" targetId="a44a-b83d-9e7c-964f" type="rule"/>
+        <infoLink id="53ea-8e96-6cdb-9fed" name="Coordinate: *Unit Type*" hidden="false" targetId="84b3-093e-53b5-e805" type="rule"/>
+        <infoLink id="38bd-7875-660a-a1aa" name="Impervious" hidden="false" targetId="8c57-6c86-0cef-1c7b" type="rule"/>
+        <infoLink id="a24e-1c52-fb22-ada0" name="Mandalorians Are Stronger Together" hidden="false" targetId="5c81-a54a-f050-6655" type="rule"/>
+        <infoLink id="93d4-22ac-a4c1-c0c3" name="Tactical X" hidden="false" targetId="3ca9-ac5e-80c1-3778" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="aa09-ba76-900a-7ec7" name="Operative" hidden="false" targetId="fb02-3ca8-cc7c-87a9" primary="true"/>
+        <categoryLink id="1299-d977-2041-3d72" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+        <categoryLink id="56ec-0537-63e7-0edc" name="Mandalorian Trooper" hidden="false" targetId="b46a-c38f-ea92-6ba6" primary="false"/>
+        <categoryLink id="6f49-645f-d5fe-244c" name="Mercenary" hidden="false" targetId="3a36-59d0-2eae-0daa" primary="false"/>
+        <categoryLink id="aaef-2bff-a8b4-b7dd" name="Mercenary Operative" hidden="false" targetId="3d53-fe97-bc89-78c5" primary="false"/>
+        <categoryLink id="b528-0b6a-ac8d-9806" name="Affiliation: Clan Kryze" hidden="false" targetId="413c-95f1-81ef-555a" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0ee9-43a6-d8c8-ef6f" name=" Vibroknife &amp; Pistol" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="43a4-c3da-ea6b-e327" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0697-1d13-ca8c-11b6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="100f-3c8e-258c-b3bc" name=" Vibroknife &amp; Pistol" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+              <characteristics>
+                <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee/1-2</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red x2, Black x2</characteristic>
+                <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Lethal 1</characteristic>
+                <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="1abf-bcf2-7d38-a839" name="Lethal X" hidden="false" targetId="3cf0-869d-474d-6f37" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="7cba-c4e1-118b-8861" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="d61f-e553-69e6-5ac1" value="2"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="1d84-7ff0-3f24-7eab" name="Comms" hidden="false" collective="false" import="true" targetId="bbf8-c77e-246a-d5c6" type="selectionEntryGroup"/>
+        <entryLink id="629c-9498-7e85-0c36" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="06c9-5f62-6d83-3aa0" value="2"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="854e-c155-5c0a-711f" name="Grenades" hidden="false" collective="false" import="true" targetId="8e00-7b0f-9520-fb2d" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="90.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -26846,6 +29158,101 @@ During the End Phase, roll 1 red defense die for each of your inactive shield to
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="52a3-2a11-457e-1ff5" name="•Omega" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a061-7174-2a23-fce0" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a4f8-1733-3dda-bc38" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8a76-b1b7-2dc1-c1b6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0e63-e6f4-ed5b-96d6" name="Omega" hidden="false" typeId="2332-473f-2385-57a9" typeName="1.3 Counterparts">
+              <characteristics>
+                <characteristic name="Subtitle" typeId="c2e6-3500-61a5-d6c4">Mascot of the 99th</characteristic>
+                <characteristic name="Models" typeId="8715-991f-4d19-44ff">1</characteristic>
+                <characteristic name="Wounds" typeId="266b-70a8-36f6-e230">1</characteristic>
+                <characteristic name="Keywords" typeId="0ced-237b-5eb7-c27f">Mercenary: Rebel, Counterpart: The Bad Batch, I'm Part of the Squad Too</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="c951-5e9b-a226-a090" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
+            <infoLink id="931b-237d-6889-1230" name="Counterpart: *Unit Name*" hidden="false" targetId="e299-9d9f-3a98-06d8" type="rule"/>
+            <infoLink id="c535-6677-3726-85ad" name="I'm Part of the Squad Too" hidden="false" targetId="aec0-b429-1373-28bd" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="caff-d234-1752-8b41" name="Counterpart" hidden="false" targetId="5607-032a-efad-1d58" primary="false"/>
+            <categoryLink id="e474-b412-998e-134a" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+            <categoryLink id="2be7-73de-71a8-63b7" name="Affiliation: Rogues" hidden="false" targetId="eb20-63ea-433c-bc49" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="111d-b90e-e3b0-b387" name=" Zygerrian Energy Bow" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1284-3973-02eb-c7d7" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="90c4-ae35-2887-f649" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="77a0-ca86-2ebe-99c3" name=" Zygerrian Energy Bow" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
+                  <characteristics>
+                    <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee/1-2</characteristic>
+                    <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">White x2</characteristic>
+                    <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae"/>
+                    <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2342-f139-2c76-29fe" name="•Grogu" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="19ca-06a3-5327-c82c" type="notInstanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cdc7-03e4-3e58-d237" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c17b-5c47-85be-cba6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2382-97f9-21b1-6955" name="Grogu" hidden="false" typeId="2332-473f-2385-57a9" typeName="1.3 Counterparts">
+              <characteristics>
+                <characteristic name="Subtitle" typeId="c2e6-3500-61a5-d6c4">The Child</characteristic>
+                <characteristic name="Models" typeId="8715-991f-4d19-44ff">1</characteristic>
+                <characteristic name="Wounds" typeId="266b-70a8-36f6-e230">1</characteristic>
+                <characteristic name="Keywords" typeId="0ced-237b-5eb7-c27f">Mercenary: Rebel, Counterpart: Din Djarin, Hunted, Latent Power, Small</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="9e50-ec60-7028-ffa9" name="Mercenary: *Faction*" hidden="false" targetId="fc39-5442-d61a-df0b" type="rule"/>
+            <infoLink id="2a6b-4d17-0b42-1524" name="Counterpart: *Unit Name*" hidden="false" targetId="e299-9d9f-3a98-06d8" type="rule"/>
+            <infoLink id="78a0-3d8f-c45c-f2a4" name="Hunted" hidden="false" targetId="8332-74b3-2ab1-4a40" type="rule"/>
+            <infoLink id="b280-6034-bdee-2efd" name="Latent Power" hidden="false" targetId="f9fb-703d-bad6-a556" type="rule"/>
+            <infoLink id="986c-db58-371f-c1e1" name="Small" hidden="false" targetId="875b-c67a-3256-8f1a" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="1803-135c-77bb-ac6e" name="Counterpart" hidden="false" targetId="5607-032a-efad-1d58" primary="false"/>
+            <categoryLink id="753e-37d5-8b11-560d" name="Trooper" hidden="false" targetId="3ed4-f620-e8b3-3ca6" primary="false"/>
+            <categoryLink id="9763-d47d-ff2d-4245" name="Affiliation: Children of the Watch" hidden="false" targetId="7016-6dd5-7d93-d697" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="17.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="1c9b-29ff-9d21-cdf5" name="Programming" hidden="false" collective="false" import="true">
@@ -27090,6 +29497,9 @@ During the End Phase, roll 1 red defense die for each of your inactive shield to
     </rule>
     <rule id="dcab-9ffc-62be-bb59" name="Take Cover X" hidden="false">
       <description>As a Card or Free Card action, a unit with the Take Cover X keyword can choose up to X allied units within Range 2. Each chosen unit gains 1 Dodge token.</description>
+    </rule>
+    <rule id="6995-d431-a4b2-4e4c" name="Long Shot" hidden="false">
+      <description>When a unit with 1 or more weapons that have the Long Shot keyword makes an attack, before choosing an enemy unit to attack during the Declare Defender step, it may spend 1 Aim token to increase the maximum Range of each weapon with the Longshot keyword by 1 until the end of that attack sequence. The attacking unit may not reroll dice with any Aim tokens spent in this way. Only 1 Aim token may be spent in this way per attack sequence.</description>
     </rule>
     <rule id="a7bd-0b72-3096-1729" name="Low Profile" hidden="false">
       <description>When a unit with the Low Profile keyword would roll 1 or more defense dice during the Roll Cover Pool step, it rolls 1 fewer defense die and instead adds an additional Block result to the Cover Pool after rolling.</description>
