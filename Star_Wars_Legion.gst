@@ -24794,6 +24794,16 @@ BX-Series Commando Droids units in this army count as Corps units for the purpos
                 <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ce68-baa2-9223-05d7" type="notInstanceOf"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a28a-87da-7eed-cb4c" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9589-505d-aff2-fd25" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2feb-c026-b79f-75a2" type="max"/>
@@ -24822,6 +24832,9 @@ BX-Series Commando Droids units in this army count as Corps units for the purpos
             <infoLink id="7771-69bb-e3dd-5e1b" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
             <infoLink id="17c9-5396-e4f2-8eee" name="Impact X" hidden="false" targetId="6da6-1112-3a36-33c2" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="6499-3a3b-4692-3aca" name="Leader" hidden="false" targetId="a28a-87da-7eed-cb4c" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="22.0"/>
           </costs>
@@ -24847,6 +24860,16 @@ BX-Series Commando Droids units in this army count as Corps units for the purpos
               <conditions>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="208a-110a-721b-b37d" type="atLeast"/>
               </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a28a-87da-7eed-cb4c" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4813-6e0e-7192-470d" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -24881,6 +24904,9 @@ BX-Series Commando Droids units in this army count as Corps units for the purpos
             <infoLink id="f963-b54a-569d-adf4" name="Impact X" hidden="false" targetId="6da6-1112-3a36-33c2" type="rule"/>
             <infoLink id="32b2-d688-88e4-88e4" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="1fb9-2b77-ed8f-e005" name="Leader" hidden="false" targetId="a28a-87da-7eed-cb4c" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="35.0"/>
           </costs>
@@ -33344,7 +33370,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
           <profiles>
             <profile id="9346-3779-59a9-7568" name="Master Duelist" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">If this unit has Block, it gains Outmaneuver. If it does not, this unit gains Block instead. This unit's Melee weapons gain Critical 1. This unit gains Action Jump 1.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">If this unit has Block, it gains Outmaneuver. If it does not, this unit gains Block instead. This unit's Melee weapons gain Critical 1. This unit gains Action: Jump 1.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Outmaneuver, Block, Critical 1, Jump 1</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -33415,7 +33441,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
           <profiles>
             <profile id="6acc-78e6-fb57-2bd3" name="Force Adept" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains Action Jump 2 and 1 Force upgrade slot. When this unit would Expend 1 or more Force upgrades, Exhaust those upgrades instead.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains Action: Jump 2 and 1 Force upgrade slot. When this unit would Expend 1 or more Force upgrades, Exhaust those upgrades instead.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Jump 2</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -33448,7 +33474,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
           <profiles>
             <profile id="e626-f88c-cb4c-6a5e" name="Tactical Acumen" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains Action Guidance: Corps Trooper.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains Action: Guidance: Corps Trooper.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Guidance</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -35834,7 +35860,7 @@ During the End Phase, roll 1 red defense die for each of your inactive shield to
           <profiles>
             <profile id="1b83-05d2-c503-5d43" name="General of the Republic" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains 1 Command upgrade slot. This unit gains Action Bolster 2, Direct: Clone Trooper, and Inspire 1.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains 1 Command upgrade slot. This unit gains Action: Bolster 2, Direct: Clone Trooper, and Inspire 1.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Bolster 2, Direct: Clone Trooper, Inspire 1</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
