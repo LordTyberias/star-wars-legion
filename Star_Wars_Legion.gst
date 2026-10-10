@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="bece-5df3-7e27-1c4d" name="Star Wars: Legion" revision="96" battleScribeVersion="2.03" authorName="Dr Lucky, JoshWeller" authorContact="Dr Lucky on the BGG or FFG forums, JoshWeller on Github" authorUrl="https://github.com/BSData/star-wars-legion" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="bece-5df3-7e27-1c4d" name="Star Wars: Legion" revision="97" battleScribeVersion="2.03" authorName="Dr Lucky, JoshWeller" authorContact="Dr Lucky on the BGG or FFG forums, JoshWeller on Github" authorUrl="https://github.com/BSData/star-wars-legion" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="7d8d-a40c-cb7f-9ff3" name=" Points" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
@@ -38199,7 +38199,7 @@ When defending against a melee attack, you gain Immune: Pierce.</characteristic>
             <infoLink id="bc91-5f5e-96de-1395" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="10.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f8fa-2ec7-2575-b81b" name="•The Darksaber (Head of Clan Saxon)" hidden="false" collective="false" import="true" type="upgrade">
@@ -38265,7 +38265,7 @@ When defending against a melee attack, you gain Immune: Pierce.</characteristic>
             <infoLink id="589d-30cf-99b3-4a15" name="Pierce X" hidden="false" targetId="8baa-3b31-6fd5-cf66" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="0.0"/>
+            <cost name=" Points" typeId="7d8d-a40c-cb7f-9ff3" value="10.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0603-a691-139f-3de9" name="Lightsaber" hidden="false" collective="false" import="true" type="upgrade">
