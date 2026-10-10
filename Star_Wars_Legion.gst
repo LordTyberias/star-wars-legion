@@ -110,6 +110,10 @@
     <categoryEntry id="ce68-baa2-9223-05d7" name="Clone Trooper" hidden="false"/>
     <categoryEntry id="40ed-3197-cf01-9a62" name="Droid Trooper" hidden="false"/>
     <categoryEntry id="a824-a683-e978-d045" name="Detachment" hidden="false"/>
+    <categoryEntry id="d2b8-67c0-e8c3-6894" name="Detachment Operative" hidden="false"/>
+    <categoryEntry id="ca83-f90e-219d-b62d" name="Detachment Corps" hidden="false"/>
+    <categoryEntry id="acb3-fee5-9066-083e" name="Detachment Special Forces" hidden="false"/>
+    <categoryEntry id="812b-dc4e-2a1b-24fb" name="Detachment Support" hidden="false"/>
     <categoryEntry id="8f23-7df3-e89c-3a4f" name="Sidecar" hidden="false"/>
     <categoryEntry id="5938-b46b-abe2-3c4f" name="Strike Team" hidden="false"/>
     <categoryEntry id="5607-032a-efad-1d58" name="Counterpart" hidden="false"/>
@@ -164,6 +168,13 @@
           </constraints>
         </categoryLink>
         <categoryLink id="d40e-b81b-9f3d-0c55" name="Operative" hidden="false" targetId="fb02-3ca8-cc7c-87a9" primary="false">
+          <modifiers>
+            <modifier type="increment" field="ebc5-8e8b-fb87-90a9" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d2b8-67c0-e8c3-6894" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="ebc5-8e8b-fb87-90a9" type="max"/>
           </constraints>
@@ -173,6 +184,11 @@
             <modifier type="increment" field="e0f7-3514-c48f-4831" value="1.0">
               <repeats>
                 <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0ef8-b3fb-e5b5-125f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="3a6f-ff6f-7269-6b34" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ca83-f90e-219d-b62d" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -203,12 +219,24 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" field="2708-aedb-3c64-0bde" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="acb3-fee5-9066-083e" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="2708-aedb-3c64-0bde" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="3f36-c78e-dc21-c151" name="Support" hidden="false" targetId="b871-39d2-ad98-e654" primary="false">
+          <modifiers>
+            <modifier type="increment" field="d9fe-0386-2b5d-3a61" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="812b-dc4e-2a1b-24fb" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="d9fe-0386-2b5d-3a61" type="max"/>
           </constraints>
@@ -437,11 +465,25 @@
           </constraints>
         </categoryLink>
         <categoryLink id="e7a8-0b0f-e616-c917" name="Operative" hidden="false" targetId="fb02-3ca8-cc7c-87a9" primary="false">
+          <modifiers>
+            <modifier type="increment" field="9ac7-e1b2-8c75-4b78" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d2b8-67c0-e8c3-6894" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="9ac7-e1b2-8c75-4b78" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="8ed1-b282-45d4-126e" name="Corps" hidden="false" targetId="0020-8ddc-bf35-3170" primary="false">
+          <modifiers>
+            <modifier type="increment" field="faa9-577c-1b1b-d557" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ca83-f90e-219d-b62d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="869a-2829-7d4f-c229" type="min"/>
             <constraint field="selections" scope="force" value="10.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="faa9-577c-1b1b-d557" type="max"/>
@@ -469,12 +511,24 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" field="8db8-1b48-a5a3-a565" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="acb3-fee5-9066-083e" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="5.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="8db8-1b48-a5a3-a565" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="4728-5189-3e03-9080" name="Support" hidden="false" targetId="b871-39d2-ad98-e654" primary="false">
+          <modifiers>
+            <modifier type="increment" field="3efb-d1f0-62bd-96f6" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="812b-dc4e-2a1b-24fb" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="5.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="3efb-d1f0-62bd-96f6" type="max"/>
           </constraints>
@@ -560,6 +614,13 @@
           </constraints>
         </categoryLink>
         <categoryLink id="35a4-66d8-c35f-e1a5" name="Operative" hidden="false" targetId="fb02-3ca8-cc7c-87a9" primary="false">
+          <modifiers>
+            <modifier type="increment" field="34f0-71cc-32e0-2842" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d2b8-67c0-e8c3-6894" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="34f0-71cc-32e0-2842" type="max"/>
           </constraints>
@@ -569,6 +630,11 @@
             <modifier type="increment" field="7e80-303f-c6a7-f520" value="1.0">
               <repeats>
                 <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0ef8-b3fb-e5b5-125f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="eb9b-84ae-1466-09bb" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ca83-f90e-219d-b62d" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -599,12 +665,24 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" field="80dd-0f29-62f6-75f3" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="acb3-fee5-9066-083e" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="80dd-0f29-62f6-75f3" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="0562-c86b-c418-0fc1" name="Support" hidden="false" targetId="b871-39d2-ad98-e654" primary="false">
+          <modifiers>
+            <modifier type="increment" field="d8ad-5271-23e1-8947" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="812b-dc4e-2a1b-24fb" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="d8ad-5271-23e1-8947" type="max"/>
           </constraints>
@@ -9714,6 +9792,7 @@ Card Action: Choose up to 3 enemy units within Range 1 and in LOS. For each chos
         <categoryLink id="efbd-2144-8972-71f1" name="Detachment" hidden="false" targetId="a824-a683-e978-d045" primary="false"/>
         <categoryLink id="86ff-8ff6-a40f-d487" name="Small Base" hidden="false" targetId="6db2-4a46-fe95-7db6" primary="false"/>
         <categoryLink id="119e-5b3b-4615-2dd3" name="Strike Team" hidden="false" targetId="5938-b46b-abe2-3c4f" primary="false"/>
+        <categoryLink id="6496-159d-6f72-25de" name="Detachment Support" hidden="false" targetId="812b-dc4e-2a1b-24fb" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="f0b3-98cf-426a-b654" name=" Unarmed" hidden="false" collective="false" import="true" type="upgrade">
@@ -10042,6 +10121,7 @@ Card Action: Choose up to 3 enemy units within Range 1 and in LOS. For each chos
         <categoryLink id="0e70-2ea3-fcd4-ca8d" name="Detachment" hidden="false" targetId="a824-a683-e978-d045" primary="false"/>
         <categoryLink id="e73c-9e9d-2034-8208" name="Small Base" hidden="false" targetId="6db2-4a46-fe95-7db6" primary="false"/>
         <categoryLink id="120b-ca5b-ad81-c0bb" name="Strike Team" hidden="false" targetId="5938-b46b-abe2-3c4f" primary="false"/>
+        <categoryLink id="c74d-7d41-8d30-79c2" name="Detachment Support" hidden="false" targetId="812b-dc4e-2a1b-24fb" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="bb7f-0840-2d64-64fe" name=" Unarmed" hidden="false" collective="false" import="true" type="upgrade">
@@ -13260,6 +13340,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <categoryLink id="55f9-cfda-ccb8-0432" name="Emplacement Trooper" hidden="false" targetId="800f-3742-0fdf-e2da" primary="false"/>
         <categoryLink id="25fc-5848-6a75-23ce" name="Detachment" hidden="false" targetId="a824-a683-e978-d045" primary="false"/>
         <categoryLink id="fa1a-5658-22fa-4007" name="Medium Base" hidden="false" targetId="81b7-a43d-9e75-399a" primary="false"/>
+        <categoryLink id="3a21-8107-739c-ad05" name="Detachment Corps" hidden="false" targetId="ca83-f90e-219d-b62d" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="25bd-cc7d-28bb-1519" name=" Unarmed" hidden="false" collective="false" import="true" type="upgrade">
@@ -13379,6 +13460,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <categoryLink id="605c-6859-faf5-3fab" name="Emplacement Trooper" hidden="false" targetId="800f-3742-0fdf-e2da" primary="false"/>
         <categoryLink id="808b-01f5-8377-b78e" name="Detachment" hidden="false" targetId="a824-a683-e978-d045" primary="false"/>
         <categoryLink id="f64d-7804-55a9-1a2f" name="Medium Base" hidden="false" targetId="81b7-a43d-9e75-399a" primary="false"/>
+        <categoryLink id="f973-06a3-48a2-67ab" name="Detachment Corps" hidden="false" targetId="ca83-f90e-219d-b62d" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="3f7e-c405-532a-b417" name=" E-22 Blaster Rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -14859,6 +14941,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <categoryLink id="a9c7-e580-8ff9-0ebc" name="Detachment" hidden="false" targetId="a824-a683-e978-d045" primary="false"/>
         <categoryLink id="7085-6040-4123-a258" name="Small Base" hidden="false" targetId="6db2-4a46-fe95-7db6" primary="false"/>
         <categoryLink id="213a-7d4d-fab8-4be3" name="Strike Team" hidden="false" targetId="5938-b46b-abe2-3c4f" primary="false"/>
+        <categoryLink id="f8e9-bd5f-b701-64ff" name="Detachment Support" hidden="false" targetId="812b-dc4e-2a1b-24fb" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="9a7b-ade1-de54-e476" name=" DC-17 Hand Blasters" hidden="false" collective="false" import="true" type="upgrade">
@@ -15443,6 +15526,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <categoryLink id="c890-f93e-b960-ded2" name="Detachment" hidden="false" targetId="a824-a683-e978-d045" primary="false"/>
         <categoryLink id="d01e-b265-7a3a-a64b" name="Small Base" hidden="false" targetId="6db2-4a46-fe95-7db6" primary="false"/>
         <categoryLink id="445b-a80b-8446-1080" name="Strike Team" hidden="false" targetId="5938-b46b-abe2-3c4f" primary="false"/>
+        <categoryLink id="1cbf-641c-4ee6-6fae" name="Detachment Support" hidden="false" targetId="812b-dc4e-2a1b-24fb" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="6dfb-c74d-7a78-b669" name=" Unarmed" hidden="false" collective="false" import="true" type="upgrade">
@@ -15543,6 +15627,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <categoryLink id="a77a-de00-893c-a230" name="Droid Trooper" hidden="false" targetId="40ed-3197-cf01-9a62" primary="false"/>
         <categoryLink id="8ec7-e782-7213-d9f0" name="Detachment" hidden="false" targetId="a824-a683-e978-d045" primary="false"/>
         <categoryLink id="c2e9-f4ec-bd0c-067f" name="Small Base" hidden="false" targetId="6db2-4a46-fe95-7db6" primary="false"/>
+        <categoryLink id="c6c4-ab89-9bdd-71d7" name="Detachment Operative" hidden="false" targetId="d2b8-67c0-e8c3-6894" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e62d-2bba-1eb0-e397" name=" Overpower" hidden="false" collective="false" import="true" type="upgrade">
@@ -15966,6 +16051,7 @@ At the end of the Activation Phase, each player may detonate 1 unclaimed objecti
         <categoryLink id="8deb-78c0-861d-27ca" name="Droid Trooper" hidden="false" targetId="40ed-3197-cf01-9a62" primary="false"/>
         <categoryLink id="1550-11e5-c479-0038" name="Detachment" hidden="false" targetId="a824-a683-e978-d045" primary="false"/>
         <categoryLink id="d3b5-d3e3-24e9-e35f" name="Small Base" hidden="false" targetId="6db2-4a46-fe95-7db6" primary="false"/>
+        <categoryLink id="8f23-f212-33c3-9543" name="Detachment Special Forces" hidden="false" targetId="acb3-fee5-9066-083e" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="7a53-08b9-018e-262a" name=" Electro-stun Blaster" hidden="false" collective="false" import="true" type="upgrade">
@@ -24144,6 +24230,7 @@ BX-Series Commando Droids units in this army count as Corps units for the purpos
         <categoryLink id="2a0c-9548-899e-01ed" name="Imperial" hidden="false" targetId="ef40-1f1b-5578-a7c3" primary="false"/>
         <categoryLink id="6e1d-cb3f-835c-23d9" name="Droid Trooper" hidden="false" targetId="40ed-3197-cf01-9a62" primary="false"/>
         <categoryLink id="9426-50de-d1c2-0281" name="Detachment" hidden="false" targetId="a824-a683-e978-d045" primary="false"/>
+        <categoryLink id="e103-1455-fd4a-fdcd" name="Detachment Special Forces" hidden="false" targetId="acb3-fee5-9066-083e" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e6d3-9fa8-85af-ac90" name=" Light Blaster" hidden="false" collective="false" import="true" type="upgrade">
@@ -25268,6 +25355,7 @@ While Raider units in this army are within Range 3 of an allied Hondo Ohnaka, th
         <categoryLink id="5fd6-5575-9649-3383" name="Mandalorian Trooper" hidden="false" targetId="b46a-c38f-ea92-6ba6" primary="false"/>
         <categoryLink id="3056-4f6f-2f3d-a624" name="Affiliation: Mandalorians" hidden="false" targetId="248f-b19a-fb97-d2d8" primary="false"/>
         <categoryLink id="f485-b8ad-f5b3-e1b1" name="Detachment" hidden="false" targetId="a824-a683-e978-d045" primary="false"/>
+        <categoryLink id="2ef7-6338-2255-1c69" name="Detachment Support" hidden="false" targetId="812b-dc4e-2a1b-24fb" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e632-7334-99cb-a42c" name=" Vibro Blades" hidden="false" collective="false" import="true" type="upgrade">
