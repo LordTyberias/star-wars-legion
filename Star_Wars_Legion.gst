@@ -23483,7 +23483,11 @@ The first time 1 or more miniatures in each Wookiee Trooper unit are defeated ea
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="b25e-e75d-f6fc-71a7" name="Programming" hidden="false" collective="false" import="true" targetId="1c9b-29ff-9d21-cdf5" type="selectionEntryGroup"/>
+        <entryLink id="b25e-e75d-f6fc-71a7" name="Programming" hidden="false" collective="false" import="true" targetId="1c9b-29ff-9d21-cdf5" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0790-4f70-c05f-e4a6" type="min"/>
+          </constraints>
+        </entryLink>
         <entryLink id="1f0e-a1c1-8f99-3cc0" name="Hardpoint" hidden="false" collective="false" import="true" targetId="542e-0da1-cc37-5c44" type="selectionEntryGroup"/>
         <entryLink id="3abb-2662-b0c5-59c4" name="Comms" hidden="false" collective="false" import="true" targetId="bbf8-c77e-246a-d5c6" type="selectionEntryGroup"/>
       </entryLinks>
@@ -25410,7 +25414,11 @@ While Raider units in this army are within Range 3 of an allied Hondo Ohnaka, th
       </selectionEntries>
       <entryLinks>
         <entryLink id="424e-c173-f5da-cfa8" name="Clan" hidden="false" collective="false" import="true" targetId="8e47-75f4-d42e-0bfe" type="selectionEntryGroup"/>
-        <entryLink id="b2e7-2201-2baf-0615" name="Heavy Weapon" hidden="false" collective="false" import="true" targetId="e8aa-f460-6961-1e6e" type="selectionEntryGroup"/>
+        <entryLink id="b2e7-2201-2baf-0615" name="Heavy Weapon" hidden="false" collective="false" import="true" targetId="e8aa-f460-6961-1e6e" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="870f-dd9a-76e2-c8d7" value="1.0"/>
+          </modifiers>
+        </entryLink>
         <entryLink id="f2cd-cfd1-a481-0d71" name="Personnel" hidden="false" collective="false" import="true" targetId="5758-b6ce-3d80-b87c" type="selectionEntryGroup"/>
         <entryLink id="ef63-3f31-a5f4-64be" name="Training" hidden="false" collective="false" import="true" targetId="fc8c-6e59-70b2-c76d" type="selectionEntryGroup"/>
         <entryLink id="7d4e-6f72-2152-6731" name="Gear" hidden="false" collective="false" import="true" targetId="8e54-db3e-b853-ebb3" type="selectionEntryGroup"/>
@@ -25723,7 +25731,7 @@ Clan Saxon: When an allied unit defeats an enemy unit, after the effect is resol
               </constraints>
               <rules>
                 <rule id="cc41-be91-59c3-7840" name="Veterans" hidden="false">
-                  <description>Each time a Mandalorian Warrior unit equips the GALAAR-15 Carbines upgrade, reduce the cost of that upgrade by 5 points. Additionally, during Setup you may choose 2 allied units. Each chosen gains Dauntless.</description>
+                  <description>Each time a Mandalorian Warrior unit equips the GALAAR-15 Carbines upgrade, reduce the cost of that upgrade by 5 points. Additionally, during Setup you may choose 2 allied Mandalorian units. Each chosen gains Dauntless.</description>
                 </rule>
               </rules>
               <costs>
@@ -25749,7 +25757,7 @@ Clan Saxon: When an allied unit defeats an enemy unit, after the effect is resol
               </constraints>
               <rules>
                 <rule id="7943-95de-4ae7-0c9a" name="Rapid Deployment" hidden="false">
-                  <description>During Setup, you may set aside up to 2 allied units that are not holding an Asset Objective token, marking the set aside units with Advantage tokens. The first time each set-aside unit would be chosen to activate this Game, you may Deploy it by putting that unit's unit leader onto the battlefield not within 2 of all enemy units, if able, then put the rest of the unit in cohesion. If you do, that unit is treated as activated and its Order token is placed facedown. Then the unit loses its Advantage token.</description>
+                  <description>During Setup, you may set aside up to 2 allied Mandalorian units that are not holding an Asset Objective token, marking the set aside units with Advantage tokens. The first time each set-aside unit would be chosen to activate this Game, you may Deploy it by putting that unit's unit leader onto the battlefield not within 2 of all enemy units, if able, then put the rest of the unit in cohesion. If you do, that unit is treated as activated and its Order token is placed facedown. Then the unit loses its Advantage token.</description>
                 </rule>
               </rules>
               <costs>
