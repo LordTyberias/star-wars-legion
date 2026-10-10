@@ -151,6 +151,134 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
+    <forceEntry id="6c98-0842-79b6-10e5" name="The Ohnaka Gang" hidden="false">
+      <constraints>
+        <constraint field="7d8d-a40c-cb7f-9ff3" scope="force" value="1000.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="e98d-40d2-311e-c6c6" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f04a-f80f-97c4-2857" name="Battle Force" hidden="false" targetId="4b05-2844-a676-2834" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="52b2-2880-69a2-4cda" type="min"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="b55c-5932-6d2c-a4cb" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="6c9c-74e9-8821-b0a3" name="Commander" hidden="false" targetId="8837-65e9-c1bd-f304" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="0008-de57-36f3-f838" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="af54-059c-64f4-ec55" name="Operative" hidden="false" targetId="fb02-3ca8-cc7c-87a9" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="b92f-21dc-b7b3-9136" type="min"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="9eba-4e9a-edc8-0498" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d417-8836-9022-2cab" name="Corps" hidden="false" targetId="0020-8ddc-bf35-3170" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="c842-709c-f7b8-3786" type="min"/>
+            <constraint field="selections" scope="force" value="6.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="aa28-92d0-6da7-60b5" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b2db-d8f1-29fa-7e04" name="Special Forces" hidden="false" targetId="8be4-90a0-cf45-973c" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="03e8-b790-9e03-9eb0" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="c7f6-088f-d02b-4c9b" name="Support" hidden="false" targetId="b871-39d2-ad98-e654" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="cc44-4dcc-bcc1-9642" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="eb55-0308-edd0-897f" name="Heavy" hidden="false" targetId="2efc-25e2-f8de-7494" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="0178-4965-3a69-fba9" type="min"/>
+            <constraint field="selections" scope="force" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="41e8-95cb-5ef4-3bab" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="abfb-f1c5-b98d-b230" name="Command Hand" hidden="false" targetId="6405-820e-ddee-20d3" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="6de7-f7e3-e4ed-cf1e" type="min"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="1316-1590-5d68-6525" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="5917-b457-4ec3-875f" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="7.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="d847-1fb3-f323-0f99" type="min"/>
+            <constraint field="selections" scope="roster" value="7.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="547b-8b4b-cd48-fe97" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="7cbb-1fab-6006-b0d5" name="Battle Cards" hidden="false" targetId="b249-fbc6-5d4f-8f82" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="982d-4a18-7292-db62" type="min"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="1761-b3fe-5078-e964" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="09f4-24c6-764f-5ca3" name="The Ohnaka Gang (Recon)" hidden="false">
+      <constraints>
+        <constraint field="7d8d-a40c-cb7f-9ff3" scope="force" value="600.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="3a9b-e0df-35dc-e816" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c163-7365-39fc-3047" name="Battle Force" hidden="false" targetId="4b05-2844-a676-2834" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="f93e-df88-fbf5-1c9c" type="min"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="be94-5922-2821-0abe" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="1610-a87a-80f0-3b63" name="Commander" hidden="false" targetId="8837-65e9-c1bd-f304" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="4ec2-7691-2a07-1ac0" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b148-23aa-7345-3861" name="Operative" hidden="false" targetId="fb02-3ca8-cc7c-87a9" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="5cd1-6d4d-2e4e-54ce" type="min"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="a43d-6a7e-640d-a540" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="3db1-567f-c9e5-1604" name="Corps" hidden="false" targetId="0020-8ddc-bf35-3170" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="56de-a619-fb15-4da0" type="min"/>
+            <constraint field="selections" scope="force" value="5.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="49eb-3e60-1b3c-a77c" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="56ae-1a28-b484-e435" name="Special Forces" hidden="false" targetId="8be4-90a0-cf45-973c" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="9143-ff8b-8cdf-be16" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ad16-2f61-4950-68fc" name="Support" hidden="false" targetId="b871-39d2-ad98-e654" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="d5e3-758a-d0f7-51c7" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b2df-0d42-f500-4cc3" name="Heavy" hidden="false" targetId="2efc-25e2-f8de-7494" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="03cd-fd27-2afb-9c1f" type="min"/>
+            <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="9991-504e-3f57-4973" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="0740-43cd-10fa-7c30" name="Command Hand" hidden="false" targetId="6405-820e-ddee-20d3" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="7496-4a7f-5d78-6d6e" type="min"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="cf5b-46da-9a88-c639" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="67b9-694d-97ec-24ec" name="Command Cards" hidden="false" targetId="c151-c107-dd65-5bc7" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="7.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="451c-36a4-faba-746e" type="min"/>
+            <constraint field="selections" scope="roster" value="7.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="56d7-e83d-6097-3011" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ba91-64ab-1a0e-c6d3" name="Battle Cards" hidden="false" targetId="b249-fbc6-5d4f-8f82" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="485a-1eef-9f21-0c1a" type="min"/>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="dd53-afe0-70df-92ea" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <entryLinks>
     <entryLink id="d6e1-f27f-3add-a720" name="Battle Force: Shadow Collective" hidden="false" collective="false" import="true" targetId="8e55-0081-b0dd-4062" type="selectionEntry">
@@ -304,6 +432,8 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c98-0842-79b6-10e5" type="notInstanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09f4-24c6-764f-5ca3" type="notInstanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f06-5192-9f73-4926" type="notInstanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4a1-0f90-ca3b-0096" type="notInstanceOf"/>
               </conditions>
@@ -313,6 +443,103 @@
       </modifiers>
     </entryLink>
     <entryLink id="a1ff-0f75-e865-bf22" name="A-A5 Speeder Truck (Raiders)" hidden="false" collective="false" import="true" targetId="539c-12e3-9fc9-68fa" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f06-5192-9f73-4926" type="notInstanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4a1-0f90-ca3b-0096" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="6296-9c7b-5a56-d695" name="Battle Force: The Ohnaka Gang" hidden="false" collective="false" import="true" targetId="b8c9-c06b-272e-4162" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c98-0842-79b6-10e5" type="notInstanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09f4-24c6-764f-5ca3" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9c40-3043-b4dd-835e">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09f4-24c6-764f-5ca3" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="b34d-0bbe-cba9-c320" name="•Hondo Ohnaka" hidden="false" collective="false" import="true" targetId="28bb-a928-7be6-3ad7" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c98-0842-79b6-10e5" type="notInstanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09f4-24c6-764f-5ca3" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="a4d6-0647-0163-364c" name="Weequay Pirates" hidden="false" collective="false" import="true" targetId="8085-6f1d-54c8-2b39" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c98-0842-79b6-10e5" type="notInstanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09f4-24c6-764f-5ca3" type="notInstanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f06-5192-9f73-4926" type="notInstanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4a1-0f90-ca3b-0096" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="179c-f6e3-83ac-27a7" name="WLO-5 Speeder Tank" hidden="false" collective="false" import="true" targetId="8f80-83c2-31c6-715a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6c98-0842-79b6-10e5" type="notInstanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09f4-24c6-764f-5ca3" type="notInstanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f06-5192-9f73-4926" type="notInstanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4a1-0f90-ca3b-0096" type="notInstanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="e6d2-abcd-a58d-7863" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8085-6f1d-54c8-2b39" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" field="e6d2-abcd-a58d-7863" value="-1.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8f06-5192-9f73-4926" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4a1-0f90-ca3b-0096" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="e6d2-abcd-a58d-7863" type="max"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="bce8-c7e5-d8fc-da54" name="•Savage Opress (Maul&apos;s Enforcer)" hidden="false" collective="false" import="true" targetId="abf8-0844-c28b-3a1f" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
