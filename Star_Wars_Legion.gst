@@ -5801,9 +5801,14 @@ This Round, when Din Djarin makes an Attack action, after that Attack action is 
             <selectionEntry id="3d8c-8e25-2175-7a41" name="••Close Formation" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5249-e2b1-30f5-76f2" type="equalTo"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5249-e2b1-30f5-76f2" type="equalTo"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4fbc-0475-56e6-92c4" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -5828,9 +5833,15 @@ This Round, when Din Djarin makes an Attack action, after that Attack action is 
             <selectionEntry id="f4f2-d490-8963-0046" name="••Out of the Shadows" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="19ca-06a3-5327-c82c" type="equalTo"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="19ca-06a3-5327-c82c" type="equalTo"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7c8e-366e-e612-2831" type="equalTo"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="01f2-2b06-7edb-6e18" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -30102,7 +30113,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <characteristics>
                 <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Add 1 Paz Vizsla miniature. Leader. This unit gains This Is the Way: Aim 1.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Leader, This Is the Way</characteristic>
-                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">2 Wounds</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -34083,7 +34094,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
               <characteristics>
                 <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Add 1 Micro-Grenade Launcher Mandalorian miniature. Cycle.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Cycle</characteristic>
-                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">Exhaust</characteristic>
               </characteristics>
             </profile>
           </profiles>
