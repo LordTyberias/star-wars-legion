@@ -2139,9 +2139,14 @@ Once per round, when an enemy unit at range 1-2 and in line of sight of Jyn Erso
             <selectionEntry id="a470-6175-2cbc-3fa1" name="•Trained in Your Jedi Arts" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="78ba-e4fe-8cb3-7c8e" type="equalTo"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="78ba-e4fe-8cb3-7c8e" type="equalTo"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7b0-083f-d48e-4970" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -3382,9 +3387,14 @@ The first time IG-11 declares an Attack action during his next Activation, he ma
             <selectionEntry id="8307-2e0d-30b7-6f49" name="•I&apos;ll Do it Myself!" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7b0-083f-d48e-4970" type="equalTo"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7b0-083f-d48e-4970" type="equalTo"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="78ba-e4fe-8cb3-7c8e" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -3506,7 +3516,7 @@ The first time IG-11 declares an Attack action during his next Activation, he ma
               <profiles>
                 <profile id="6a10-f10b-c4ee-b5b2" name="•See You In Hell" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
-                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Han Solo</characteristic>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Han Solo, Reluctant Hero</characteristic>
                     <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">Han Solo</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">Permanent. Han Solo gains Unconcerned and Unstoppable. During the Round in which this card was played, Han Solo gains Disengage and gains 1 Aim token, 1 Dodge token, and cannot be Suppressed or Panicked.</characteristic>
                   </characteristics>
@@ -4209,9 +4219,14 @@ The first time IG-11 declares an Attack action during his next Activation, he ma
             <selectionEntry id="b505-1efa-fa2f-e27a" name="••Supreme Commander" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="78ba-e4fe-8cb3-7c8e" type="equalTo"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="78ba-e4fe-8cb3-7c8e" type="equalTo"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7b0-083f-d48e-4970" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -5675,9 +5690,14 @@ Divulge: Resolve Setup Effects step. Choose up to 2 allied Children of the Watch
             <selectionEntry id="2a00-f286-1e3d-7179" name="••Pincer Attack" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7b0-083f-d48e-4970" type="equalTo"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7b0-083f-d48e-4970" type="equalTo"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="78ba-e4fe-8cb3-7c8e" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -6455,9 +6475,14 @@ When a friendly trooper unit with a faceup order token activates, during its act
             <selectionEntry id="4c7c-efd8-26c0-8843" name="•••Crush Them!" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="78ba-e4fe-8cb3-7c8e" type="equalTo"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="78ba-e4fe-8cb3-7c8e" type="equalTo"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7b0-083f-d48e-4970" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -7825,9 +7850,14 @@ Card Action: Choose up to 3 enemy units within Range 1 and in LOS. For each chos
             <selectionEntry id="4ec0-4306-d894-e082" name="•••Full Throttle" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7b0-083f-d48e-4970" type="equalTo"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7b0-083f-d48e-4970" type="equalTo"/>
+                        <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="78ba-e4fe-8cb3-7c8e" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -8052,7 +8082,7 @@ Card Action: Choose up to 3 enemy units within Range 1 and in LOS. For each chos
               <profiles>
                 <profile id="abdd-51a8-b3c3-a3d5" name="••••Insolence?! We Are Pirates!" hidden="false" typeId="76e4-5331-b635-524f" typeName="1.0 Command Cards">
                   <characteristics>
-                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">Hondo Ohnaka</characteristic>
+                    <characteristic name="Commander" typeId="c37c-423d-ec0a-fdf9">The Ohnaka Gang</characteristic>
                     <characteristic name="Orders" typeId="0645-af6e-93d9-92c1">Hondo Ohnaka</characteristic>
                     <characteristic name="Effect" typeId="957b-dc58-3195-2a96">While building a Command Hand, treat this card as though it has 1 pip. This Round, when an allied Raider Trooper unit within Range 2 and in LOS of Hondo Ohnaka makes an attack, if Hondo Ohnaka is not Suppressed or Panicked, he may gain 1 Suppression token during the Roll Attack Dice step. If he does, that allied Raider Trooper unit gains Hit Surge : Hit during that attack.</characteristic>
                   </characteristics>
@@ -22705,7 +22735,7 @@ The first time 1 or more miniatures in each Wookiee Trooper unit are defeated ea
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">--</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">--</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
-            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Observe 2, Scout 1, Low Profile, Unhindered</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Card Action: Observe 2, Scout 1, Low Profile, Unhindered</characteristic>
             <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Squad Leader, Heavy Weapon, Personnel, Comms, Training, Grenades</characteristic>
           </characteristics>
         </profile>
@@ -23031,7 +23061,7 @@ The first time 1 or more miniatures in each Wookiee Trooper unit are defeated ea
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">Critical</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">--</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">3</characteristic>
-            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Jump 2, Associate: Anakin Skywalker, Deflect, Immune: Pierce, Independent: Recover, Scout 1, Shien Mastery</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Card Action: Jump 2, Associate: Anakin Skywalker, Deflect, Immune: Pierce, Independent: Recover, Scout 1, Shien Mastery</characteristic>
             <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Force, Command, Training</characteristic>
           </characteristics>
         </profile>
@@ -23446,9 +23476,9 @@ The first time 1 or more miniatures in each Wookiee Trooper unit are defeated ea
           <profiles>
             <profile id="a951-2cd9-6c5c-e679" name="Caught in a Web" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Action Choose up to 2 enemy units within Range 5 and in LOS. Each chosen unit gains 1 Ploy token. Admiral Trench may make this Action twice per Activation. When an enemy Trooper unit within Range 5 and in LOS that has 1 or more Ploy tokens attacks an allied unit, you may spend 1 of those tokens. If you do, after the attack is resolved, the enemy unit gains 2 Suppression tokens.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Card Action: Choose up to 2 enemy units within Range 5 and in LOS. Each chosen unit gains 1 Ploy token. Admiral Trench may make this Action twice per Activation. When an enemy Trooper unit within Range 5 and in LOS that has 1 or more Ploy tokens attacks an allied unit, you may spend 1 of those tokens. If you do, after the attack is resolved, the enemy unit gains 2 Suppression tokens.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
-                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42">Action</characteristic>
+                <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
             </profile>
           </profiles>
@@ -23493,7 +23523,7 @@ The first time 1 or more miniatures in each Wookiee Trooper unit are defeated ea
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">--</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">--</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
-            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Jump 1, Demoralize 1, Enrage 2, Immune: Pierce, Retinue: Count Dooku</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Card Action: Jump 1, Demoralize 1, Enrage 2, Immune: Pierce, Retinue: Count Dooku</characteristic>
             <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Force, Training</characteristic>
           </characteristics>
         </profile>
@@ -23598,7 +23628,7 @@ The first time 1 or more miniatures in each Wookiee Trooper unit are defeated ea
             <characteristic name="Attack Surge" typeId="62c7-6e08-5a25-baca">--</characteristic>
             <characteristic name="Defense Surge" typeId="8aca-49b2-7bf4-fdec">--</characteristic>
             <characteristic name="Speed" typeId="0c97-ed56-7e7b-1e9f">2</characteristic>
-            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Jump 1, Demoralize 1, Enrage 2, Immune: Pierce, Retinue: Maul</characteristic>
+            <characteristic name="Keywords" typeId="9940-b5a3-802f-9825">Card Action: Jump 1, Demoralize 1, Enrage 2, Immune: Pierce, Retinue: Maul</characteristic>
             <characteristic name="Upgrade Bar" typeId="4381-84d3-c939-9df5">Force, Training</characteristic>
           </characteristics>
         </profile>
@@ -24331,7 +24361,7 @@ During Setup, a player may choose to align their army with the Light Side or the
 This army cannot include more WLO-5 Speeder Tank units than Weequay Pirate units. Each WLO-5 Speeder Tank unit in this army must Transport a Weequay Pirate unit.
 When Hondo Ohnaka Deploys, instead of Deploying normally, he may make a Speed-1 Move, measuring the start of this Move with both prongs of one side of the Movement Tool touching the base of an allied WLO-5 Speeder Tank unit on the battlefield. When Hondo Ohnaka Deploys in this way, measure the vertical distance changed during that Move starting from the allied WLO-5 Speeder Tank unit.
 Trooper units in this army gain Eyes On The Prize: Relentless.
-While Raider units in this army are within Range 3 of an allied Hondo Ohnaka, they use his Courage icon instead of their own when checking for Panic. Additionally, Hondo Ohnaka gains a Command upgrade icon upgrade icon, and can be nominated as Commander during the Command Phase.</description>
+While Raider units in this army are within Range 3 of an allied Hondo Ohnaka, they use his Courage icon instead of their own when checking for Panic. Additionally, Hondo Ohnaka gains a Command upgrade icon, and can be nominated as Commander during the Command Phase.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -34155,7 +34185,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
           <profiles>
             <profile id="782b-dbab-2dc2-3471" name="Pirate Captain" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Action: Choose 1 Raider unit within Range 1 of this unit. The chosen unit removes 1 Suppression token or gains 1 Dodge token.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">Card Action: Choose 1 Raider unit within Range 1 of this unit. The chosen unit removes 1 Suppression token or gains 1 Dodge token.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256"/>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -34968,7 +34998,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
           <profiles>
             <profile id="9346-3779-59a9-7568" name="Master Duelist" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">If this unit has Block, it gains Outmaneuver. If it does not, this unit gains Block instead. This unit's Melee weapons gain Critical 1. This unit gains Action: Jump 1.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">If this unit has Block, it gains Outmaneuver. If it does not, this unit gains Block instead. This unit's Melee weapons gain Critical 1. This unit gains Card Action: Jump 1.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Outmaneuver, Block, Critical 1, Jump 1</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -35039,7 +35069,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
           <profiles>
             <profile id="6acc-78e6-fb57-2bd3" name="Force Adept" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains Action: Jump 2 and 1 Force upgrade slot. When this unit would Expend 1 or more Force upgrades, Exhaust those upgrades instead.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains Card Action: Jump 2 and 1 Force upgrade slot. When this unit would Expend 1 or more Force upgrades, Exhaust those upgrades instead.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Jump 2</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -35072,7 +35102,7 @@ When you activate, you cannot remove suppression tokens or be suppressed during 
           <profiles>
             <profile id="e626-f88c-cb4c-6a5e" name="Tactical Acumen" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains Action: Guidance: Corps Trooper.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains Card Action: Guidance: Corps Trooper.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Guidance</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -36486,7 +36516,7 @@ When defending against a melee attack, you gain Immune: Pierce.</characteristic>
             <profile id="fbc5-f813-80d4-d98a" name="Stun Baton" hidden="false" typeId="815e-1bb1-5ddf-34f7" typeName="2.1 Attacks">
               <characteristics>
                 <characteristic name="Range" typeId="3ab1-6127-1998-0e2d">Melee</characteristic>
-                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red, White x5</characteristic>
+                <characteristic name="Attack Dice" typeId="2dc1-4c70-fc3b-24dc">Red, Black x5</characteristic>
                 <characteristic name="Keywords" typeId="c0ef-04da-1be6-73ae">Immobilize 1</characteristic>
                 <characteristic name="Icons" typeId="7c32-f1fd-0053-e544"/>
               </characteristics>
@@ -37781,7 +37811,7 @@ During the End Phase, roll 1 red defense die for each of your inactive shield to
           <profiles>
             <profile id="1b83-05d2-c503-5d43" name="General of the Republic" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains 1 Command upgrade slot. This unit gains Action: Bolster 2, Direct: Clone Trooper, and Inspire 1.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">This unit gains 1 Command upgrade slot. This unit gains Card Action: Bolster 2, Direct: Clone Trooper, and Inspire 1.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Bolster 2, Direct: Clone Trooper, Inspire 1</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
@@ -38114,7 +38144,7 @@ During the End Phase, roll 1 red defense die for each of your inactive shield to
           <profiles>
             <profile id="fb95-f0b2-4f08-9069" name="Platoon Commander" hidden="false" typeId="7b29-30f9-05bf-a8e1" typeName="3.1 Upgrade">
               <characteristics>
-                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">During Setup, choose 1 allied Corps Trooper unit. The chosen unit gains Retinue: Imperial Agent. While this unit is Engaged, it gains Attack Surge: Hit and Defense Surge: Block if it does not have it. This unit gains Sharpshooter 1.</characteristic>
+                <characteristic name="Upgrade Ability" typeId="cecf-8e4a-c196-58bc">During Setup, choose 1 allied Corps Trooper unit. The chosen unit gains Retinue: Imperial Agent. While this unit is Engaged, it gains Attack Surge: Critical and Defense Surge: Block if it does not have it. This unit gains Sharpshooter 1.</characteristic>
                 <characteristic name="Keywords" typeId="7559-cfee-de60-8256">Retinue: Imperial Agent, Sharpshooter 1</characteristic>
                 <characteristic name="Icons" typeId="e197-655b-7f5d-1f42"/>
               </characteristics>
