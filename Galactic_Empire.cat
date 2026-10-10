@@ -902,7 +902,7 @@
     </entryLink>
     <entryLink id="59ee-25fe-b89f-d909" name="•Emperor Palpatine" hidden="true" collective="false" import="true" targetId="e0c2-b41f-4814-9b56" type="selectionEntry"/>
     <entryLink id="a8fa-85cd-a3ca-4c1c" name="Imperial Royal Guards" hidden="true" collective="false" import="true" targetId="aec2-d449-8d4a-9a84" type="selectionEntry"/>
-    <entryLink id="e4c3-bec8-eed5-812c" name="Imperial Officer" hidden="true" collective="false" import="true" targetId="b1ab-39cb-f761-ed4a" type="selectionEntry"/>
+    <entryLink id="e4c3-bec8-eed5-812c" name="Imperial Officer (Ruthless Commander)" hidden="true" collective="false" import="true" targetId="b1ab-39cb-f761-ed4a" type="selectionEntry"/>
     <entryLink id="93a4-4f22-1b3b-32ed" name="Imperial Death Troopers" hidden="false" collective="false" import="true" targetId="fe82-164e-5d9b-3724" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
@@ -1693,6 +1693,58 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+    </entryLink>
+    <entryLink id="222c-1257-fd86-e9eb" name="Imperial Officer" hidden="false" collective="false" import="true" targetId="d0f9-7c35-f915-0298" type="selectionEntry"/>
+    <entryLink id="6893-1852-999b-ce30" name="Imperial Agent" hidden="false" collective="false" import="true" targetId="c0b6-4616-3f45-e0ce" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d56f-a78b-4eff-6aa7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6ee8-25a0-7a5d-2985" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="9fde-0ff6-e310-c40b" name="Imperial Probe Droid" hidden="false" collective="false" import="true" targetId="5a51-1e1f-dfd9-a8ae" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="748b-e544-56b9-f116" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9363-25ff-2b6d-baf9" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="3dbf-4534-e48a-a780" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8be4-90a0-cf45-973c" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" field="3dbf-4534-e48a-a780" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5a51-1e1f-dfd9-a8ae" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" field="3dbf-4534-e48a-a780" value="-1.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d56f-a78b-4eff-6aa7" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6ee8-25a0-7a5d-2985" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3dbf-4534-e48a-a780" type="max"/>
+      </constraints>
     </entryLink>
   </entryLinks>
 </catalogue>

@@ -529,7 +529,7 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="2eab-a0cf-3421-fe43" name="Rebel Officer" hidden="true" collective="false" import="true" targetId="6a95-8257-96f5-984e" type="selectionEntry"/>
+    <entryLink id="2eab-a0cf-3421-fe43" name="Rebel Officer (Resolute Commander)" hidden="true" collective="false" import="true" targetId="6a95-8257-96f5-984e" type="selectionEntry"/>
     <entryLink id="8516-8584-bdef-dc60" name="Rebel Pathfinders" hidden="true" collective="false" import="true" targetId="366c-1d23-178b-9949" type="selectionEntry"/>
     <entryLink id="0051-8a73-0c24-4a97" name="•Jyn Erso" hidden="false" collective="false" import="true" targetId="1618-567c-e0b2-c65e" type="selectionEntry">
       <modifiers>
@@ -1087,6 +1087,62 @@
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="21ad-4fa2-7c97-db02" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b26e-e8f9-23e9-cf6a" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="6cef-5e03-8755-cae4" name="Rebel Officer" hidden="false" collective="false" import="true" targetId="a8c7-ad82-7b79-9942" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f5f9-ddfd-ad3f-4937" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5cd-0684-03e6-a901" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="ddd0-7ebc-88d1-019c" name="Rebel Agent" hidden="false" collective="false" import="true" targetId="27ba-a22d-0ba1-5a0f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f5f9-ddfd-ad3f-4937" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5cd-0684-03e6-a901" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="f646-b4ed-7f09-260f" name="•Han Solo (Reluctant Hero)" hidden="false" collective="false" import="true" targetId="3110-ea9c-84e3-a8fa" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f5f9-ddfd-ad3f-4937" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5cd-0684-03e6-a901" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="15fe-59d3-72f7-081e" name="•Luke Skywalker (Commander Skywalker)" hidden="false" collective="false" import="true" targetId="1023-9b0a-e80d-f579" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f5f9-ddfd-ad3f-4937" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c5cd-0684-03e6-a901" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
